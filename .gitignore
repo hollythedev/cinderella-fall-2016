@@ -56,3 +56,4 @@ themes/cinderella/node_modules/*
 # ================== #
 themes/cinderella/build/*
 themes/cinderella/gulpfile.js
+themes/cinderella/style.css
