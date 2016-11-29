@@ -55,3 +55,4 @@ themes/cinderella/node_modules/*
 # Ignore build files #
 # ================== #
 themes/cinderella/build/*
+themes/cinderella/gulpfile.js
