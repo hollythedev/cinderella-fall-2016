@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package Cinderella Project Theme
  */
 
 /**
@@ -20,3 +20,20 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+/*
+Custom Home Page background Image
+*/
+
+function my_styles_method() {
+    
+    if(!is_page_template( 'front-page.php' )){
+        return;
+    }
+    $url = CFS()->get('home_background_image');
+    $custom_css = "
+    .home_photo{
+        background-image: url( {$url});
+    }";
+    wp_add_inline_style( 'red-starter-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'my_styles_method' );
