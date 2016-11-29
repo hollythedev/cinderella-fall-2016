@@ -7,7 +7,8 @@ $(document).ready(function() {
         $('#mobile-nav').animate({height: 'show'},500, function(){});
     });
 
-    $('.nav-close').click(function(){
+    $('.nav-close-icon').on('click', function($event){
+        event.stopPropagation();
         $('#mobile-nav').animate({height: 'hide'},500, function(){
             $('#nav-icon').show();
         });
