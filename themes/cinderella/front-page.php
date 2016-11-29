@@ -12,7 +12,7 @@ get_header(); ?>
 
 		 <section class = "home_section_1">
 		 <div class = "home_photo">
-			<h2><?php echo get_the_title();?></h2>
+			<h2><?php bloginfo('name');?></h2>
 			<img src="<?php echo get_template_directory_uri() ?>/images/test.svg" />
 		</div>
         </section>
@@ -34,11 +34,15 @@ get_header(); ?>
  			
 			<?php 
 			$fields = CFS()->get( 'home_stats' );
-			foreach ( $fields as $field ) {
-   			 	echo $field['image_stat'];
-    			echo $field['title_stat'];
-				echo $field['description_stat'];}
+			foreach ( $fields as $field ) :
 			?>
+			<img src = "<?php echo $field['image_stat'];?>" />
+   			 <?php	
+    			echo $field['title_stat'];
+				echo $field['description_stat'];
+			?>
+			<?php endforeach ?>
+			
 		</section>
 		<section class = "home_section 6">
 			<h2>No gift is too small</h2>
