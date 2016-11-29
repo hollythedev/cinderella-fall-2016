@@ -18,17 +18,29 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
-			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div><!-- .site-branding -->
+				<nav>
+					<div id="mobile-nav">
+						<div class="nav-wrapper">
+							<ul class="nav-ul">
+								<li><div class="nav-list-item"><i class="fa fa-facebook"></i> Home</div></li>
+								<li><div class="nav-list-item"><i class="fa fa-twitter"></i> About</div></li>
+								<li><div class="nav-list-item"><i class="fa fa-pinterest"></i> Boutique Day</div></li>
+								<li><div class="nav-list-item"><i class="fa fa-google"></i> Get Involved</div></li>
+								<li><div class="nav-list-item"><i class="fa fa-github"></i> Refer a Student</div></li>
+							</ul>
+							<div class="nav-close-container">
+								<div class="nav-close-wrapper">
+									<span class="nav-close-text">The Cinderella Project</span>
+									<i class="nav-close-icon fa fa-times-circle-o fa-2x"></i>
+								</div>
+							</div>
+						</div>
+					</div>
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<div id="nav-icon">
+						<i class="fa fa-bars"></i> 
+					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
