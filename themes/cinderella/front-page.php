@@ -31,7 +31,6 @@ get_header(); ?>
  			<!-- add student section if confirmed-->
 		</section>
 		<section class="home_section_5">
- 			
 			<?php 
 			$fields = CFS()->get( 'home_stats' );
 			foreach ( $fields as $field ) :
@@ -42,12 +41,11 @@ get_header(); ?>
 				echo $field['description_stat'];
 			?>
 			<?php endforeach ?>
-			
 		</section>
 		<section class = "home_section 6">
 			<h2>No gift is too small</h2>
 			<p>	Help us contribute to these student’s stories.</p>
-			<p><a class="donate" href="<?php the_permalink(); ?>">Ways to Help</a></p>
+			<a class="donate" href="<?php the_permalink(); ?>">Ways to Help</a>
 		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
