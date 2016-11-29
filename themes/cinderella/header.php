@@ -23,11 +23,18 @@
 					<div id="mobile-nav">
 						<div class="nav-wrapper">
 							<ul class="nav-ul">
-								<li>link 1</li>
-								<li>link 2</li>
-								<li>link 3</li>
+								<li><div class="nav-list-item"><i class="fa fa-facebook"></i> Home</div></li>
+								<li><div class="nav-list-item"><i class="fa fa-twitter"></i> About</div></li>
+								<li><div class="nav-list-item"><i class="fa fa-pinterest"></i> Boutique Day</div></li>
+								<li><div class="nav-list-item"><i class="fa fa-google"></i> Get Involved</div></li>
+								<li><div class="nav-list-item"><i class="fa fa-github"></i> Refer a Student</div></li>
 							</ul>
-							<i class="nav-close fa fa-times-circle-o"></i> 
+							<div class="nav-close-container">
+								<div class="nav-close-wrapper">
+									<span class="nav-close-text">The Cinderella Project</span>
+									<i class="nav-close-icon fa fa-times-circle-o fa-2x"></i>
+								</div>
+							</div>
 						</div>
 					</div>
 
