@@ -20,7 +20,6 @@ get_header(); ?>
 		</div>
         </section>
 		<section class="home_section_2">
- 			
 			<?php echo CFS()->get( 'section_2_title' ); ?>
 			<?php echo CFS()->get( 'home_section_2_copy' ); ?>
             <?php echo CFS()->get( 'home_section_2_link_1' ); ?>

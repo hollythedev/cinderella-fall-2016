@@ -29,10 +29,15 @@ function my_styles_method() {
     if(!is_page_template( 'front-page.php' )){
         return;
     }
-    $url = CFS()->get('home_background_image');
+    $urlHome = CFS()->get('home_background_image');
+	$urlBD = CFS()->get('boutique_day_background_image');
     $custom_css = "
     .home_photo{
-        background-image: url( {$url});
+        background-image: url( {$urlHome});
+    }";
+	$custom_css = "
+    .bd_photo{
+        background-image: url( {$urlBD});
     }";
     wp_add_inline_style( 'red-starter-style', $custom_css );
 }
