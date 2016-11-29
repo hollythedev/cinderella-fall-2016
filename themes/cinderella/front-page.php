@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Front Page
+ * The front page of the website
  *
  * @package Cinderella_Project_Theme
  */
