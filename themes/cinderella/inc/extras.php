@@ -26,7 +26,7 @@ Custom Home Page background Image
 
 function my_styles_method() {
     
-    if(!is_page_template( 'front-page.php' )){
+    if(!is_page_template( 'front-page.php', 'boutique-day.php' )){
         return;
     }
     $urlHome = CFS()->get('home_background_image');
