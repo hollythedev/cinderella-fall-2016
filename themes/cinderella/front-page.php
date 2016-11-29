@@ -11,8 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
             <?php echo CFS()->get( 'home_background_image' ); ?>
-			<?php echo CFS()->get( 'section_2_title' ); ?>
-			<?php echo CFS()->get( 'home_section_2_copy' ); ?>
+						<?php echo CFS()->get( 'section_2_title' ); ?>
+						<?php echo CFS()->get( 'home_section_2_copy' ); ?>
             <?php echo CFS()->get( 'home_section_2_link_1' ); ?>
             <?php echo CFS()->get( 'home_section_2_link_2' ); ?>
 

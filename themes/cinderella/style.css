@@ -656,3 +656,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  color: blue;
+  background-color: #4A4A4A; }
