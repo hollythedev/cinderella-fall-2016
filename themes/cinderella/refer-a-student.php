@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the Refer a Student page.
+ * Template Name: Refer a Student Page
  *
  * @package Cinderella_Project_Theme
  */

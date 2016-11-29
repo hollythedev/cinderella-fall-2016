@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the about page.
+ * Template Name: About Page
  *
  * @package Cinderella_Project_Theme
  */
@@ -9,12 +9,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
+			<?php echo CFS()->get( 'our_story' ); ?>
+			<?php echo CFS()->get( 'our_team_title' ); ?>
+			<?php echo CFS()->get( 'our_team' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the Contact Us page.
+ * Template Name: Contact Us Page
  *
  * @package Cinderella_Project_Theme
  */

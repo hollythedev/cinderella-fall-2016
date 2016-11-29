@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the Resource Kit page.
+ * Template Name: Resource Kit Page
  *
  * @package Cinderella_Project_Theme
  */
