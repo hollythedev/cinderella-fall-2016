@@ -1,4 +1,14 @@
 .site-footer{ 
-  color: blue;
   background-color: $color_background_footer;
+  color:$color__text-brand-btn;
+  font-size: 11px;
+    /*@include mobile{
+
+    }*/
+  a{
+    text-decoration: none;
+    color: $color__text-brand-btn;
+    border-bottom: 1px solid $color_footer_borders;
+    font-size: 11px;
+  }
 }
