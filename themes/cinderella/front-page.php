@@ -54,6 +54,7 @@ get_header(); ?>
 					<p><a class="donate" href="<?php the_permalink(); ?>">Ways to Help</a></p>
 				</section>
 
+
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
