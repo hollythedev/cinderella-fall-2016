@@ -26,11 +26,8 @@ get_header(); ?>
 		<section class = "bd_section_2">
 			<?php echo CFS()->get( 'bd_section_2_title' ); ?>
 			<?php echo CFS()->get( 'bd_section_2_description' ); ?>
-		</section>
-		<section class="bd_section_3">
-			<?php echo CFS()->get( 'bd_quote' ); ?>
-			<?php echo CFS()->get( 'bd_quote_author' ); ?>
-		</section>
+        </section>
+		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
