@@ -25,22 +25,26 @@ Custom Home Page background Image
 */
 
 function my_styles_method() {
-
-    if(!is_page_template( 'front-page.php' )){
+    if(is_page( 'Home' )){
          $urlHome = CFS()->get('home_background_image');
          $custom_css = "
-        .home_section_1{
+        .home-section-1{
         background-image: url( {$urlHome});
         }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
-    } else if(!is_page_template('get-involved.php')){
+    } elseif(is_page('get-involved')){
+        $urlInKindDonation = CFS()->get('donations_section_background_image');
         $urlGetInv = CFS()->get('get_involved_background_image');
-        $custom_css = " .get-involved_section_1{
-            background-image: url( {$urlHome});
+        $custom_css = " .donations-section-2{
+                background-image: url({$urlInKindDonation});
+                }
+                .get-involved-section-1{
+            background-image: url({$urlGetInv});
             }";
+  
             wp_add_inline_style( 'red-starter-style', $custom_css );
-            return;
+        return;
     }
 
 }
