@@ -7,8 +7,6 @@
 
 ?>
 
-
-
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 					<div class="globe-logo">
@@ -16,13 +14,13 @@
 					</div>
 					
 					<div class="navigation">
-						<div>
+						<div class="first-nav">
 							<a href="#">Home</a>
 							<a href="#">About</a>
 							<a href="#">Boutique Day</a>
 							<a href="#">Get Involed</a>
 						</div>
-						<div>
+						<div class="second-nav">
 							<a href="#">Refer a Student</a>
 							<a href="#">Blog</a>
 							<a href="#">Contact Us</a>
@@ -43,7 +41,7 @@
 					<div class="logoDevelopment">
 						<img src = "<?php echo get_template_directory_uri(); ?>/images/globe-icon.svg" alt = "Globe Icon">
 					</div>
-			</div><!-- #content -->
+					</div><!-- #content -->
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

@@ -956,6 +956,16 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.globe-logo {
+  text-align: center;
+  width: 52px;
+  height: 52.44px;
+  background: #9B9B9B;
+  border-radius: 50px; }
+  .globe-logo img {
+    width: 22.05px;
+    height: 29.9px; }
+
 .site-footer {
   display: -ms-flexbox;
   display: flex;
@@ -972,13 +982,35 @@ object {
     color: #fff;
     border-bottom: 1px solid #3E3E3E;
     font-size: 11px; }
-  .site-footer .globe-logo {
-    text-align: center; }
 
 .navigation {
   display: -ms-flexbox;
   display: flex;
   display: inline-block; }
+  .navigation a {
+    text-transform: uppercase; }
 
 .facebook {
-  text-align: center; }
+  text-align: center;
+  border-bottom: 1px solid #FFF; }
+  .facebook img {
+    width: 24px;
+    height: 23.97px; }
+
+.navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .navigation .first-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-left: 2rem; }
+  .navigation .second-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-right: 3rem; }
