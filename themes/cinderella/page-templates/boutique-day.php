@@ -36,7 +36,7 @@ get_header(); ?>
 			<!--Students who attend BD are provided...-->
 			<section class="bd_section_4">
 				<?php echo CFS()->get( 'bd_about_bd' ); ?>
-				<?php echo CFS()->get( 'bd_expect_title' ); ?>
+				<h2>What to expect</h2>
 			</section>
 			<!--What to expect image and copy grid-->
 			<section class="bd_section_5">
@@ -53,21 +53,21 @@ get_header(); ?>
 			<!--The Student resource kit-->
 			<section class="bd_section_6">
 						<?php echo CFS()->get( 'bd_resource_kit' ); ?>
-						<?php echo CFS()->get( 'bd_register_kit' ); ?>
+						<h3>The Student Resource Kit your’s for life</h3>
 						<?php echo CFS()->get( 'bd_register_2_mins' ); ?>
 						<p><a class="register" href="<?php the_permalink(); ?>">Register</a></p>
 			</section>
 			<!--Dreams come true-->
 			<section class="bd_section_7">
-				<?php echo CFS()->get( 'bd_dreams_titles' ); ?>
+				<h3>Dreams come true. See for yourself.</h3>
 				<?php echo CFS()->get( 'bd_footage_call_to_action' ); ?>
 				<div class="footage">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/TFmLGlVx7hc" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</section>
 			<section class="bd_section_8">
-				<?php echo CFS()->get( 'bd_gift' ); ?>
-				<?php echo CFS()->get( 'bd_contribute' ); ?>
+				<h3>No gift is too small.</h3>
+				<p>Help us contribute to these student’s stories.</p>
 				<p><a class="register" href="<?php the_permalink(); ?>">Ways to help</a></p>
 			</section>
 		</main><!-- #main -->
