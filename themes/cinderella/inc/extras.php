@@ -30,12 +30,17 @@ function my_styles_method() {
         return;
     }
     $urlHome = CFS()->get('home_background_image');
-	$urlBD = CFS()->get('boutique_day_background_image');
+	$urlGetInv = CFS()->get('get_involved_background_image');
     $custom_css = "
     .home_section_1{
 
         background-image: url( {$urlHome});
-    }";
+    },
+    .get-involved_section_1{
+         background-image: url( {$urlGetInv});
+        }
+    
+    ";
     wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
