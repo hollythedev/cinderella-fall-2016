@@ -55,7 +55,7 @@ $(document).ready(function() {
 
         //Design
         controlArrows: true,
-        verticalCentered: true,
+        verticalCentered: false,
         fixedElements: 'nav',
         responsiveWidth: 0,
         responsiveHeight: 0,
