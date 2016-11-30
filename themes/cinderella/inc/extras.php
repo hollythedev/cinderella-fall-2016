@@ -32,14 +32,14 @@ function my_styles_method() {
         .home_section_1{
         background-image: url( {$urlHome});
         }";
-            wp_add_inline_style( 'red-starter-style', $custom_css );
+        wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
     } else if(!is_page_template('get-involved.php')){
         $urlGetInv = CFS()->get('get_involved_background_image');
         $custom_css = " .get-involved_section_1{
             background-image: url( {$urlHome});
             }";
-                wp_add_inline_style( 'red-starter-style', $custom_css );
+            wp_add_inline_style( 'red-starter-style', $custom_css );
             return;
     }
 
