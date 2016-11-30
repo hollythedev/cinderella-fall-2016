@@ -23,12 +23,9 @@ get_header(); ?>
 			<?php endforeach ?>
 		</div>
         </section>
-		<section class = "bd_section_2">
-			<?php echo CFS()->get( 'bd_section_2_title' ); ?>
-			<?php echo CFS()->get( 'bd_section_2_description' ); ?>
-        </section>
-		
-
+		<section class = "bd_section_two">
+				<?php echo CFS()->get( 'home_section_2_copy' ); ?>
+		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
