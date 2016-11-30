@@ -42,7 +42,7 @@ $(document).ready(function() {
         resetSliders: false,
         fadingEffect: false,
         normalScrollElements: '#element1, .element2',
-        scrollOverflow: false,
+        scrollOverflow: true,
         scrollOverflowOptions: null,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
@@ -60,7 +60,7 @@ $(document).ready(function() {
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
-        sectionsColor : ['#000', '#69B9C6', '#F5A623', '#393E53', '#393E53'],
+       // sectionsColor : ['#000', '#69B9C6', '#F5A623', '#393E53', '#393E53'],
 
         //Custom selectors
         sectionSelector: '.section',
