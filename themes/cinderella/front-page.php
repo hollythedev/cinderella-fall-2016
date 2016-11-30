@@ -33,10 +33,6 @@ get_header(); ?>
 					<?php echo CFS()->get( 'home_quote_author' ); ?>
 				</section>
 
-				<section class="section home_section_4">
-					<!-- add student section if confirmed-->
-				</section>
-
 				<section class="section fp-auto-height home_section_5">
 					<?php 
 					$fields = CFS()->get( 'home_stats' );
@@ -49,13 +45,12 @@ get_header(); ?>
 					?>
 					<?php endforeach ?>
 
+				<section class="section home_section 5">
 					<h2>No gift is too small</h2>
 					<p>	Help us contribute to these student’s stories.</p>
 					<p><a class="donate" href="<?php the_permalink(); ?>">Ways to Help</a></p>
 					<?php get_footer(); ?>
 				</section>
-
-
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the Get Involved page.
+ * Template Name: Get Involved Page
  *
  * @package Cinderella_Project_Theme
  */
@@ -9,11 +9,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<section class="get-involved_section_1">
+			<?php echo CFS()->get( 'get_involved_no_gift' ); ?>
+		</section>
 
-<!-- add custom fields-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
