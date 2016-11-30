@@ -62,8 +62,13 @@ get_header(); ?>
 				<?php echo CFS()->get( 'bd_dreams_title' ); ?>
 				<?php echo CFS()->get( 'bd_footage_call_to_action' ); ?>
 				<div class="footage">
-				[embed width="400" height="225"]https://www.youtube.com/watch?v=AvOTBFM_3RQ[/embed]
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/TFmLGlVx7hc" frameborder="0" allowfullscreen></iframe>
 				</div>
+			</section>
+			<section class="bd_section_8">
+				<?php echo CFS()->get( 'bd_gift' ); ?>
+				<?php echo CFS()->get( 'bd_contribute' ); ?>
+				<p><a class="register" href="<?php the_permalink(); ?>">Ways to help</a></p>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
