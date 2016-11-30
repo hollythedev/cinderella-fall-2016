@@ -56,12 +56,11 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        paddingTop: '0',
-        paddingBottom: '0',
         fixedElements: 'nav',
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
+        sectionsColor : ['#000', '#69B9C6', '#F5A623', '#393E53', '#393E53'],
 
         //Custom selectors
         sectionSelector: '.section',
