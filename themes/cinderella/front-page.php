@@ -15,14 +15,17 @@ get_header(); ?>
 					<img class="brand-logo" src="<?php echo get_template_directory_uri() ?>/images/test.svg" />
 					<h2 class="brand-title"><?php bloginfo('name');?></h2>
 					<span class="horizontal-line"></span>
-					<p>Your story begins here.</p>
+					<p class="brand-slogan">Your story begins here.</p>
+					<i class="angle-down fa fa-angle-down"></i>
 				</section>
 
 				<section class="section home_section_2">
-					<?php echo CFS()->get( 'section_2_title' ); ?>
-					<?php echo CFS()->get( 'home_section_2_copy' ); ?>
-					<?php echo CFS()->get( 'home_section_2_link_1' ); ?>
-					<?php echo CFS()->get( 'home_section_2_link_2' ); ?>
+					<h2 class="title"><?php echo CFS()->get( 'section_2_title' ); ?></h2>
+					<span class="horizontal-line"></span>
+					<p class="copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
+					<div class="button-link"><?php echo CFS()->get( 'home_section_2_link_1' ); ?></div>
+					<div class="learn-about-link"><?php echo CFS()->get( 'home_section_2_link_2' ); ?><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+					<i class="angle-down fa fa-angle-down"></i>
 				</section>
 
 				<section class="section home_section_3">
@@ -34,8 +37,7 @@ get_header(); ?>
 					<!-- add student section if confirmed-->
 				</section>
 
-				<section class="section home_section_5">
-					
+				<section class="section fp-auto-height home_section_5">
 					<?php 
 					$fields = CFS()->get( 'home_stats' );
 					foreach ( $fields as $field ) :
@@ -46,16 +48,15 @@ get_header(); ?>
 						echo $field['description_stat'];
 					?>
 					<?php endforeach ?>
-				</section>
 
-				<section class="section home_section 6">
 					<h2>No gift is too small</h2>
 					<p>	Help us contribute to these student’s stories.</p>
 					<p><a class="donate" href="<?php the_permalink(); ?>">Ways to Help</a></p>
+					<?php get_footer(); ?>
 				</section>
 
 
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_footer(); ?>
+
