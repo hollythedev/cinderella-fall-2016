@@ -7,7 +7,7 @@
 
 ?>
 
-			</div><!-- #content -->
+
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
@@ -43,7 +43,7 @@
 					<div class="logoDevelopment">
 						<img src = "<?php echo get_template_directory_uri(); ?>/images/globe-icon.svg" alt = "Globe Icon">
 					</div>
-
+			</div><!-- #content -->
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
