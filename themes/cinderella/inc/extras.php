@@ -35,10 +35,6 @@ function my_styles_method() {
     .home_section_1{
 
         background-image: url( {$urlHome});
-    }
-
-    .bd_photo{
-        background-image: url( {$urlBD});
     }";
     wp_add_inline_style( 'red-starter-style', $custom_css );
 }
