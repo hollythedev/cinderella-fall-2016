@@ -27,7 +27,9 @@ get_header(); ?>
 				<?php echo CFS()->get( 'bd_title' ); ?>
 				<?php echo CFS()->get( 'bd_description' ); ?>
 			</section>
-
+			<section class="bd_section_3">
+				<?php echo CFS()->get( 'bd_quote' ); ?>	
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
