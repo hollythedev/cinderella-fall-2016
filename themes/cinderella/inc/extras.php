@@ -32,10 +32,11 @@ function my_styles_method() {
     $urlHome = CFS()->get('home_background_image');
 	$urlBD = CFS()->get('boutique_day_background_image');
     $custom_css = "
-    .home_photo{
+    .home_section_1{
+
         background-image: url( {$urlHome});
-    }";
-	$custom_css = "
+    }
+
     .bd_photo{
         background-image: url( {$urlBD});
     }";
