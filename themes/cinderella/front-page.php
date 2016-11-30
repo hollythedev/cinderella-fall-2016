@@ -28,7 +28,7 @@ get_header(); ?>
 					<i class="angle-down fa fa-angle-down"></i>
 				</section>
 
-				<section class="section home_section_3">
+				<section class="section home-section-3">
 					<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( 'home_quote' ); ?></span></h2>
 					<h3 class="author"><?php echo CFS()->get( 'home_quote_author' ); ?></h3>
 				</section>
