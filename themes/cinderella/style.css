@@ -289,8 +289,7 @@ nav {
   top: 50px;
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
-  right: 60px;
-  width: 200px; }
+  right: 60px; }
   #nav-icon i {
     font-size: 2rem; }
 
@@ -550,6 +549,37 @@ body {
 
 .bypostauthor {
   display: block; }
+
+.home .fp-tableCell {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%; }
+
+.home .home_section_1 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 5rem; }
+
+.home .brand-logo {
+  width: 75px;
+  height: 75px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+
+.home .brand-title {
+  font-size: 2.5rem;
+  width: 265px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
 
 /*--------------------------------------------------------------
 # Media

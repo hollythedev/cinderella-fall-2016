@@ -62,6 +62,7 @@ $(document).ready(function() {
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
+        sectionsColor : ['#000', '#69B9C6', '#F5A623', '#393E53', '#393E53'],
 
         //Custom selectors
         sectionSelector: '.section',
