@@ -961,7 +961,8 @@ object {
   width: 52px;
   height: 52.44px;
   background: #9B9B9B;
-  border-radius: 50px; }
+  border-radius: 50px;
+  margin: 0 auto; }
   .globe-logo img {
     width: 22.05px;
     height: 29.9px; }
@@ -973,10 +974,7 @@ object {
       flex-wrap: wrap;
   background-color: #4A4A4A;
   color: #fff;
-  font-size: 11px;
-  /*@include mobile{
-
-    }*/ }
+  font-size: 11px; }
   .site-footer a {
     text-decoration: none;
     color: #fff;
@@ -1014,3 +1012,14 @@ object {
     -ms-flex-direction: column;
         flex-direction: column;
     padding-right: 3rem; }
+
+.information {
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase; }
+
+.logoDevelopment {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }

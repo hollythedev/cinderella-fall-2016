@@ -3,7 +3,8 @@
   width: 52px;
 	height: 52.44px;
   background: $color_globe_background;
-  border-radius: 50px;;
+  border-radius: 50px;
+  margin: 0 auto;
     img {
       width: 22.05px;
       height: 29.9px;
@@ -15,9 +16,6 @@
   background-color: $color_background_footer;
   color:$color__text-brand-btn;
   font-size: 11px;
-    /*@include mobile{
-
-    }*/
   a{
     text-decoration: none;
     color: $color__text-brand-btn;
@@ -32,14 +30,15 @@
       text-transform: uppercase;
     }
 }
+
 .facebook{
   text-align: center;
   border-bottom: 1px solid #FFF;
-  img{
-    width:24px;
-    height:23.97px; 
+    img{
+      width:24px;
+      height:23.97px; 
+    }
   }
-}
 
 
 .navigation { 
@@ -55,4 +54,12 @@
       flex-direction: column;
       padding-right: 3rem;
   }
+}
+.information {
+  display: flex;
+  text-transform: uppercase;
+}
+.logoDevelopment{
+  display: flex;
+  justify-content: flex-end;
 }
