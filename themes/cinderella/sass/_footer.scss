@@ -1,4 +1,6 @@
 .site-footer{ 
+  display: flex;
+  flex-wrap: wrap;
   background-color: $color_background_footer;
   color:$color__text-brand-btn;
   font-size: 11px;
@@ -11,4 +13,15 @@
     border-bottom: 1px solid $color_footer_borders;
     font-size: 11px;
   }
+.globe-logo {
+  text-align: center;
+}
+
+}
+.navigation{
+  display: flex;
+  display: inline-block;
+}
+.facebook{
+  text-align: center;
 }

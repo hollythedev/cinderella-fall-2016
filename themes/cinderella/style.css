@@ -616,6 +616,10 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #4A4A4A;
   color: #fff;
   font-size: 11px;
@@ -627,3 +631,13 @@ object {
     color: #fff;
     border-bottom: 1px solid #3E3E3E;
     font-size: 11px; }
+  .site-footer .globe-logo {
+    text-align: center; }
+
+.navigation {
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block; }
+
+.facebook {
+  text-align: center; }
