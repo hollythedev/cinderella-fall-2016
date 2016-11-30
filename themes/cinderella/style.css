@@ -956,6 +956,10 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*---    FOOTER   ---*/
+.container {
+  width: 1441px; }
+
 .globe-logo {
   text-align: center;
   width: 52px;
@@ -974,7 +978,9 @@ object {
       flex-wrap: wrap;
   background-color: #4A4A4A;
   color: #fff;
-  font-size: 11px; }
+  font-size: 11px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .site-footer a {
     text-decoration: none;
     color: #fff;
@@ -988,10 +994,9 @@ object {
   .navigation a {
     text-transform: uppercase; }
 
-.facebook {
-  text-align: center;
-  border-bottom: 1px solid #FFF; }
-  .facebook img {
+.facebook-icon {
+  text-align: center; }
+  .facebook-icon img {
     width: 24px;
     height: 23.97px; }
 
@@ -999,27 +1004,33 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  /*.second-nav {
+      display: flex;
+      flex-direction: column;
+      padding-right: 3rem;
+  }*/ }
   .navigation .first-nav {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    padding-left: 2rem; }
-  .navigation .second-nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding-right: 3rem; }
+    padding-left: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
 .information {
   display: -ms-flexbox;
   display: flex;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
 
 .logoDevelopment {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+  padding-right: 2rem; }

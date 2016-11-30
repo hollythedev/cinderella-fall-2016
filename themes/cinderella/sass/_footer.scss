@@ -1,3 +1,8 @@
+/*---    FOOTER   ---*/
+.container {
+  width: 1441px;
+}
+
 .globe-logo {
   text-align: center;
   width: 52px;
@@ -16,6 +21,7 @@
   background-color: $color_background_footer;
   color:$color__text-brand-btn;
   font-size: 11px;
+  justify-content: space-around;
   a{
     text-decoration: none;
     color: $color__text-brand-btn;
@@ -31,9 +37,8 @@
     }
 }
 
-.facebook{
+.facebook-icon{
   text-align: center;
-  border-bottom: 1px solid #FFF;
     img{
       width:24px;
       height:23.97px; 
@@ -48,18 +53,23 @@
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
+    flex-wrap: wrap;
   }
-    .second-nav {
+    /*.second-nav {
       display: flex;
       flex-direction: column;
       padding-right: 3rem;
-  }
+  }*/
 }
 .information {
   display: flex;
   text-transform: uppercase;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 .logoDevelopment{
   display: flex;
   justify-content: flex-end;
+  padding-right: 2rem;
 }
