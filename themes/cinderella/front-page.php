@@ -33,7 +33,7 @@ get_header(); ?>
 					<?php echo CFS()->get( 'home_quote_author' ); ?>
 				</section>
 
-				<section class="section fp-auto-height home_section_5">
+				<section class="section fp-auto-height home-section-4">
 					<?php 
 					$fields = CFS()->get( 'home_stats' );
 					foreach ( $fields as $field ) :
