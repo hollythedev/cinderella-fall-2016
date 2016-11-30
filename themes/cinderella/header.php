@@ -22,13 +22,7 @@
 				<nav>
 					<div id="mobile-nav">
 						<div class="nav-wrapper">
-							<ul class="nav-ul">
-								<li><div class="nav-list-item"><i class="fa fa-facebook"></i> Home</div></li>
-								<li><div class="nav-list-item"><i class="fa fa-twitter"></i> About</div></li>
-								<li><div class="nav-list-item"><i class="fa fa-pinterest"></i> Boutique Day</div></li>
-								<li><div class="nav-list-item"><i class="fa fa-google"></i> Get Involved</div></li>
-								<li><div class="nav-list-item"><i class="fa fa-github"></i> Refer a Student</div></li>
-							</ul>
+								<?php wp_nav_menu( array( 'menu_class' => 'nav-links-wrapper', 'link_before' => '<span class="nav-icon"></span>', 'link_after' => '',  'theme_location' => 'primary' )); ?>
 							<div class="nav-close-container">
 								<div class="nav-close-wrapper">
 									<span class="nav-close-text">The Cinderella Project</span>
@@ -41,6 +35,7 @@
 					<div id="nav-icon">
 						<i class="fa fa-bars"></i> 
 					</div>
+						
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

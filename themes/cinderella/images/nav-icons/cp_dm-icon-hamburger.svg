@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="22px" viewBox="0 0 32 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>hamburger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="hamburger" stroke="#FFFFFF">
+            <g>
+                <path d="M0.497994423,0.5 L31.4378393,0.5" id="Line"></path>
+                <path d="M0.497994423,11.5 L31.4378393,11.5" id="Line-Copy"></path>
+                <path d="M0.497994423,21.5 L31.4378393,21.5" id="Line-Copy-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -28,23 +28,26 @@ get_header(); ?>
 					<i class="angle-down fa fa-angle-down"></i>
 				</section>
 
-				<section class="section home-section-3">
-					<?php echo CFS()->get( 'home_quote' ); ?>
-					<?php echo CFS()->get( 'home_quote_author' ); ?>
+				<section class="section home_section_3">
+					<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( 'home_quote' ); ?></span></h2>
+					<h3 class="author"><?php echo CFS()->get( 'home_quote_author' ); ?></h3>
 				</section>
-
 				<section class="section fp-auto-height home-section-4">
 					<?php 
 					$fields = CFS()->get( 'home_stats' );
 					foreach ( $fields as $field ) :
 					?>
-					<img src = "<?php echo $field['image_stat'];?>" />
-					<?php	
-						echo $field['title_stat'];
-						echo $field['description_stat'];
-					?>
+					<div class="stat-container">
+						<div class="image-wrapper">
+							<img src="<?php echo $field['image_stat'];?>" />
+						</div>
+						<div class="stat-text-wrapper">
+							<h3 class="stat-value"><?php echo $field['title_stat'];?></h3>
+							<p class="stat-description"><?php echo $field['description_stat'];?></p>
+						</div>
+					</div>
 					<?php endforeach ?>
-					
+
 					<h2>No gift is too small</h2>
 					<p>	Help us contribute to these student’s stories.</p>
 					<p><a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a></p>
