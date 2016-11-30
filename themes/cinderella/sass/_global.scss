@@ -1,0 +1,49 @@
+.button-link {
+    width: 80%;
+    height: 5rem;
+    background-color:$color_buttons;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $base__space-unit;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover, &focus{
+
+        }
+    }
+}
+
+.learn-about-link {
+    width: 280px;
+    color: #fff;
+    font-size:1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: $base__space-unit;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 1rem;
+
+        &:hover, &focus{
+
+        }
+    }
+}
+
+// body needed to increase style weight and override font-awesome's default font-size
+body{
+    .angle-down {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+}
