@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		
 		<section class="get-involved_section_1">
 			<?php echo CFS()->get( 'get_involved_no_gift' ); ?>
 		</section>

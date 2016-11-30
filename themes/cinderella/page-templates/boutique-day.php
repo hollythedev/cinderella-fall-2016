@@ -59,7 +59,7 @@ get_header(); ?>
 			</section>
 			<!--Dreams come true-->
 			<section class="bd_section_7">
-				<?php echo CFS()->get( 'bd_dreams_title' ); ?>
+				<?php echo CFS()->get( 'bd_dreams_titles' ); ?>
 				<?php echo CFS()->get( 'bd_footage_call_to_action' ); ?>
 				<div class="footage">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/TFmLGlVx7hc" frameborder="0" allowfullscreen></iframe>

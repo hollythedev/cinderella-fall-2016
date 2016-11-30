@@ -840,6 +840,7 @@ a {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+
   width: 100%;
   padding-top: 10vh;
   background-color: #69B9C6; }
