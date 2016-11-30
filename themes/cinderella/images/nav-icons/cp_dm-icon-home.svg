@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="23px" viewBox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>Home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="dropdown---logged-out" transform="translate(-18.000000, -13.000000)" stroke="#FFFFFF">
+            <g transform="translate(0.000000, -2.000000)" id="Home">
+                <g transform="translate(19.000000, 15.000000)">
+                    <path d="M11.746531,11.3957813 L15.1072552,0.071875" id="Stroke-1"></path>
+                    <path d="M15.1072697,10.27295 L17.760511,7.29229375" id="Stroke-3"></path>
+                    <path d="M17.7604821,11.3957813 L20.8558821,10.78125" id="Stroke-4"></path>
+                    <path d="M13.4269076,12.39171 L20.2368455,14.9070475" id="Stroke-6"></path>
+                    <path d="M17.3624959,16.9699462 L19.3082545,18.462215" id="Stroke-7"></path>
+                    <path d="M13.0289214,14.5104556 L16.4338179,22.9830806" id="Stroke-8"></path>
+                    <path d="M11.304329,17.0349931 L10.7736807,20.4585431" id="Stroke-10"></path>
+                    <path d="M8.33566759,17.4963587 L3.2668469,22.9830087" id="Stroke-11"></path>
+                    <path d="M10.5902131,14.5104556 L2.09998552,15.9976931" id="Stroke-13"></path>
+                    <path d="M9.2378131,11.9025288 L3.02340621,8.78229125" id="Stroke-14"></path>
+                    <path d="M9.44708897,7.79511688 L8.03197862,3.05639813" id="Stroke-15"></path>
+                    <path d="M3.52158414,12 L0.0723703448,12" id="Stroke-16"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

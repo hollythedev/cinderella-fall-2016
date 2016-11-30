@@ -33,7 +33,10 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							<p>and in order to make it all possible, we rely on donations of student care packages, formal wear, and much more. If you can provide support for any of the below items, we would greatly appreciate your donation! Each has an impact on a student’s experience.</p>
 							<h3>Our Wishlist</h3>
 							<div class="wishlist-menu">
-
+									<ul>
+										<li>Most-Needed</li>
+										<p><?php echo CFS()->get( 'gender_shoe_size' ); ?></p>
+									</ul>
 
 							</div>
 						</div>
