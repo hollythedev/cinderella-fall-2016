@@ -18,3 +18,11 @@ $mobile-width: 320px;
         @content;
     }
 }
+
+// Desktop
+$desktop-width: 1441px;
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
