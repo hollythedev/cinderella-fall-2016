@@ -267,9 +267,7 @@ html.fp-enabled,
   position: relative; }
 
 .fp-scroller {
-  overflow: hidden;
-  margin: 0;
-  padding: 0; }
+  overflow: hidden; }
 
 .iScrollIndicator {
   border: 0 !important; }
