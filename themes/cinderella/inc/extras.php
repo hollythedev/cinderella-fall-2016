@@ -34,11 +34,7 @@ function my_styles_method() {
     $custom_css = "
     .home_photo{
         background-image: url( {$urlHome});
-    }";
-	$custom_css = "
-    .bd_photo{
-        background-image: url( {$urlBD});
-    }";
+    }";	
     wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
