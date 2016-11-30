@@ -19,7 +19,7 @@ get_header(); ?>
 				</section>
 
 				<section class="section home_section_2">
-					<?php echo CFS()->get( 'section_2_title' ); ?>
+					<?php echo CFS()->get( 'bd_title' ); ?>
 					<?php echo CFS()->get( 'home_section_2_copy' ); ?>
 					<?php echo CFS()->get( 'home_section_2_link_1' ); ?>
 					<?php echo CFS()->get( 'home_section_2_link_2' ); ?>
