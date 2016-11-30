@@ -1,25 +1,69 @@
 .home {
-    .fp-tableCell {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .home_section_1 {
+
+    .home_section_1{
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 5rem;
-        background-color: red;
+        width: 100%;
+        padding-top: 20vh;
+
+        .brand-logo {
+            width: 75px;
+            height: 75px;
+        }
+
+        .brand-title {
+            font-size: 2.5rem;
+            width: 265px;
+            text-align: center;
+            margin-bottom: 10vh;
+            color: #fff;
+        }
+
+        .horizontal-line {
+            width: 85%;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 10vh;
+        }
+
+        .brand-slogan {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 25vh;
+        }
+
     }
-    .brand-logo {
-        width: 75px;
-        height: 75px;
-        align-self: center;
-    }
-    .brand-title {
-        font-size: 2.5rem;
-        width: 265px;
-        text-align: center;
-        align-self: center;
+
+    .home_section_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 10vh;
+        background-color: $color_background_2;
+
+        .title {
+            font-size: 2.5rem;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 10vh;
+            color: #fff;
+        }
+
+        .horizontal-line {
+            width: 85%;
+            border-bottom: 1px solid #fff;
+            margin-bottom: $base__space-unit;
+        }
+
+        .copy {
+            width: 85%;
+            padding: 0 1.5rem;
+            color: white;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
     }
 }
