@@ -11,7 +11,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<section class="get-involved-section-1">
 			<?php echo CFS()->get( 'get_involved_no_gift' ); ?>
-			
 		</section>
 		<section class="get-involved-section-2">
 			<p>There are a few ways you can help The Cinderella Project thrive</p>
@@ -104,6 +103,11 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							<p class="stat-description"><?php echo $field['donation_package_amount'];?></p>
 						</div>
 					</div>
+					<div class="counter">
+						<button class="target_pos" type="button">+</button>
+						<div class="output">0</div>
+						<button class="target_neg" type="button">-</button>
+					</div>
 					<?php endforeach ?>
 					</div>
 					<a class="button-link" href="<?php the_permalink(); ?>">Pledge Now</a>
@@ -131,7 +135,6 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							</div>
 						</section> <!-- end of get-involved-fundraising -->
 						<section class="fundraising-contact-form">
-							
 							<?php echo CFS()->get( 'fundraising_contact_form' ); ?>
 						</section>
 						<!-- volunteer section-->
@@ -144,6 +147,7 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							<h3 class="author"><?php echo CFS()->get( 'volunteer_quote_author' ); ?></h3>
 						</div>
 						<h2>Some of our Volunteers</h2>
+						<!-- volunteer gallery -->
 						<section class= "volunteer_gallery">
 							<div class= "volunteer_photo">
 		 						<?php 
@@ -158,6 +162,13 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 								</div>	
 							<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
        	 				</section> <!-- end of volunteer gallery -->
+						<div class="volunteer-idea">
+								<h2>Want to get involved?</h2>
+								<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+						</div>
+						<section class="volunteer-contact-form">
+							<?php echo CFS()->get( 'volunteer_contact_form' ); ?>
+						</section>
 				</ul>
 			</div>
 		</section>
