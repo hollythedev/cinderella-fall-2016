@@ -10,7 +10,7 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 					<div class="globe-logo">
-						<img src = "<?php echo get_template_directory_uri(); ?>/images/globe-icon.svg" alt = "Globe Icon">
+						<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/globe-icon.svg" alt = "Globe Icon">
 					</div>
 					
 					<div class="navigation">
@@ -27,13 +27,13 @@
 							<li><a href="#">Account</a></li>
 						</ul>
 						<div class="logoDevelopment">
-							<img src = "<?php echo get_template_directory_uri(); ?>/images/nav-icons/cp_dm-icon-home.svg" alt ="Spark Icon">
+							<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/nav-icons/cp_dm-icon-home.svg" alt ="Spark Icon">
 							<h2>The Cinderella <spa>Project<span></h2>
 						</div>
 					</div>
 
 					<div class="facebook-icon">
-						<img src = "<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg" alt = "Facebook Icon">
+						<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/facebook-icon.svg" alt = "Facebook Icon">
 					</div>
 					
 					<div class="information">

@@ -42,30 +42,10 @@
     .home-section-2 {
         padding-top: 10vh;
         background-color: $color_background_2;
-         display: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
-
-        .title {
-            font-size: 2.5rem;
-            width: 200px;
-            text-align: center;
-            margin-bottom: 10vh;
-        }
-
-        .horizontal-line {
-            width: 85%;
-            border-bottom: 1px solid #fff;
-            margin-bottom: $base__space-unit;
-        }
-
-        .copy {
-            width: 85%;
-            padding: 0 1.5rem;
-            text-align: center;
-            font-size: 1.4rem;
-        }
     }
 
     .home-section-3 {
@@ -75,43 +55,6 @@
         align-items: center;
         padding-top: 15vh;
         width: 100vw;
-
-        .quote{
-            font-size: 3rem;
-            text-align: left;
-            padding-bottom: 2rem;
-            width: 70%;
-
-            .quote-text{
-                padding-left: 2rem;
-            }
-
-            &:before {
-                padding-left: -2rem;
-                font-family: FontAwesome;
-                font-weight: normal;
-                font-style: normal;
-                display: block;
-                text-decoration: inherit;
-                text-align: left;
-                content:"\f10d";
-            }
-
-            &:after {
-                font-family: FontAwesome;
-                font-weight: normal;
-                font-style: normal;
-                display: block;
-                text-decoration: inherit;
-                text-align: right;
-                content:"\f10e";
-            }
-        }
-
-        .author{
-            width: 70%;
-            text-align: right; 
-        }
     }
 
     .home-section-4 {
@@ -119,53 +62,5 @@
         flex-direction: column;
         align-items: center;
         width: 100vw;
-
-        .stat-container{
-            display: flex;
-            width: 100%;
-
-            .image-wrapper {
-                width: 50%;
-                padding-bottom: 50%;
-                height: 0;
-            }
-
-            .stat-text-wrapper {
-                width: 50%;
-                background-color: $color_background_2;
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 0 1.5rem;
-
-                .stat-value {
-                    font-size: 2.5rem;
-
-                    &:after {
-                        width: 2rem;
-                        border-bottom: 1px solid #fff;
-                        content:"";
-                        display: block;
-                        margin: .5rem auto;
-                        
-                    }
-                }
-                .stat-description {
-                    font-size:1.3rem;
-                    text-align: center;
-                    margin: 0;
-                }
-
-            }
-
-            &:nth-child(2n){
-                .stat-text-wrapper {
-                    background-color: $color_background_3;
-                    order: -1;
-                }
-            }
-        }
     }
 }
