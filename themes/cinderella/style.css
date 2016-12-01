@@ -605,7 +605,7 @@ nav {
   width: 100%;
   -ms-flex-align: center;
       align-items: center; }
-  .nav-wrapper .nav-links-wrapper {
+  .nav-wrapper div {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -613,7 +613,7 @@ nav {
     width: 100%;
     -ms-flex-align: center;
         align-items: center; }
-    .nav-wrapper .nav-links-wrapper ul {
+    .nav-wrapper div .nav-links-wrapper {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
@@ -626,16 +626,16 @@ nav {
       list-style: none;
       background-color: #4A4A4A;
       color: #fff; }
-      .nav-wrapper .nav-links-wrapper ul li {
+      .nav-wrapper div .nav-links-wrapper li {
         width: 90%;
         font-size: 1.5rem;
         text-transform: lowercase;
         border-bottom: 1px solid #A7B5C9; }
-        .nav-wrapper .nav-links-wrapper ul li a {
+        .nav-wrapper div .nav-links-wrapper li a {
           font-size: 1.5rem;
           text-decoration: none;
           color: #fff; }
-        .nav-wrapper .nav-links-wrapper ul li:last-child .nav-list-item {
+        .nav-wrapper div .nav-links-wrapper li:last-child .nav-list-item {
           border: 0; }
 
 .nav-icon {
@@ -644,22 +644,37 @@ nav {
   display: inline-block;
   margin-right: 1rem; }
 
-.page-item-35 .nav-icon {
+#menu-item-58 .nav-icon {
   background: url("../../images/nav-icons/cp_dm-icon-about.svg");
   background-size: contain;
   background-repeat: no-repeat; }
 
-.page-item-26 .nav-icon {
+#menu-item-59 .nav-icon {
   background: url("../../images/nav-icons/cp_dm-icon-boutiqueDay.svg");
   background-size: contain;
   background-repeat: no-repeat; }
 
-.page-item-37 .nav-icon {
+#menu-item-61 .nav-icon {
   background: url("../../images/nav-icons/cp_dm-icon-getInvolved.svg");
   background-size: contain;
   background-repeat: no-repeat; }
 
-.page-item-7 .nav-icon {
+#menu-item-63 .nav-icon {
+  background: url("../../images/nav-icons/cp_dm-icon-refer.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#menu-item-66 .nav-icon {
+  background: url("../../images/nav-icons/cp_dm-icon-account.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#menu-item-60 .nav-icon {
+  background: url("../../images/nav-icons/cp_dm-icon-contactUs.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#menu-item-57 .nav-icon {
   background: url("../../images/nav-icons/cp_dm-icon-home.svg");
   background-size: contain;
   background-repeat: no-repeat; }
@@ -1019,6 +1034,130 @@ a {
       -ms-flex-order: -1;
           order: -1; }
 
+.page-template-boutique-day #fp-nav {
+  display: none; }
+
+.page-template-boutique-day .flickity-page-dots {
+  bottom: 10px; }
+  .page-template-boutique-day .flickity-page-dots .dot {
+    background: #fff; }
+
+.page-template-boutique-day .carousel-image {
+  width: 100vw;
+  height: 100vh; }
+
+/*! Flickity v2.0.4
+http://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+  position: relative; }
+
+.flickity-enabled:focus {
+  outline: 0; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  transform: translateY(-50%); }
+
+.flickity-prev-next-button:hover {
+  background: #fff; }
+
+.flickity-prev-next-button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 5px #09F; }
+
+.flickity-prev-next-button:active {
+  opacity: .6; }
+
+.flickity-prev-next-button.previous {
+  left: 10px; }
+
+.flickity-prev-next-button.next {
+  right: 10px; }
+
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px; }
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px; }
+
+.flickity-prev-next-button:disabled {
+  opacity: .3;
+  cursor: auto; }
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%; }
+
+.flickity-prev-next-button .arrow {
+  fill: #333; }
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1; }
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: .25;
+  cursor: pointer; }
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1095,6 +1234,18 @@ object {
 .ideas-donations a {
   color: black; }
 
+.page .image-wrapper {
+  width: 50%;
+  padding-bottom: 50%;
+  height: 200px; }
+
+.page .sponsor-via-cash {
+  width: 50%;
+  height: 200px; }
+
+.page .quote-text {
+  color: black; }
+
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;
@@ -1149,3 +1300,14 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 2rem; }
+
+/*.wpcf7-form {
+    input[type=email],
+    input[type=password],
+    input[type=search],
+    input[type=text],
+    input[type=url] {
+        border-radius: 0;
+        padding: 6px;
+  }
+}*/
