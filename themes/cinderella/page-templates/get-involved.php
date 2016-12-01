@@ -74,6 +74,7 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 					</div>
 					<?php endforeach ?>
 					</div>
+					<!-- Sponsorship quote area -->
 					<div class="sponsorship-quote">
 					<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( '	sponsorship_quote' ); ?></span></h2>
 					<h3 class="author"><?php echo CFS()->get( '	sponsorship_quote_author' ); ?></h3>
