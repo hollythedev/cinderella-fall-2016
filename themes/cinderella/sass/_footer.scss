@@ -1,75 +1,54 @@
 /*---    FOOTER   ---*/
-.container {
+.site-footer {
+  background-color: $color_background_footer;
   width: 1441px;
 }
-
-.globe-logo {
-  text-align: center;
+.globe-logo{
+  background: $color_globe_background;
   width: 52px;
 	height: 52.44px;
-  background: $color_globe_background;
   border-radius: 50px;
   margin: 0 auto;
-    img {
-      width: 22.05px;
-      height: 29.9px;
-    }
-}
-.site-footer{ 
-  display: flex;
-  flex-wrap: wrap;
-  background-color: $color_background_footer;
-  color:$color__text-brand-btn;
-  font-size: 11px;
-  justify-content: space-around;
-  a{
-    text-decoration: none;
-    color: $color__text-brand-btn;
-    border-bottom: 1px solid $color_footer_borders;
-    font-size: 11px;
-  }
-}
-.navigation{
-  display: flex;
-  display: inline-block;
-    a{
-      text-transform: uppercase;
-    }
-}
-
-.facebook-icon{
-  text-align: center;
+  position: relative;
     img{
-      width:24px;
-      height:23.97px; 
+      position: absolute;
+      top:25%;
+      right:28%;
     }
-  }
-
-
-.navigation { 
-  display: flex;
-  justify-content: space-between;
-  .first-nav {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    flex-wrap: wrap;
-  }
-    /*.second-nav {
-      display: flex;
-      flex-direction: column;
-      padding-right: 3rem;
-  }*/
 }
-.information {
+.navigation {
   display: flex;
-  text-transform: uppercase;
-  justify-content: space-between;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  @include mobile {
+    align-self: center;
+  }
+   a{
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: 1px solid $color_footer_borders;
+   }
+  .second-nav{
+  flex-basis: 62%;
+  }
 }
 .logoDevelopment{
   display: flex;
-  justify-content: flex-end;
-  padding-right: 2rem;
+  width: 317px;
+  height: 80px;
+    img {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+    h2 {
+      font-size:2.1rem;
+    }
+}
+.facebook-icon {
+  padding-left:720.5px;
+  padding-bottom: 1rem;
+}
+
+.information {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2rem;
 }

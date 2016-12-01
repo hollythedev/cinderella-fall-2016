@@ -8,7 +8,7 @@
 ?>
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info container">
+				<div class="site-info">
 					<div class="globe-logo">
 						<img src = "<?php echo get_template_directory_uri(); ?>/images/globe-icon.svg" alt = "Globe Icon">
 					</div>
@@ -19,13 +19,16 @@
 							<li><a href="#">About</a></li>
 							<li><a href="#">Boutique Day</a></li>
 							<li><a href="#">Get Involed</a></li>
+						</ul>
+						<ul class="second-nav">
 							<li><a href="#">Refer a Student</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">Contact Us</a></li>
 							<li><a href="#">Account</a></li>
 						</ul>
 						<div class="logoDevelopment">
-							<img src = "<?php echo get_template_directory_uri(); ?>/images/globe-icon.svg" alt = "Globe Icon">
+							<img src = "<?php echo get_template_directory_uri(); ?>/images/nav-icons/cp_dm-icon-home.svg" alt ="Spark Icon">
+							<h2>The Cinderella <spa>Project<span></h2>
 						</div>
 					</div>
 
