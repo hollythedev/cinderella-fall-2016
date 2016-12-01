@@ -1083,11 +1083,17 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Get Involved Page (will move later)- Sharifa */
+.get-involved-section-1 {
+  height: 400px; }
+
 .help-nav .donations-section-2 {
   height: 400px; }
 
 .help-nav .drop-off-donations {
   height: 400px; }
+
+.ideas-donations a {
+  color: black; }
 
 /*---    FOOTER   ---*/
 .site-footer {

@@ -39,7 +39,7 @@ function register_wishlist_post_type() {
 		'label'                 => 'Wishlist',
 		'description'           => 'Wishlists items for the Cinderella Project',
 		'labels'                => $labels,
-		'supports'              => array( 'title','custom-fields'),
+		'supports'              => array( 'title'),
 		'hierarchical'          => false,
 		'public'                => false,
 		'show_ui'               => true,
