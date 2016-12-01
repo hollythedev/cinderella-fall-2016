@@ -1046,6 +1046,20 @@ a {
   width: 100vw;
   height: 100vh; }
 
+.page-template-boutique-day .bd-photo {
+  position: relative; }
+
+.page-template-boutique-day .boutique-day-message {
+  color: #fff;
+  z-index: 99;
+  font-size: 3rem;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%); }
+
 /*! Flickity v2.0.4
 http://flickity.metafizzy.co
 ---------------------------------------------- */
