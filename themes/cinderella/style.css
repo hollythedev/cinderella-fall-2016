@@ -1095,6 +1095,15 @@ object {
 .ideas-donations a {
   color: black; }
 
+.page .image-wrapper {
+  width: 50%;
+  padding-bottom: 50%;
+  height: 200px; }
+
+.page .sponsor-via-cash {
+  width: 50%;
+  height: 200px; }
+
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;
@@ -1149,3 +1158,14 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 2rem; }
+
+/*.wpcf7-form {
+    input[type=email],
+    input[type=password],
+    input[type=search],
+    input[type=text],
+    input[type=url] {
+        border-radius: 0;
+        padding: 6px;
+  }
+}*/
