@@ -503,6 +503,26 @@ html.fp-enabled,
     -ms-flex-order: -1;
         order: -1; }
 
+.cp-description-section {
+  background-color: #393D53;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 5vh;
+  width: 100vw; }
+  .cp-description-section .cp-description-text {
+    width: 85%;
+    padding: 0 1.5rem;
+    text-align: center;
+    font-size: 1.2rem; }
+  .cp-description-section br {
+    width: 55%;
+    border-bottom: 1px solid #fff;
+    margin: 1.5em auto; }
+
 .cp-button-link {
   width: 80%;
   height: 5rem;
@@ -1276,6 +1296,15 @@ object {
   height: 200px; }
 
 .page .quote-text {
+  color: black; }
+
+.wpcf7-form input[type=email],
+.wpcf7-form input[type=password],
+.wpcf7-form input[type=search],
+.wpcf7-form input[type=text],
+.wpcf7-form input[type=url] {
+  border-radius: 0;
+  padding: 6px;
   color: black; }
 
 /*---    FOOTER   ---*/
