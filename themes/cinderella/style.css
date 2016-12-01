@@ -130,14 +130,28 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  color: black; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  color: black; }
 
-dfn, cite, em, i {
+ul,
+li {
+  color: black; }
+
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -157,16 +171,21 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -1063,7 +1082,13 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Get Involved Page (will move later)- Sharifa */
+.help-nav .donations-section-2 {
+  height: 400px; }
+
+.help-nav .drop-off-donations {
+  height: 400px; }
+
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;

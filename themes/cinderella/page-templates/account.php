@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Account Page.
+ * Template Name: Account Page
  *
  * @package Cinderella_Project_Theme
  */

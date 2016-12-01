@@ -33,19 +33,30 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							<h3>Our Wishlist</h3>
 							<div class="wishlist-menu">
 								<ul>
-									<li><?php the_title(); ?></li>
- 									<div class="get-wishlist-items">
-     								 <?php
+ 									<div class="get-wishlist-posts">
+     							 		<?php
           								$args = array( 'post_type' => 'wishlist',
-          								'posts_per_page' => 20);
+          								'posts_per_page' => 20,
+									   'order' => 'ASC');
           								$wishlist_posts = get_posts( $args );
-     								 ?>
-       								 <?php foreach ( $wishlist_posts as $post ) : setup_postdata( $post ); ?>
-									<?php endforeach ?>
-								</ul>
-							</div>
+     							 		?>
+       									 <?php foreach ( $wishlist_posts as $post ) : setup_postdata( $post ); ?>
+										<li><?php echo get_the_title(); ?></li>
+										<li><p>item</p></li>
+										<?php endforeach ?>
+								</ul> <!-- end of help nav -->
+									</div>
 						</div>
+						<div class="drop-off-donations">
+							<!--Drop off donations background image and title-->
+							<h2><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h2>
+							<p><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
 
+						</div>
+						<div class="ideas-donations">
+							<h2>Ideas for other donations? Get in touch!</h2>
+							<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+						</div>
 					<li>Sponsorships</li>
 					<li>Fundraising</li>
 					<li>Volunteer</li>
