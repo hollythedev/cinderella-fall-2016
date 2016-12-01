@@ -9,11 +9,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<section id="fullpage">
+		
+		<div id="fullpage">
+			<section>
 				<div class="background-image">
-					<img class="band-logo">
-					<h2 class="brand-title"></h2>
+					<div class="band-logo">
+					<h2 class="brand-title"><?php echo CFS()->get( '' ); ?></h2>
 					<i class="angle-down fa fa-angle-down"></i>
 			</select>
 			<section class="registration">
@@ -30,10 +31,11 @@ get_header(); ?>
 						<option value="Resource Kit">Resource Kit</option>
 						<option value="Value">Value</option>
 					<select>	
-					<!--   CONTACT FORM 7 HERE-->
+					<?php the_content(); ?>
 					<a class="button-link" href="http://localhost:3000/cinderella/">Send a Message</a>
 				</form>
-			</section>	
+			</section>
+		</div>	
 <!-- add custom fields-->
 
 		</main><!-- #main -->

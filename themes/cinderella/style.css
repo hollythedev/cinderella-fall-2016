@@ -1298,6 +1298,15 @@ object {
 .page .quote-text {
   color: black; }
 
+.wpcf7-form input[type=email],
+.wpcf7-form input[type=password],
+.wpcf7-form input[type=search],
+.wpcf7-form input[type=text],
+.wpcf7-form input[type=url] {
+  border-radius: 0;
+  padding: 6px;
+  color: black; }
+
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;
@@ -1352,14 +1361,3 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 2rem; }
-
-/*.wpcf7-form {
-    input[type=email],
-    input[type=password],
-    input[type=search],
-    input[type=text],
-    input[type=url] {
-        border-radius: 0;
-        padding: 6px;
-  }
-}*/
