@@ -9,7 +9,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		
 		<section class="get-involved-section-1">
 			<?php echo CFS()->get( 'get_involved_no_gift' ); ?>
 		</section>
@@ -33,22 +32,17 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							<p>and in order to make it all possible, we rely on donations of student care packages, formal wear, and much more. If you can provide support for any of the below items, we would greatly appreciate your donation! Each has an impact on a student’s experience.</p>
 							<h3>Our Wishlist</h3>
 							<div class="wishlist-menu">
-									<ul>
-										<li>Most-Needed</li>
- 							<div class="get-posts">
-      <?php
-          $args = array( 'post_type' => 'wishlist',
-          'posts_per_page' => 3);
-          $wishlist_posts = get_posts( $args );
-      ?>
-        <?php foreach ( $wishlist_posts as $post ) : setup_postdata( $post ); ?>
-<p><?php the_title(); ?></p>
-
-
-		<?php endforeach ?>
-
-				</ul>
-
+								<ul>
+									<li><?php the_title(); ?></li>
+ 									<div class="get-wishlist-items">
+     								 <?php
+          								$args = array( 'post_type' => 'wishlist',
+          								'posts_per_page' => 20);
+          								$wishlist_posts = get_posts( $args );
+     								 ?>
+       								 <?php foreach ( $wishlist_posts as $post ) : setup_postdata( $post ); ?>
+									<?php endforeach ?>
+								</ul>
 							</div>
 						</div>
 
