@@ -130,14 +130,28 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  color: black; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  color: black; }
 
-dfn, cite, em, i {
+ul,
+li {
+  color: black; }
+
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -157,16 +171,21 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -1202,7 +1221,28 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Get Involved Page (will move later)- Sharifa */
+.get-involved-section-1 {
+  height: 400px; }
+
+.help-nav .donations-section-2 {
+  height: 400px; }
+
+.help-nav .drop-off-donations {
+  height: 400px; }
+
+.ideas-donations a {
+  color: black; }
+
+.page .image-wrapper {
+  width: 50%;
+  padding-bottom: 50%;
+  height: 200px; }
+
+.page .sponsor-via-cash {
+  width: 50%;
+  height: 200px; }
+
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;
@@ -1257,3 +1297,14 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 2rem; }
+
+/*.wpcf7-form {
+    input[type=email],
+    input[type=password],
+    input[type=search],
+    input[type=text],
+    input[type=url] {
+        border-radius: 0;
+        padding: 6px;
+  }
+}*/
