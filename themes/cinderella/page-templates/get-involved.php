@@ -35,8 +35,19 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							<div class="wishlist-menu">
 									<ul>
 										<li>Most-Needed</li>
-										<p><?php echo CFS()->get( 'gender_shoe_size' ); ?></p>
-									</ul>
+ 							<div class="get-posts">
+      <?php
+          $args = array( 'post_type' => 'wishlist',
+          'posts_per_page' => 3);
+          $wishlist_posts = get_posts( $args );
+      ?>
+        <?php foreach ( $wishlist_posts as $post ) : setup_postdata( $post ); ?>
+<p><?php the_title(); ?></p>
+
+
+		<?php endforeach ?>
+
+				</ul>
 
 							</div>
 						</div>

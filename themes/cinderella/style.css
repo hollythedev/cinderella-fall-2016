@@ -1064,70 +1064,57 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*---    FOOTER   ---*/
+.site-footer {
+  background-color: #4A4A4A;
+  width: 1441px; }
+
 .globe-logo {
-  text-align: center;
+  background: #9B9B9B;
   width: 52px;
   height: 52.44px;
-  background: #9B9B9B;
   border-radius: 50px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   .globe-logo img {
-    width: 22.05px;
-    height: 29.9px; }
-
-.site-footer {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: #4A4A4A;
-  color: #fff;
-  font-size: 11px; }
-  .site-footer a {
-    text-decoration: none;
-    color: #fff;
-    border-bottom: 1px solid #3E3E3E;
-    font-size: 11px; }
+    position: absolute;
+    top: 25%;
+    right: 28%; }
 
 .navigation {
   display: -ms-flexbox;
-  display: flex;
-  display: inline-block; }
+  display: flex; }
+  @media (min-width: 600px) {
+    .navigation {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; } }
   .navigation a {
-    text-transform: uppercase; }
-
-.facebook {
-  text-align: center;
-  border-bottom: 1px solid #FFF; }
-  .facebook img {
-    width: 24px;
-    height: 23.97px; }
-
-.navigation {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .navigation .first-nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding-left: 2rem; }
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: 1px solid #3E3E3E; }
   .navigation .second-nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding-right: 3rem; }
-
-.information {
-  display: -ms-flexbox;
-  display: flex;
-  text-transform: uppercase; }
+    -ms-flex-preferred-size: 62%;
+        flex-basis: 62%; }
 
 .logoDevelopment {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end; }
+  width: 317px;
+  height: 80px; }
+  .logoDevelopment img {
+    width: 5.5rem;
+    height: 5.5rem; }
+  .logoDevelopment h2 {
+    font-size: 2.1rem; }
+
+.facebook-icon {
+  padding-left: 720.5px;
+  padding-bottom: 1rem; }
+
+.information {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 2rem; }
