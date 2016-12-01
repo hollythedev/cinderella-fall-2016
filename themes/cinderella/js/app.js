@@ -32,46 +32,46 @@
             slidesNavigation: true,
             slidesNavPosition: 'bottom',
 
-        //Scrolling
-        css3: true,
-        scrollingSpeed: 700,
-        autoScrolling: true,
-        fitToSection: true,
-        fitToSectionDelay: 1000,
-        scrollBar: false,
-        easing: 'easeInOutCubic',
-        easingcss3: 'ease',
-        loopBottom: false,
-        loopTop: false,
-        loopHorizontal: true,
-        continuousVertical: false,
-        continuousHorizontal: false,
-        scrollHorizontally: false,
-        interlockedSlides: false,
-        dragAndMove: false,
-        offsetSections: false,
-        resetSliders: false,
-        fadingEffect: false,
-        normalScrollElements: null,
-        scrollOverflow: true,
-        scrollOverflowOptions: null,
-        touchSensitivity: 15,
-        normalScrollElementTouchThreshold: 5,
-        bigSectionsDestination: null,
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 1000,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            continuousHorizontal: false,
+            scrollHorizontally: false,
+            interlockedSlides: false,
+            dragAndMove: false,
+            offsetSections: false,
+            resetSliders: false,
+            fadingEffect: false,
+            normalScrollElements: null,
+            scrollOverflow: true,
+            scrollOverflowOptions: null,
+            touchSensitivity: 15,
+            normalScrollElementTouchThreshold: 5,
+            bigSectionsDestination: null,
 
             //Accessibility
             keyboardScrolling: true,
             animateAnchor: true,
             recordHistory: true,
 
-        //Design
-        controlArrows: true,
-        verticalCentered: false,
-        fixedElements: 'nav',
-        responsiveWidth: 0,
-        responsiveHeight: 0,
-        responsiveSlides: false,
-       // sectionsColor : ['#000', '#69B9C6', '#F5A623', '#393E53', '#393E53'],
+            //Design
+            controlArrows: true,
+            verticalCentered: false,
+            fixedElements: 'nav',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            responsiveSlides: false,
+            // sectionsColor : ['#000', '#69B9C6', '#F5A623', '#393E53', '#393E53'],
             //Custom selectors
             sectionSelector: '.section',
             slideSelector: '.slide',
@@ -88,5 +88,7 @@
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
         });
     });
+
+
 
 })(jQuery);

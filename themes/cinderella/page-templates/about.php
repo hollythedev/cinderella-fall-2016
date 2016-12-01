@@ -93,7 +93,6 @@ get_header(); ?>
 					<p>	Help us contribute to these student’s stories.</p>
 						<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
 			</section>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
