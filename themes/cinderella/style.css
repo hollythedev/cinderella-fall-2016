@@ -1104,6 +1104,9 @@ object {
   width: 50%;
   height: 200px; }
 
+.page .quote-text {
+  color: black; }
+
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;
