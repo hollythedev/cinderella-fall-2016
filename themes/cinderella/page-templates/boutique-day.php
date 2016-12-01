@@ -13,8 +13,7 @@ get_header(); ?>
 			<div id="fullpage">
 				<section class= "section bd_gallery">
 					<div class= "bd_photo">
-						<h2 class="boutique-day-message"><?php CFS()->get('boutique_day_message');?></h2>
-						
+						<h2 class="boutique-day-message"><?php CFS()->get('boutique_day_message');?></h2
 						<div class="carousel">
 							<?php
 								$fields = CFS()->get( 'boutique_day_gallery' );
@@ -28,7 +27,7 @@ get_header(); ?>
 				</section>
 					<!--the most magical day of the year-->
 				
-				<section class="section fp-auto-height">
+				<section class="section fp-auto-height">	
 					<section class="bd_section_2">
 						<?php echo CFS()->get( 'bd_title' ); ?>
 						<?php echo CFS()->get( 'bd_description' ); ?>
@@ -42,6 +41,7 @@ get_header(); ?>
 					<section class="bd_section_4">
 						<?php echo CFS()->get( 'bd_about_bd' ); ?>
 						<h2>What to expect</h2>
+						
 					</section>
 					<!--What to expect image and copy grid-->
 					<section class="bd_section_5">

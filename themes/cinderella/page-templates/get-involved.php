@@ -57,7 +57,7 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 						</section>
 						<div class="ideas-donations">
 							<h2>Ideas for other donations?</h2>
-							<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
+							<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
 						</div>
 					<li>Sponsorships</li>
 					<section class="sponsorship-stats">
@@ -123,7 +123,15 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 								?>
 								<?php endforeach ?>
 								</div>
-       	 					</section>
+								<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
+       	 					</section> <!-- end of fundraising gallery -->
+							<div class="donations-idea">
+								<h2>Have an idea and want to get involved?</h2>
+								<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+							</div>
+						</section> <!-- end of get-involved-fundraising -->
+						<section class="fundraising-contact-form">
+							<!-- fundraising contact form goes here -->
 						</section>
 					<li>Volunteer</li>
 				</ul>
