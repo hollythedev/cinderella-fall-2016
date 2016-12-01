@@ -13,12 +13,9 @@ get_header(); ?>
 			<div id="fullpage">
 				<section class= "section bd_gallery">
 					<div class= "bd_photo">
-<<<<<<< HEAD
 						<h2 class="boutique-day-message"><?php echo CFS()->get( 'bd_message' ); ?></h2>
 						
-=======
 						<h2 class="boutique-day-message"><?php echo CFS()->get( 'boutique_day_message' ); ?></h2>
->>>>>>> 3b5442840cd747ac5356d18b4e5c74e6d2074192
 						<div class="carousel">
 							<?php
 								$fields = CFS()->get( 'bd_gallery' );
