@@ -23,8 +23,8 @@ get_header(); ?>
 					<h2 class="title"><?php echo CFS()->get( 'section_2_title' ); ?></h2>
 					<span class="horizontal-line"></span>
 					<p class="copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
-					<p><a class="button-link" href="<?php the_permalink(); ?>">About Boutique Day</a></p>
-					<p><a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a></p>
+					<a class="button-link" href="<?php the_permalink(); ?>">About Boutique Day</a>
+					<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
 					<i class="angle-down fa fa-angle-down"></i>
 				</section>
 
@@ -38,9 +38,7 @@ get_header(); ?>
 					foreach ( $fields as $field ) :
 					?>
 					<div class="stat-container">
-						<div class="image-wrapper">
-							<img src="<?php echo $field['image_stat'];?>" />
-						</div>
+						<div class="image-wrapper" style="background: url(<?php echo $field['image_stat'];?>); background-size: cover;"></div>
 						<div class="stat-text-wrapper">
 							<h3 class="stat-value"><?php echo $field['title_stat'];?></h3>
 							<p class="stat-description"><?php echo $field['description_stat'];?></p>
@@ -50,7 +48,7 @@ get_header(); ?>
 
 					<h2>No gift is too small</h2>
 					<p>	Help us contribute to these student’s stories.</p>
-					<p><a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a></p>
+					<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
 					<?php get_footer(); ?>
 				</section>
 			</div>
