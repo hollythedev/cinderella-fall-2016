@@ -38,41 +38,42 @@ nav {
 	width:100%;
 	align-items: center;
 
-	.nav-links-wrapper{
-	display: flex;
-	flex-direction: column;
-	width:100%;
-	align-items: center;
+		div {
+		display: flex;
+		flex-direction: column;
+		width:100%;
+		align-items: center;
+	.nav-links-wrapper {
 	
-		ul {
-			width:100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			background-color: $color__background-nav;
-			color: $color__text-nav;
-			
-			li{
-				width: 90%;
-				font-size: 1.5rem;
-				text-transform: lowercase;
-				border-bottom: 1px solid #A7B5C9;
-
-				a{
+				width:100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				background-color: $color__background-nav;
+				color: $color__text-nav;
+				
+				li{
+					width: 90%;
 					font-size: 1.5rem;
-					text-decoration: none;
-					color: $color__text-nav;
-				}
+					text-transform: lowercase;
+					border-bottom: 1px solid #A7B5C9;
 
-				&:last-child {
-					.nav-list-item {
-						border: 0;
+					a{
+						font-size: 1.5rem;
+						text-decoration: none;
+						color: $color__text-nav;
+					}
+
+					&:last-child {
+						.nav-list-item {
+							border: 0;
+						}
 					}
 				}
-			}
+			
 		}
 	}
 }
@@ -84,7 +85,7 @@ nav {
 	margin-right: 1rem;
 }
 
-.page-item-35 {
+#menu-item-58 {
 	.nav-icon {
 		background: url('../../images/nav-icons/cp_dm-icon-about.svg');
 		background-size: contain;
@@ -92,7 +93,7 @@ nav {
 	}
 }
 
-.page-item-26{
+#menu-item-59 {
 	.nav-icon {
 		background: url('../../images/nav-icons/cp_dm-icon-boutiqueDay.svg');
 		background-size: contain;
@@ -100,7 +101,7 @@ nav {
 	}
 }
 
-.page-item-37 {
+#menu-item-61 {
 	.nav-icon {
 		background: url('../../images/nav-icons/cp_dm-icon-getInvolved.svg');
 		background-size: contain;
@@ -108,7 +109,31 @@ nav {
 	}
 }
 
-.page-item-7 {
+#menu-item-63 {
+	.nav-icon {
+		background: url('../../images/nav-icons/cp_dm-icon-refer.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+#menu-item-66 {
+	.nav-icon {
+		background: url('../../images/nav-icons/cp_dm-icon-account.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+#menu-item-60 {
+	.nav-icon {
+		background: url('../../images/nav-icons/cp_dm-icon-contactUs.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+#menu-item-57 {
 	.nav-icon {
 		background: url('../../images/nav-icons/cp_dm-icon-home.svg');
 		background-size: contain;
