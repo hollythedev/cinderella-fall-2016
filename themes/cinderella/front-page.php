@@ -32,6 +32,7 @@ get_header(); ?>
 					<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( 'home_quote' ); ?></span></h2>
 					<h3 class="author"><?php echo CFS()->get( 'home_quote_author' ); ?></h3>
 				</section>
+				
 				<section class="section fp-auto-height home-section-4">
 					<?php 
 					$fields = CFS()->get( 'home_stats' );
