@@ -13,7 +13,7 @@ get_header(); ?>
 			<div id="fullpage">
 				<section class= "section bd_gallery">
 					<div class= "bd_photo">
-						<h2 class="boutique-day-message"><?php CFS()->get('boutique_day_message');?></h2>
+						<h2 class="boutique-day-message"><?php echo CFS()->get( 'boutique_day_message' ); ?></h2>
 						
 						<div class="carousel">
 							<?php
