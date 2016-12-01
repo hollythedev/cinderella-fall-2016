@@ -36,12 +36,17 @@ function my_styles_method() {
     } elseif(is_page('get-involved')){
         $urlInKindDonation = CFS()->get('donations_section_background_image');
         $urlGetInv = CFS()->get('get_involved_background_image');
+        $urlDropOff = CFS()->get('drop_off_locations_background_image');
+
         $custom_css = " .donations-section-2{
                 background-image: url({$urlInKindDonation});
                 }
                 .get-involved-section-1{
             background-image: url({$urlGetInv});
-            }";
+            }
+            .drop-off-donations{
+                background-image: url({$urlDropOff}); 
+                }";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
         return;

@@ -11,6 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<section class="get-involved-section-1">
 			<?php echo CFS()->get( 'get_involved_no_gift' ); ?>
+			
 		</section>
 		<section class="get-involved-section-2">
 			<p>There are a few ways you can help The Cinderella Project thrive</p>
@@ -18,6 +19,7 @@ get_header(); ?>
 				<ul class="help-nav">
 					<li>Donations</li>
 						<div class="donations-section-1">
+							
 							<p>100% of every donation received goes to make the students’ experience with the Cinderella Project better.
 Cash donations help us purchase harder to obtain items such as large or small clothing/shoe sizes! 
 We also rely on them to pay costs such as storage, dry cleaning and transportation amongst other expenses.</p>
@@ -33,19 +35,22 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							<h3>Our Wishlist</h3>
 							<div class="wishlist-menu">
 								<ul>
-									<li><?php the_title(); ?></li>
- 									<div class="get-wishlist-items">
-     								 <?php
-          								$args = array( 'post_type' => 'wishlist',
-          								'posts_per_page' => 20);
-          								$wishlist_posts = get_posts( $args );
-     								 ?>
-       								 <?php foreach ( $wishlist_posts as $post ) : setup_postdata( $post ); ?>
-									<?php endforeach ?>
-								</ul>
+ 								<!--add donations menu items here-->
+								</ul> <!-- end of help nav -->
 							</div>
 						</div>
-
+					<!--Drop off donations background image and title-->
+						<div class="drop-off-donations">
+							<?php echo CFS()->get( 'drop_off_locations_title' ); ?>
+							<?php echo CFS()->get( 'drop_off_locations_dates' ); ?>
+							<div class="drop-off-locations">
+									<?php echo CFS()->get( 'business_name' ); ?>
+							</div>
+						</div>
+						<div class="ideas-donations">
+							<h2>Ideas for other donations?</h2>
+							<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
+						</div>
 					<li>Sponsorships</li>
 					<li>Fundraising</li>
 					<li>Volunteer</li>
