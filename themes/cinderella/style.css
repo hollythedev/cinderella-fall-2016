@@ -867,43 +867,57 @@ a {
       align-items: center;
   width: 100vw; }
 
-.home .home_section_1 {
-  padding-top: 20vh; }
-  .home .home_section_1 .brand-logo {
+.home .home-section-1 {
+  padding-top: 20vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .home .home-section-1 .brand-logo {
     width: 75px;
     height: 75px; }
-  .home .home_section_1 .brand-title {
+  .home .home-section-1 .brand-title {
     font-size: 2.5rem;
     width: 265px;
     text-align: center;
     margin-bottom: 10vh; }
-  .home .home_section_1 .horizontal-line {
+  .home .home-section-1 .horizontal-line {
     width: 85%;
     border-bottom: 1px solid #fff;
     margin-bottom: 10vh; }
-  .home .home_section_1 .brand-slogan {
+  .home .home-section-1 .brand-slogan {
     font-size: 1.5rem;
     margin-bottom: 25vh; }
 
-.home .home_section_2 {
+.home .home-section-2 {
   padding-top: 10vh;
-  background-color: #69B9C6; }
-  .home .home_section_2 .title {
+  background-color: #69B9C6;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .home .home-section-2 .title {
     font-size: 2.5rem;
     width: 200px;
     text-align: center;
     margin-bottom: 10vh; }
-  .home .home_section_2 .horizontal-line {
+  .home .home-section-2 .horizontal-line {
     width: 85%;
     border-bottom: 1px solid #fff;
     margin-bottom: 1.5em; }
-  .home .home_section_2 .copy {
+  .home .home-section-2 .copy {
     width: 85%;
     padding: 0 1.5rem;
     text-align: center;
     font-size: 1.4rem; }
 
-.home .home_section_3 {
+.home .home-section-3 {
   background-color: #F5A623;
   display: -ms-flexbox;
   display: flex;
@@ -913,14 +927,14 @@ a {
       align-items: center;
   padding-top: 15vh;
   width: 100vw; }
-  .home .home_section_3 .quote {
+  .home .home-section-3 .quote {
     font-size: 3rem;
     text-align: left;
     padding-bottom: 2rem;
     width: 70%; }
-    .home .home_section_3 .quote .quote-text {
+    .home .home-section-3 .quote .quote-text {
       padding-left: 2rem; }
-    .home .home_section_3 .quote:before {
+    .home .home-section-3 .quote:before {
       padding-left: -2rem;
       font-family: FontAwesome;
       font-weight: normal;
@@ -929,7 +943,7 @@ a {
       text-decoration: inherit;
       text-align: left;
       content: "\f10d"; }
-    .home .home_section_3 .quote:after {
+    .home .home-section-3 .quote:after {
       font-family: FontAwesome;
       font-weight: normal;
       font-style: normal;
@@ -937,24 +951,32 @@ a {
       text-decoration: inherit;
       text-align: right;
       content: "\f10e"; }
-  .home .home_section_3 .author {
+  .home .home-section-3 .author {
     width: 70%;
     text-align: right; }
 
-.home .home_section_4 .stat-container {
+.home .home-section-4 {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .home .home_section_4 .stat-container .image-wrapper {
-    width: 50%;
-    padding-bottom: 50%;
-    height: 0; }
-    .home .home_section_4 .stat-container .image-wrapper img {
-      height: auto;
-      width: 100%; }
-  .home .home_section_4 .stat-container .stat-text-wrapper {
-    width: 50%; }
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .home .home-section-4 .stat-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .home .home-section-4 .stat-container .image-wrapper {
+      width: 50%;
+      padding-bottom: 50%;
+      height: 0; }
+      .home .home-section-4 .stat-container .image-wrapper img {
+        height: auto;
+        width: 100%; }
+    .home .home-section-4 .stat-container .stat-text-wrapper {
+      width: 50%; }
 
 /*--------------------------------------------------------------
 # Media
