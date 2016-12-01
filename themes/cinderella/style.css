@@ -413,7 +413,97 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
   height: auto !important; }
 
-.button-link {
+.cp-marketing-section {
+  padding-top: 10vh;
+  background-color: #69B9C6;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .cp-marketing-section .cp-marketing-title {
+    font-size: 2.5rem;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10vh; }
+  .cp-marketing-section .cp-marketing-copy {
+    width: 85%;
+    padding: 0 1.5rem;
+    text-align: center;
+    font-size: 1.4rem; }
+
+.cp-quote-section {
+  background-color: #F5A623;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 15vh;
+  width: 100vw; }
+  .cp-quote-section .cp-quote-wrapper {
+    font-size: 3rem;
+    text-align: left;
+    padding-bottom: 2rem;
+    width: 70%; }
+    .cp-quote-section .cp-quote-wrapper .cp-quote-text {
+      padding-left: 2rem; }
+    .cp-quote-section .cp-quote-wrapper:before {
+      padding-left: -2rem;
+      font-family: FontAwesome;
+      display: block;
+      text-align: left;
+      content: "\f10d"; }
+    .cp-quote-section .cp-quote-wrapper:after {
+      font-family: FontAwesome;
+      display: block;
+      text-align: right;
+      content: "\f10e"; }
+  .cp-quote-section .cp-quote-author {
+    width: 70%;
+    text-align: right; }
+
+.cp-checkered-section .cp-checkered-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .cp-checkered-section .cp-checkered-container .cp-checkered-image-wrapper {
+    width: 50%;
+    padding-bottom: 50%;
+    height: 0; }
+  .cp-checkered-section .cp-checkered-container .cp-checkered-text-wrapper {
+    width: 50%;
+    background-color: #69B9C6;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0 1.5rem; }
+    .cp-checkered-section .cp-checkered-container .cp-checkered-text-wrapper .cp-checkered-value {
+      font-size: 2.5rem; }
+      .cp-checkered-section .cp-checkered-container .cp-checkered-text-wrapper .cp-checkered-value:after {
+        width: 2rem;
+        border-bottom: 1px solid #fff;
+        content: "";
+        display: block;
+        margin: .5rem auto; }
+    .cp-checkered-section .cp-checkered-container .cp-checkered-text-wrapper .cp-checkered-description {
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0; }
+  .cp-checkered-section .cp-checkered-container:nth-child(2n) .cp-checkered-text-wrapper {
+    background-color: #F5A623;
+    -ms-flex-order: -1;
+        order: -1; }
+
+.cp-button-link {
   width: 80%;
   height: 5rem;
   background-color: #393E53;
@@ -428,23 +518,28 @@ html.fp-enabled,
   -ms-flex-align: center;
       align-items: center;
   margin-bottom: 1.5em; }
-  .button-link a {
+  .cp-button-link a {
     text-decoration: none;
     color: #fff; }
 
-.learn-about-link {
+.cp-learn-about-link {
   width: 280px;
   color: #fff;
   font-size: 1.4rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.5em; }
-  .learn-about-link a {
+  .cp-learn-about-link a {
     text-decoration: none;
     color: #fff;
     margin-right: 1rem; }
 
-body .angle-down {
+.cp-horizontal-line {
+  width: 85%;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1.5em; }
+
+body .cp-angle-down {
   font-size: 2.5rem;
   color: #fff; }
 
@@ -936,20 +1031,6 @@ a {
   -ms-flex-align: center;
       align-items: center;
   width: 100vw; }
-  .home .home-section-2 .title {
-    font-size: 2.5rem;
-    width: 200px;
-    text-align: center;
-    margin-bottom: 10vh; }
-  .home .home-section-2 .horizontal-line {
-    width: 85%;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 1.5em; }
-  .home .home-section-2 .copy {
-    width: 85%;
-    padding: 0 1.5rem;
-    text-align: center;
-    font-size: 1.4rem; }
 
 .home .home-section-3 {
   background-color: #F5A623;
@@ -961,33 +1042,6 @@ a {
       align-items: center;
   padding-top: 15vh;
   width: 100vw; }
-  .home .home-section-3 .quote {
-    font-size: 3rem;
-    text-align: left;
-    padding-bottom: 2rem;
-    width: 70%; }
-    .home .home-section-3 .quote .quote-text {
-      padding-left: 2rem; }
-    .home .home-section-3 .quote:before {
-      padding-left: -2rem;
-      font-family: FontAwesome;
-      font-weight: normal;
-      font-style: normal;
-      display: block;
-      text-decoration: inherit;
-      text-align: left;
-      content: "\f10d"; }
-    .home .home-section-3 .quote:after {
-      font-family: FontAwesome;
-      font-weight: normal;
-      font-style: normal;
-      display: block;
-      text-decoration: inherit;
-      text-align: right;
-      content: "\f10e"; }
-  .home .home-section-3 .author {
-    width: 70%;
-    text-align: right; }
 
 .home .home-section-4 {
   display: -ms-flexbox;
@@ -997,42 +1051,6 @@ a {
   -ms-flex-align: center;
       align-items: center;
   width: 100vw; }
-  .home .home-section-4 .stat-container {
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%; }
-    .home .home-section-4 .stat-container .image-wrapper {
-      width: 50%;
-      padding-bottom: 50%;
-      height: 0; }
-    .home .home-section-4 .stat-container .stat-text-wrapper {
-      width: 50%;
-      background-color: #69B9C6;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-      padding: 0 1.5rem; }
-      .home .home-section-4 .stat-container .stat-text-wrapper .stat-value {
-        font-size: 2.5rem; }
-        .home .home-section-4 .stat-container .stat-text-wrapper .stat-value:after {
-          width: 2rem;
-          border-bottom: 1px solid #fff;
-          content: "";
-          display: block;
-          margin: .5rem auto; }
-      .home .home-section-4 .stat-container .stat-text-wrapper .stat-description {
-        font-size: 1.3rem;
-        text-align: center;
-        margin: 0; }
-    .home .home-section-4 .stat-container:nth-child(2n) .stat-text-wrapper {
-      background-color: #F5A623;
-      -ms-flex-order: -1;
-          order: -1; }
 
 .page-template-boutique-day #fp-nav {
   display: none; }
