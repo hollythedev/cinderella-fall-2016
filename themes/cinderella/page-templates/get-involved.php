@@ -131,9 +131,33 @@ We also rely on them to pay costs such as storage, dry cleaning and transportati
 							</div>
 						</section> <!-- end of get-involved-fundraising -->
 						<section class="fundraising-contact-form">
-							<!-- fundraising contact form goes here -->
+							
+							<?php echo CFS()->get( 'fundraising_contact_form' ); ?>
 						</section>
+						<!-- volunteer section-->
 					<li>Volunteer</li>
+						<section class="volunteer-information">
+							<?php echo CFS()->get( 'volunteer_information' ); ?>
+						</section>
+						<div class="volunteer-quote">
+							<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( 'volunteer_quote' ); ?></span></h2>
+							<h3 class="author"><?php echo CFS()->get( 'volunteer_quote_author' ); ?></h3>
+						</div>
+						<h2>Some of our Volunteers</h2>
+						<section class= "volunteer_gallery">
+							<div class= "volunteer_photo">
+		 						<?php 
+									$fields = CFS()->get( 'volunteer_gallery' );
+									foreach ( $fields as $field ) :
+								?>
+								<img src = "<?php echo $field['volunteer_gallery_image'];?>" />
+   								 <?php	
+    								echo $field['volunteer_gallery_message'];
+								?>
+								<?php endforeach ?>
+								</div>	
+							<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
+       	 				</section> <!-- end of volunteer gallery -->
 				</ul>
 			</div>
 		</section>

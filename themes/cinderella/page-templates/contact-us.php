@@ -30,7 +30,7 @@ get_header(); ?>
 						<option value="Resource Kit">Resource Kit</option>
 						<option value="Value">Value</option>
 					<select>	
-					<!--   CONTACT FORM 7 HERE-->
+					<?php the_content(); ?>
 					<a class="button-link" href="http://localhost:3000/cinderella/">Send a Message</a>
 				</form>
 			</section>	

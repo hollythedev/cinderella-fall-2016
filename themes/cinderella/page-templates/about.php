@@ -13,7 +13,7 @@ get_header(); ?>
 			<?php echo CFS()->get( '' ); ?>
 			<?php echo CFS()->get( '' ); ?>
 			<?php echo CFS()->get( '' ); ?>
-
+				<?php the_content(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
