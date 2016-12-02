@@ -14,11 +14,6 @@ get_header(); ?>
 				<section class= "section bd_gallery">
 					<div class= "bd_photo">
 						<h2 class="boutique-day-message"><?php echo CFS()->get( 'bd_message' ); ?></h2>
-<<<<<<< HEAD
-=======
-						
-						<h2 class="boutique-day-message"><?php echo CFS()->get( 'boutique_day_message' ); ?></h2>
->>>>>>> 34cac1c4377a033c9e7d2e0c11c9989410abb91f
 						<div class="carousel">
 							<?php
 								$fields = CFS()->get( 'bd_gallery' );
