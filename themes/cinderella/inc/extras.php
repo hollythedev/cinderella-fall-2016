@@ -33,7 +33,16 @@ function my_styles_method() {
         }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
-    } elseif(is_page('get-involved')){
+    } elseif(is_page('contact-us')){
+        $urlContactUs = CFS()->get('contact_us_background_image');
+        $custom_css = " .contact-us-background{
+                background-image: url({$urlContactUs});
+                }";
+  
+            wp_add_inline_style( 'red-starter-style', $custom_css );
+        return;
+
+    }elseif(is_page('get-involved')){
         $urlInKindDonation = CFS()->get('donations_section_background_image');
         $urlGetInv = CFS()->get('get_involved_background_image');
         $urlDropOff = CFS()->get('drop_off_locations_background_image');
