@@ -36,22 +36,26 @@ get_header(); ?>
 				<section class="section fp-auto-height home-section-4">
 					<section class="cp-checkered-section">
 						<?php 
-						$fields = CFS()->get( 'home_stats' );
+						$fields = CFS()->get( 'what_to_expect' );
 						foreach ( $fields as $field ) :
 						?>
 						<div class="cp-checkered-container">
-							<div class="cp-checkered-image-wrapper" style="background: url(<?php echo $field['image_stat'];?>); background-size: cover;"></div>
+							<div class="cp-checkered-image-wrapper" style="background: url(<?php echo $field['image_what_to_expect'];?>); background-size: cover;"></div>
 							<div class="cp-checkered-text-wrapper">
-								<h3 class="cp-checkered-value"><?php echo $field['title_stat'];?></h3>
-								<p class="cp-checkered-description"><?php echo $field['description_stat'];?></p>
+								<p class="cp-checkered-value"><?php echo $field['what_to_expect_details'];?></p>
 							</div>
 						</div>
 						<?php endforeach ?>
 					</section>
-
+					<section class="section home-section-5">
 					<h2>No gift is too small</h2>
 					<p>	Help us contribute to these student’s stories.</p>
 					<a class="cp-button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
+					</section>
+					<section class="section home-section-6 cp-quote-section">
+					<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote_2' ); ?></span></h2>
+					<h3 class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author_2' ); ?></h3>
+				</section>
 					<?php get_footer(); ?>
 				</section>
 			</div>
