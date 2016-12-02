@@ -36,14 +36,13 @@ get_header(); ?>
 				<section class="section fp-auto-height home-section-4">
 					<section class="cp-checkered-section">
 						<?php 
-						$fields = CFS()->get( 'home_stats' );
+						$fields = CFS()->get( 'what_to_expect' );
 						foreach ( $fields as $field ) :
 						?>
 						<div class="cp-checkered-container">
-							<div class="cp-checkered-image-wrapper" style="background: url(<?php echo $field['image_stat'];?>); background-size: cover;"></div>
+							<div class="cp-checkered-image-wrapper" style="background: url(<?php echo $field['	image_what_to_expect'];?>); background-size: cover;"></div>
 							<div class="cp-checkered-text-wrapper">
-								<h3 class="cp-checkered-value"><?php echo $field['title_stat'];?></h3>
-								<p class="cp-checkered-description"><?php echo $field['description_stat'];?></p>
+								<p class="cp-checkered-value"><?php echo $field['title_what_to_expect'];?></p>
 							</div>
 						</div>
 						<?php endforeach ?>
