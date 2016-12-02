@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		
-		<div id="fullpage">
+		<div class="contact-us-page">
 			<section class="section contact-us-1">
 				<div class="contact-us-background">
 					<h2 class="contact-us-title"><?php echo CFS()->get( 'contact_us_message' ); ?></h2>
@@ -18,6 +18,7 @@ get_header(); ?>
 							<i class="angle-down fa fa-angle-down fa-3x"></i>
 				</div>
 			</select>
+			
 			<section class="registration">
 				<div class="contactform">
 					<?php echo CFS()->get( 'contact_us_select_menu' ); ?>

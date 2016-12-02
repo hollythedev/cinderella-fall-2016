@@ -34,6 +34,16 @@ function my_styles_method() {
         wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
         
+    } elseif(is_page( 'refer-a-student' )){
+        $urlReferAstudent = CFS()->get('refer_student_background_img');
+        $custom_css = " .refer-student-background{
+                    background: url({$urlReferAstudent}) no-repeat center bottom;
+                    background-size: cover, cover;
+                }";
+  
+            wp_add_inline_style( 'red-starter-style', $custom_css );
+        return;
+    
     } elseif(is_page( 'contact-us' )){
         $urlContactUs = CFS()->get('contact_us_background_image');
         $custom_css = " .contact-us-background{
@@ -44,7 +54,7 @@ function my_styles_method() {
             wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
 
-    }elseif(is_page('about')){
+    } elseif(is_page('about')){
         $urlImpact = CFS()->get('about_us_background_image');
         $urlCinderellas = CFS()->get('about_us_cinderella_background_image');
         $custom_css = " .about-section-1{
@@ -56,6 +66,8 @@ function my_styles_method() {
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
+    } elseif(is_page('get-involved')){
+        $urlInKindDonation = CFS()->get('donations_section_background_image');
     }elseif(is_page('get-involved')){
         $urlInKindDonation = CFS()->get('donations_section_background_image_2');
         $urlGetInv = CFS()->get('get_involved_background_image');

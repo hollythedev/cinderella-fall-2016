@@ -1372,10 +1372,26 @@ object {
   letter-spacing: 1px;
   line-height: 41px; }
 
-.wpcf7-form input[type=email],
-.wpcf7-form input[type=password],
-.wpcf7-form input[type=search],
-.wpcf7-form input[type=text],
-.wpcf7-form input[type=url] {
-  border-radius: 0;
-  padding: 6px; }
+/*.wpcf7-form {
+    input[type=email],
+    input[type=password],
+    input[type=search],
+    input[type=text],
+    input[type=url] {
+        border-radius: 0;
+        padding: 6px;
+    }
+}*/
+.refer-student-background {
+  height: 100vh; }
+
+.home-section-2 {
+  background: #69B9C6;
+  height: 80vh; }
+
+.home-section-3 {
+  background: #393D53; }
+
+.home-section-4 {
+  background: #F5A623;
+  height: 80vh; }
