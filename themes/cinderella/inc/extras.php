@@ -34,10 +34,10 @@ function my_styles_method() {
         wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
         
-    } elseif(is_page('contact-us')){
+    } elseif(is_page( 'contact-us' )){
         $urlContactUs = CFS()->get('contact_us_background_image');
         $custom_css = " .contact-us-background{
-                background-image: url({$urlContactUs});
+                contact-us-1: url({$urlContactUs});
                 }";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
