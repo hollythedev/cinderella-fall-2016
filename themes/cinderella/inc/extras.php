@@ -60,7 +60,7 @@ function my_styles_method() {
         $custom_css = " .about-section-1{
                 background-image: url({$urlImpact});
                 }
-                .about-section-5{
+                .cinderella-section{
                     background-image: url({$urlCinderellas});
                 ";
   
@@ -68,10 +68,12 @@ function my_styles_method() {
         return;
     } elseif(is_page('get-involved')){
         $urlInKindDonation = CFS()->get('donations_section_background_image');
+    }elseif(is_page('get-involved')){
+        $urlInKindDonation = CFS()->get('donations_section_background_image_2');
         $urlGetInv = CFS()->get('get_involved_background_image');
         $urlDropOff = CFS()->get('drop_off_locations_background_image');
-        $urlCashDon = CFS()->get('sponsor_via_cash_donation_image');
-        $custom_css = " .donations-section-2{
+        $urlSponsorImg = CFS()->get('donations_section_background_image_2');
+        $custom_css = " .in-kind-wishlist-background-image{
                 background-image: url({$urlInKindDonation});
                 }
                 .get-involved-section-1{
@@ -80,8 +82,8 @@ function my_styles_method() {
             .drop-off-donations{
                 background-image: url({$urlDropOff}); 
                 }
-            .sponsor-via-cash{
-                background-image: url({$urlCashDon})
+            .sponsorship-section-1{
+                background-image: url({$urlSponsorImg})
                 }";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );

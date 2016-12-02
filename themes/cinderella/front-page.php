@@ -19,6 +19,7 @@ get_header(); ?>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 
+
 				<section class="section home-section-2 cp-marketing-section">
 					<h2 class="cp-marketing-title"><?php echo CFS()->get( 'section_2_title' ); ?></h2>
 					<span class="cp-horizontal-line"></span>
@@ -28,10 +29,12 @@ get_header(); ?>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 
+
 				<section class="section home-section-3 cp-quote-section">
 					<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote' ); ?></span></h2>
 					<h3 class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author' ); ?></h3>
 				</section>
+
 
 				<section class="section fp-auto-height home-section-4">
 					<section class="cp-checkered-section">
@@ -47,17 +50,22 @@ get_header(); ?>
 						</div>
 						<?php endforeach ?>
 					</section>
-					<section class="section home-section-5">
+
+
+					<section class=" home-section-5">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
 					</section>
-					<section class="section home-section-6 cp-quote-section">
+
+					<section class=" home-section-6 cp-quote-section">
 						<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote_2' ); ?></span></h2>
 						<h3 class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author_2' ); ?></h3>
 					</section>
+					
 					<?php get_footer(); ?>
-				</section>
+				</section> <!-- end of section fp-auto-height -->
+
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
