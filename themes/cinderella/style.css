@@ -1330,6 +1330,9 @@ object {
 .page .cp-checkered-image-wrapper {
   height: 50px; }
 
+.page-template-about .about-section-1 {
+  height: 200px; }
+
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;

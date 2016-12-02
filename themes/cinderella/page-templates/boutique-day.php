@@ -22,7 +22,6 @@ get_header(); ?>
 							<img class="carousel-image" src="<?php echo $field['bd_gallery_image'];?>" />
 							<?php endforeach ?>
 						</div>
-
 					</div>
 				</section>
 					<!--the most magical day of the year-->
@@ -38,9 +37,9 @@ get_header(); ?>
 						<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'bd_quote' ); ?></span></h2>
 						<h3 class="cp-quote-author"><?php echo CFS()->get( 'bd_author' ); ?></h3>
 					</section>
+
 					<section>
 						<h2>What to expect</h2>
-						
 					</section>
 
 					<!--What to expect image and copy grid-->

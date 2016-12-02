@@ -43,6 +43,18 @@ function my_styles_method() {
             wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
 
+    }elseif(is_page('about')){
+        $urlImpact = CFS()->get('about_us_background_image');
+        $urlCinderellas = CFS()->get('about_us_cinderella_background_image');
+        $custom_css = " .about-section-1{
+                background-image: url({$urlImpact});
+                }
+                .about-section-5{
+                    background-image: url({$urlCinderellas});
+                ";
+  
+            wp_add_inline_style( 'red-starter-style', $custom_css );
+        return;
     }elseif(is_page('get-involved')){
         $urlInKindDonation = CFS()->get('donations_section_background_image');
         $urlGetInv = CFS()->get('get_involved_background_image');
