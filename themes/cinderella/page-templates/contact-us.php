@@ -19,8 +19,8 @@ get_header(); ?>
 				</div>
 			</select>
 			<section class="registration">
-				<div>
-					<!--   CONTACT FORM 7 HERE-->
+				<div class="contactform">
+					<?php echo CFS()->get( 'contact_us_select_menu' ); ?>
 				<form>
 					<a class="button-link" href="http://localhost:3000/cinderella/">Send a Message</a>
 				</div>

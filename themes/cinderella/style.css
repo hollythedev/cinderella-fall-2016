@@ -1411,3 +1411,11 @@ object {
   text-align: center;
   letter-spacing: 1px;
   line-height: 41px; }
+
+.wpcf7-form input[type=email],
+.wpcf7-form input[type=password],
+.wpcf7-form input[type=search],
+.wpcf7-form input[type=text],
+.wpcf7-form input[type=url] {
+  border-radius: 0;
+  padding: 6px; }
