@@ -9,7 +9,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section class="full-page">
+			<div id="fullpage">
+			<section class="section about">
+				<div class="about-background-image"></div>
 				<h2 class="about-us"><?php CFS()->get('');?></h2>
 			</section>
 
@@ -20,17 +22,22 @@ get_header(); ?>
 				<a class="button-link" href="http://localhost:3000/cinderella/">Get Involved</a>
 			</section>
 
-			<section class="recognition">
+			<section class="about-recognition">
 				<?php echo CFS()->get( '' ); ?>
 			</section>
 
-			<section class=""> 
+			<section class="about-impact"> 
 				<?php echo CFS()->get( '' ); ?>
 			</section>
 
 			<setion class="main-event">
 				<h2 class="event">Our Main Event</h2>
 				<?php echo CFS()->get( '' ); ?>
+				<span class="horizontal-line"></span>
+				<?php echo CFS()->get( '' ); ?>
+				<span class="horizontal-line"></span>
+				<?php echo CFS()->get( '' ); ?>
+				<span class="horizontal-line"></span>
 			</section>
 
 			<section class="memorial-awards">
@@ -93,6 +100,7 @@ get_header(); ?>
 					<p>	Help us contribute to these student’s stories.</p>
 						<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
 			</section>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
