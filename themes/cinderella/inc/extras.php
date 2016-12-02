@@ -37,7 +37,8 @@ function my_styles_method() {
     } elseif(is_page( 'contact-us' )){
         $urlContactUs = CFS()->get('contact_us_background_image');
         $custom_css = " .contact-us-background{
-                    background-image: url({$urlContactUs});
+                    background: url({$urlContactUs}) no-repeat center bottom;
+                    background-size: cover, cover;
                 }";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );

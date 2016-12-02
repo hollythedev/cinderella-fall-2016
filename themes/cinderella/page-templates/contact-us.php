@@ -15,7 +15,7 @@ get_header(); ?>
 				<div class="contact-us-background">
 					<h2 class="contact-us-title"><?php echo CFS()->get( 'contact_us_message' ); ?></h2>
 						<span class='horizontal-line'></span>
-							<i class="angle-down fa fa-angle-down"></i>
+							<i class="angle-down fa fa-angle-down fa-3x"></i>
 				</div>
 			</select>
 			<section class="registration">
