@@ -10,12 +10,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div id="fullpage">
+			<div class="refer-a-student">
 				<section class="section home-section-1">
-					<div class="refer-student-background-img"></div>
-					<h2 class="brand-title"><?php echo CFS()->get( 'brand-title' ); ?></h2>
-					<span class="horizontal-line"></span>
-					<i class="angle-down fa fa-angle-down"></i>
+					<div class="refer-student-background">
+						<h3 class="brand-title"><?php echo CFS()->get( 'brand_title' ); ?></h3>
+							<span class="horizontal-line"></span>
+								<i class="angle-down fa fa-angle-down"></i>
+					</div>
 				</section>
 
 				<section class="section home-section-2">
@@ -23,14 +24,20 @@ get_header(); ?>
 				</section>
 
 				<section class="section home-section-3">
-					<?php echo CFS()->get( 'referrals_from_district' ); ?>
+					<div class="referral-student-message">
+						<?php echo CFS()->get( 'ref_a_student_message' ); ?>
+					</div>
 						<span class="horizontal-line"></span>
-					<?php echo CFS()->get( 'city_district' ); ?>
-					<a class="button" href="http://localhost:3000/cinderella">Download Referral Form</a>
+					<div clss="city-district">
+						<?php echo CFS()->get( 'city_district' ); ?>
+					<div class="student-download-form">
+						<?php echo CFS()->get( 'ref_student_download' ); ?>
+							<a class="button" href="http://localhost:3000/cinderella">Download Referral Form</a>
+					</div>
 				</section>
 
 				<section class="section home-section-4">
-					<?php echo CFS()->get( 'similar_project' ); ?>
+					<h2><?php echo CFS()->get( 'similar_project' ); ?></h2>
 				</section>
 
 				<section class="section home-section-5">
