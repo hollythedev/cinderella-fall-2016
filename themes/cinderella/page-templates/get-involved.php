@@ -190,7 +190,7 @@ get_header(); ?>
 								<h2>Together, we can make a difference!</h2>
 								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
 								<div class= "fundraising_gallery">
-									<div class= "bd_photo">
+									<div class= "fundraising_photo">
 									<?php 
 										$fields = CFS()->get( 'fundraising_gallery' );
 										foreach ( $fields as $field ) :
