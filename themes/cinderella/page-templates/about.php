@@ -11,7 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div id="fullpage">
 				<section class="section about-section-1">
-					<?php echo CFS()->get( 'about_us_title' ); ?>
+					<span class="horizontal-line"></span>
+					<p class="brand-slogan"><?php echo CFS()->get( 'about_us_title' ); ?></p>
+					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 
 				<section class="section fp-auto-height">
