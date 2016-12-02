@@ -14,7 +14,6 @@ get_header(); ?>
 				<section class= "section bd_gallery">
 					<div class= "bd_photo">
 						<h2 class="boutique-day-message"><?php echo CFS()->get( 'bd_message' ); ?></h2>
-						
 						<h2 class="boutique-day-message"><?php echo CFS()->get( 'boutique_day_message' ); ?></h2>
 						<div class="carousel">
 							<?php
@@ -40,11 +39,6 @@ get_header(); ?>
 						<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'bd_quote' ); ?></span></h2>
 						<h3 class="cp-quote-author"><?php echo CFS()->get( 'bd_author' ); ?></h3>
 					</section>
-					<!--Students who attend BD are provided...-->
-					<section class="bd_section_4 cp-description-section">
-						<div class="cp-description-text"><?php echo CFS()->get( 'bd_about_paragraph' ); ?></div>
-					</section>
-
 					<section>
 						<h2>What to expect</h2>
 						
@@ -52,26 +46,24 @@ get_header(); ?>
 
 					<!--What to expect image and copy grid-->
 					<section class="bd_section_5">
-					<section class="cp-checkered-section">
+						<section class="cp-checkered-section">
 							<div style="display:none">
 								<div class="cp-checkered-image-wrapper"></div>
 								<div class="cp-checkered-text-wrapper"></div>
 							</div>
-						<?php 
-						$fields = CFS()->get( 'bd_what_to_expect' );
-						foreach ( $fields as $field ) :
-						?>
-						<div class="cp-checkered-container">
-							<div class="cp-checkered-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
-							<div class="cp-checkered-text-wrapper">
-								<p class="cp-checkered-description"><?php echo $field['bd_what_to_expect_copy'];?></p>
+							<?php 
+							$fields = CFS()->get( 'bd_what_to_expect' );
+							foreach ( $fields as $field ) :
+							?>
+							<div class="cp-checkered-container">
+									<div class="cp-checkered-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
+								<div class="cp-checkered-text-wrapper">
+									<p class="cp-checkered-description"><?php echo $field['bd_what_to_expect_copy'];?></p>
+								</div>
 							</div>
-						</div>
-						<?php endforeach ?>
+							<?php endforeach ?>
+						</section>
 					</section>
-					</section>
-
-
 
 					<!--The Student resource kit-->
 					<section class="bd_section_6">
@@ -80,19 +72,20 @@ get_header(); ?>
 								<?php echo CFS()->get( 'bd_register_2_mins' ); ?>
 								<p><a class="register" href="<?php the_permalink(); ?>">Register</a></p>
 					</section>
-					<!--Dreams come true-->
 					<section class="bd_section_7">
+						<h3>This kit is yours for life</h3>
+						<p>It includes everyday tips and links to community resources.</p>
+						<p><a class="register" href="<?php the_permalink(); ?>">Access the kit</a></p>
+					</section>
+					<!--Dreams come true-->
+					<section class="bd_section_8">
 						<h3>Dreams come true. See for yourself.</h3>
 						<?php echo CFS()->get( 'bd_footage_call_to_action' ); ?>
 						<div class="footage">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/TFmLGlVx7hc" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</section>
-					<section class="bd_section_8">
-						<h3>No gift is too small.</h3>
-						<p>Help us contribute to these student’s stories.</p>
-						<p><a class="register" href="<?php the_permalink(); ?>">Ways to help</a></p>
-					</section>
+					
 					<?php get_footer(); ?>
 				</section>
 			</div>

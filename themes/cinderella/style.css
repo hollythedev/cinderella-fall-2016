@@ -1307,6 +1307,9 @@ object {
   padding: 6px;
   color: black; }
 
+.page .cp-checkered-image-wrapper {
+  height: 50px; }
+
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;

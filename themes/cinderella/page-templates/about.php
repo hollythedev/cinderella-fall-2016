@@ -9,9 +9,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section class="full-page">
-				<h2 class="about-us"><?php CFS()->get('');?></h2>
-			</section>
+			<section class="about-section-1">
+			<?php echo CFS()->get( '' ); ?>
+		</section>
 
 			<section class="magic-of-cp">
 				<h2 class="">this is the "Magic" of the Cinerella Project</h2>
