@@ -29,7 +29,8 @@ function my_styles_method() {
          $urlHome = CFS()->get('home_background_image');
          $custom_css = "
         .home-section-1{
-        background-image: url( {$urlHome});
+        background-image: url( {$urlHome}) no-repeat center bottom;
+                    background-size: cover, cover;
         }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
@@ -58,10 +59,12 @@ function my_styles_method() {
         $urlImpact = CFS()->get('about_us_background_image');
         $urlCinderellas = CFS()->get('about_us_cinderella_background_image');
         $custom_css = " .about-section-1{
-                background-image: url({$urlImpact});
+                background-image: url({$urlImpact}) no-repeat center bottom;
+                    background-size: cover, cover;
                 }
                 .cinderella-section{
-                    background-image: url({$urlCinderellas});
+                    background-image: url({$urlCinderellas}) no-repeat center bottom;
+                    background-size: cover, cover;
                 ";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
