@@ -14,7 +14,7 @@ get_header(); ?>
 				<section class= "section bd_gallery">
 					<div class= "bd_photo">
 						<h2 class="boutique-day-message"><?php echo CFS()->get( 'bd_message' ); ?></h2>
-						<h2 class="boutique-day-message"><?php echo CFS()->get( 'boutique_day_message' ); ?></h2>
+						
 						<div class="carousel">
 							<?php
 								$fields = CFS()->get( 'bd_gallery' );

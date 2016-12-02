@@ -2,6 +2,12 @@
 
     $(document).ready(function() {
 
+        $( "#accordion" ).accordion({
+            collapsible: true,
+            active: false,
+            heightStyle: 'content'
+        });
+
         $('#nav-icon').click(function() {
             $(this).hide();
             $('#mobile-nav').animate({ height: 'show' }, 500, function() {});
