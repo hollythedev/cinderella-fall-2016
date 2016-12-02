@@ -1,7 +1,8 @@
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: $color_background_footer;
-  width: 1441px;
+  width: 100vw;
+  padding:3.3125rem 3.5625rem 1.375rem 3.5625rem;
 }
 .globe-logo{
   background: $color_globe_background;
@@ -18,19 +19,21 @@
 }
 .navigation {
   display: flex;
-  @include mobile {
-    align-self: center;
-  }
+
+    li {
+      list-style: none;
+    }
    a{
-    text-decoration: none;
-    color: #FFF;
     border-bottom: 1px solid $color_footer_borders;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
    }
-  .second-nav{
-  flex-basis: 62%;
-  }
 }
+
 .logoDevelopment{
+  display: none;
+  @include desktop{
   display: flex;
   width: 317px;
   height: 80px;
@@ -41,14 +44,22 @@
     h2 {
       font-size:2.1rem;
     }
+  }
 }
 .facebook-icon {
-  padding-left:720.5px;
-  padding-bottom: 1rem;
+  text-align: center;
+  padding-bottom:0.555rem;
+  padding-top:1.125rem;
+    @include desktop{
+      text-align: left;
+    }
 }
 
 .information {
+  display: none;
+  @include desktop{
   display: flex;
   justify-content: space-around;
   border-bottom: 2rem;
+  }
 }
