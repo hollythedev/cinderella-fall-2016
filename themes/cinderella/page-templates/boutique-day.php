@@ -62,28 +62,21 @@ get_header(); ?>
 							<?php endforeach ?>
 						</section>
 					</section>
-
 					<!--The Student resource kit-->
 					<section class="bd_section_6">
-								<?php echo CFS()->get( 'bd_resource_kit' ); ?>
-								<h3>The Student Resource Kit your’s for life</h3>
-								<?php echo CFS()->get( 'bd_register_2_mins' ); ?>
-								<p><a class="register" href="<?php the_permalink(); ?>">Register</a></p>
-					</section>
-					<section class="bd_section_7">
+						<p><?php echo CFS()->get( 'bd_resource_kit' ); ?></p>
 						<h3>This kit is yours for life</h3>
 						<p>It includes everyday tips and links to community resources.</p>
 						<p><a class="register" href="<?php the_permalink(); ?>">Access the kit</a></p>
 					</section>
 					<!--Dreams come true-->
-					<section class="bd_section_8">
+					<section class="bd_section_7">
 						<h3>Dreams come true. See for yourself.</h3>
 						<?php echo CFS()->get( 'bd_footage_call_to_action' ); ?>
 						<div class="footage">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/TFmLGlVx7hc" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</section>
-					
 					<?php get_footer(); ?>
 				</section>
 			</div>
