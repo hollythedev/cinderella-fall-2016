@@ -1007,6 +1007,26 @@ a {
 .bypostauthor {
   display: block; }
 
+.ui-accordion-header {
+  background-color: #393D53;
+  height: 3rem;
+  font-size: 2rem;
+  outline: 0;
+  color: #fff; }
+  .ui-accordion-header:after {
+    font-family: FontAwesome;
+    display: block;
+    float: right;
+    padding-right: 2rem;
+    content: "\f078"; }
+
+.ui-accordion-header-active:after {
+  font-family: FontAwesome;
+  display: block;
+  float: right;
+  padding-right: 2rem;
+  content: "\f077"; }
+
 .home .fp-scroller {
   display: -ms-flexbox;
   display: flex;
