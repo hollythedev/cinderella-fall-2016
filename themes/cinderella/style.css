@@ -1389,3 +1389,29 @@ object {
       -ms-flex-pack: distribute;
           justify-content: space-around;
       border-bottom: 2rem; } }
+
+.contact-us-background {
+  background-size: cover cover;
+  height: 100vh;
+  position: relative;
+  width: 100vw; }
+
+.registration {
+  background-color: #393D53;
+  height: 100vh; }
+
+.contact-us-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 41px; }
+
+.wpcf7-form input[type=email],
+.wpcf7-form input[type=password],
+.wpcf7-form input[type=search],
+.wpcf7-form input[type=text],
+.wpcf7-form input[type=url] {
+  border-radius: 0;
+  padding: 6px; }

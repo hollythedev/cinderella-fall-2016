@@ -12,15 +12,15 @@ get_header(); ?>
 		
 		<div id="fullpage">
 			<section class="section contact-us-1">
-				<div class="background-image">
-					<div class="contact-us-background">
+				<div class="contact-us-background">
 					<h2 class="contact-us-title"><?php echo CFS()->get( 'contact_us_message' ); ?></h2>
 						<span class='horizontal-line'></span>
-					<i class="angle-down fa fa-angle-down"></i>
+							<i class="angle-down fa fa-angle-down fa-3x"></i>
+				</div>
 			</select>
 			<section class="registration">
-				<div>
-					<!--   CONTACT FORM 7 HERE-->
+				<div class="contactform">
+					<?php echo CFS()->get( 'contact_us_select_menu' ); ?>
 				<form>
 					<a class="button-link" href="http://localhost:3000/cinderella/">Send a Message</a>
 				</div>
