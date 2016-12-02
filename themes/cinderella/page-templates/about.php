@@ -9,7 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			
+			<div id="fullpage">
+			<section class="section about-section-1">
+				<?php echo CFS()->get( 'about_us_title' ); ?>
+			</section>
 
 			<section class="section about-section-2 cp-marketing-section">
 					<h2 class="cp-marketing-title"><?php echo CFS()->get( 'about_us_section_2_title' ); ?></h2>
@@ -20,22 +23,16 @@ get_header(); ?>
 
 			<section class="section about-section-3"> 
 				<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
-			</section>
-
-			<section class="section about-section-4">
 				<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_impact_statement' ); ?></p>
 			</section>
 
-			<section class="section about-section-5">
+			<section class="section about-section-4 memorial-awards">
 				<h2>Our main event</h2>
-			</section>
-		
-			<section class="section about-section-5 memorial-awards">
 				<?php echo CFS()->get( 'about_us_awards_block' ); ?>
 				<a class="cp-button-link" href="<?php the_permalink(); ?>">More on Boutique Day</a>
 			</section>
 
-			<section class="section about-section-6 cinderellas-cinderfellas">
+			<section class="section about-section-5 cinderellas-cinderfellas">
 				<div class="cinderella-section">
 					<?php echo CFS()->get( 'about_us_cinderella_title' ); ?>
 				</div>
@@ -88,6 +85,7 @@ get_header(); ?>
 					<p>	Help us contribute to these student’s stories.</p>
 						<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
 			</section>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

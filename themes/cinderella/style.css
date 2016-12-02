@@ -1336,7 +1336,8 @@ object {
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;
-  width: 1441px; }
+  width: 100vw;
+  padding: 3.3125rem 3.5625rem 1.375rem 3.5625rem; }
 
 .globe-logo {
   background: #9B9B9B;
@@ -1353,37 +1354,42 @@ object {
 .navigation {
   display: -ms-flexbox;
   display: flex; }
-  @media (min-width: 600px) {
-    .navigation {
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center; } }
+  .navigation li {
+    list-style: none; }
   .navigation a {
+    border-bottom: 1px solid #3E3E3E;
     text-decoration: none;
-    color: #FFF;
-    border-bottom: 1px solid #3E3E3E; }
-  .navigation .second-nav {
-    -ms-flex-preferred-size: 62%;
-        flex-basis: 62%; }
+    text-transform: uppercase;
+    color: #FFF; }
 
 .logoDevelopment {
-  display: -ms-flexbox;
-  display: flex;
-  width: 317px;
-  height: 80px; }
-  .logoDevelopment img {
-    width: 5.5rem;
-    height: 5.5rem; }
-  .logoDevelopment h2 {
-    font-size: 2.1rem; }
+  display: none; }
+  @media (min-width: 1240px) {
+    .logoDevelopment {
+      display: -ms-flexbox;
+      display: flex;
+      width: 317px;
+      height: 80px; }
+      .logoDevelopment img {
+        width: 5.5rem;
+        height: 5.5rem; }
+      .logoDevelopment h2 {
+        font-size: 2.1rem; } }
 
 .facebook-icon {
-  padding-left: 720.5px;
-  padding-bottom: 1rem; }
+  text-align: center;
+  padding-bottom: 0.555rem;
+  padding-top: 1.125rem; }
+  @media (min-width: 1240px) {
+    .facebook-icon {
+      text-align: left; } }
 
 .information {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-bottom: 2rem; }
+  display: none; }
+  @media (min-width: 1240px) {
+    .information {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      border-bottom: 2rem; } }

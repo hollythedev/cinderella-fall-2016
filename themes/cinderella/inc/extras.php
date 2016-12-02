@@ -33,6 +33,7 @@ function my_styles_method() {
         }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
+        
     } elseif(is_page('contact-us')){
         $urlContactUs = CFS()->get('contact_us_background_image');
         $custom_css = " .contact-us-background{
@@ -48,7 +49,7 @@ function my_styles_method() {
         $custom_css = " .about-section-1{
                 background-image: url({$urlImpact});
                 }
-                .about-section-6{
+                .about-section-5{
                     background-image: url({$urlCinderellas});
                 ";
   
