@@ -11,9 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 		<div id="fullpage">
-			<section>
+			<section class="section contact-us-1">
 				<div class="background-image">
-					<div class="contact-us-background" style="background: url(<?php echo [''];?>); background-size: cover;"></div>
+					<div class="contact-us-background">
 					<h2 class="contact-us-title"><?php echo CFS()->get( 'contact_us_message' ); ?></h2>
 						<span class='horizontal-line'></span>
 					<i class="angle-down fa fa-angle-down"></i>
