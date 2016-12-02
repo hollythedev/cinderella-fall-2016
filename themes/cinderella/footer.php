@@ -14,13 +14,10 @@
 					</div>
 					
 					<div class="navigation">
-						<ul class="first-nav">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">About</a></li>
 							<li><a href="#">Boutique Day</a></li>
 							<li><a href="#">Get Involed</a></li>
-						</ul>
-						<ul class="second-nav">
 							<li><a href="#">Refer a Student</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">Contact Us</a></li>
@@ -39,7 +36,6 @@
 					<div class="information">
 						<p>Registered Canadian Charitable Organization BN 86666 0699 RR0001</p>
 						<p>The Cinderella Project 2016</p>
-						<p>Mailing address: #172-219 Mackay Road, North Vancouver, BC V7P 3N6</p>
 					</div>
 					</div><!-- #content -->
 				</div><!-- .site-info -->
