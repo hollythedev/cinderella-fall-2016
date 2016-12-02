@@ -14,6 +14,7 @@
 					</div>
 					
 					<div class="navigation">
+						<ul class="nav">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">About</a></li>
 							<li><a href="#">Boutique Day</a></li>
