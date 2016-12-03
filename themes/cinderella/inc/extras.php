@@ -66,18 +66,19 @@ function my_styles_method() {
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
-    } elseif(is_page('get-involved')){
-        $urlInKindDonation = CFS()->get('donations_section_background_image');
     }elseif(is_page('get-involved')){
         $urlInKindDonation = CFS()->get('donations_section_background_image_2');
         $urlGetInv = CFS()->get('get_involved_background_image');
         $urlDropOff = CFS()->get('drop_off_locations_background_image');
         $urlSponsorImg = CFS()->get('donations_section_background_image_2');
         $custom_css = " .in-kind-wishlist-background-image{
-                background-image: url({$urlInKindDonation});
+            background-image: url({$urlInKindDonation});
                 }
                 .get-involved-section-1{
             background-image: url({$urlGetInv});
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-size: cover;
             }
             .drop-off-donations{
                 background-image: url({$urlDropOff}); 
