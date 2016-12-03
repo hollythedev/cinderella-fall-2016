@@ -20,6 +20,14 @@
             });
         });
 
+        $('.target_pos').click(function() {
+            $('.output').html(function(i, val) { return val*1 >= 0 ? val * 1 + 1 : 0 });
+        });
+
+        $('.target_neg').click(function() {
+            $('.output').html(function(i, val) { return val*1 - 1 >= 0 ? val * 1 - 1 : 0 });
+        });
+        
         $('.carousel').flickity({
             cellAlign: 'left',
             contain: true,
@@ -94,7 +102,5 @@
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
         });
     });
-
-
 
 })(jQuery);
