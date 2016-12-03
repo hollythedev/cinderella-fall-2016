@@ -24,8 +24,8 @@ get_header(); ?>
 					<h2 class="cp-marketing-title"><?php echo CFS()->get( 'section_2_title' ); ?></h2>
 					<span class="cp-horizontal-line"></span>
 					<p class="cp-marketing-copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
-					<a class="cp-button-link" href="<?php the_permalink(); ?>">About Boutique Day</a>
-					<a class="cp-learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
+					<a class="cp-button-link" href="/index.php?p=26">About Boutique Day</a>
+					<a class="cp-learn-about-link" href="/index.php?p=35">Learn about the Cinderella Project</a>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 
@@ -55,14 +55,14 @@ get_header(); ?>
 					<section class=" home-section-5">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
-						<a class="cp-button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
+						<a class="cp-button-link" href="/index.php?p=37">Ways to Help</a>
 					</section>
 
 					<section class=" home-section-6 cp-quote-section">
 						<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote_2' ); ?></span></h2>
 						<h3 class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author_2' ); ?></h3>
 					</section>
-					
+
 					<?php get_footer(); ?>
 				</section> <!-- end of section fp-auto-height -->
 

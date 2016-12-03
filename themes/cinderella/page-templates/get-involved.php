@@ -104,7 +104,7 @@ get_header(); ?>
 								<div class= "fundraising_gallery">
 									<div class= "fundraising_photo">
 									<?php 
-										$fields = CFS()->get( 'fundraising_gallery' );
+										$fields = CFS()->get( 'specific_donation_grid' );
 
 										foreach ( $fields as $field ) :
 										?>
