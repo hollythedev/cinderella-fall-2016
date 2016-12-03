@@ -45,25 +45,67 @@ get_header(); ?>
 								<!-- First donations background image-->
 									</div>
 
-									<div class ="donations-section-2">
-										<div class="donations-copy-block">
-											<p>and in order to make it all possible, we rely on donations of student care packages, formal wear, and much more. If you can provide support for any of the below items, we would greatly appreciate your donation! Each has an impact on a student’s experience.</p>
-										</div>
-										<div class="support-via-cash">
-											<h2>Support us with a cash donation</h2>
-											<form class="donation-amount">
-												<label for="amount">$</label>
-												<input id="amount" type="text" placeholder="enter amount">
-											</form>
-											<a class="button-link" href="<?php the_permalink(); ?>">Support Us</a>
-											<p>or</p>
-											<p>Choose specific donation:</p>
-										</div>
-									</div> <!--end of donations section 2 -->
+							<div class="get-involved-wishlist">	
+								<div class="wishlist-menu">
+										<!--most-needed/care package items/men's attire/women's attire/supplies/decorations-->
+									<ul>
+										add donations-wishlist menu items loop here
+									</ul> 
+								</div>
+							</div>
+							<!--Drop off donations background image and title-->
+							<div class="get-involved-drop-off-donations">							
+								<div class="drop-off-donations">
+									<?php echo CFS()->get( 'drop_off_locations_title' ); ?>
+									<?php echo CFS()->get( 'drop_off_locations_dates' ); ?>
+								</div>
+								<!--Donation locations loop start-->
+								<?php 
+								$fields = CFS()->get( 'drop_off_locations' );
+								foreach ( $fields as $field ) :
+								?>
+								<div class="business-information">
+									<h3 class="stat-value"><?php echo $field['business_name'];?></h3>
+									<p class="stat-description"><?php echo $field['business_address'];?></p>
+								</div>
+								<?php endforeach ?>
+							<!-- end of donations location here-->
+								<div class="ideas-donations">
+									<h2>Ideas for other donations?</h2>
+									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+								</div>
+						</section> <!-- end of donations tab -->
+			
+					<li>Sponsorships</li>
+						<section class="sponsorship-tab">
+							<div class="sponsorship-section-1">
+								<h3>boutique day is a monumental event…</h3>
+						<!-- First donations background image-->
+							</div>
+							<div class="in-kind-donations-copy">
+								<?php echo CFS()->get( 'sponsorship_in_kind_copy' ); ?>
+							</div>
+						<!-- Sponsorship quote area -->
+							<div class="sponsorship-quote">
+								<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( 'sponsorship_quote' ); ?></span></h2>
+								<h3 class="author"><?php echo CFS()->get( 'sponsorship_quote_author' ); ?></h3>
+							</div>
+							<div class="ideas-donations">
+								<h2>Ideas for other donations?</h2>
+								<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+							</div>
+						</section> <!-- end of sponsorship tab -->
 
-									<div class="sponsorship-stats">
-										<?php 
-										$fields = CFS()->get( 'specific_donation_grid' );
+					<li>Fundraising</li>
+						<section class="fundraising-tab">
+							<div class="get-involved-fundraising">
+								<h2>Together, we can make a difference!</h2>
+								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
+								<div class= "fundraising_gallery">
+									<div class= "fundraising_photo">
+									<?php 
+										$fields = CFS()->get( 'fundraising_gallery' );
+
 										foreach ( $fields as $field ) :
 										?>
 										<div class="donation-grid-container">

@@ -985,15 +985,15 @@ a {
     width: 70%;
     text-align: right; }
 
-.cp-stat-grid {
+.cp-stat-grid-wrapper .cp-stat-grid {
   display: -ms-flexbox;
   display: flex;
   width: 100vw; }
-  .cp-stat-grid .cp-stat-image-wrapper {
+  .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-image-wrapper {
     width: 50%;
     padding-bottom: 50%;
     height: 0; }
-  .cp-stat-grid .cp-stat-text-wrapper {
+  .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper {
     width: 50%;
     background-color: #69B9C6;
     display: -ms-flexbox;
@@ -1005,19 +1005,19 @@ a {
     -ms-flex-pack: center;
         justify-content: center;
     padding: 0 1.5rem; }
-    .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value {
+    .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value {
       font-size: 2.5rem; }
-      .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value:after {
+      .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value:after {
         width: 2rem;
         border-bottom: 1px solid #fff;
         content: "";
         display: block;
         margin: .5rem auto; }
-    .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
+    .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
       font-size: 1.3rem;
       text-align: center;
       margin: 0; }
-  .cp-stat-grid:nth-child(2n) .cp-stat-text-wrapper {
+  .cp-stat-grid-wrapper .cp-stat-grid:nth-child(2n) .cp-stat-text-wrapper {
     background-color: #F5A623;
     -ms-flex-order: 2;
         order: 2; }
@@ -1327,42 +1327,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Get Involved Page (will move later)- Sharifa */
-.get-involved-section-1 {
-  height: 400px; }
-
-.help-nav .drop-off-donations {
-  height: 400px; }
-
-.ideas-donations a {
-  color: black; }
-
-.page .image-wrapper {
-  width: 50%;
-  padding-bottom: 50%;
-  height: 200px; }
-
-.page .quote-text {
-  color: black; }
-
-.wpcf7-form input[type=email],
-.wpcf7-form input[type=password],
-.wpcf7-form input[type=search],
-.wpcf7-form input[type=text],
-.wpcf7-form input[type=url] {
-  border-radius: 0;
-  padding: 6px;
-  color: black; }
-
-.page .cp-checkered-image-wrapper {
-  height: 50px; }
-
-.page .cinderella-section-referrals {
-  color: black; }
-
-.page-template-about .about-section-1 {
-  height: 200px; }
-
 /*---    FOOTER   ---*/
 .site-footer {
   background-color: #4A4A4A;

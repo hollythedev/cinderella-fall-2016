@@ -19,11 +19,11 @@ get_header(); ?>
 					</div>
 				</section>
 
-				<section class="section home-section-2">
+				<section class=" home-section-2">
 					<h2="referral-message"><?php echo CFS()->get( 'referral_message' ); ?></h2>
 				</section>
 
-				<section class="section home-section-3">
+				<section class=" home-section-3">
 					<div class="referral-student-message">
 						<?php echo CFS()->get( 'ref_a_student_message' ); ?>
 					</div>
@@ -36,11 +36,11 @@ get_header(); ?>
 					</div>
 				</section>
 
-				<section class="section home-section-4">
+				<section class=" home-section-4">
 					<h2><?php echo CFS()->get( 'similar_project' ); ?></h2>
 				</section>
 
-				<section class="section home-section-5">
+				<section class=" home-section-5">
 					<h2><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
 					<!-- CONTACT FORM 7 -->
 					<a class="button" href="http://localhost:3000/cinderella">Find Results</a>
@@ -51,5 +51,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
