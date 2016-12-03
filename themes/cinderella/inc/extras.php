@@ -29,8 +29,7 @@ function my_styles_method() {
          $urlHome = CFS()->get('home_background_image');
          $custom_css = "
         .home-section-1{
-        background-image: url( {$urlHome}) no-repeat center bottom;
-                    background-size: cover, cover;
+        background-image: url( {$urlHome});
         }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
@@ -39,7 +38,7 @@ function my_styles_method() {
         $urlReferAstudent = CFS()->get('refer_student_background_img');
         $custom_css = " .refer-student-background{
                     background: url({$urlReferAstudent}) no-repeat center bottom;
-                    background-size: cover, cover;
+                    background-size: cover;
                 }";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
@@ -49,7 +48,7 @@ function my_styles_method() {
         $urlContactUs = CFS()->get('contact_us_background_image');
         $custom_css = " .contact-us-background{
                     background: url({$urlContactUs}) no-repeat center bottom;
-                    background-size: cover, cover;
+                    background-size: cover;
                 }";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
@@ -59,12 +58,12 @@ function my_styles_method() {
         $urlImpact = CFS()->get('about_us_background_image');
         $urlCinderellas = CFS()->get('about_us_cinderella_background_image');
         $custom_css = " .about-section-1{
-                background-image: url({$urlImpact}) no-repeat center bottom;
-                    background-size: cover, cover;
+                background: url({$urlImpact}) no-repeat center bottom;
+                    background-size: cover;
                 }
                 .cinderella-section{
-                    background-image: url({$urlCinderellas}) no-repeat center bottom;
-                    background-size: cover, cover;
+                    background: url({$urlCinderellas}) no-repeat center bottom;
+                    background-size: cover;
                 ";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
@@ -75,7 +74,7 @@ function my_styles_method() {
         $urlDropOff = CFS()->get('drop_off_locations_background_image');
         $urlSponsorImg = CFS()->get('donations_section_background_image_2');
         $custom_css = " .in-kind-wishlist-background-image{
-            background-image: url({$urlInKindDonation});
+            background: url({$urlInKindDonation});
                 }
                 .get-involved-section-1{
             background-image: url({$urlGetInv});
@@ -84,10 +83,10 @@ function my_styles_method() {
             background-size: cover;
             }
             .drop-off-donations{
-                background-image: url({$urlDropOff}); 
+                background: url({$urlDropOff}); 
                 }
             .sponsorship-section-1{
-                background-image: url({$urlSponsorImg})
+                background: url({$urlSponsorImg})
                 }";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
