@@ -36,14 +36,18 @@ get_header(); ?>
 					</div>
 				</section> <!-- end of get-involved section 2-->
 				<!-- Beginning of Menu-->
-					<section class="get-inv-nav-wrapper">
-						<ul class="ways-to-help-menu">
-							<li>Donations</li>
+					<div id="accordion">
+							<h3>Donations</h3>
 								<section class="donations-tab">
 									<div class="donations-section-1">
 										<h3>boutique day is a monumental event…</h3>
 								<!-- First donations background image-->
 									</div>
+
+
+
+
+
 
 							<div class="get-involved-wishlist">	
 								<div class="wishlist-menu">
@@ -53,6 +57,11 @@ get_header(); ?>
 									</ul> 
 								</div>
 							</div>
+
+
+
+
+
 							<!--Drop off donations background image and title-->
 							<div class="get-involved-drop-off-donations">							
 								<div class="drop-off-donations">
@@ -76,7 +85,7 @@ get_header(); ?>
 								</div>
 						</section> <!-- end of donations tab -->
 			
-					<li>Sponsorships</li>
+					<h3>Sponsorships</h3>
 						<section class="sponsorship-tab">
 							<div class="sponsorship-section-1">
 								<h3>boutique day is a monumental event…</h3>
@@ -96,7 +105,7 @@ get_header(); ?>
 							</div>
 						</section> <!-- end of sponsorship tab -->
 
-					<li>Fundraising</li>
+					<h3>Fundraising</h3>
 						<section class="fundraising-tab">
 							<div class="get-involved-fundraising">
 								<h2>Together, we can make a difference!</h2>
@@ -159,7 +168,7 @@ get_header(); ?>
 										</div>
 								</section> <!-- end of donations tab -->
 					
-							<li>Sponsorships</li>
+							<h3>Sponsorships</h3>
 								<section class="sponsorship-tab">
 									<div class="sponsorship-section-1">
 										<h3>boutique day is a monumental event…</h3>
@@ -179,7 +188,7 @@ get_header(); ?>
 									</div>
 								</section> <!-- end of sponsorship tab -->
 
-							<li>Fundraising</li>
+							<h3>Fundraising</h3>
 								<section class="fundraising-tab">
 									<div class="get-involved-fundraising">
 										<h2>Together, we can make a difference!</h2>
@@ -209,7 +218,7 @@ get_header(); ?>
 									</div>
 								</section> <!-- end of fundraising tab -->
 
-							<li>Volunteer</li>
+							<h3>Volunteer</h3>
 								<section class="volunteer-tab">
 									<div class="volunteer-information">
 										<?php echo CFS()->get( 'volunteer_information' ); ?>
@@ -244,8 +253,7 @@ get_header(); ?>
 									<?php echo CFS()->get( 'volunteer_contact_form' ); ?>
 									</div>
 								</section> <!-- end of volunteer tab -->
-						</ul> <!--end of ways-to-help-menu -->
-					</section> <!-- end of get-inv-nav-wrapper -->
+						</div>
 					<?php get_footer(); ?>
 				</section>
 			</div>
