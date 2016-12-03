@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
     clear: both;
-    color: black;
+    color: $color__text-main;
 }
 
 
@@ -31,12 +31,12 @@ h6 {
 
 p {
     margin-bottom: $base__space-unit;
-    color: black;
+    color: $color__text-main;
 }
 
 ul,
 li {
-    color: black;
+    color: $color__text-main;
 }
 
 dfn,
