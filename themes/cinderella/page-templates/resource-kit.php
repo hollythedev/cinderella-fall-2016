@@ -11,7 +11,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 <!-- add custom fields-->
+	<div id="fullpage">
+		<section class="section cp-landing-section">
+			Landing Page
+		</section>
 
+		<section class="section fp-auto-height cp-registration-section">
+			<?php echo CFS()->get( 'login_form' ); ?>
+		</section>
+	</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
