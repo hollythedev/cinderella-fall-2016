@@ -26,41 +26,37 @@ get_header(); ?>
 				</section>
 					<!--the most magical day of the year-->
 				<section class="section fp-auto-height">
-					<section class="bd_section_2 cp-marketing-section">
+					<section class="bd_section_2 cp-section cp-marketing-section">
 						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'bd_title' ); ?></h2>
 						<span class="cp-horizontal-line"></span>
 						<div class="cp-marketing-copy"><?php echo CFS()->get( 'bd_description' ); ?></div>
 					</section>
 
 					<!--You made it possible quote-->
-					<section class="bd_section_3 cp-quote-section">
+					<section class="bd_section_3 cp-section cp-quote-section">
 						<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'bd_quote' ); ?></span></h2>
 						<h3 class="cp-quote-author"><?php echo CFS()->get( 'bd_author' ); ?></h3>
 					</section>
 
-					<section>
-						<h2>What to expect</h2>
+					<section class="cp-section cp-title-section">
+						<h2 class="cp-title-text">What to expect</h2>
 					</section>
 
 					<!--What to expect image and copy grid-->
 					<section class="bd_section_5">
-						<section class="cp-checkered-section">
-							<div style="display:none">
-								<div class="cp-checkered-image-wrapper"></div>
-								<div class="cp-checkered-text-wrapper"></div>
-							</div>
-							<?php 
+						<div class="cp-expect-grid-wrapper">
+						<?php 
 							$fields = CFS()->get( 'bd_what_to_expect' );
 							foreach ( $fields as $field ) :
 							?>
-							<div class="cp-checkered-container">
-									<div class="cp-checkered-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
-								<div class="cp-checkered-text-wrapper">
-									<p class="cp-checkered-description"><?php echo $field['bd_what_to_expect_copy'];?></p>
+							<div class="cp-expect-grid">
+								<div class="cp-expect-text-wrapper">
+									<p class="cp-expect-description"><?php echo $field['bd_what_to_expect_copy'];?></p>
 								</div>
+								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
 							</div>
-							<?php endforeach ?>
-						</section>
+						<?php endforeach ?>
+						</div>
 					</section>
 					<!--The Student resource kit-->
 					<section class="bd_section_6">
