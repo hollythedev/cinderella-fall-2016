@@ -45,17 +45,52 @@ get_header(); ?>
 									</div>
 
 
+							
+							<div id="wishlist-accordion">	
+								<!-- arguments for the custom query, used to grab all wishlist posts -->
+								<?php $args = array(
+									'posts_per_page'   => 0,
+									'post_type'        => 'wishlist',
+								);
+								$wishlist_loop = new WP_Query($args);
+										// loop through all wishlist posts
+										while( $wishlist_loop->have_posts() ): $wishlist_loop->the_post();
+										?>
+										<!--  print Wishlist accordion heading ie Most Wanted -->
+										<h3><?php the_title(); ?></h3>
+										<!-- this section tag contains eveything within the accordion for the above heading -->
+										<section class="wishlist-section">
+											<?php 
+												// get the CFS wishlist loop and loop through all items
+												$fields = CFS()->get( 'wishlist_menu' );
+												foreach ( $fields as $field ) :
+											?>
+												<!-- print out the title of the wishlist category ie. Dress SHoes-->
+												<h3><?php echo $field['wishlist_category'];?></h3>
 
+												<!-- check if this category has specifics on the category ie. Womens sizes 10 and up. -->
+												<!-- this check is needed because some categories do not have specifics and when we try to
+													 call upon the $field['wishlist_specific'] array we will get an error because it does not
+													 exist, so this check lets us only use the variable when it is defined. -->
+												<?php if (isset($field['wishlist_specific'])) : ?>
+												<!-- if it does print all specifics in an unordered list !-->
+													<ul>
+													<?php
+														// this is the loop that goes through the array of specifics
+														foreach ($field['wishlist_specific'] as $wishlist_specific) :
+													?>
+														<li><?php echo $wishlist_specific['items_description']; ?></li>
 
-
-
-							<div class="get-involved-wishlist">	
-								<div class="wishlist-menu">
-										<!--most-needed/care package items/men's attire/women's attire/supplies/decorations-->
-									<ul>
-										add donations-wishlist menu items loop here
-									</ul> 
-								</div>
+													<?php endforeach; ?>
+												</ul>
+												<?php endif ?>
+											<?php endforeach; ?>
+										</section>
+										<?php
+										endwhile;
+									// because we used a custom WP_Query() we need to reset the postdata for all other query calls below
+									wp_reset_postdata();
+									?>
 							</div>
 
 
