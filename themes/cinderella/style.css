@@ -137,16 +137,16 @@ h4,
 h5,
 h6 {
   clear: both;
-  color: black; }
+  color: #fff; }
 
 /* Copy */
 p {
   margin-bottom: 1.5em;
-  color: black; }
+  color: #fff; }
 
 ul,
 li {
-  color: black; }
+  color: #fff; }
 
 dfn,
 cite,
@@ -413,115 +413,8 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
   height: auto !important; }
 
-.cp-marketing-section {
-  padding-top: 10vh;
-  background-color: #69B9C6;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
-  .cp-marketing-section .cp-marketing-title {
-    font-size: 2.5rem;
-    width: 200px;
-    text-align: center;
-    margin-bottom: 10vh; }
-  .cp-marketing-section .cp-marketing-copy {
-    width: 85%;
-    padding: 0 1.5rem;
-    text-align: center;
-    font-size: 1.4rem; }
-
-.cp-quote-section {
-  background-color: #F5A623;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  padding-top: 15vh;
-  width: 100vw; }
-  .cp-quote-section .cp-quote-wrapper {
-    font-size: 3rem;
-    text-align: left;
-    padding-bottom: 2rem;
-    width: 70%; }
-    .cp-quote-section .cp-quote-wrapper .cp-quote-text {
-      padding-left: 2rem; }
-    .cp-quote-section .cp-quote-wrapper:before {
-      padding-left: -2rem;
-      font-family: FontAwesome;
-      display: block;
-      text-align: left;
-      content: "\f10d"; }
-    .cp-quote-section .cp-quote-wrapper:after {
-      font-family: FontAwesome;
-      display: block;
-      text-align: right;
-      content: "\f10e"; }
-  .cp-quote-section .cp-quote-author {
-    width: 70%;
-    text-align: right; }
-
-.cp-checkered-section .cp-checkered-container {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%; }
-  .cp-checkered-section .cp-checkered-container .cp-checkered-image-wrapper {
-    width: 50%;
-    padding-bottom: 50%;
-    height: 0; }
-  .cp-checkered-section .cp-checkered-container .cp-checkered-text-wrapper {
-    width: 50%;
-    background-color: #69B9C6;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    padding: 0 1.5rem; }
-    .cp-checkered-section .cp-checkered-container .cp-checkered-text-wrapper .cp-checkered-value {
-      font-size: 2.5rem; }
-      .cp-checkered-section .cp-checkered-container .cp-checkered-text-wrapper .cp-checkered-value:after {
-        width: 2rem;
-        border-bottom: 1px solid #fff;
-        content: "";
-        display: block;
-        margin: .5rem auto; }
-    .cp-checkered-section .cp-checkered-container .cp-checkered-text-wrapper .cp-checkered-description {
-      font-size: 1.3rem;
-      text-align: center;
-      margin: 0; }
-  .cp-checkered-section .cp-checkered-container:nth-child(2n) .cp-checkered-text-wrapper {
-    background-color: #F5A623;
-    -ms-flex-order: -1;
-        order: -1; }
-
-.cp-description-section {
-  background-color: #393D53;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  padding-top: 5vh;
-  width: 100vw; }
-  .cp-description-section .cp-description-text {
-    width: 85%;
-    padding: 0 1.5rem;
-    text-align: center;
-    font-size: 1.2rem; }
-  .cp-description-section br {
-    width: 55%;
-    border-bottom: 1px solid #fff;
-    margin: 1.5em auto; }
+body {
+  background-color: black; }
 
 .cp-button-link {
   width: 80%;
@@ -1026,6 +919,147 @@ a {
   float: right;
   padding-right: 2rem;
   content: "\f077"; }
+
+.cp-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+
+.cp-marketing-section {
+  background-color: #69B9C6;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100vh; }
+  .cp-marketing-section .cp-marketing-title {
+    font-size: 2.5rem;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10vh; }
+  .cp-marketing-section .cp-marketing-copy {
+    width: 85%;
+    padding: 0 1.5rem;
+    text-align: center;
+    font-size: 1.4rem; }
+
+.cp-title-section {
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #69B9C6; }
+  .cp-title-section .cp-title-text {
+    font-size: 3rem;
+    width: 141px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    padding: 8rem 0; }
+
+.cp-quote-section {
+  background-color: #F5A623;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 15% 0;
+  height: 100vh; }
+  .cp-quote-section .cp-quote-wrapper {
+    font-size: 3rem;
+    text-align: left;
+    padding-bottom: 2rem;
+    width: 70%; }
+    .cp-quote-section .cp-quote-wrapper .cp-quote-text {
+      padding-left: 2rem; }
+    .cp-quote-section .cp-quote-wrapper:before {
+      padding-left: -2rem;
+      font-family: FontAwesome;
+      display: block;
+      text-align: left;
+      content: "\f10d"; }
+    .cp-quote-section .cp-quote-wrapper:after {
+      font-family: FontAwesome;
+      display: block;
+      text-align: right;
+      content: "\f10e"; }
+  .cp-quote-section .cp-quote-author {
+    width: 70%;
+    text-align: right; }
+
+.cp-stat-grid {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw; }
+  .cp-stat-grid .cp-stat-image-wrapper {
+    width: 50%;
+    padding-bottom: 50%;
+    height: 0; }
+  .cp-stat-grid .cp-stat-text-wrapper {
+    width: 50%;
+    background-color: #69B9C6;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0 1.5rem; }
+    .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value {
+      font-size: 2.5rem; }
+      .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value:after {
+        width: 2rem;
+        border-bottom: 1px solid #fff;
+        content: "";
+        display: block;
+        margin: .5rem auto; }
+    .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0; }
+  .cp-stat-grid:nth-child(2n) .cp-stat-text-wrapper {
+    background-color: #F5A623;
+    -ms-flex-order: 2;
+        order: 2; }
+
+.cp-expect-grid-wrapper .cp-expect-grid {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw; }
+  .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-image-wrapper {
+    width: 50%;
+    padding-bottom: 50%;
+    height: 0; }
+  .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper {
+    background-color: #F5A623;
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper .cp-expect-description {
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0; }
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2n) .cp-expect-text-wrapper {
+    background-color: #69B9C6;
+    -ms-flex-order: 2;
+        order: 2; }
+
+.cp-description-section {
+  background-color: #393D53;
+  padding-top: 5vh; }
+  .cp-description-section .cp-description-text {
+    width: 85%;
+    padding: 0 1.5rem;
+    text-align: center;
+    font-size: 1.2rem; }
+  .cp-description-section br {
+    width: 55%;
+    border-bottom: 1px solid #fff;
+    margin: 1.5em auto; }
 
 .home .fp-scroller {
   display: -ms-flexbox;
