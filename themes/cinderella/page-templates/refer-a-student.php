@@ -40,6 +40,7 @@ get_header(); ?>
 
 					<section class=" referral-section-5">
 						<h2><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
+						<p><?php echo CFS()->get( '	organizations' ); ?></p>
 						<a class="button" href="http://localhost:3000/cinderella">Find Results</a>
 					</section>
 					<?php get_footer(); ?>
