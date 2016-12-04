@@ -12,8 +12,10 @@ get_header(); ?>
 
 <!-- no gift is too small landing page full screen image-->
 		<div id="fullpage">
-			<section class="section get-involved-section-1">
-				<?php echo CFS()->get( 'get_involved_no_gift' ); ?>
+			<section class="section get-involved-section-1 cp-landing-section">
+				<p class="cp-landing-title get-involved"><?php echo CFS()->get( 'get_involved_no_gift' ); ?></p>
+				<span class="cp-horizontal-line"></span>
+				<i class="cp-angle-down fa fa-angle-down"></i>
 			</section>
 
 			<section class="section fp-responsive-auto-height">
