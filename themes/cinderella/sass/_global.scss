@@ -1,10 +1,11 @@
-body{
+body {
     background-color: black;
 }
+
 .cp-button-link {
     width: 80%;
     height: 5rem;
-    background-color:$color_buttons;
+    background-color: $color_buttons;
     border: 1px solid #fff;
     color: #fff;
     text-transform: uppercase;
@@ -13,47 +14,43 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: $base__space-unit;
-
     a {
         text-decoration: none;
         color: #fff;
-
-        &:hover, &focus{
-
-        }
+        &:hover,
+        &focus {}
     }
 }
 
 .cp-learn-about-link {
     width: 280px;
     color: #fff;
-    font-size:1.4rem;
+    font-size: 1.4rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: $base__space-unit;
-
     a {
         text-decoration: none;
         color: #fff;
         margin-right: 1rem;
-
-        &:hover, &focus{
-
-        }
+        &:hover,
+        &focus {}
     }
 }
 
 .cp-horizontal-line {
+    position: absolute;
     width: 85%;
-    border-bottom: 1px solid #fff;
-    margin-bottom: $base__space-unit;
+    border-bottom: 3px solid #fff;
+    margin: 5%;
+    text-align: center;
 }
 
-
 // body needed to increase style weight and override font-awesome's default font-size
-body{
+body {
     .cp-angle-down {
         font-size: 2.5rem;
         color: #fff;
+        padding: 40% 50%;
     }
 }

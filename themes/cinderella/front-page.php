@@ -14,7 +14,7 @@ get_header(); ?>
 				<section class="section home-section-1">
 					<img class="brand-logo" src="<?php echo get_template_directory_uri() ?>/images/test.svg" />
 					<h2 class="brand-title"><?php bloginfo('name');?></h2>
-					<span class="horizontal-line"></span>
+					<span class="cp-horizontal-line"></span>
 					<p class="brand-slogan">Your story begins here.</p>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
