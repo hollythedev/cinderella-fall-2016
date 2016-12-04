@@ -15,15 +15,15 @@ get_header(); ?>
 					<span class="cp-horizontal-line"></span>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
+				
+				<section class=" section about-section-2 cp-marketing-section">
+					<h2 class="cp-marketing-title about-page"><?php echo CFS()->get( 'about_us_section_2_title' ); ?></h2>
+					<span class="cp-horizontal-line"></span>
+					<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_section_2_statement' ); ?></p>
+					<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
+				</section>
 
 				<section class="section fp-auto-height">
-					<section class="about-section-2 cp-marketing-section">
-						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'about_us_section_2_title' ); ?></h2>
-						<span class="cp-horizontal-line"></span>
-						<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_section_2_statement' ); ?></p>
-						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
-					</section>
-
 					<section class="about-section-3"> 
 						<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
 						<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_impact_statement' ); ?></p>

@@ -24,6 +24,7 @@ body {
     align-items: center;
     margin-bottom: $base__space-unit;
     text-decoration: none;
+    margin: 10%;
     &:hover,
     &focus {}
 }
@@ -47,8 +48,8 @@ body {
 
 .fa-caret-right {
     position: absolute;
-    top: 60%;
-    left: 74%;
+    top: 90%;
+    left: 69%;
     font-size: 1.2rem;
 }
 
