@@ -115,9 +115,96 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'robotoblack';
+  src: url("roboto-black-webfont.eot");
+  src: url("roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-black-webfont.woff") format("woff"), url("roboto-black-webfont.svg#robotoblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-blackitalic-webfont.eot");
+  src: url("../../fonts/roboto-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-blackitalic-webfont.woff") format("woff"), url("../../fonts/roboto-blackitalic-webfont.svg#robotoblack_italic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-bold-webfont.eot");
+  src: url("../../fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-bold-webfont.woff") format("woff"), url("../../fonts/roboto-bold-webfont.svg#robotobold") format("svg");
+  font-weight: 900;
+  font-style: bold; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-bolditalic-webfont.eot");
+  src: url("../../fonts/roboto-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-bolditalic-webfont.woff") format("woff"), url("../../fonts/roboto-bolditalic-webfont.svg#robotobold_italic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("roboto-italic-webfont.eot");
+  src: url("roboto-italic-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-italic-webfont.woff") format("woff"), url("roboto-italic-webfont.svg#robotoitalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-light-webfont.eot");
+  src: url("../../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-light-webfont.woff") format("woff"), url("../../fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: 300;
+  font-style: light; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-lightitalic-webfont.eot");
+  src: url("../../fonts/roboto-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-lightitalic-webfont.woff") format("woff"), url("../../fonts/roboto-lightitalic-webfont.svg#robotolight_italic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-medium-webfont.eot");
+  src: url("../../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-medium-webfont.woff") format("woff"), url("../../fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: 500;
+  font-style: medium; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-mediumitalic-webfont.eot");
+  src: url("../../fonts/roboto-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-mediumitalic-webfont.woff") format("woff"), url("../../fonts/roboto-mediumitalic-webfont.svg#robotomedium_italic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-regular-webfont.eot");
+  src: url("../../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-regular-webfont.woff") format("woff"), url("../../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-thin-webfont.eot");
+  src: url("../../fonts/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-thin-webfont.woff") format("woff"), url("../../fonts/roboto-thin-webfont.svg#robotothin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../../fonts/roboto-thinitalic-webfont.eot");
+  src: url("../../fonts/roboto-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-thinitalic-webfont.woff") format("woff"), url("../../fonts/roboto-thinitalic-webfont.svg#robotothin_italic") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+html {
+  font-size: 16px; }
+
 body,
 button,
 input,
@@ -416,6 +503,15 @@ html.fp-enabled,
 body {
   background-color: black; }
 
+.fp-scroller {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+
 .cp-button-link {
   width: 80%;
   height: 5rem;
@@ -424,37 +520,46 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.5rem;
+  letter-spacing: 1.1px;
+  font-weight: 200;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 1.5em; }
-  .cp-button-link a {
-    text-decoration: none;
-    color: #fff; }
+  margin-bottom: 1.5em;
+  text-decoration: none; }
 
 .cp-learn-about-link {
   width: 280px;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: .9rem;
+  font-weight: 100;
+  letter-spacing: 2.5px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  text-decoration: none; }
   .cp-learn-about-link a {
-    text-decoration: none;
-    color: #fff;
     margin-right: 1rem; }
+
+.fa-caret-right {
+  position: absolute;
+  top: 60%;
+  left: 74%;
+  font-size: 1.2rem; }
 
 .cp-horizontal-line {
   width: 85%;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 1.5em; }
+  border-bottom: 3px solid #fff;
+  margin: 5%;
+  text-align: center; }
 
 body .cp-angle-down {
   font-size: 2.5rem;
-  color: #fff; }
+  color: #fff;
+  padding: 25% 50%; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -929,21 +1034,58 @@ a {
       align-items: center;
   width: 100vw; }
 
+.cp-landing-section {
+  padding-top: 20vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .cp-landing-section .cp-landing-title {
+    font-size: 2.8rem;
+    font-weight: 100;
+    font-family: "roboto";
+    color: #fff;
+    padding: 10rem 5rem 0;
+    text-align: center;
+    margin: 0; }
+  .cp-landing-section .get-involved {
+    padding: 10rem 8rem 0; }
+  .cp-landing-section .brand-slogan {
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'roboto';
+    color: #fff;
+    font-size: 1.5rem;
+    width: 25%;
+    text-align: center;
+    margin: 5%; }
+  .cp-landing-section .brand-logo {
+    width: 275px; }
+
 .cp-marketing-section {
   background-color: #69B9C6;
   -ms-flex-pack: center;
       justify-content: center;
   height: 100vh; }
   .cp-marketing-section .cp-marketing-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: "roboto";
+    font-style: normal;
+    font-weight: 200;
     width: 200px;
-    text-align: center;
-    margin-bottom: 10vh; }
+    text-align: center; }
   .cp-marketing-section .cp-marketing-copy {
     width: 85%;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
     text-align: center;
-    font-size: 1.4rem; }
+    font-size: 1.2rem;
+    font-family: "roboto";
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 1px; }
 
 .cp-title-section {
   -ms-flex-pack: center;
@@ -1060,40 +1202,6 @@ a {
     width: 55%;
     border-bottom: 1px solid #fff;
     margin: 1.5em auto; }
-
-.home .fp-scroller {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
-
-.home .home-section-1 {
-  padding-top: 20vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
-  .home .home-section-1 .brand-logo {
-    width: 75px;
-    height: 75px; }
-  .home .home-section-1 .brand-title {
-    font-size: 2.5rem;
-    width: 265px;
-    text-align: center;
-    margin-bottom: 10vh; }
-  .home .home-section-1 .horizontal-line {
-    width: 85%;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 10vh; }
-  .home .home-section-1 .brand-slogan {
-    font-size: 1.5rem;
-    margin-bottom: 25vh; }
 
 .home .home-section-2 {
   padding-top: 10vh;
@@ -1347,7 +1455,9 @@ object {
 
 .navigation {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .navigation li {
     list-style: none; }
   .navigation a {
@@ -1355,6 +1465,8 @@ object {
     text-decoration: none;
     text-transform: uppercase;
     color: #FFF; }
+  .navigation .nav {
+    margin: 0; }
 
 .logoDevelopment {
   display: none; }
@@ -1384,8 +1496,8 @@ object {
     .information {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
       border-bottom: 2rem; } }
 
 .contact-us-background {
@@ -1406,26 +1518,35 @@ object {
   letter-spacing: 1px;
   line-height: 41px; }
 
-/*.wpcf7-form {
-    input[type=email],
-    input[type=password],
-    input[type=search],
-    input[type=text],
-    input[type=url] {
-        border-radius: 0;
-        padding: 6px;
-    }
-}*/
-.refer-student-background {
+.referral-section-1 {
   height: 100vh; }
+  .referral-section-1 .cp-marketing-title {
+    font-size: 2.5rem;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10vh; }
 
-.home-section-2 {
+.horizontal-line {
+  width: 85%;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10vh; }
+
+.referral-section-2 {
   background: #69B9C6;
   height: 80vh; }
 
-.home-section-3 {
+.referral-section-3 {
   background: #393D53; }
 
-.home-section-4 {
+.referral-section-4 {
   background: #F5A623;
+  height: 80vh; }
+  .referral-section-4 .cp-marketing-title {
+    font-size: 2.5rem;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10vh; }
+
+.referral-section-5 {
+  background: #393D53;
   height: 80vh; }

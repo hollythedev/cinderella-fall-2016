@@ -1,44 +1,71 @@
 .cp-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
 
 .cp-landing-section {
-    .cp-landing-title{
-
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    .cp-landing-title {
+        font-size: 2.8rem;
+        font-weight: 100;
+        font-family: $font_roboto;
+        color: $color__text-main;
+        padding: 10rem 5rem 0;
+        text-align: center;
+        margin: 0;
     }
-
-    .cp-langing-image {
-
+    .get-involved {
+        padding: 10rem 8rem 0;
     }
+    .brand-slogan {
+        font-weight: 100;
+        font-style: normal;
+        font-family: 'roboto';
+        color: $color__text-main;
+        font-size: 1.5rem;
+        width: 25%;
+        text-align: center;
+        margin: 5%;
+    }
+    .brand-logo {
+        width: 275px;
+    }
+    .cp-landing-image {}
 }
+
 .cp-marketing-section {
     background-color: $color_background_2;
     justify-content: center;
     height: 100vh;
-
     .cp-marketing-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        font-family: $font_roboto;
+        font-style: normal;
+        font-weight: 200;
         width: 200px;
         text-align: center;
-        margin-bottom: 10vh;
     }
-
     .cp-marketing-copy {
         width: 85%;
-        padding: 0 1.5rem;
+        padding: 0 2.5rem;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        font-family: $font_roboto;
+        font-style: normal;
+        font-weight: 100;
+        letter-spacing: 1px;
     }
 }
 
 .cp-title-section {
     justify-content: center;
     background-color: $color_background_2;
-
-
     .cp-title-text {
         font-size: 3rem;
         width: 141px;
@@ -50,84 +77,72 @@
 }
 
 .cp-quote-section {
-        background-color: $color_background_3;
-        justify-content: center;
-        padding: 15% 0;
-        height: 100vh;
-
-        .cp-quote-wrapper{
-            font-size: 3rem;
+    background-color: $color_background_3;
+    justify-content: center;
+    padding: 15% 0;
+    height: 100vh;
+    .cp-quote-wrapper {
+        font-size: 3rem;
+        text-align: left;
+        padding-bottom: 2rem;
+        width: 70%;
+        .cp-quote-text {
+            padding-left: 2rem;
+        }
+        &:before {
+            padding-left: -2rem;
+            font-family: FontAwesome;
+            display: block;
             text-align: left;
-            padding-bottom: 2rem;
-            width: 70%;
-
-            .cp-quote-text{
-                padding-left: 2rem;
-            }
-
-            &:before {
-                padding-left: -2rem;
-                font-family: FontAwesome;
-                display: block;
-                text-align: left;
-                content:"\f10d";
-            }
-
+            content: "\f10d";
+        }
         &:after {
             font-family: FontAwesome;
             display: block;
             text-align: right;
-            content:"\f10e";
+            content: "\f10e";
         }
     }
-
-    .cp-quote-author{
+    .cp-quote-author {
         width: 70%;
-        text-align: right; 
+        text-align: right;
     }
 }
 
 .cp-stat-grid-wrapper {
-    .cp-stat-grid{
+    .cp-stat-grid {
         display: flex;
         width: 100vw;
-
         .cp-stat-image-wrapper {
             width: 50%;
             padding-bottom: 50%;
             height: 0;
         }
-
         .cp-stat-text-wrapper {
             width: 50%;
             background-color: $color_background_2;
-
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 0 1.5rem;
-
             .cp-stat-value {
                 font-size: 2.5rem;
-
                 &:after {
                     width: 2rem;
                     border-bottom: 1px solid #fff;
-                    content:"";
+                    content: "";
                     display: block;
                     margin: .5rem auto;
-                    
                 }
             }
             .cp-stat-description {
-                font-size:1.3rem;
+                font-size: 1.3rem;
                 text-align: center;
                 margin: 0;
             }
         }
-
-        &:nth-child(2n){
+        &:nth-child(2n) {
             .cp-stat-text-wrapper {
                 background-color: $color_background_3;
                 order: 2;
@@ -135,31 +150,29 @@
         }
     }
 }
+
 .cp-expect-grid-wrapper {
-    .cp-expect-grid{
+    .cp-expect-grid {
         display: flex;
         width: 100vw;
-
         .cp-expect-image-wrapper {
             width: 50%;
             padding-bottom: 50%;
             height: 0;
         }
-
-        .cp-expect-text-wrapper{
+        .cp-expect-text-wrapper {
             background-color: $color_background_3;
             width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-
             .cp-expect-description {
-                font-size:1.3rem;
+                font-size: 1.3rem;
                 text-align: center;
                 margin: 0;
             }
         }
-        &:nth-child(2n){
+        &:nth-child(2n) {
             .cp-expect-text-wrapper {
                 background-color: $color_background_2;
                 order: 2;
@@ -169,20 +182,17 @@
 }
 
 .cp-description-section {
-        background-color: $color_background_4;
-        padding-top: 5vh;
-
-        .cp-description-text {
-            width: 85%;
-            padding: 0 1.5rem;
-            text-align: center;
-            font-size: 1.2rem;
-        }
-
-        br {
-            width: 55%;
-            border-bottom: 1px solid #fff;
-            margin: $base__space-unit auto;
-        }
-
+    background-color: $color_background_4;
+    padding-top: 5vh;
+    .cp-description-text {
+        width: 85%;
+        padding: 0 1.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    br {
+        width: 55%;
+        border-bottom: 1px solid #fff;
+        margin: $base__space-unit auto;
+    }
 }

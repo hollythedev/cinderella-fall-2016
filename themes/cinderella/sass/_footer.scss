@@ -1,65 +1,72 @@
 /*---    FOOTER   ---*/
+
 .site-footer {
   background-color: $color_background_footer;
   width: 100vw;
-  padding:3.3125rem 3.5625rem 1.375rem 3.5625rem;
+  padding: 3.3125rem 3.5625rem 1.375rem 3.5625rem;
 }
-.globe-logo{
+
+.globe-logo {
   background: $color_globe_background;
   width: 52px;
-	height: 52.44px;
+  height: 52.44px;
   border-radius: 50px;
   margin: 0 auto;
   position: relative;
-    img{
-      position: absolute;
-      top:25%;
-      right:28%;
-    }
+  img {
+    position: absolute;
+    top: 25%;
+    right: 28%;
+  }
 }
+
 .navigation {
   display: flex;
-
-    li {
-      list-style: none;
-    }
-   a{
+  justify-content: space-between;
+  li {
+    list-style: none;
+  }
+  a {
     border-bottom: 1px solid $color_footer_borders;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFF;
-   }
+  }
+  .nav {
+    margin: 0;
+  }
 }
 
-.logoDevelopment{
+.logoDevelopment {
   display: none;
-  @include desktop{
-  display: flex;
-  width: 317px;
-  height: 80px;
+  @include desktop {
+    display: flex;
+    width: 317px;
+    height: 80px;
     img {
       width: 5.5rem;
       height: 5.5rem;
     }
     h2 {
-      font-size:2.1rem;
+      font-size: 2.1rem;
     }
   }
 }
+
 .facebook-icon {
   text-align: center;
-  padding-bottom:0.555rem;
-  padding-top:1.125rem;
-    @include desktop{
-      text-align: left;
-    }
+  padding-bottom: 0.555rem;
+  padding-top: 1.125rem;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .information {
   display: none;
-  @include desktop{
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 2rem;
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2rem;
   }
 }

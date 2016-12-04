@@ -11,10 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 			<div id="fullpage">
-				<section class="section home-section-1">
-					<img class="brand-logo" src="<?php echo get_template_directory_uri() ?>/images/test.svg" />
-					<h2 class="brand-title"><?php bloginfo('name');?></h2>
-					<span class="horizontal-line"></span>
+				<section class="section home-section-1 cp-landing-section">
+					<img class="brand-logo" src="<?php echo get_template_directory_uri() ?>/images/assets/cp_home-logo.svg" />
+					<span class="cp-horizontal-line"></span>
 					<p class="brand-slogan">Your story begins here.</p>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
@@ -26,6 +25,7 @@ get_header(); ?>
 					<p class="cp-marketing-copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
 					<a class="cp-button-link" href="/index.php?p=26">About Boutique Day</a>
 					<a class="cp-learn-about-link" href="/index.php?p=35">Learn about the Cinderella Project</a>
+					<i class="fa fa-caret-right" aria-hidden="true"></i>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 

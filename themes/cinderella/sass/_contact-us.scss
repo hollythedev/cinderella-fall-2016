@@ -1,13 +1,15 @@
-.contact-us-background{
+.contact-us-background {
   background-size: cover cover;
   height: 100vh;
   position: relative;
   width: 100vw;
 }
-.registration{
+
+.registration {
   background-color: $color_background_4;
   height: 100vh;
 }
+
 .contact-us-title {
   color: $color__text-main;
   font-size: 36px;
@@ -16,13 +18,3 @@
   letter-spacing: 1px;
   line-height: 41px;
 }
-/*.wpcf7-form {
-    input[type=email],
-    input[type=password],
-    input[type=search],
-    input[type=text],
-    input[type=url] {
-        border-radius: 0;
-        padding: 6px;
-    }
-}*/
