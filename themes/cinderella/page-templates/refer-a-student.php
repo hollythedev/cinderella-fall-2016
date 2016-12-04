@@ -25,7 +25,7 @@ get_header(); ?>
 						<div class="cp-referral-student-message">
 						<?php echo CFS()->get( 'ref_a_student_message' ); ?>
 						</div>
-							<span class="horizontal-line"></span>
+							<span class="cp-horizontal-line"></span>
 						<div clss="city-district">
 							<?php echo CFS()->get( 'city_district' ); ?>
 						<div class="student-download-form">
