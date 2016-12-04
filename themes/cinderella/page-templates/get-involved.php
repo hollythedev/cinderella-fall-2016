@@ -18,7 +18,7 @@ get_header(); ?>
 				<i class="cp-angle-down fa fa-angle-down"></i>
 			</section>
 
-			<section class="section fp-responsive-auto-height">
+			<section class="section fp-auto-height">
 				<section class="get-involved-section-2">
 					<p>There are a few ways you can help The Cinderella Project thrive</p>
 					<!-- get involved stat grid-->
@@ -38,7 +38,7 @@ get_header(); ?>
 					</div>
 				</section> <!-- end of get-involved section 2-->
 				<!-- Beginning of Menu-->
-					<div class="accordion">
+					<div id="get-involved-accordion">
 							<h3>Donations</h3>
 								<section class="donations-tab">
 									<div class="donations-section-1">
@@ -48,7 +48,7 @@ get_header(); ?>
 
 
 							
-							<div class="accordion">	
+							<div id="wishlist-accordion">
 								<!-- arguments for the custom query, used to grab all wishlist posts -->
 								<?php $args = array(
 									'posts_per_page'   => 0,
