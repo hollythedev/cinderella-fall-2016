@@ -43,11 +43,8 @@ get_header(); ?>
 						<!-- CONTACT FORM 7 -->
 						<a class="button" href="http://localhost:3000/cinderella">Find Results</a>
 					</section>
+					<?php get_footer(); ?>
 				</section><!-- end of fp-auto-height -->	
 			</div>				
-<!-- add custom fields-->
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_footer(); ?>

@@ -21,12 +21,8 @@ get_header(); ?>
 						<h2 class="cp-contactform"><?php echo CFS()->get( 'contact_us_select_menu' ); ?><h2>
 						<a class="button-link" href="http://localhost:3000/cinderella/">Send a Message</a>
 					</section>
+					<?php get_footer(); ?>
 				</section><!-- end of fp-auto-height -->
 			</div><!-- #end of fullpage -->	
-<!-- add custom fields-->
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
