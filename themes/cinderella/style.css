@@ -118,6 +118,9 @@ table {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+html {
+  font-size: 16px; }
+
 body,
 button,
 input,
@@ -928,6 +931,15 @@ a {
   -ms-flex-align: center;
       align-items: center;
   width: 100vw; }
+
+.cp-landing-section .cp-landing-title {
+  font-size: 2.8rem;
+  font-weight: 100;
+  font-family: "st_marie_thinthin";
+  color: #fff;
+  padding: 10rem 5rem;
+  text-align: center;
+  margin: 0; }
 
 .cp-marketing-section {
   background-color: #69B9C6;
