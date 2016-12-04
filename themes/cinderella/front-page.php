@@ -25,6 +25,7 @@ get_header(); ?>
 					<p class="cp-marketing-copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
 					<a class="cp-button-link" href="/index.php?p=26">About Boutique Day</a>
 					<a class="cp-learn-about-link" href="/index.php?p=35">Learn about the Cinderella Project</a>
+					<i class="fa fa-caret-right" aria-hidden="true"></i>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 

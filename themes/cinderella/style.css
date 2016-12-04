@@ -520,28 +520,35 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.5rem;
+  letter-spacing: 1.1px;
+  font-weight: 200;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 1.5em; }
-  .cp-button-link a {
-    text-decoration: none;
-    color: #fff; }
+  margin-bottom: 1.5em;
+  text-decoration: none; }
 
 .cp-learn-about-link {
   width: 280px;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: .9rem;
+  font-weight: 100;
+  letter-spacing: 2.5px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  text-decoration: none; }
   .cp-learn-about-link a {
-    text-decoration: none;
-    color: #fff;
     margin-right: 1rem; }
+
+.fa-caret-right {
+  position: absolute;
+  top: 60%;
+  left: 74%;
+  font-size: 1.2rem; }
 
 .cp-horizontal-line {
   width: 85%;
@@ -1064,15 +1071,21 @@ a {
       justify-content: center;
   height: 100vh; }
   .cp-marketing-section .cp-marketing-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: "roboto";
+    font-style: normal;
+    font-weight: 200;
     width: 200px;
-    text-align: center;
-    margin-bottom: 10vh; }
+    text-align: center; }
   .cp-marketing-section .cp-marketing-copy {
     width: 85%;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
     text-align: center;
-    font-size: 1.4rem; }
+    font-size: 1.2rem;
+    font-family: "roboto";
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 1px; }
 
 .cp-title-section {
   -ms-flex-pack: center;
