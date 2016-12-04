@@ -35,7 +35,7 @@ get_header(); ?>
 					</section>
 
 					<section class=" referral-section-4">
-						<h2><?php echo CFS()->get( 'similar_project' ); ?></h2>
+						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'similar_project' ); ?></h2>
 					</section>
 
 					<section class=" referral-section-5">
