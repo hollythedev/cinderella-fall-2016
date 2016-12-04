@@ -503,6 +503,15 @@ html.fp-enabled,
 body {
   background-color: black; }
 
+.fp-scroller {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+
 .cp-button-link {
   width: 80%;
   height: 5rem;
@@ -535,7 +544,6 @@ body {
     margin-right: 1rem; }
 
 .cp-horizontal-line {
-  position: absolute;
   width: 85%;
   border-bottom: 3px solid #fff;
   margin: 5%;
@@ -544,7 +552,7 @@ body {
 body .cp-angle-down {
   font-size: 2.5rem;
   color: #fff;
-  padding: 40% 50%; }
+  padding: 25% 50%; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -1019,14 +1027,36 @@ a {
       align-items: center;
   width: 100vw; }
 
-.cp-landing-section .cp-landing-title {
-  font-size: 2.8rem;
-  font-weight: 100;
-  font-family: "roboto";
-  color: #fff;
-  padding: 10rem 5rem 0;
-  text-align: center;
-  margin: 0; }
+.cp-landing-section {
+  padding-top: 20vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .cp-landing-section .cp-landing-title {
+    font-size: 2.8rem;
+    font-weight: 100;
+    font-family: "roboto";
+    color: #fff;
+    padding: 10rem 5rem 0;
+    text-align: center;
+    margin: 0; }
+  .cp-landing-section .get-involved {
+    padding: 10rem 8rem 0; }
+  .cp-landing-section .brand-slogan {
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'roboto';
+    color: #fff;
+    font-size: 1.5rem;
+    width: 25%;
+    text-align: center;
+    margin: 5%; }
+  .cp-landing-section .brand-logo {
+    width: 275px; }
 
 .cp-marketing-section {
   background-color: #69B9C6;
@@ -1159,40 +1189,6 @@ a {
     width: 55%;
     border-bottom: 1px solid #fff;
     margin: 1.5em auto; }
-
-.home .fp-scroller {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
-
-.home .home-section-1 {
-  padding-top: 20vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
-  .home .home-section-1 .brand-logo {
-    width: 75px;
-    height: 75px; }
-  .home .home-section-1 .brand-title {
-    font-size: 2.5rem;
-    width: 265px;
-    text-align: center;
-    margin-bottom: 10vh; }
-  .home .home-section-1 .horizontal-line {
-    width: 85%;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 10vh; }
-  .home .home-section-1 .brand-slogan {
-    font-size: 1.5rem;
-    margin-bottom: 25vh; }
 
 .home .home-section-2 {
   padding-top: 10vh;

@@ -11,9 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 			<div id="fullpage">
-				<section class="section home-section-1">
-					<img class="brand-logo" src="<?php echo get_template_directory_uri() ?>/images/test.svg" />
-					<h2 class="brand-title"><?php bloginfo('name');?></h2>
+				<section class="section home-section-1 cp-landing-section">
+					<img class="brand-logo" src="<?php echo get_template_directory_uri() ?>/images/assets/cp_home-logo.svg" />
 					<span class="cp-horizontal-line"></span>
 					<p class="brand-slogan">Your story begins here.</p>
 					<i class="cp-angle-down fa fa-angle-down"></i>

@@ -29,7 +29,8 @@ function my_styles_method() {
          $urlHome = CFS()->get('home_background_image');
          $custom_css = "
         .home-section-1{
-        background-image: url( {$urlHome});
+        background: url( {$urlHome}) no-repeat center bottom;
+         background-size: cover;
         }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
