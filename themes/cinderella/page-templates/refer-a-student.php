@@ -17,15 +17,15 @@ get_header(); ?>
 				</section>
 
 				<section class="section fp-auto-height">
-					<section class="referral-section-2">
-					<h2="cp-referral-title"><?php echo CFS()->get( 'referral_message' ); ?></h2>
+					<section class="cp-marketing-section referral-section-2">
+						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'referral_message' ); ?></h2>
 					</section>
 
-					<section class=" referral-section-3">
+					<section class="section referral-section-3">
 						<div class="cp-referral-student-message">
 						<?php echo CFS()->get( 'ref_a_student_message' ); ?>
 						</div>
-							<span class="cp-horizontal-line"></span>
+							<span class="horizontal-line"></span>
 						<div clss="city-district">
 							<?php echo CFS()->get( 'city_district' ); ?>
 						<div class="student-download-form">
@@ -40,7 +40,6 @@ get_header(); ?>
 
 					<section class=" referral-section-5">
 						<h2><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
-						<!-- CONTACT FORM 7 -->
 						<a class="button" href="http://localhost:3000/cinderella">Find Results</a>
 					</section>
 					<?php get_footer(); ?>

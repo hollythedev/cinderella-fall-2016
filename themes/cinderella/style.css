@@ -1517,6 +1517,11 @@ object {
     text-align: center;
     margin-bottom: 10vh; }
 
+.horizontal-line {
+  width: 85%;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10vh; }
+
 .referral-section-2 {
   background: #69B9C6;
   height: 80vh; }
