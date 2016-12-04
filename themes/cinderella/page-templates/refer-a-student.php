@@ -44,7 +44,7 @@ get_header(); ?>
 						<a class="button" href="http://localhost:3000/cinderella">Find Results</a>
 					</section>
 				</section><!-- end of fp-auto-height -->	
-
+			</div>				
 <!-- add custom fields-->
 
 		</main><!-- #main -->

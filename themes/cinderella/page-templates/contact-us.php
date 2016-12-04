@@ -22,7 +22,7 @@ get_header(); ?>
 						<a class="button-link" href="http://localhost:3000/cinderella/">Send a Message</a>
 					</section>
 				</section><!-- end of fp-auto-height -->
-		</div><!-- #end of fullpage -->	
+			</div><!-- #end of fullpage -->	
 <!-- add custom fields-->
 
 		</main><!-- #main -->

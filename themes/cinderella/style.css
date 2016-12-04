@@ -1419,13 +1419,17 @@ object {
 .refer-student-background {
   height: 100vh; }
 
-.home-section-2 {
+.referral-section-2 {
   background: #69B9C6;
   height: 80vh; }
 
-.home-section-3 {
+.referral-section-3 {
   background: #393D53; }
 
-.home-section-4 {
+.referral-section-4 {
   background: #F5A623;
+  height: 80vh; }
+
+.referral-section-5 {
+  background: red;
   height: 80vh; }

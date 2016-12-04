@@ -36,7 +36,7 @@ function my_styles_method() {
         
     } elseif(is_page( 'refer-a-student' )){
         $urlReferAstudent = CFS()->get('refer_student_background_img');
-        $custom_css = " .refer-student-background{
+        $custom_css = " .referral-section-1{
                     background: url({$urlReferAstudent}) no-repeat center bottom;
                     background-size: cover;
                 }";
@@ -46,7 +46,7 @@ function my_styles_method() {
     
     } elseif(is_page( 'contact-us' )){
         $urlContactUs = CFS()->get('contact_us_background_image');
-        $custom_css = " .contact-us-background{
+        $custom_css = " .contact-us-section-1{
                     background: url({$urlContactUs}) no-repeat center bottom;
                     background-size: cover;
                 }";
