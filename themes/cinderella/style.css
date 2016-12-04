@@ -1532,6 +1532,11 @@ object {
 .referral-section-4 {
   background: #F5A623;
   height: 80vh; }
+  .referral-section-4 .cp-marketing-title {
+    font-size: 2.5rem;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10vh; }
 
 .referral-section-5 {
   background: #393D53;
