@@ -2,10 +2,13 @@
 
     $(document).ready(function() {
 
-        $( ".accordion" ).accordion({
+        $( "#get-involved-accordion, #wishlist-accordion" ).accordion({
             collapsible: true,
             active: false,
-            heightStyle: 'content'
+            heightStyle: 'content',
+            activate: function( event, ui ) {
+                $.fn.fullpage.reBuild();
+            }
         });
 
         $('#nav-icon').click(function() {
