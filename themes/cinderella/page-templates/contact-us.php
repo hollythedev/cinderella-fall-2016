@@ -14,7 +14,7 @@ get_header(); ?>
 					<h2 class="contact-us-title"><?php echo CFS()->get( 'contact_us_message' ); ?></h2>
 						<span class='horizontal-line'></span>
 						<i class="angle-down fa fa-angle-down fa-3x"></i>
-				</select>
+				</section>
 
 				<section class="section fp-auto-height">
 					<section class="section contact-us-section-2">
