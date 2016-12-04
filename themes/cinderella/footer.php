@@ -35,8 +35,8 @@
 					</div>
 					
 					<div class="information">
+						<p class="cp-copyright"><i class="fa fa-copyright" aria-hidden="true"></i>The Cinderella Project 2016</p>
 						<p>Registered Canadian Charitable Organization BN 86666 0699 RR0001</p>
-						<p>The Cinderella Project 2016</p>
 					</div>
 					</div><!-- #content -->
 				</div><!-- .site-info -->

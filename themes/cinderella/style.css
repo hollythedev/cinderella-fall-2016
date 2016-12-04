@@ -1347,7 +1347,9 @@ object {
 
 .navigation {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .navigation li {
     list-style: none; }
   .navigation a {
@@ -1355,6 +1357,8 @@ object {
     text-decoration: none;
     text-transform: uppercase;
     color: #FFF; }
+  .navigation .nav {
+    margin: 0; }
 
 .logoDevelopment {
   display: none; }
@@ -1384,8 +1388,8 @@ object {
     .information {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
       border-bottom: 2rem; } }
 
 .contact-us-background {
