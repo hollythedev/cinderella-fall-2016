@@ -23,15 +23,17 @@ get_header(); ?>
 					<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
 				</section>
 
-				<section class="section fp-auto-height">
-					<section class="about-section-3"> 
-						<p class=" cp-history"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
-						<div class="cp-purple-section">
-							<p class=" cp-purple-copy"><?php echo CFS()->get( 'about_us_impact_statement' ); ?></p>
+				<section class=" section about-section-3 fp-auto-height">
+					<section>
+						<div class="cp-history-section"> 
+							<p class=" cp-history-copy"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
 						</div>
+							<div class="cp-purple-section">
+								<?php echo CFS()->get( 'about_us_impact_statement' ); ?>
+							</div>
 					</section>
 
-					<section class="about-section-4 cp-title-section">
+					<section class="  about-section-4 cp-title-section">
 						<h2 class="cp-title-text">Our main event</h2>
 						<div class="cp-awards">
 						<?php echo CFS()->get( 'about_us_awards_block' ); ?>
@@ -39,41 +41,41 @@ get_header(); ?>
 						</div>
 					</section>
 
-					<section class=" about-section-5 cp-landing-section">
+					<section class="  about-section-5 cp-landing-section">
 						<div class="cinderella-section section">
 							<p class="cp-landing-title cinderella"><?php echo CFS()->get( 'about_us_cinderella_title' ); ?></p>
 						</div>
 						<div class="cinderella-section-referrals cp-purple-section">
-							<p class="cp-purple-copy"><?php echo CFS()->get( 'about_us_cinderella_referral_block' ); ?></p>
+							<?php echo CFS()->get( 'about_us_cinderella_referral_block' ); ?>
 						</div>
 					</section>
 
-					<section class=" about-section-6 about-us-referral-grid section">
+					<section class="section about-section-6 cp-stat-grid-wrapper ">
 						<?php 
 						$fields = CFS()->get( 'about_us_referral_grid' );
 						foreach ( $fields as $field ) :
 						?>
-						<div class="stat-container">
-							<div class="image-wrapper" style="background: url(<?php echo $field['about_us_referral_image'];?>); background-size: cover;"></div>
-								<div class="stat-text-wrapper">
-									<h3 class="stat-value"><?php echo $field['about_us_referral_statistic'];?></h3>
-									<p class="stat-description"><?php echo $field['about_us_referral_details'];?></p>
+						<div class="cp-stat-grid">
+								<div class="cp-stat-text-wrapper">
+									<h3 class="cp-stat-value"><?php echo $field['about_us_referral_statistic'];?></h3>
+									<p class="cp-stat-description"><?php echo $field['about_us_referral_details'];?></p>
 								</div>
+								<div class="cp-stat-image-wrapper" style="background: url(<?php echo $field['about_us_referral_image'];?>); background-size: cover;"></div>
 							</div>
+							<?php endforeach ?>
 						</div>
-						<?php endforeach ?>
 					</section>
 				
-					<section class=" about-section-7 about-cinderellas">
+					<section class="section about-section-7 about-cinderellas">
 						<?php echo CFS()->get( 'about_us_recipients' ); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
 					</section>
 			
-					<section class=" about-section-8 about_awards_gallery">
-						<h2>We're so proud</h2>
+					<section class="section about-section-8 cp-title-section">
+						<h2 class="cp-title-text">We're so proud</h2>
 					</section>
 
-					<section class=" about-section-9 about_awards_gallery">
+					<section class="section about-section-9 about_awards_gallery">
 						<div class= "about_awards_photos">
 							<h2 class="about-awards-message"><?php echo CFS()->get( 'about_awards' ); ?></h2>
 							<div class="carousel">
@@ -87,15 +89,13 @@ get_header(); ?>
 						</div>
 					</section>
 
-					<section class=" about-section-10 ways-to-help">
+					<section class="section about-section-10 ways-to-help">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
 						<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
 					</section>
+					<?php get_footer(); ?>
 				</section> <!--end of section fp-auto-height -->
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
-
-
-<?php get_footer(); ?>
