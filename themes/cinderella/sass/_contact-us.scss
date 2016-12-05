@@ -12,6 +12,14 @@
   background: $color_background_4;
 }
 
-form.wpcf7-form {
+.wpcf7-select {
+  background: 0;
+}
+
+textarea {
+  background: 0 0;
+}
+
+input.wpcf7-form-control {
   background: 0 0;
 }
