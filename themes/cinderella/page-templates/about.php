@@ -89,15 +89,13 @@ get_header(); ?>
 					</div>
 				</section>
 
-				<section class="about-section-9 ways-to-help">
-					<h2>No gift is too small</h2>
-					<p>	Help us contribute to these student’s stories.</p>
-					<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
-				</section>
-			</section> <!--end of section fp-auto-height -->
+					<section class="section about-section-10 ways-to-help">
+						<h2>No gift is too small</h2>
+						<p>	Help us contribute to these student’s stories.</p>
+						<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
+					</section>
+					<?php get_footer(); ?>
+				</section> <!--end of section fp-auto-height -->
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
-
-
-<?php get_footer(); ?>
