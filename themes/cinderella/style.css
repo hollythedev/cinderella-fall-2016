@@ -1702,6 +1702,10 @@ object {
   height: 57px;
   background: 0 0; }
 
+textarea.wpcf7-textarea {
+  height: 180px;
+  width: 285px; }
+
 .referral-section-1 {
   height: 100vh; }
   .referral-section-1 .cp-marketing-title {
