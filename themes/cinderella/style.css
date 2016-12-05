@@ -1507,23 +1507,13 @@ object {
           justify-content: space-between;
       border-bottom: 2rem; } }
 
-.contact-us-background {
-  background-size: cover cover;
-  height: 100vh;
-  position: relative;
-  width: 100vw; }
-
-.registration {
-  background-color: #393D53;
+.contact-us-section-1 {
   height: 100vh; }
-
-.contact-us-title {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 300;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 41px; }
+  .contact-us-section-1 .cp-marketing-title {
+    font-size: 2.5rem;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10vh; }
 
 .referral-section-1 {
   height: 100vh; }
