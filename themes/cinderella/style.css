@@ -558,6 +558,21 @@ body .cp-angle-down {
   color: #fff;
   padding: 25% 50%; }
 
+textarea {
+  background: 0 0;
+  width: 284px;
+  height: 180px; }
+
+input.wpcf7-form-control {
+  background: 0 0;
+  width: 284px;
+  height: 62px; }
+
+.wpcf7-select {
+  background: 0;
+  width: 284px;
+  height: 62px; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -1518,9 +1533,6 @@ object {
 
 .contact-us-section-2 {
   background: #393D53; }
-
-form.wpcf7-form {
-  background: 0 0; }
 
 .referral-section-1 {
   height: 100vh; }
