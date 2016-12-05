@@ -1,98 +1,193 @@
-body {
-    background-color: black;
-}
-
-.fp-scroller {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-}
-
-.cp-button-link {
-    width: 80%;
-    height: 5rem;
-    background-color: $color_buttons;
-    border: 1px solid #fff;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    letter-spacing: 1.1px;
-    font-weight: 200;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: $base__space-unit;
-    text-decoration: none;
-    margin: 10%;
-    &:hover,
-    &focus {}
-}
-
-.cp-learn-about-link {
-    width: 280px;
-    color: #fff;
-    font-size: .9rem;
-    font-weight: 100;
-    letter-spacing: 2.5px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: $base__space-unit;
-    text-decoration: none;
-    a {
-        margin-right: 1rem;
-        &:hover,
-        &focus {}
-    }
-}
-
-.fa-caret-right {
-    position: absolute;
-    top: 90%;
-    left: 69%;
-    font-size: 1.2rem;
-}
-
-.cp-horizontal-line {
-    width: 85%;
-    border-bottom: 3px solid #fff;
-    margin: 5%;
-    text-align: center;
-}
-
-// body needed to increase style weight and override font-awesome's default font-size
-body {
-    .cp-angle-down {
-        font-size: 2.5rem;
-        color: #fff;
-        padding: 25% 50%;
-    }
-}
-
-// Contact form 7
-.wpcf7-select {
-    background: 0;
-    width: 284px;
-    height: 62px;
-    border-radius: 0;
-}
-
-.wpcf7-form {
-    input[type=name],
-    input[type=email],
-    input[type=text],
-    {
-        border-radius: 0;
-        padding: 6px;
-        width: 285px;
-        height: 57px;
-        background: 0 0;
-    }
-}
-
-textarea {
-    background: 0;
-    width: 284px;
-    height: 180px;
-    border-radius: 0;
-}
+        body {
+            background-color: black;
+        }
+        
+        .fp-scroller {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+        }
+        
+        .cp-button-link {
+            width: 80%;
+            height: 5rem;
+            background-color: $color_buttons;
+            border: 1px solid #fff;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: 1.1px;
+            font-weight: 200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: $base__space-unit;
+            text-decoration: none;
+            margin: 10%;
+            &:hover,
+            &focus {}
+        }
+        
+        .cp-learn-about-link {
+            // width: 280px;
+            color: #fff;
+            font-size: .9rem;
+            font-weight: 100;
+            letter-spacing: 2.5px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: $base__space-unit;
+            padding: 0 24% 0 24%;
+            a {
+                margin-right: 1rem;
+                text-decoration: none;
+                &:hover,
+                &focus {}
+            }
+        }
+        
+        .cp-learn-about-link-small {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 100;
+            letter-spacing: 2.5px;
+            text-align: center;
+            margin-bottom: $base__space-unit;
+            text-decoration: none;
+            a {
+                margin-right: 1rem;
+                &:hover,
+                &focus {}
+            }
+        }
+        
+        .fa-caret-right {
+            font-size: 1.2rem;
+            padding-left: .5rem;
+        }
+        
+        .cp-horizontal-line {
+            width: 85%;
+            border-bottom: 3px solid #fff;
+            margin: 5%;
+            text-align: center;
+        }
+        
+        //carousel
+        .carousel-image {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .carousel-text {
+            color: #fff;
+            z-index: 99;
+            font-family: $font_roboto;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 3rem;
+            width: 300px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+        }
+        
+        //flickity 
+        #fp-nav {
+            display: none;
+        }
+        
+        textarea {
+            background: 0;
+            width: 284px;
+            height: 180px;
+            border-radius: 0;
+        }
+        
+        .flickity-page-dots {
+            bottom: 50px;
+            .dot {
+                background: #fff;
+            }
+            // body needed to increase style weight and override font-awesome's default font-size
+            body {
+                .cp-angle-down {
+                    font-size: 2.5rem;
+                    color: #fff;
+                    padding: 25% 50%;
+                }
+            }
+            // Contact form 7
+            .wpcf7-select {
+                background: 0 0;
+                width: 284px;
+                height: 62px;
+                border-radius: 0;
+            }
+            .wpcf7-form {
+                input[type=email],
+                input[type=text],
+                {
+                    border-radius: 0;
+                    padding: 6px;
+                    width: 285px;
+                    height: 57px;
+                    background: 0 0;
+                }
+            }
+            .wpcf7-submit {
+                height: 57px;
+                width: 285.25px;
+                background: $color__send__buttons;
+                color: #FFF;
+                box-shadow: none;
+                text-shadow: none;
+            }
+            // body needed to increase style weight and override font-awesome's default font-size
+            .cp-angle-down {
+                font-size: 2.5rem;
+                color: #fff;
+                padding: 25% 50%;
+            }
+        }
+        
+        .cp-button-link {
+            width: 80%;
+            height: 5rem;
+            background-color: $color__background-brand-btn;
+            border: 1px solid #fff;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: 1.1px;
+            font-weight: 200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: $base__space-unit;
+            text-decoration: none;
+            margin: 5% 10% 10% 10%;
+            &:hover,
+            &focus {}
+        }
+        
+        .cp-learn-about-link {
+            // width: 280px;
+            color: #fff;
+            font-size: .9rem;
+            font-weight: 100;
+            letter-spacing: 2.5px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: $base__space-unit;
+            padding: 0 24% 0 24%;
+            a {
+                margin-right: 1rem;
+                text-decoration: none;
+                &:hover,
+                &focus {}
+            }
+        }

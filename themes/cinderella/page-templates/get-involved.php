@@ -19,8 +19,10 @@ get_header(); ?>
 			</section>
 
 			<section class="section fp-auto-height">
-				<section class="get-involved-section-2">
+				<!--white text on yellow background-->
+				<div class="cp-message"> 
 					<p>There are a few ways you can help The Cinderella Project thrive</p>
+				</div> 
 					<!-- get involved stat grid-->
 					<div class="cp-stat-grid-wrapper">
 						<?php 
@@ -36,7 +38,6 @@ get_header(); ?>
 						</div>
 						<?php endforeach ?>
 					</div>
-				</section> <!-- end of get-involved section 2-->
 				<!-- Beginning of Menu-->
 					<div id="get-involved-accordion">
 							<h3>Donations</h3>
@@ -228,20 +229,24 @@ get_header(); ?>
 										<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
 										<div class= "fundraising_gallery">
 											<div class= "carousel">
-											<?php 
-												$fields = CFS()->get( 'fundraising_gallery' );
-												foreach ( $fields as $field ) :
-											?>
-											<img class="carousel-image"src = "<?php echo $field['fundraising_gallery_image'];?>" />
-											<h2 class="carousel-text"><?php	echo $field['fundraising_gallery_message'];?></h2>
-											<?php endforeach ?>
+												<?php 
+													$fields = CFS()->get( 'fundraising_gallery' );
+													foreach ( $fields as $field ) :
+												?>
+												<img class="carousel-image"src = "<?php echo $field['fundraising_gallery_image'];?>" />
+												<h2 class="carousel-text"><?php	echo $field['fundraising_gallery_message'];?></h2>
+												<?php endforeach ?>
 											</div>
-											<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
+											
+											<a class="cp-learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
 										</div> <!-- end of fundraising gallery -->
 
-										<div class="donations-idea">
-											<h2>Have an idea and want to get involved?</h2>
-											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+										<div class="cp-marketing-section-small">
+											<h2 class="cp-marketing-title donate">Have an idea and want to get involved?</h2>
+											<span class="cp-horizontal-line"></span>
+											<p class="cp-learn-about-link-small"><a  href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+											
+
 										</div>
 									</div> <!-- end of get-involved-fundraising -->
 									<div class="fundraising-contact-form">
