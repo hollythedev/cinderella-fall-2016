@@ -106,4 +106,11 @@
         });
     });
 
+    $('#first_name').attr( 'placeholder', 'First Name' );
+$('#last_name').attr( 'placeholder', 'Last Name' );
+$('#user_email').attr( 'placeholder', 'Email' );
+$('#password').attr( 'placeholder', 'Password' );
+$('#confirm_password').attr( 'placeholder', 'Retype Password' );
+
+
 })(jQuery);

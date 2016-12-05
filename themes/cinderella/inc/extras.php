@@ -96,3 +96,27 @@ function my_styles_method() {
 
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+
+
+
+function my_heading( $heading ) {     
+    $heading = '';
+    return $heading;
+}
+add_filter( 'wpmem_register_heading', 'my_heading' );
+
+
+function custom_registration_form( $string ) {
+    // the parameter $string is the 
+    // generated html of the form
+ 
+    // use str_replace like:
+    // $new_string = str_replace( $needle, $replacement, $haystack );
+
+    global $wpmem_a;
+    $new_text = ( $wpmem_a == 'edit' ) ? 'Update Profile' : 'Get My Account';
+    $string = str_replace( 'Register', $new_text, $string );
+    print_r($string);
+    return $string;
+}
+add_filter( 'wpmem_register_form', 'custom_registration_form' );
