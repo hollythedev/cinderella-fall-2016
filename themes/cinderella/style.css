@@ -559,20 +559,26 @@ body .cp-angle-down {
   color: #fff;
   padding: 25% 50%; }
 
-textarea {
-  background: 0 0;
-  width: 284px;
-  height: 180px; }
-
-input.wpcf7-form-control {
-  background: 0 0;
-  width: 284px;
-  height: 62px; }
-
 .wpcf7-select {
   background: 0;
   width: 284px;
-  height: 62px; }
+  height: 62px;
+  border-radius: 0; }
+
+.wpcf7-form input[type=name],
+.wpcf7-form input[type=email],
+.wpcf7-form input[type=text] {
+  border-radius: 0;
+  padding: 6px;
+  width: 285px;
+  height: 57px;
+  background: 0 0; }
+
+textarea {
+  background: 0;
+  width: 284px;
+  height: 180px;
+  border-radius: 0; }
 
 /*--------------------------------------------------------------
 # Elements
