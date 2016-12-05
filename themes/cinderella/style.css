@@ -1298,10 +1298,14 @@ a {
   font-style: normal;
   text-align: center; }
 
-.cp-impact {
+.cp-purple-section {
+  background-color: #393D53; }
+
+.cp-purple-copy {
   padding: 10% 5% 10% 5%;
   font-size: 1.3rem;
   font-family: "roboto";
+  font-weight: 100;
   text-align: center; }
 
 .cp-marketing-section-small {

@@ -26,7 +26,9 @@ get_header(); ?>
 				<section class="section fp-auto-height">
 					<section class="about-section-3"> 
 						<p class=" cp-history"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
-						<p class=" cp-impact"><?php echo CFS()->get( 'about_us_impact_statement' ); ?></p>
+						<div class="cp-purple-section">
+							<p class=" cp-purple-copy"><?php echo CFS()->get( 'about_us_impact_statement' ); ?></p>
+						</div>
 					</section>
 
 					<section class="about-section-4 cp-title-section">
@@ -41,8 +43,8 @@ get_header(); ?>
 						<div class="cinderella-section section">
 							<p class="cp-landing-title cinderella"><?php echo CFS()->get( 'about_us_cinderella_title' ); ?></p>
 						</div>
-						<div class="cinderella-section-referrals">
-							<?php echo CFS()->get( 'about_us_cinderella_referral_block' ); ?>
+						<div class="cinderella-section-referrals cp-purple-section">
+							<p class="cp-purple-copy"><?php echo CFS()->get( 'about_us_cinderella_referral_block' ); ?></p>
 						</div>
 					</section>
 

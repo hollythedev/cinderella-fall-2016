@@ -148,10 +148,15 @@
      text-align: center;
  }
  
- .cp-impact {
+ .cp-purple-section {
+     background-color: $color_background_4;
+ }
+ 
+ .cp-purple-copy {
      padding: 10% 5% 10% 5%;
      font-size: 1.3rem;
      font-family: $font_roboto;
+     font-weight: 100;
      text-align: center;
  }
  
