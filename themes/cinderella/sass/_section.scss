@@ -26,6 +26,23 @@
      background-color: $color_background_3;
  }
  
+ .cp-no-gift {
+     font-family: $font_roboto;
+     font-weight: 200;
+     font-style: normal;
+     text-align: center;
+     background-color: $color_background_4;
+     width: 100%;
+     h2 {
+         padding: 10% 0 5% 0;
+         font-size: 1.8rem;
+     }
+     p {
+         font-size: 1.3rem;
+         padding: 0 25% 0 25%;
+     }
+ }
+ 
  .cp-section {
      display: flex;
      flex-direction: column;
@@ -33,8 +50,18 @@
      width: 100vw;
  }
  
+ .cp-awards {
+     background-color: $color_background_3;
+     font-family: $font_roboto;
+     font-weight: 200;
+     font-style: normal;
+     font-size: 1.3rem;
+     text-align: center;
+     padding: 5%;
+ }
+ 
  .cp-landing-section {
-     padding-top: 20vh;
+     //  padding-top: 20vh;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -47,6 +74,10 @@
          padding: 10rem 5rem 0;
          text-align: center;
          margin: 0;
+     }
+     .cinderella {
+         padding: 36rem 0 0 2rem;
+         text-align: left;
      }
      .get-involved {
          padding: 10rem 8rem 0;
@@ -95,7 +126,6 @@
          padding: 20% 10% 0 10%;
      }
      .cp-marketing-copy {
-         // width: 85%;
          padding: 0 2.5rem;
          text-align: center;
          font-size: 1.2rem;
@@ -106,6 +136,23 @@
          line-height: 1.5;
          margin-top: 10%;
      }
+ }
+ 
+ .cp-history {
+     background-color: $color_background_3;
+     padding: 10%;
+     font-family: $font_roboto;
+     font-size: 1.4rem;
+     font-weight: 200;
+     font-style: normal;
+     text-align: center;
+ }
+ 
+ .cp-impact {
+     padding: 10% 5% 10% 5%;
+     font-size: 1.3rem;
+     font-family: $font_roboto;
+     text-align: center;
  }
  
  .cp-marketing-section-small {
@@ -133,16 +180,16 @@
      .cp-title-text {
          font-size: 3rem;
          font-weight: 300;
+         font-family: $font_roboto;
          color: #fff;
          text-align: center;
-         padding: 25%;
+         padding: 30%;
      }
  }
  
  .cp-quote-section {
      background-color: $color_background_3;
-     justify-content: center;
-     padding: 15% 0;
+     padding: 15%;
      height: 100vh;
      font-family: $font_roboto;
      font-weight: 200;
@@ -151,7 +198,6 @@
          font-size: 3rem;
          text-align: left;
          padding-bottom: 2rem;
-         width: 70%;
          .cp-quote-text {
              padding-left: 2rem;
          }
@@ -225,6 +271,9 @@
      .cp-expect-grid {
          display: flex;
          width: 100vw;
+         font-family: $font_roboto;
+         font-weight: 200;
+         font-style: normal;
          .cp-expect-image-wrapper {
              width: 50%;
              padding-bottom: 50%;
@@ -234,8 +283,10 @@
              background-color: $color_background_3;
              width: 50%;
              display: flex;
-             justify-content: center;
              align-items: center;
+             text-align: center;
+             font-size: 1.3rem;
+             padding: 5%;
              .cp-expect-description {
                  font-size: 1.3rem;
                  text-align: center;
@@ -265,4 +316,8 @@
          border-bottom: 1px solid #fff;
          margin: $base__space-unit auto;
      }
+ }
+ 
+ .bd-photo {
+     position: relative;
  }

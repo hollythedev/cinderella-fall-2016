@@ -50,10 +50,10 @@ get_header(); ?>
 					</section>
 
 
-					<section class=" home-section-5">
+					<section class=" home-section-5 cp-no-gift">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
-						<a class="cp-button-link" href="/index.php?p=37">Ways to Help</a>
+						<a class="cp-button-link" href="/index.php?p=37">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 
 					<section class=" home-section-6 cp-quote-section">
