@@ -25,7 +25,6 @@ get_header(); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
 					</section>
 
-
 					<section class="about-section-3">
 						<section>
 							<div class="cp-history-section"> 
