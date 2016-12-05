@@ -1,12 +1,11 @@
                 body {
                     background-color: black;
-                }
-                
-                .fp-scroller {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100vw;
+                    // body needed to increase style weight and override font-awesome's default font-size
+                    .cp-angle-down {
+                        font-size: 2.5rem;
+                        color: #fff;
+                        padding: 25% 50%;
+                    }
                 }
                 
                 .cp-button-link {
@@ -111,7 +110,6 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: 100vw;
                 }
                 
                 .cp-button-link {
@@ -224,14 +222,6 @@
                     bottom: 50px;
                     .dot {
                         background: #fff;
-                    }
-                    // body needed to increase style weight and override font-awesome's default font-size
-                    body {
-                        .cp-angle-down {
-                            font-size: 2.5rem;
-                            color: #fff;
-                            padding: 25% 50%;
-                        }
                     }
                     // Contact form 7
                     .wpcf7-select {

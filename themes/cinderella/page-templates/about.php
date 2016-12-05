@@ -25,26 +25,28 @@ get_header(); ?>
 
 				<section class="section fp-auto-height">
 					<section class="about-section-3"> 
-						<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
-						<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_impact_statement' ); ?></p>
+						<p class=" cp-history"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
+						<p class=" cp-impact"><?php echo CFS()->get( 'about_us_impact_statement' ); ?></p>
 					</section>
 
-					<section class="about-section-4 memorial-awards">
-						<h2>Our main event</h2>
+					<section class="about-section-4 cp-title-section">
+						<h2 class="cp-title-text">Our main event</h2>
+						<div class="cp-awards">
 						<?php echo CFS()->get( 'about_us_awards_block' ); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">More on Boutique Day</a>
+						</div>
 					</section>
 
-					<section class=" about-section-5 cinderellas-cinderfellas">
-						<div class="cinderella-section ">
-							<?php echo CFS()->get( 'about_us_cinderella_title' ); ?>
+					<section class=" about-section-5 cp-landing-section">
+						<div class="cinderella-section section">
+							<p class="cp-landing-title cinderella"><?php echo CFS()->get( 'about_us_cinderella_title' ); ?></p>
 						</div>
 						<div class="cinderella-section-referrals">
 							<?php echo CFS()->get( 'about_us_cinderella_referral_block' ); ?>
 						</div>
 					</section>
 
-					<section class=" about-section-6 about-us-referral-grid">
+					<section class=" about-section-6 about-us-referral-grid section">
 						<?php 
 						$fields = CFS()->get( 'about_us_referral_grid' );
 						foreach ( $fields as $field ) :

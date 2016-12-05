@@ -500,15 +500,10 @@ html.fp-enabled,
 
 body {
   background-color: black; }
-
-.fp-scroller {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
+  body .cp-angle-down {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 25% 50%; }
 
 .cp-button-link {
   width: 80%;
@@ -590,25 +585,87 @@ body {
   .flickity-page-dots .dot {
     background: #fff; }
 
-body .cp-angle-down {
-  font-size: 2.5rem;
+.fp-scroller {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.cp-button-link {
+  width: 80%;
+  height: 5rem;
+  background-color: #393E53;
+  border: 1px solid #fff;
   color: #fff;
-  padding: 25% 50%; }
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1.1px;
+  font-weight: 200;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 1.5em;
+  text-decoration: none;
+  margin: 10%; }
 
-.wpcf7-select {
-  background: 0;
-  width: 284px;
-  height: 62px;
-  border-radius: 0; }
+.cp-learn-about-link {
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  padding: 0 24% 0 24%; }
+  .cp-learn-about-link a {
+    margin-right: 1rem;
+    text-decoration: none; }
 
-.wpcf7-form input[type=name],
-input[type=email],
-input[type=text] {
-  border-radius: 0;
-  padding: 6px;
-  width: 285px;
-  height: 57px;
-  background: 0 0; }
+.cp-learn-about-link-small {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+  text-align: center;
+  margin-bottom: 1.5em;
+  text-decoration: none; }
+  .cp-learn-about-link-small a {
+    margin-right: 1rem; }
+
+.fa-caret-right {
+  font-size: 1.2rem; }
+
+.cp-horizontal-line {
+  width: 85%;
+  border-bottom: 3px solid #fff;
+  margin: 5%;
+  text-align: center; }
+
+.carousel-image {
+  width: 100vw;
+  height: 100vh; }
+
+.carousel-text {
+  color: #fff;
+  z-index: 99;
+  font-family: "roboto";
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3rem;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%); }
+
+#fp-nav {
+  display: none; }
 
 textarea {
   background: 0;
@@ -623,6 +680,24 @@ textarea {
   color: #FFF;
   box-shadow: none;
   text-shadow: none; }
+
+.flickity-page-dots {
+  bottom: 50px; }
+  .flickity-page-dots .dot {
+    background: #fff; }
+  .flickity-page-dots .wpcf7-select {
+    background: 0;
+    width: 284px;
+    height: 62px;
+    border-radius: 0; }
+  .flickity-page-dots .wpcf7-form input[type=name],
+  .flickity-page-dots input[type=email],
+  .flickity-page-dots input[type=text] {
+    border-radius: 0;
+    padding: 6px;
+    width: 285px;
+    height: 57px;
+    background: 0 0; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -1139,8 +1214,16 @@ a {
       align-items: center;
   width: 100vw; }
 
+.cp-awards {
+  background-color: #F5A623;
+  font-family: "roboto";
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 5%; }
+
 .cp-landing-section {
-  padding-top: 20vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1156,6 +1239,9 @@ a {
     padding: 10rem 5rem 0;
     text-align: center;
     margin: 0; }
+  .cp-landing-section .cinderella {
+    padding: 36rem 0 0 2rem;
+    text-align: left; }
   .cp-landing-section .get-involved {
     padding: 10rem 8rem 0; }
   .cp-landing-section .brand-slogan {
@@ -1203,6 +1289,21 @@ a {
     line-height: 1.5;
     margin-top: 10%; }
 
+.cp-history {
+  background-color: #F5A623;
+  padding: 10%;
+  font-family: "roboto";
+  font-size: 1.4rem;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center; }
+
+.cp-impact {
+  padding: 10% 5% 10% 5%;
+  font-size: 1.3rem;
+  font-family: "roboto";
+  text-align: center; }
+
 .cp-marketing-section-small {
   display: -ms-flexbox;
   display: flex;
@@ -1229,9 +1330,10 @@ a {
   .cp-title-section .cp-title-text {
     font-size: 3rem;
     font-weight: 300;
+    font-family: "roboto";
     color: #fff;
     text-align: center;
-    padding: 25%; }
+    padding: 30%; }
 
 .cp-quote-section {
   background-color: #F5A623;
@@ -1345,6 +1447,9 @@ a {
     border-bottom: 1px solid #fff;
     margin: 1.5em auto; }
 
+.bd-photo {
+  position: relative; }
+
 .page-template-registration {
   background-color: #3B5998; }
   .page-template-registration #wpmem_reg label[for=first_name], .page-template-registration #wpmem_reg label[for=last_name], .page-template-registration #wpmem_reg label[for=user_email], .page-template-registration #wpmem_reg label[for=password], .page-template-registration #wpmem_reg label[for=confirm_password] {
@@ -1358,9 +1463,6 @@ a {
   -ms-flex-align: center;
       align-items: center;
   width: 100vw; }
-
-.bd-photo {
-  position: relative; }
 
 /*! Flickity v2.0.4
 http://flickity.metafizzy.co
