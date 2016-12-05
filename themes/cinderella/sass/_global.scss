@@ -64,6 +64,7 @@
         
         .fa-caret-right {
             font-size: 1.2rem;
+            padding-left: .5rem;
         }
         
         .cp-horizontal-line {
@@ -106,15 +107,6 @@
             border-radius: 0;
         }
         
-        .wpcf7-submit {
-            height: 57px;
-            width: 285.25px;
-            background: $color__send__buttons;
-            color: #FFF;
-            box-shadow: none;
-            text-shadow: none;
-        }
-        
         .flickity-page-dots {
             bottom: 50px;
             .dot {
@@ -130,13 +122,12 @@
             }
             // Contact form 7
             .wpcf7-select {
-                background: 0;
+                background: 0 0;
                 width: 284px;
                 height: 62px;
                 border-radius: 0;
             }
             .wpcf7-form {
-                input[type=name],
                 input[type=email],
                 input[type=text],
                 {
@@ -147,10 +138,14 @@
                     background: 0 0;
                 }
             }
-        }
-        
-        body {
-            background-color: black;
+            .wpcf7-submit {
+                height: 57px;
+                width: 285.25px;
+                background: $color__send__buttons;
+                color: #FFF;
+                box-shadow: none;
+                text-shadow: none;
+            }
             // body needed to increase style weight and override font-awesome's default font-size
             .cp-angle-down {
                 font-size: 2.5rem;
@@ -195,9 +190,4 @@
                 &:hover,
                 &focus {}
             }
-        }
-        
-        .fa-caret-right {
-            font-size: 1.2rem;
-            padding-left: .5rem;
         }
