@@ -1746,8 +1746,21 @@ textarea.wpcf7-textarea {
     text-align: center;
     margin: 0 auto; }
 
-div.city-district {
-  font-size: 17px; }
+p {
+  font-size: 18px;
+  line-height: 1.75; }
+
+/*.city-district {
+  font-size: 40px;
+}*/
+.student-download-form {
+  font-size: 24px;
+  width: 284px;
+  height: 46px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 70px; }
 
 .referral-section-4 {
   background: #F5A623;

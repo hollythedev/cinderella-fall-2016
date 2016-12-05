@@ -33,8 +33,8 @@ get_header(); ?>
 						</div>
 						<div class="student-download-form">
 							<?php echo CFS()->get( 'ref_student_download' ); ?>
-							<a class="button" href="http://localhost:3000/cinderella">Download Referral Form</a>
 						</div>
+							<a class="cp-button-link button-color" href="http://localhost:3000/cinderella">Download Referral Form</a>
 					</section>
 
 					<section class="cp-marketing-section referral-section-4">
@@ -44,7 +44,7 @@ get_header(); ?>
 					<section class=" referral-section-5">
 						<h2><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
 						<p><?php echo CFS()->get( '	organizations' ); ?></p>
-						<a class="button" href="http://localhost:3000/cinderella">Find Results</a>
+						<a href="http://localhost:3000/cinderella">Find Results</a>
 					</section>
 					<?php get_footer(); ?>
 				</section><!-- end of fp-auto-height -->	
