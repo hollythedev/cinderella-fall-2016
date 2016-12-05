@@ -1210,6 +1210,11 @@ a {
     border-bottom: 1px solid #fff;
     margin: 1.5em auto; }
 
+.page-template-registration {
+  background-color: #3B5998; }
+  .page-template-registration #wpmem_reg label[for=first_name], .page-template-registration #wpmem_reg label[for=last_name], .page-template-registration #wpmem_reg label[for=user_email], .page-template-registration #wpmem_reg label[for=password], .page-template-registration #wpmem_reg label[for=confirm_password] {
+    display: none; }
+
 .home .home-section-2 {
   padding-top: 10vh;
   background-color: #69B9C6;
