@@ -28,8 +28,9 @@ get_header(); ?>
 							<span class="horizontal-line"></span>
 						<div clss="city-district">
 							<?php echo CFS()->get( 'city_district' ); ?>
-							<?php echo CFS()->get( 'cities_in_bracket' ); ?>
+							<span class="bracket"><?php echo CFS()->get( 'cities_in_bracket' ); ?></span>
 							<?php echo CFS()->get( 'city_district_2' ); ?>
+						</div>
 						<div class="student-download-form">
 							<?php echo CFS()->get( 'ref_student_download' ); ?>
 							<a class="button" href="http://localhost:3000/cinderella">Download Referral Form</a>
