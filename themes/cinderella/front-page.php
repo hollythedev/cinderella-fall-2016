@@ -24,28 +24,27 @@ get_header(); ?>
 					<span class="cp-horizontal-line"></span>
 					<p class="cp-marketing-copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
 					<a class="cp-button-link" href="/index.php?p=26">About Boutique Day</a>
-					<a class="cp-learn-about-link" href="/index.php?p=35">Learn about the Cinderella Project</a>
-					<i class="fa fa-caret-right" aria-hidden="true"></i>
+					<p class="cp-learn-about-link"><a  href="/index.php?p=35">Learn about the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 				</section>
 
 
 				<section class="section home-section-3 cp-quote-section">
 					<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote' ); ?></span></h2>
-					<h3 class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author' ); ?></h3>
+					<p class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author' ); ?></p>
 				</section>
 
 
 				<section class="section fp-auto-height home-section-4">
-					<section class="cp-checkered-section">
+					<section class="cp-expect-grid-wrapper">
 						<?php 
 						$fields = CFS()->get( 'what_to_expect' );
 						foreach ( $fields as $field ) :
 						?>
-						<div class="cp-checkered-container">
-							<div class="cp-checkered-image-wrapper" style="background: url(<?php echo $field['image_what_to_expect'];?>); background-size: cover;"></div>
-							<div class="cp-checkered-text-wrapper">
-								<p class="cp-checkered-value"><?php echo $field['what_to_expect_details'];?></p>
-							</div>
+						<div class="cp-expect-grid">
+							
+								<p class="cp-expect-text-wrapper "><?php echo $field['what_to_expect_details'];?></p>
+							
+							<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['image_what_to_expect'];?>); background-size: cover;"></div>
 						</div>
 						<?php endforeach ?>
 					</section>

@@ -1,210 +1,268 @@
-.cp-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-}
-
-.cp-landing-section {
-    padding-top: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    .cp-landing-title {
-        font-size: 2.8rem;
-        font-weight: 100;
-        font-family: $font_roboto;
-        color: $color__text-main;
-        padding: 10rem 5rem 0;
-        text-align: center;
-        margin: 0;
-    }
-    .get-involved {
-        padding: 10rem 8rem 0;
-    }
-    .brand-slogan {
-        font-weight: 100;
-        font-style: normal;
-        font-family: 'roboto';
-        color: $color__text-main;
-        font-size: 1.5rem;
-        width: 25%;
-        text-align: center;
-        margin: 5%;
-    }
-    .brand-logo {
-        width: 275px;
-    }
-    .cp-landing-image {}
-}
-
-.cp-marketing-section {
-    background-color: $color_background_2;
-    justify-content: center;
-    height: 100vh;
-    .cp-marketing-title {
-        font-size: 3rem;
-        font-family: $font_roboto;
-        font-style: normal;
-        font-weight: 200;
-        text-align: center;
-        // width: 50%;  
-    }
-    .front-page {
-        padding: 10% 30% 0 30%;
-    }
-    .about-page {
-        padding: 15% 15% 0 15%;
-        line-height: 1.3;
-    }
-    .boutique-day {
-        padding: 20% 10% 0 10%;
-    }
-    .cp-marketing-copy {
-        // width: 85%;
-        padding: 0 2.5rem;
-        text-align: center;
-        font-size: 1.2rem;
-        font-family: $font_roboto;
-        font-style: normal;
-        font-weight: 100;
-        letter-spacing: 2.3px;
-        line-height: 1.5;
-        margin-top: 10%;
-    }
-}
-
-.cp-title-section {
-    justify-content: center;
-    background-color: $color_background_2;
-    .cp-title-text {
-        font-size: 3rem;
-        width: 141px;
-        font-weight: 300;
-        color: #fff;
-        text-align: center;
-        padding: 8rem 0;
-    }
-}
-
-.cp-quote-section {
-    background-color: $color_background_3;
-    justify-content: center;
-    padding: 15% 0;
-    height: 100vh;
-    .cp-quote-wrapper {
-        font-size: 3rem;
-        text-align: left;
-        padding-bottom: 2rem;
-        width: 70%;
-        .cp-quote-text {
-            padding-left: 2rem;
-        }
-        &:before {
-            padding-left: -2rem;
-            font-family: FontAwesome;
-            display: block;
-            text-align: left;
-            content: "\f10d";
-        }
-        &:after {
-            font-family: FontAwesome;
-            display: block;
-            text-align: right;
-            content: "\f10e";
-        }
-    }
-    .cp-quote-author {
-        width: 70%;
-        text-align: right;
-    }
-}
-
-.cp-stat-grid-wrapper {
-    .cp-stat-grid {
-        display: flex;
-        width: 100vw;
-        .cp-stat-image-wrapper {
-            width: 50%;
-            padding-bottom: 50%;
-            height: 0;
-        }
-        .cp-stat-text-wrapper {
-            width: 50%;
-            background-color: $color_background_2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 0 1.5rem;
-            .cp-stat-value {
-                font-size: 2.5rem;
-                &:after {
-                    width: 2rem;
-                    border-bottom: 1px solid #fff;
-                    content: "";
-                    display: block;
-                    margin: .5rem auto;
-                }
-            }
-            .cp-stat-description {
-                font-size: 1.3rem;
-                text-align: center;
-                margin: 0;
-            }
-        }
-        &:nth-child(2n) {
-            .cp-stat-text-wrapper {
-                background-color: $color_background_3;
-                order: 2;
-            }
-        }
-    }
-}
-
-.cp-expect-grid-wrapper {
-    .cp-expect-grid {
-        display: flex;
-        width: 100vw;
-        .cp-expect-image-wrapper {
-            width: 50%;
-            padding-bottom: 50%;
-            height: 0;
-        }
-        .cp-expect-text-wrapper {
-            background-color: $color_background_3;
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .cp-expect-description {
-                font-size: 1.3rem;
-                text-align: center;
-                margin: 0;
-            }
-        }
-        &:nth-child(2n) {
-            .cp-expect-text-wrapper {
-                background-color: $color_background_2;
-                order: 2;
-            }
-        }
-    }
-}
-
-.cp-description-section {
-    background-color: $color_background_4;
-    padding-top: 5vh;
-    .cp-description-text {
-        width: 85%;
-        padding: 0 1.5rem;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-    br {
-        width: 55%;
-        border-bottom: 1px solid #fff;
-        margin: $base__space-unit auto;
-    }
-}
+ .get-involved-fundraising {
+     font-weight: 200;
+     font-family: $font_roboto;
+     font-style: normal;
+     background-color: $color_background_3;
+     h2 {
+         text-align: center;
+         font-size: 1.8rem;
+         ;
+         padding: 5% 5% 0 5%;
+     }
+     p {
+         text-align: center;
+         padding: 5%;
+         font-size: 1.5rem;
+     }
+ }
+ 
+ .cp-message {
+     font-size: 2.8rem;
+     font-weight: 200;
+     font-family: $font_roboto;
+     font-style: normal;
+     text-align: center;
+     padding: 25% 10% 25% 10%;
+     background-color: $color_background_3;
+ }
+ 
+ .cp-section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100vw;
+ }
+ 
+ .cp-landing-section {
+     padding-top: 20vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100vw;
+     .cp-landing-title {
+         font-size: 2.8rem;
+         font-weight: 100;
+         font-family: $font_roboto;
+         color: $color__text-main;
+         padding: 10rem 5rem 0;
+         text-align: center;
+         margin: 0;
+     }
+     .get-involved {
+         padding: 10rem 8rem 0;
+     }
+     .brand-slogan {
+         font-weight: 100;
+         font-style: normal;
+         font-family: 'roboto';
+         color: $color__text-main;
+         font-size: 1.5rem;
+         width: 25%;
+         text-align: center;
+         margin: 5%;
+     }
+     .brand-logo {
+         width: 275px;
+     }
+     .cp-landing-image {}
+ }
+ 
+ .cp-marketing-section {
+     background-color: $color_background_2;
+     justify-content: center;
+     height: 100vh;
+     .cp-marketing-title {
+         font-size: 3rem;
+         font-family: $font_roboto;
+         font-style: normal;
+         font-weight: 200;
+         text-align: center;
+         // width: 50%;  
+     }
+     .front-page {
+         padding: 10% 30% 0 30%;
+     }
+     .about-page {
+         padding: 15% 15% 0 15%;
+         line-height: 1.3;
+     }
+     .donate {
+         text-align: center;
+         padding: 5%;
+         font-size: 1.8rem;
+     }
+     .boutique-day {
+         padding: 20% 10% 0 10%;
+     }
+     .cp-marketing-copy {
+         // width: 85%;
+         padding: 0 2.5rem;
+         text-align: center;
+         font-size: 1.2rem;
+         font-family: $font_roboto;
+         font-style: normal;
+         font-weight: 100;
+         letter-spacing: 2.3px;
+         line-height: 1.5;
+         margin-top: 10%;
+     }
+ }
+ 
+ .cp-marketing-section-small {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     background-color: $color_background_2;
+     justify-content: center;
+     .cp-marketing-title {
+         font-size: 1.8rem;
+         font-family: $font_roboto;
+         font-style: normal;
+         font-weight: 200;
+         text-align: center;
+         padding: 5% 25% 0 25%;
+         // width: 50%;  
+     }
+ }
+ 
+ .cp-title-section {
+     justify-content: center;
+     background-color: $color_background_2;
+     width: 100%;
+     height: inherit;
+     .cp-title-text {
+         font-size: 3rem;
+         font-weight: 300;
+         color: #fff;
+         text-align: center;
+         padding: 25%;
+     }
+ }
+ 
+ .cp-quote-section {
+     background-color: $color_background_3;
+     justify-content: center;
+     padding: 15% 0;
+     height: 100vh;
+     font-family: $font_roboto;
+     font-weight: 200;
+     font-style: normal;
+     .cp-quote-wrapper {
+         font-size: 3rem;
+         text-align: left;
+         padding-bottom: 2rem;
+         width: 70%;
+         .cp-quote-text {
+             padding-left: 2rem;
+         }
+         &:before {
+             padding-left: -2rem;
+             font-family: FontAwesome;
+             display: block;
+             text-align: left;
+             content: "\f10d";
+         }
+         &:after {
+             font-family: FontAwesome;
+             display: block;
+             text-align: right;
+             content: "\f10e";
+         }
+     }
+     .cp-quote-author {
+         width: 70%;
+         text-align: right;
+         padding-bottom: 5%;
+         text-transform: uppercase;
+         text-align: center;
+         font-size: 1.2rem;
+     }
+ }
+ 
+ .cp-stat-grid-wrapper {
+     .cp-stat-grid {
+         display: flex;
+         width: 100vw;
+         .cp-stat-image-wrapper {
+             width: 50%;
+             padding-bottom: 50%;
+             height: 0;
+         }
+         .cp-stat-text-wrapper {
+             width: 50%;
+             background-color: $color_background_2;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             padding: 0 1.5rem;
+             .cp-stat-value {
+                 font-size: 2.5rem;
+                 &:after {
+                     width: 2rem;
+                     border-bottom: 1px solid #fff;
+                     content: "";
+                     display: block;
+                     margin: .5rem auto;
+                 }
+             }
+             .cp-stat-description {
+                 font-size: 1.3rem;
+                 text-align: center;
+                 margin: 0;
+             }
+         }
+         &:nth-child(2n) {
+             .cp-stat-text-wrapper {
+                 background-color: $color_background_3;
+                 order: 2;
+             }
+         }
+     }
+ }
+ 
+ .cp-expect-grid-wrapper {
+     .cp-expect-grid {
+         display: flex;
+         width: 100vw;
+         .cp-expect-image-wrapper {
+             width: 50%;
+             padding-bottom: 50%;
+             height: 0;
+         }
+         .cp-expect-text-wrapper {
+             background-color: $color_background_3;
+             width: 50%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             .cp-expect-description {
+                 font-size: 1.3rem;
+                 text-align: center;
+                 margin: 0;
+             }
+         }
+         &:nth-child(2n) {
+             .cp-expect-text-wrapper {
+                 background-color: $color_background_2;
+                 order: 2;
+             }
+         }
+     }
+ }
+ 
+ .cp-description-section {
+     background-color: $color_background_4;
+     padding-top: 5vh;
+     .cp-description-text {
+         width: 85%;
+         padding: 0 1.5rem;
+         text-align: center;
+         font-size: 1.2rem;
+     }
+     br {
+         width: 55%;
+         border-bottom: 1px solid #fff;
+         margin: $base__space-unit auto;
+     }
+ }

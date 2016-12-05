@@ -38,7 +38,7 @@ get_header(); ?>
 						<h3 class="cp-quote-author"><?php echo CFS()->get( 'bd_author' ); ?></h3>
 					</section>
 
-					<section class="section cp-title-section">
+					<section class=" cp-title-section">
 						<h2 class="cp-title-text">What to expect</h2>
 					</section>
 
