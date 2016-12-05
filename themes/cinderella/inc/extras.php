@@ -99,23 +99,18 @@ add_action( 'wp_enqueue_scripts', 'my_styles_method' );
 
 
 
-function my_heading( $heading ) {     
-    $heading = '';
-    return $heading;
+function filter_resource_json( $data, $post, $context ) {
+$name = get_post_meta( $post->ID, 'name', true );
+$phone = get_post_meta( $post->ID, 'phone', true );
+
+if( $phone ) {
+    $data->data['phone'] = $phone;
 }
-add_filter( 'wpmem_register_heading', 'my_heading' );
 
 
-function custom_registration_form( $string ) {
-    // the parameter $string is the 
-    // generated html of the form
- 
-    // use str_replace like:
-    // $new_string = str_replace( $needle, $replacement, $haystack );
-
-    global $wpmem_a;
-    $new_text = ( $wpmem_a == 'edit' ) ? 'Update Profile' : 'Get My Account';
-    $string = str_replace( 'Register', $new_text, $string );
-    return $string;
+if( $name ) {
+    $data->data['name'] = $name;
 }
-add_filter( 'wpmem_register_form', 'custom_registration_form' );
+return $data;
+}
+add_filter( 'rest_prepare_resource', 'filter_resource_json', 10, 3 );
