@@ -23,7 +23,7 @@ get_header(); ?>
 					<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
 				</section>
 
-				<section class="section about-section-3 fp-auto-height">
+				<section class="section fp-auto-height about-section-3">
 					<div class="cp-history-section"> 
 						<p class=" cp-history-copy"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
 					</div>
@@ -66,7 +66,7 @@ get_header(); ?>
 						</div>
 					</div>
 <!--??? *** page is stopping here *** ???-->
-					<div class=" about-cinderellas cp-purple-section">
+					<div class="about-cinderellas cp-purple-section">
 						<?php echo CFS()->get( 'about_us_recipients' ); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
 					</div>
@@ -75,25 +75,25 @@ get_header(); ?>
 						<h2 class="cp-title-text">We're so proud</h2>
 					</div>
 			
-				<section class=" about-section-8 about_awards_gallery">
-					<div class="about_awards_photos">
-						<h2 class="about-awards-message"><?php echo CFS()->get( 'about_awards' ); ?></h2>
-						<div class="carousel">
-							<?php
-								$fields = CFS()->get( 'about_us_awards_gallery' );
-								foreach ( $fields as $field ) :
-							?>
-							<img class="carousel-image" src="<?php echo $field['about_us_awards_gallery_image'];?>" />
-							<?php endforeach ?>
+					<div class=" about-section-8 about_awards_gallery">
+						<div class="about_awards_photos">
+							<h2 class="about-awards-message"><?php echo CFS()->get( 'about_awards' ); ?></h2>
+							<div class="carousel">
+								<?php
+									$fields = CFS()->get( 'about_us_awards_gallery' );
+									foreach ( $fields as $field ) :
+								?>
+								<img class="carousel-image" src="<?php echo $field['about_us_awards_gallery_image'];?>" />
+								<?php endforeach ?>
+							</div>
 						</div>
 					</div>
-				</section>
 
-					<section class="section about-section-10 ways-to-help">
+					<div class="section about-section-10 ways-to-help">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
 						<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
-					</section>
+					</div>
 					<?php get_footer(); ?>
 				</section> <!--end of section fp-auto-height -->
 		</div>
