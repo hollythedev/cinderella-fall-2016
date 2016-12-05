@@ -94,10 +94,8 @@ get_header(); ?>
 						<p>	Help us contribute to these student’s stories.</p>
 						<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
 					</section>
+					<?php get_footer(); ?>
 				</section> <!--end of section fp-auto-height -->
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
-
-
-<?php get_footer(); ?>
