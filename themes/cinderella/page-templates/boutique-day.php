@@ -11,18 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div id="fullpage">
-				<section class= "section bd_gallery">
-					<div class= "bd_photo">
-						<h2 class="carousel-text"><?php echo CFS()->get( 'bd_message' ); ?></h2>
-						<div class="carousel">
-							<?php
-								$fields = CFS()->get( 'bd_gallery' );
-								foreach ( $fields as $field ) :
-							?>
-							<img class="carousel-image" src="<?php echo $field['bd_gallery_image'];?>" />
-							<?php endforeach ?>
-						</div>
-					</div>
+				<section class= "section boutique-day-section-1">
+					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 					<!--the most magical day of the year-->
 				<section class="section fp-auto-height">
