@@ -2,11 +2,11 @@
 
     $(document).ready(function() {
 
-        $( "#get-involved-accordion, #wishlist-accordion" ).accordion({
+        $("#get-involved-accordion, #wishlist-accordion").accordion({
             collapsible: true,
             active: false,
             heightStyle: 'content',
-            activate: function( event, ui ) {
+            activate: function(event, ui) {
                 $.fn.fullpage.reBuild();
             }
         });
@@ -24,19 +24,19 @@
         });
 
         $('.target_pos').click(function() {
-            $('.output').html(function(i, val) { return val*1 >= 0 ? val * 1 + 1 : 0 });
+            $('.output').html(function(i, val) { return val * 1 >= 0 ? val * 1 + 1 : 0 });
         });
 
         $('.target_neg').click(function() {
-            $('.output').html(function(i, val) { return val*1 - 1 >= 0 ? val * 1 - 1 : 0 });
+            $('.output').html(function(i, val) { return val * 1 - 1 >= 0 ? val * 1 - 1 : 0 });
         });
-        
+
         $('.carousel').flickity({
             cellAlign: 'left',
             contain: true,
             percentPosition: false,
             imagesLoaded: true,
-            autoPlay: true,
+            autoPlay: false,
             prevNextButtons: false,
             wrapAround: true,
             pageDots: true

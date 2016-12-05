@@ -95,10 +95,6 @@ get_header(); ?>
 									?>
 							</div>
 
-
-
-
-
 							<!--Drop off donations background image and title-->
 							<div class="get-involved-drop-off-donations">							
 								<div class="drop-off-donations">
@@ -231,15 +227,13 @@ get_header(); ?>
 										<h2>Together, we can make a difference!</h2>
 										<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
 										<div class= "fundraising_gallery">
-											<div class= "bd_photo">
+											<div class= "carousel">
 											<?php 
 												$fields = CFS()->get( 'fundraising_gallery' );
 												foreach ( $fields as $field ) :
 											?>
-											<img src = "<?php echo $field['fundraising_gallery_image'];?>" />
-											<?php	
-												echo $field['fundraising_gallery_message'];
-											?>
+											<img class="carousel-image"src = "<?php echo $field['fundraising_gallery_image'];?>" />
+											<h2 class="carousel-text"><?php	echo $field['fundraising_gallery_message'];?></h2>
 											<?php endforeach ?>
 											</div>
 											<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
@@ -268,15 +262,13 @@ get_header(); ?>
 
 									<h2>Some of our Volunteers</h2>
 									<div class= "volunteer_gallery">
-										<div class= "volunteer_photo">
+										<div class= "carousel">
 											<?php 
 												$fields = CFS()->get( 'volunteer_gallery' );
 												foreach ( $fields as $field ) :
 											?>
-											<img src = "<?php echo $field['volunteer_gallery_image'];?>" />
-											<?php	
-												echo $field['volunteer_gallery_message'];
-											?>
+											<img class="carousel-image" src = "<?php echo $field['volunteer_gallery_image'];?>" />
+											<h2 class="carousel-text"><?php echo $field['volunteer_gallery_message'];?></h2>
 											<?php endforeach ?>
 										</div>	
 										<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>

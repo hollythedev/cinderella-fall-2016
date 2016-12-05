@@ -225,7 +225,6 @@ h6 {
 
 /* Copy */
 p {
-  margin-bottom: 1.5em;
   color: #fff; }
 
 ul,
@@ -558,6 +557,27 @@ body .cp-angle-down {
   font-size: 2.5rem;
   color: #fff;
   padding: 25% 50%; }
+
+.wpcf7-select {
+  background: 0;
+  width: 284px;
+  height: 62px;
+  border-radius: 0; }
+
+.wpcf7-form input[type=name],
+.wpcf7-form input[type=email],
+.wpcf7-form input[type=text] {
+  border-radius: 0;
+  padding: 6px;
+  width: 285px;
+  height: 57px;
+  background: 0 0; }
+
+textarea {
+  background: 0;
+  width: 284px;
+  height: 180px;
+  border-radius: 0; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -1079,12 +1099,14 @@ a {
     font-style: normal;
     font-weight: 200;
     text-align: center; }
-    .cp-marketing-section .cp-marketing-title .about-page {
-      padding: 10% 25% 0 25%; }
-  .cp-marketing-section .cp-marketing-title .front-page {
+  .cp-marketing-section .front-page {
     padding: 10% 30% 0 30%; }
+  .cp-marketing-section .about-page {
+    padding: 15% 15% 0 15%;
+    line-height: 1.3; }
+  .cp-marketing-section .boutique-day {
+    padding: 20% 10% 0 10%; }
   .cp-marketing-section .cp-marketing-copy {
-    width: 85%;
     padding: 0 2.5rem;
     text-align: center;
     font-size: 1.2rem;
@@ -1092,7 +1114,8 @@ a {
     font-style: normal;
     font-weight: 100;
     letter-spacing: 2.3px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    margin-top: 10%; }
 
 .cp-title-section {
   -ms-flex-pack: center;
@@ -1223,8 +1246,7 @@ a {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
+      align-items: center; }
 
 .home .home-section-3 {
   background-color: #F5A623;
@@ -1261,7 +1283,7 @@ a {
 .page-template-boutique-day .bd-photo {
   position: relative; }
 
-.page-template-boutique-day .boutique-day-message {
+.page-template-boutique-day .carousel-text {
   color: #fff;
   z-index: 99;
   font-size: 3rem;
@@ -1512,23 +1534,16 @@ object {
           justify-content: space-between;
       border-bottom: 2rem; } }
 
-.contact-us-background {
-  background-size: cover cover;
-  height: 100vh;
-  position: relative;
-  width: 100vw; }
-
-.registration {
-  background-color: #393D53;
+.contact-us-section-1 {
   height: 100vh; }
+  .contact-us-section-1 .cp-marketing-title {
+    font-size: 2.5rem;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10vh; }
 
-.contact-us-title {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 300;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 41px; }
+.contact-us-section-2 {
+  background: #393D53; }
 
 .referral-section-1 {
   height: 100vh; }
@@ -1543,22 +1558,21 @@ object {
   border-bottom: 1px solid #fff;
   margin-bottom: 10vh; }
 
-.referral-section-2 {
-  background: #69B9C6;
-  height: 80vh; }
-
 .referral-section-3 {
-  background: #393D53; }
+  background: #393D53;
+  height: 100vh; }
 
 .referral-section-4 {
   background: #F5A623;
-  height: 80vh; }
+  height: 100vh;
+  width: 100vw; }
   .referral-section-4 .cp-marketing-title {
     font-size: 2.5rem;
-    width: 200px;
+    width: 85%;
     text-align: center;
     margin-bottom: 10vh; }
 
 .referral-section-5 {
   background: #393D53;
-  height: 80vh; }
+  height: 100vh;
+  width: 100vw; }

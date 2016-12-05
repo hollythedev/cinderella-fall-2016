@@ -13,7 +13,7 @@ get_header(); ?>
 			<div id="fullpage">
 				<section class= "section bd_gallery">
 					<div class= "bd_photo">
-						<h2 class="boutique-day-message"><?php echo CFS()->get( 'bd_message' ); ?></h2>
+						<h2 class="carousel-text"><?php echo CFS()->get( 'bd_message' ); ?></h2>
 						<div class="carousel">
 							<?php
 								$fields = CFS()->get( 'bd_gallery' );
@@ -26,19 +26,19 @@ get_header(); ?>
 				</section>
 					<!--the most magical day of the year-->
 				<section class="section fp-auto-height">
-					<section class="bd_section_2 cp-section cp-marketing-section">
-						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'bd_title' ); ?></h2>
+					<section class="bd_section_2 section cp-marketing-section">
+						<h2 class="cp-marketing-title boutique-day"><?php echo CFS()->get( 'bd_title' ); ?></h2>
 						<span class="cp-horizontal-line"></span>
 						<div class="cp-marketing-copy"><?php echo CFS()->get( 'bd_description' ); ?></div>
 					</section>
 
 					<!--You made it possible quote-->
-					<section class="bd_section_3 cp-section cp-quote-section">
+					<section class="bd_section_3 section cp-quote-section">
 						<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'bd_quote' ); ?></span></h2>
 						<h3 class="cp-quote-author"><?php echo CFS()->get( 'bd_author' ); ?></h3>
 					</section>
 
-					<section class="cp-section cp-title-section">
+					<section class="section cp-title-section">
 						<h2 class="cp-title-text">What to expect</h2>
 					</section>
 
