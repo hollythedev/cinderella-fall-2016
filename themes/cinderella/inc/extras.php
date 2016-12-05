@@ -116,7 +116,6 @@ function custom_registration_form( $string ) {
     global $wpmem_a;
     $new_text = ( $wpmem_a == 'edit' ) ? 'Update Profile' : 'Get My Account';
     $string = str_replace( 'Register', $new_text, $string );
-    print_r($string);
     return $string;
 }
 add_filter( 'wpmem_register_form', 'custom_registration_form' );
