@@ -68,3 +68,22 @@ body {
         padding: 25% 50%;
     }
 }
+
+// Contact form 7
+textarea {
+    background: 0 0;
+    width: 284px;
+    height: 180px;
+}
+
+input.wpcf7-form-control {
+    background: 0 0;
+    width: 284px;
+    height: 62px;
+}
+
+.wpcf7-select {
+    background: 0;
+    width: 284px;
+    height: 62px;
+}

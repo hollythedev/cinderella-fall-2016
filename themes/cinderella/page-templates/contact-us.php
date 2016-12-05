@@ -19,7 +19,6 @@ get_header(); ?>
 				<section class="section fp-auto-height">
 					<section class="section contact-us-section-2">
 						<p class="cp-contactform"><?php echo CFS()->get( 'contact_us_select_menu' ); ?><p>
-						<a class="button-link" href="http://localhost:3000/cinderella/">Send a Message</a>
 					</section>
 					<?php get_footer(); ?>
 				</section><!-- end of fp-auto-height -->
