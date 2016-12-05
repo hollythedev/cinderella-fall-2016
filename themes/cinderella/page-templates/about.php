@@ -64,16 +64,17 @@ get_header(); ?>
 							</div>
 								<?php endforeach ?>
 						</div>
-					</div>
-<!--??? *** page is stopping here *** ???-->
+				
 					<div class="about-cinderellas cp-purple-section">
 						<?php echo CFS()->get( 'about_us_recipients' ); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
 					</div>
+						
 					
 					<div class="cp-title-section">
 						<h2 class="cp-title-text">We're so proud</h2>
 					</div>
+				
 			
 					<div class=" about-section-8 about_awards_gallery">
 						<div class="about_awards_photos">
@@ -89,13 +90,16 @@ get_header(); ?>
 						</div>
 					</div>
 
-					<div class="section about-section-10 ways-to-help">
+
+					<div class="section about-section-10 ways-to-help cp-no-gift">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
-						<a class="button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
+						<a class="cp-button-link" href="<?php the_permalink(); ?>">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</div>
+			
 					<?php get_footer(); ?>
 				</section> <!--end of section fp-auto-height -->
+				</div> <!--??? *** page is stopping here *** ???-->
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
