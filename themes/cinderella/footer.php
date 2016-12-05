@@ -20,7 +20,7 @@
 							<p><a href="#">Boutique Day</a></p>
 						</div>
 						<div class="nav-2">
-							<p><a href="#">Get Involed</a></p>
+							<p><a href="#">Get Involved</a></p>
 							<p><a href="#">Refer a Student</a></p>
 							<p><a href="#">Blog</a></p>
 						</div>
