@@ -42,9 +42,9 @@ get_header(); ?>
 					</section>
 
 					<section class=" referral-section-5">
-						<h2><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
-						<p><?php echo CFS()->get( '	organizations' ); ?></p>
-						<a href="http://localhost:3000/cinderella">Find Results</a>
+						<h2 class="cp-district-dropdown"><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
+						<span class="cp-organizations"><?php echo CFS()->get( 'organizations' ); ?></span>
+						<a class="cp-button-link" href="http://localhost:3000/cinderella">Find Results</a>
 					</section>
 					<?php get_footer(); ?>
 				</section><!-- end of fp-auto-height -->	
