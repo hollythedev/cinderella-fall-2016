@@ -12,6 +12,8 @@ get_header(); ?>
 
 			<div id="fullpage">
 				<section class= "section boutique-day-section-1">
+					<h2 class="cp-marketing-title"><?php echo CFS()->get( 'bd_message' ); ?></h2>				
+					<span class="horizontal-line"></span>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 					<!--the most magical day of the year-->

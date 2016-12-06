@@ -1793,3 +1793,9 @@ textarea.wpcf7-textarea {
   line-height: 24px;
   text-align: center;
   margin: 0 auto; }
+
+/*.horizontal-line {
+  width: 85%;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10vh;
+}*/
