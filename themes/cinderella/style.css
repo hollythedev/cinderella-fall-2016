@@ -507,8 +507,7 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
+      align-items: center; }
 
 .cp-button-link {
   width: 80%;
@@ -1103,12 +1102,20 @@ a {
 .bypostauthor {
   display: block; }
 
+.accordion {
+  width: 90vw; }
+
 .ui-accordion-header {
   background-color: #393D53;
   height: 3rem;
   font-size: 2rem;
   outline: 0;
-  color: #fff; }
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%; }
   .ui-accordion-header:after {
     font-family: FontAwesome;
     display: block;
