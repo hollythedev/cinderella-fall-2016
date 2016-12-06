@@ -1,0 +1,26 @@
+.bd_section_6 {
+  background: $color_background_4;
+  height: 50vh;
+}
+
+.bd_section_7 {
+  background: $color_background_2;
+  height: 100vh;
+  .button-color {
+    background-color: #77BDC9;
+  }
+}
+
+.cp-horizontal-line {
+  width: 85%;
+  border-bottom: 3px solid #fff;
+  margin: 5%;
+  text-align: center;
+}
+
+.bd-message {
+  font-size: 20px;
+  width: 185px;
+  text-align: center;
+  margin: 0 auto;
+}
