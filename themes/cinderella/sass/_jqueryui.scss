@@ -1,9 +1,14 @@
+.accordion {
+    width: 90vw;
+}
 .ui-accordion-header {
     background-color: $color_background_4;
     height: 3rem;
     font-size: 2rem;
     outline: 0;
     color: #fff;
+    user-select: none;
+    width: 100%;
 
     &:after {
         font-family: FontAwesome;
@@ -15,6 +20,7 @@
 }
 
 .ui-accordion-header-active{
+
     &:after {
         font-family: FontAwesome;
         display: block;
