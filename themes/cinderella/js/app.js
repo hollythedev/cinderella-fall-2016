@@ -2,7 +2,7 @@
 
     $(document).ready(function() {
 
-        $("#get-involved-accordion, #wishlist-accordion").accordion({
+        $(".accordion").accordion({
             collapsible: true,
             active: false,
             heightStyle: 'content',
@@ -104,30 +104,6 @@
             afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
         });
-    });
-
-
-    var url = 'http://cinderella.academy.red/wp-json/wp/v2/resource';
-    $.ajax({
-      url: url,
-      method: 'GET',
-    })
-    .done(function(data) {        
-        $.each(data, function ( key, value ) {
-            console.log(key);
-            console.log(value);
-            // newsStoriesMarkup += '<li>';
-            // newsStoriesMarkup += '<a href="'+value.url+'">'
-            // newsStoriesMarkup += '<div class="article-background" style="background-image:url('+ value.multimedia[4].url + ')">';
-            // newsStoriesMarkup += '<p class="article-abstract">'+value.abstract;
-            // newsStoriesMarkup += '</p></div></a></li>';
-        })
-    })
-    .fail(function(err) {
-      throw err;
-    })
-    .always(function(){              
-      
     });
 
 })(jQuery);
