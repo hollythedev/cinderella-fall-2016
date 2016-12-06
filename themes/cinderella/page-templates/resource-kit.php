@@ -17,37 +17,40 @@ get_header(); ?>
 			<section class="section fp-auto-height cp-resources-section">
 				<section class="cp-resources-form">
 					<div class="accordion">
-						<?php    
-							$terms = get_terms( array(
-												'taxonomy' => 'resource_category',
-												'orderby' => 'name', ));
-							foreach ($terms as $term) :           
-						?>  
-						<h3><?php echo $term->name; ?></h3>
-						<ul class="resource-list">
-							<?php
-									$resource_query = new WP_Query( array(
-										'post_type' => 'resource',
-										'tax_query' => array(
-											array(
-												'taxonomy' => 'resource_category',
-												'field' => 'slug',
-												'terms' => array( $term->slug ),
-												'operator' => 'IN'
+							<?php    
+								$terms = get_terms( array(
+													'taxonomy' => 'resource_category',
+													'orderby' => 'name', ));
+								foreach ($terms as $term) :           
+							?>  
+							<h3><?php echo $term->name; ?></h3>
+							<ul class="resource-list">
+								<?php
+										$resource_query = new WP_Query( array(
+											'post_type' => 'resource',
+											'tax_query' => array(
+												array(
+													'taxonomy' => 'resource_category',
+													'field' => 'slug',
+													'terms' => array( $term->slug ),
+													'operator' => 'IN'
+												)
 											)
-										)
-									) );
-									?>
-									<ul>
-									<?php
-									if ( $resource_query->have_posts() ) : while ( $resource_query->have_posts() ) : $resource_query->the_post(); ?>
-<p>1</p>
-									<?php endwhile; endif; ?>
-									</ul>
-									<?php
-										$resource_query = null;
-										wp_reset_postdata();
-									?>
+										) );
+										?>
+										<ul>
+										<?php
+										if ( $resource_query->have_posts() ) : while ( $resource_query->have_posts() ) : $resource_query->the_post(); ?>
+											<li class="resource-item">
+											<h3><?php echo the_title(); ?></h3>
+
+											</li>
+										<?php endwhile; endif; ?>
+										</ul>
+										<?php
+											$resource_query = null;
+											wp_reset_postdata();
+										?>
 							<?php endforeach; ?>
 						</div>
 
