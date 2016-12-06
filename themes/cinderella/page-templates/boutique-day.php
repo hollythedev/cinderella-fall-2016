@@ -51,8 +51,10 @@ get_header(); ?>
 						</div>
 					</section>
 					<!--The Student resource kit-->
-					<section class="bd_section_6">
+					<section class="bd_section_6 cp-marketing-section">
 						<p><?php echo CFS()->get( 'bd_resource_kit' ); ?></p>
+					</section>
+					<section class="bd-section-7">
 						<h3>This kit is yours for life</h3>
 						<p>It includes everyday tips and links to community resources.</p>
 						<p><a class="register" href="<?php the_permalink(); ?>">Access the kit</a></p>

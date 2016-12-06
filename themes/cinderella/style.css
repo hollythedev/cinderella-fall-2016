@@ -1119,7 +1119,8 @@ a {
   font-style: normal;
   text-align: center;
   background-color: #393D53;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
   .cp-no-gift h2 {
     padding: 10% 0 5% 0;
     font-size: 1.8rem; }
@@ -1760,9 +1761,3 @@ textarea.wpcf7-textarea {
   line-height: 24px;
   text-align: center;
   margin: 0 auto; }
-
-/*.horizontal-line {
-  width: 85%;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 10vh;
-}*/
