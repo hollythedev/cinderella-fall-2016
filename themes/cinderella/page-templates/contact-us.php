@@ -19,11 +19,11 @@ get_header(); ?>
 				<section class="section fp-auto-height">
 					<section class="section contact-us-section-2">
 						<p class="cp-contactform"><?php echo CFS()->get( 'contact_us_select_menu' ); ?><p>
-							<h2 class="cp-title">The Cinderella Project</h2>
 							<div class="cp-contact-info">
-								<?php echo CFS()->get('contact_address'); ?>
-								<?php echo CFS()->get('contact_address') ?>
-								<?php echo CFS()->get('contact-email'); ?>
+								<h2 class="cp-title">The Cinderella Project</h2>
+								<p class="cp-address"><?php echo CFS()->get('contact_address'); ?></p>
+								<p class="cp-number"><?php echo CFS()->get('contact_number') ?></p>
+								<p class="cp-email"><?php echo CFS()->get('contact_email'); ?></p>
 							</div>
 					</section>
 					<?php get_footer(); ?>

@@ -126,6 +126,8 @@ body {
 }
 
 .wpcf7-form {
+    text-align: center;
+    padding-top: 5%;
     input[type=email],
     input[type=text],
     {
@@ -135,13 +137,22 @@ body {
         height: 57px;
         background: 0 0;
     }
+    input[type="submit"] {
+        width: 285.25px;
+        height: 57px;
+        background-color: $color__send__buttons;
+        box-shadow: none;
+        text-shadow: none;
+        display: flex;
+        color: white;
+        font-size: 19px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        justify-content: center;
+    }
 }
 
-.wpcf7-submit {
-    height: 57px;
-    width: 285.25px;
-    background: $color__send__buttons;
-    color: #FFF;
-    box-shadow: none;
-    text-shadow: none;
+textarea.wpcf7-textarea {
+    height: 180px;
+    width: 285px;
 }
