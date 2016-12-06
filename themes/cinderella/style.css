@@ -1711,6 +1711,9 @@ object {
   width: 100vw;
   height: 100vh; }
 
+.cp-contact-info {
+  text-align: center; }
+
 .referral-section-1 {
   height: 100vh; }
 
