@@ -198,7 +198,7 @@ get_header(); ?>
 									<!-- end of donations location here-->
 										<div class="ideas-donations">
 											<h2>Ideas for other donations?</h2>
-											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 										</div>
 								</section> <!-- end of donations tab -->
 					
@@ -278,9 +278,12 @@ get_header(); ?>
 										</div>	
 										<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
 									</div> <!-- end of volunteer gallery -->
-									<div class="volunteer-idea">
+									<div class="get-in-touch">
+										<div class="get-in-touch-wrapper">
 											<h2>Want to get involved?</h2>
-											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+											<span class="cp-horizontal-line"></span>
+											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+										</div>
 									</div>
 
 									<div class="volunteer-contact-form">

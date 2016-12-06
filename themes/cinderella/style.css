@@ -507,11 +507,10 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
+      align-items: center; }
 
 .cp-button-link {
-  width: 80%;
+  width: 90%;
   height: 5rem;
   background-color: #393E53;
   border: 3px solid #fff;
@@ -527,8 +526,7 @@ body {
   -ms-flex-align: center;
       align-items: center;
   margin-bottom: 1.5em;
-  text-decoration: none;
-  margin: 10%; }
+  text-decoration: none; }
 
 .cp-learn-about-link {
   color: #fff;
@@ -1090,6 +1088,9 @@ a {
   padding-right: 2rem;
   content: "\f077"; }
 
+#get-involved-accordion {
+  width: 100%; }
+
 .get-involved-fundraising {
   font-weight: 200;
   font-family: "roboto";
@@ -1103,6 +1104,26 @@ a {
     text-align: center;
     padding: 5%;
     font-size: 1.5rem; }
+
+.get-in-touch {
+  background-color: #393D53;
+  font-size: 1.8rem;
+  font-family: "roboto";
+  font-weight: 200;
+  font-style: normal;
+  padding: 10%; }
+  .get-in-touch a {
+    text-decoration: none;
+    font-size: 1.1rem; }
+  .get-in-touch .cp-horizontal-line {
+    margin: 5% 0 5% 0; }
+
+.get-in-touch-wrapper {
+  padding-left: 25%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 .cp-message {
   font-size: 2.8rem;
@@ -1119,7 +1140,8 @@ a {
   font-style: normal;
   text-align: center;
   background-color: #393D53;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
   .cp-no-gift h2 {
     padding: 10% 0 5% 0;
     font-size: 1.8rem; }
@@ -1226,12 +1248,19 @@ a {
     text-align: center; }
 
 .cp-purple-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   background-color: #393D53;
-  padding: 10%;
   font-size: 1.3rem;
   font-family: "roboto";
   font-weight: 100;
   text-align: center; }
+  .cp-purple-section p {
+    width: 80%; }
 
 .cp-marketing-section-small {
   display: -ms-flexbox;

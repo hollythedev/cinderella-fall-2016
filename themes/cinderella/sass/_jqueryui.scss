@@ -4,22 +4,25 @@
     font-size: 2rem;
     outline: 0;
     color: #fff;
-
     &:after {
         font-family: FontAwesome;
         display: block;
-        float:right;
+        float: right;
         padding-right: 2rem;
-        content:"\f078";
+        content: "\f078";
     }
 }
 
-.ui-accordion-header-active{
+.ui-accordion-header-active {
     &:after {
         font-family: FontAwesome;
         display: block;
-        float:right;
+        float: right;
         padding-right: 2rem;
-        content:"\f077";
+        content: "\f077";
     }
+}
+
+#get-involved-accordion {
+    width: 100%;
 }
