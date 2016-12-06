@@ -62,8 +62,9 @@ get_header(); ?>
 					</section>
 					<!--Dreams come true-->
 					<section class="bd_section_8">
-						<h3>Dreams come true. See for yourself.</h3>
-						<p><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
+						<h3 class="cp-marketing-title">Dreams come true. See for yourself.</h3>
+						<p class="bd-message"><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
+						<span class="cp-horizontal-line"></span>
 						<div class="footage">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/TFmLGlVx7hc" frameborder="0" allowfullscreen></iframe>
 						</div>
