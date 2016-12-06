@@ -1068,12 +1068,20 @@ a {
 .bypostauthor {
   display: block; }
 
+.accordion {
+  width: 90vw; }
+
 .ui-accordion-header {
   background-color: #393D53;
   height: 3rem;
   font-size: 2rem;
   outline: 0;
-  color: #fff; }
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%; }
   .ui-accordion-header:after {
     font-family: FontAwesome;
     display: block;
@@ -1789,3 +1797,31 @@ textarea.wpcf7-textarea {
   line-height: 24px;
   text-align: center;
   margin: 0 auto; }
+
+.bd_section_6 {
+  background: #393D53;
+  height: 50vh;
+  width: 100vw; }
+
+.bd_section_7 {
+  background: #69B9C6;
+  height: 100vh;
+  width: 100vw; }
+  .bd_section_7 .button-color {
+    background-color: #77BDC9; }
+
+.cp-horizontal-line {
+  width: 85%;
+  border-bottom: 3px solid #fff;
+  margin: 5%;
+  text-align: center; }
+
+.bd-message {
+  font-size: 20px;
+  width: 185px;
+  text-align: center;
+  margin: 0 auto; }
+
+.bd_section_8 {
+  background: #393D53;
+  width: 100vw; }
