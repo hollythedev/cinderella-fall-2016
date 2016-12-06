@@ -233,7 +233,7 @@ get_header(); ?>
 													$fields = CFS()->get( 'fundraising_gallery' );
 													foreach ( $fields as $field ) :
 												?>
-												<img class="carousel-image"src = "<?php echo $field['fundraising_gallery_image'];?>" />
+												<img class="carousel-image" src= "<?php echo $field['fundraising_gallery_image'];?>" />
 												<h2 class="carousel-text"><?php	echo $field['fundraising_gallery_message'];?></h2>
 												<?php endforeach ?>
 											</div>

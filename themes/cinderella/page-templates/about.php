@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			
 			<div id="fullpage">
 				<section class="section about-section-1 cp-landing-section">
 					<p class="cp-landing-title"><?php echo CFS()->get( 'about_us_title' ); ?></p>
@@ -65,7 +66,6 @@ get_header(); ?>
 								<?php endforeach ?>
 						
 					</div>
-<!--??? *** page is stopping here *** ???-->
 					<div class="about-cinderellas cp-purple-section">
 						<?php echo CFS()->get( 'about_us_recipients' ); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
@@ -74,28 +74,28 @@ get_header(); ?>
 					<div class="cp-title-section">
 						<h2 class="cp-title-text">We're so proud</h2>
 					</div>
-			
-					<div class=" about-section-8 about_awards_gallery">
-						<div class="about_awards_photos">
-							<h2 class="about-awards-message"><?php echo CFS()->get( 'about_awards' ); ?></h2>
-							<div class="carousel">
-								<?php
+
+					<div class= "about-section-8 about_awards_gallery">
+							<div class= "carousel">
+								<?php 
 									$fields = CFS()->get( 'about_us_awards_gallery' );
 									foreach ( $fields as $field ) :
-								?>
-								<img class="carousel-image" src="<?php echo $field['about_us_awards_gallery_image'];?>" />
+									?>
+									<img class="carousel-image" src = "<?php echo $field['about_us_awards_gallery_image'];?>" />
+									<h2 class="carousel-text"><?php echo $field['about_awards'];?></h2>
 								<?php endforeach ?>
-							</div>
-						</div>
-					</div>
+							</div>	
+					</div> <!-- end of about page awards gallery -->
+						<!--awards gallery goes here -->
 
-					<div class="section about-section-10 ways-to-help cp-no-gift">
+					<div class="about-section-10 ways-to-help cp-no-gift">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
 					</div>
-					</div>
+					
 					<?php get_footer(); ?>
+					</div>
 				</section> <!--end of section fp-auto-height -->
 		</div>
 	</main><!-- #main -->
