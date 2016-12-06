@@ -115,7 +115,7 @@ function register_custom_post_types() {
 		'name_admin_bar'        => 'Resource',
 		'archives'              => 'Resource',
 		'parent_item_colon'     => 'Parent Resource:',
-		'all_items'             => 'All Resource',
+		'all_items'             => 'All Resources',
 		'add_new_item'          => 'Add New Resource',
 		'add_new'               => 'Add New',
 		'new_item'              => 'New Resource',
