@@ -39,7 +39,7 @@ get_header(); ?>
 						<?php endforeach ?>
 					</div>
 				<!-- Beginning of Menu-->
-					<div id="get-involved-accordion">
+					<div class="accordion">
 							<h3>Donations</h3>
 								<section class="donations-tab">
 									<div class="donations-section-1">
@@ -49,7 +49,7 @@ get_header(); ?>
 
 
 							
-							<div id="wishlist-accordion">
+							<div class="accordion">
 								<!-- arguments for the custom query, used to grab all wishlist posts -->
 								<?php $args = array(
 									'posts_per_page'   => 0,
