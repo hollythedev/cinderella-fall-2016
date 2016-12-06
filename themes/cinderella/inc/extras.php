@@ -100,17 +100,20 @@ add_action( 'wp_enqueue_scripts', 'my_styles_method' );
 
 
 function filter_resource_json( $data, $post, $context ) {
-$name = get_post_meta( $post->ID, 'name', true );
-$phone = get_post_meta( $post->ID, 'phone', true );
+    $phone = get_post_meta( $post->ID, 'phone', true );
+    $website = get_post_meta( $post->ID, 'website', true );
+    $description = get_post_meta( $post->ID, 'description', true );
 
-if( $phone ) {
-    $data->data['phone'] = $phone;
-}
+    if( $phone ) {
+        $data->data['phone'] = $phone;
+    }
+    if( $website ) {
+        $data->data['website'] = $website;
+    }
+    if( $description ) {
+        $data->data['description'] = $description;
+    }
 
-
-if( $name ) {
-    $data->data['name'] = $name;
-}
-return $data;
+    return $data;
 }
 add_filter( 'rest_prepare_resource', 'filter_resource_json', 10, 3 );
