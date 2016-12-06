@@ -514,7 +514,7 @@ body {
   width: 80%;
   height: 5rem;
   background-color: #393E53;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -592,66 +592,33 @@ textarea {
   bottom: 50px; }
   .flickity-page-dots .dot {
     background: #fff; }
-  .flickity-page-dots body .cp-angle-down {
-    font-size: 2.5rem;
-    color: #fff;
-    padding: 25% 50%; }
-  .flickity-page-dots .wpcf7-select {
-    background: 0 0;
-    width: 284px;
-    height: 62px;
-    border-radius: 0; }
-  .flickity-page-dots .wpcf7-form input[type=email],
-  .flickity-page-dots .wpcf7-form input[type=text] {
-    border-radius: 0;
-    padding: 6px;
-    width: 285px;
-    height: 57px;
-    background: 0 0; }
-  .flickity-page-dots .wpcf7-submit {
-    height: 57px;
-    width: 285.25px;
-    background: #0C0E1B;
-    color: #FFF;
-    box-shadow: none;
-    text-shadow: none; }
-  .flickity-page-dots .cp-angle-down {
-    font-size: 2.5rem;
-    color: #fff;
-    padding: 25% 50%; }
 
-.cp-button-link {
-  width: 80%;
-  height: 5rem;
-  background-color: #393E53;
-  border: 1px solid #fff;
+body .cp-angle-down {
+  font-size: 2.5rem;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 1.1px;
-  font-weight: 200;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  margin-bottom: 1.5em;
-  text-decoration: none;
-  margin: 5% 10% 10% 10%; }
+  padding: 25% 50%; }
 
-.cp-learn-about-link {
-  color: #fff;
-  font-size: .9rem;
-  font-weight: 100;
-  letter-spacing: 2.5px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 1.5em;
-  padding: 0 24% 0 24%; }
-  .cp-learn-about-link a {
-    margin-right: 1rem;
-    text-decoration: none; }
+.wpcf7-select {
+  background: 0 0;
+  width: 284px;
+  height: 62px;
+  border-radius: 0; }
+
+.wpcf7-form input[type=email],
+.wpcf7-form input[type=text] {
+  border-radius: 0;
+  padding: 6px;
+  width: 285px;
+  height: 57px;
+  background: 0 0; }
+
+.wpcf7-submit {
+  height: 57px;
+  width: 285.25px;
+  background: #0C0E1B;
+  color: #FFF;
+  box-shadow: none;
+  text-shadow: none; }
 
 /*--------------------------------------------------------------
 # Elements
