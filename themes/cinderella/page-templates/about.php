@@ -13,8 +13,10 @@ get_header(); ?>
 			<div id="fullpage">
 				<section class="section">
 					<section class="about-section-1 cp-section cp-landing-section">
-						<p class="cp-landing-title"><?php echo CFS()->get( 'about_us_title' ); ?></p>
-						<span class="cp-horizontal-line"></span>
+						<div class="cp-landing-top-divider">
+							<h2 class="cp-landing-title"><?php echo CFS()->get( 'about_us_title' ); ?></h2>
+							<div class="cp-horizontal-line"></div>
+						</div>
 						<i class="cp-angle-down fa fa-angle-down"></i>
 					</section>
 				</section>
@@ -42,7 +44,7 @@ get_header(); ?>
 
 					<div class="cp-awards">
 						<?php echo CFS()->get( 'about_us_awards_block' ); ?>
-						<a class="cp-button-link" href="<?php the_permalink(); ?>">More on Boutique Day</a>
+						<a class="cp-button-link" href="<?php the_permalink(); ?>">More on Boutique Day<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</div>
 					
 					<div class="about-section-5 cp-landing-section cinderella-section">
