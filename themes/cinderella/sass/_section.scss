@@ -71,6 +71,7 @@
      flex-direction: column;
      align-items: center;
      width: 100vw;
+     position: relative;
  }
  
  .cp-awards {
@@ -89,6 +90,8 @@
      flex-direction: column;
      align-items: center;
      width: 100vw;
+     height: 100vh;
+
      .cp-landing-title {
          font-size: 2.8rem;
          font-weight: 100;
@@ -111,14 +114,27 @@
          font-family: 'roboto';
          color: $color__text-main;
          font-size: 1.5rem;
-         width: 25%;
+         width: 7rem;
+         line-height: 2;
          text-align: center;
-         margin: 5%;
+         margin-top: 65%;
      }
      .brand-logo {
          width: 275px;
+         margin-bottom: .5rem;
      }
      .cp-landing-image {}
+
+     .cp-landing-top-divider {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -100%);
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
  }
  
  .about-section-5 {
