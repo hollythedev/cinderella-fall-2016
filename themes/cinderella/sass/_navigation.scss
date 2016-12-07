@@ -10,11 +10,9 @@ nav {
 }
 
 .logged-in {
-	    
 		#mobile-nav {
 		top: 45px;}
 }
-
 #fp-nav {
 	top: 50%;
 	transform: translateY(-50%);
@@ -169,7 +167,7 @@ nav {
 }
 
 .bottom-mobile-nav-bar-wrapper {
-	height: 3rem;
+	height: $nav_bottom_bar_height;
 	position: relative;
 	background-color: #3B5998;
 	display: flex;
@@ -182,6 +180,8 @@ nav {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	font-size: 1.5rem;
+	font-weight: 500;
 }
 
 .bottom-mobile-nav-text {
