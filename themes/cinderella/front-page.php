@@ -44,6 +44,7 @@ get_header(); ?>
 
 				<section class="section fp-auto-height">
 					<section class="cp-section home-section-4">
+						<div class="cp-spacer"></div>
 						<div class="cp-expect-grid-wrapper">
 							<?php 
 							$fields = CFS()->get( 'what_to_expect' );
@@ -65,9 +66,9 @@ get_header(); ?>
 							<a class="cp-button-link" href="/index.php?p=37">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 						</div>
 
-						<div class=" home-section-6 cp-quote-section">
+						<div class="home-section-6 cp-quote-section cp-section">
 							<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote_2' ); ?></span></h2>
-							<h3 class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author_2' ); ?></h3>
+							<p class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author_2' ); ?></p>
 						</div>
 
 						<?php get_footer(); ?>
