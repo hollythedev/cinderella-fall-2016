@@ -3,8 +3,17 @@
 .site-info {
   background-color: $color_background_footer;
   width: 100vw;
-  padding: 0 3rem;
+  padding: 4rem 3rem 0;
   height: 230px;
+  border-top: 1px solid #fff;
+  position: relative;
+}
+
+.globe-logo-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
 }
 
 .globe-logo {
