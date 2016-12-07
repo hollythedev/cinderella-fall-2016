@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 			
 			<div id="fullpage">
-				<section class="">
+				<section class="section">
 					<div class="account-photo">
 						<h2 class="account-message"><?php echo CFS()->get( '' ); ?></h2>
 					</div>
