@@ -5,7 +5,17 @@
 html {
     box-sizing: border-box;
     @include font-size(1);
-    font-size: 16px;
+    font-size: 10px;
+
+    @include iphone6-width {
+        font-size: 11px;
+    }
+        @include iphone6-plus-width {
+        font-size: 12px;
+    }
+    @include mobile-width {
+        font-size: 14px;
+    }
 }
 
 *,
