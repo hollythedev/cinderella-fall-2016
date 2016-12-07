@@ -11,24 +11,26 @@
             }
         });
 
-        $('#nav-icon').click(function() {
+        $('#bottom-mobile-nav-open-icon').click(function() {
+            event.stopPropagation();
             $(this).hide();
-            $('#mobile-nav').animate({ height: 'show' }, 500, function() {});
+            $("#bottom-mobile-nav-close-icon").show();
+            $('.mobile-nav-menu-wrapper').animate({ height: 'show' }, 500, function() {});
         });
 
-        $('.nav-close-icon').on('click', function($event) {
+        $('#bottom-mobile-nav-close-icon').click(function() {
             event.stopPropagation();
-            $('#mobile-nav').animate({ height: 'hide' }, 500, function() {
-                $('#nav-icon').show();
-            });
+            $(this).hide();
+            $("#bottom-mobile-nav-open-icon").show();
+            $('.mobile-nav-menu-wrapper').animate({ height: 'hide' }, 500, function() {});
         });
 
         $('.target_pos').click(function() {
-            $('.output').html(function(i, val) { return val * 1 >= 0 ? val * 1 + 1 : 0 });
+            $(this).next().html(function(i, val) { return val * 1 >= 0 ? val * 1 + 1 : 0 });
         });
 
         $('.target_neg').click(function() {
-            $('.output').html(function(i, val) { return val * 1 - 1 >= 0 ? val * 1 - 1 : 0 });
+            $(this).prev().html(function(i, val) { return val * 1 - 1 >= 0 ? val * 1 - 1 : 0 });
         });
 
         $('.carousel').flickity({
@@ -45,7 +47,7 @@
         $('#fullpage').fullpage({
             //Navigation
             navigation: true,
-            navigationPosition: 'left',
+            navigationPosition: 'none',
             slidesNavigation: true,
             slidesNavPosition: 'bottom',
 
