@@ -21,21 +21,32 @@
 			<header id="masthead" class="site-header" role="banner">
 				<nav>
 					<div id="mobile-nav">
-						<div class="nav-wrapper">
+						<div class="mobile-nav-menu-wrapper">
+							<div class="mobile-nav-menu">
 								<?php wp_nav_menu( array( 'menu_class' => 'nav-links-wrapper', 'link_before' => '<span class="nav-icon"></span>', 'link_after' => '',  'theme_location' => 'primary' )); ?>
-							<div class="nav-close-container">
-								<div class="nav-close-wrapper">
-									<span class="nav-close-text">The Cinderella Project</span>
-									<i class="nav-close-icon fa fa-times-circle-o fa-2x"></i>
+							</div>
+						</div>
+						<div class="bottom-mobile-nav-container">
+							<div class="bottom-mobile-nav-bar-wrapper">
+								<span class="bottom-mobile-nav-text">
+									<?php if (! is_front_page()) : ?>
+										<?php echo get_the_title(); ?>
+									<?php else :
+										echo "Cinderella Project";
+									endif ?>
+								</span>
+								<div class="bottom-mobile-nav-icon-wrapper">
+									<div id="bottom-mobile-nav-open-icon">
+										<i class="fa fa-bars fa-3x"></i> 
+									</div>
+									<div id="bottom-mobile-nav-close-icon">
+										<i class="fa fa-times-circle-o fa-3x"></i> 
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<div id="nav-icon">
-						<i class="fa fa-bars"></i> 
-					</div>
-						
+			
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
