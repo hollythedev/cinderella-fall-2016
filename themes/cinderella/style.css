@@ -605,21 +605,35 @@ body .cp-angle-down {
   height: 62px;
   border-radius: 0; }
 
-.wpcf7-form input[type=email],
-.wpcf7-form input[type=text] {
-  border-radius: 0;
-  padding: 6px;
-  width: 285px;
-  height: 57px;
-  background: 0 0; }
+.wpcf7-form {
+  text-align: center;
+  padding-top: 5%; }
+  .wpcf7-form input[type=email],
+  .wpcf7-form input[type=text] {
+    border-radius: 0;
+    padding: 6px;
+    width: 285px;
+    height: 57px;
+    background: 0 0; }
+  .wpcf7-form input[type="submit"] {
+    width: 285.25px;
+    height: 57px;
+    background-color: #0C0E1B;
+    box-shadow: none;
+    text-shadow: none;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto; }
 
-.wpcf7-submit {
-  height: 57px;
-  width: 285.25px;
-  background: #0C0E1B;
-  color: #FFF;
-  box-shadow: none;
-  text-shadow: none; }
+textarea.wpcf7-textarea {
+  height: 180px;
+  width: 285px; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -1753,23 +1767,18 @@ object {
   width: 100vw;
   height: 100vh; }
 
-.wpcf7-select {
-  background: 0 0;
-  width: 284px;
-  height: 62px;
-  border-radius: 0; }
+.cp-contact-info {
+  text-align: center; }
+  .cp-contact-info .cp-title {
+    font-size: 24px;
+    font-family: "roboto";
+    font-weight: 300;
+    padding-bottom: 6%; }
 
-.wpcf7-form input[type=email],
-.wpcf7-form input[type=text] {
-  border-radius: 0;
-  padding: 6px;
-  width: 285px;
-  height: 57px;
-  background: 0 0; }
-
-textarea.wpcf7-textarea {
-  height: 180px;
-  width: 285px; }
+.cp-contacts {
+  font-family: "roboto";
+  font-weight: 200;
+  letter-spacing: .1rem; }
 
 .referral-section-1 {
   height: 100vh; }
@@ -1781,11 +1790,13 @@ textarea.wpcf7-textarea {
   color: #fff;
   padding: 10rem 5rem 0;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  padding-top: 50%; }
 
 .referral-section-2 {
-  height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  height: 100vh; }
 
 .referral-section-3 {
   background: #393D53;
@@ -1797,7 +1808,7 @@ textarea.wpcf7-textarea {
     height: 120px;
     line-height: 24px;
     text-align: center;
-    margin: 0 auto; }
+    margin: 27px; }
 
 .city-district {
   font-size: 18px;
@@ -1813,7 +1824,7 @@ textarea.wpcf7-textarea {
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 70px; }
+  margin-top: 35px; }
 
 .referral-section-4 {
   background: #F5A623;
@@ -1821,7 +1832,6 @@ textarea.wpcf7-textarea {
   width: 100vw; }
   .referral-section-4 .cp-marketing-title {
     font-size: 2.5rem;
-    width: 85%;
     text-align: center;
     margin-bottom: 10vh; }
 
@@ -1837,7 +1847,8 @@ textarea.wpcf7-textarea {
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 70px; }
+  margin-top: 70px;
+  font-family: "moonlight"; }
 
 .cp-organizations {
   font-size: 16px;
@@ -1846,6 +1857,11 @@ textarea.wpcf7-textarea {
   line-height: 24px;
   text-align: center;
   margin: 0 auto; }
+
+.button-color {
+  text-align: center;
+  margin-top: 35px;
+  background-color: #303346; }
 
 .bd_section_6 {
   background: #393D53;

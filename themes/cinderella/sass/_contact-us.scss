@@ -21,26 +21,18 @@
   height: 100vh;
 }
 
-.wpcf7-select {
-  background: 0 0;
-  width: 284px;
-  height: 62px;
-  border-radius: 0;
-}
-
-.wpcf7-form {
-  input[type=email],
-  input[type=text],
-  {
-    border-radius: 0;
-    padding: 6px;
-    width: 285px;
-    height: 57px;
-    background: 0 0;
+.cp-contact-info {
+  text-align: center;
+  .cp-title {
+    font-size: 24px;
+    font-family: $font_roboto;
+    font-weight: 300;
+    padding-bottom: 6%;
   }
 }
 
-textarea.wpcf7-textarea {
-  height: 180px;
-  width: 285px;
+.cp-contacts {
+  font-family: $font_roboto;
+  font-weight: 200;
+  letter-spacing: .1rem;
 }
