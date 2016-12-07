@@ -11,10 +11,25 @@
     margin-right: auto;
 }
 
+
 //mobile 
+$iphone6-width: 375px;
+$iphone6-plus-width: 414px;
 $mobile-width: 600px;
-@mixin mobile {
-    @media (min-width: $mobile-width) {
+@mixin iphone6-width {
+    @media (min-width: $iphone6-width) {
+        @content;
+    }
+}
+
+@mixin iphone6-plus-width {
+        @media (min-width: $iphone6-plus-width) {
+        @content;
+    }
+}
+
+@mixin mobile-width {
+        @media (min-width: $mobile-width) {
         @content;
     }
 }
