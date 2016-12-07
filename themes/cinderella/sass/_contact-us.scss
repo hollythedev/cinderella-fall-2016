@@ -23,4 +23,16 @@
 
 .cp-contact-info {
   text-align: center;
+  .cp-title {
+    font-size: 24px;
+    font-family: $font_roboto;
+    font-weight: 300;
+    padding-bottom: 6%;
+  }
+}
+
+.cp-contacts {
+  font-family: $font_roboto;
+  font-weight: 200;
+  letter-spacing: .1rem;
 }

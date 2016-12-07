@@ -624,7 +624,8 @@ body .cp-angle-down {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    margin: 0 auto; }
 
 textarea.wpcf7-textarea {
   height: 180px;
@@ -1713,6 +1714,16 @@ object {
 
 .cp-contact-info {
   text-align: center; }
+  .cp-contact-info .cp-title {
+    font-size: 24px;
+    font-family: "roboto";
+    font-weight: 300;
+    padding-bottom: 6%; }
+
+.cp-contacts {
+  font-family: "roboto";
+  font-weight: 200;
+  letter-spacing: .1rem; }
 
 .referral-section-1 {
   height: 100vh; }
