@@ -72,7 +72,7 @@ function my_styles_method() {
                 background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlImpact}) no-repeat center bottom;
                     background-size: cover;
                 }
-                .cinderella-section{
+                .about-section-5{
                     background: url({$urlCinderellas}) no-repeat center bottom;
                     background-size: cover;
                 ";
