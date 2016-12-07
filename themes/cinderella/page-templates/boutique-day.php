@@ -11,10 +11,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div id="fullpage">
-				<section class= "section boutique-day-section-1">
-					<h2 class="cp-marketing-title"><?php echo CFS()->get( 'bd_message' ); ?></h2>				
-					<span class="horizontal-line"></span>
-					<i class="cp-angle-down fa fa-angle-down"></i>
+				<section class="section">
+					<section class="boutique-day-section-1 cp-section cp-landing-section">
+						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'bd_message' ); ?></h2>				
+						<div class="horizontal-line"></div>
+						<i class="cp-angle-down fa fa-angle-down"></i>
+					</section>
 				</section>
 					<!--the most magical day of the year-->
 				<section class="section fp-auto-height">

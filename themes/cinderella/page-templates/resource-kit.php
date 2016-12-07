@@ -10,8 +10,12 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div id="fullpage">
-			<section class="section cp-landing-section">
+			<section class="section">
+				<section class="cp-section cp-landing-section">
 				Landing Page
+				<span class="cp-horizontal-line"></span>
+				<i class="cp-angle-down fa fa-angle-down"></i>
+				</section>
 			</section>
 
 			<section class="section fp-auto-height cp-resources-section">
