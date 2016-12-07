@@ -47,8 +47,8 @@ get_header(); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">More on Boutique Day<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</div>
 					
-					<div class="about-section-5 cp-landing-section cinderella-section">
-						<p class="cp-landing-title cinderella"><?php echo CFS()->get( 'about_us_cinderella_title' ); ?></p>
+					<div class="about-section-5 image-title-section grayscale-image">
+						<h3 class="image-title-text"><?php echo CFS()->get( 'about_us_cinderella_title' ); ?></h3>
 					</div>
 
 					<div class="cinderella-section-referrals cp-purple-section">
@@ -80,14 +80,18 @@ get_header(); ?>
 						<h2 class="cp-title-text">We're so proud</h2>
 					</div>
 
-					<div class= "about-section-8 about_awards_gallery">
+					<div class= "about-section-8 gallery-section">
 							<div class= "carousel">
 								<?php 
 									$fields = CFS()->get( 'about_us_awards_gallery' );
 									foreach ( $fields as $field ) :
 									?>
-									<img class="carousel-image" src = "<?php echo $field['about_us_awards_gallery_image'];?>" />
-									<h2 class="carousel-text"><?php echo $field['about_awards'];?></h2>
+									<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['about_us_awards_gallery_image'];?>) center no-repeat; background-size: cover;">
+										<div class="gallery-bottom-divider">
+											<div class="cp-horizontal-line"></div>
+											<h2 class="carousel-text"><?php echo $field['about_awards'];?></h2>
+										</div>
+									</div>	
 								<?php endforeach ?>
 							</div>	
 					</div> <!-- end of about page awards gallery -->
