@@ -29,7 +29,7 @@ function my_styles_method() {
          $urlHome = CFS()->get('home_background_image');
          $custom_css = "
         .home-section-1{
-        background: url( {$urlHome}) no-repeat center bottom;
+        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url( {$urlHome}) no-repeat center bottom;
          background-size: cover;
         }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
@@ -37,9 +37,9 @@ function my_styles_method() {
         
     } elseif(is_page( 'boutique-day' )){
         $urlBoutiqueDay = CFS()->get('boutique_day_background_img');
-        $custom_css = " .boutique-day-section-1{
-                    background: url({$urlBoutiqueDay}) no-repeat center bottom;
-                    background-size: cover;
+        $custom_css = ".boutique-day-section-1{
+        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url( {$urlBoutiqueDay}) no-repeat center bottom;
+         background-size: cover;
                 }";
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
@@ -48,7 +48,7 @@ function my_styles_method() {
 }elseif(is_page( 'refer-a-student' )){
         $urlReferAstudent = CFS()->get('refer_student_background_img');
         $custom_css = " .referral-section-1{
-                    background: url({$urlReferAstudent}) no-repeat center bottom;
+                    background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlReferAstudent}) no-repeat center bottom;
                     background-size: cover;
                 }";
   
@@ -58,7 +58,7 @@ function my_styles_method() {
     } elseif(is_page( 'contact-us' )){
         $urlContactUs = CFS()->get('contact_us_background_image');
         $custom_css = " .contact-us-section-1{
-                    background: url({$urlContactUs}) no-repeat center bottom;
+                    background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlContactUs}) no-repeat center bottom;
                     background-size: cover;
                 }";
   
@@ -69,7 +69,7 @@ function my_styles_method() {
         $urlImpact = CFS()->get('about_us_background_image');
         $urlCinderellas = CFS()->get('about_us_cinderella_background_image');
         $custom_css = " .about-section-1{
-                background: url({$urlImpact}) no-repeat center bottom;
+                background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlImpact}) no-repeat center bottom;
                     background-size: cover;
                 }
                 .cinderella-section{
@@ -88,9 +88,7 @@ function my_styles_method() {
             background: url({$urlInKindDonation});
                 }
                 .get-involved-section-1{
-            background-image: url({$urlGetInv});
-            background-repeat:no-repeat;
-            background-position: center center;
+            background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlGetInv}) no-repeat center bottom;
             background-size: cover;
             }
             .drop-off-donations{
