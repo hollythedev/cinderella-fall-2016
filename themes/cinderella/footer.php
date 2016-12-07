@@ -9,8 +9,10 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<div class="globe-logo">
-						<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/globe-icon.svg" alt = "Globe Icon">
+					<div class="globe-logo-wrapper">
+						<div class="globe-logo">
+							<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/globe-icon.svg" alt = "Globe Icon">
+						</div>
 					</div>
 					
 					<div class="navigation">
