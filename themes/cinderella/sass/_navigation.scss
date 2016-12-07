@@ -10,15 +10,30 @@ nav {
 }
 
 #fp-nav {
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2%;
+	display: none;
+
+	ul{
+		li {
+			margin-bottom: 0;
+		}
+	}
+}
+
+#mobile-nav {
+	position: fixed;
+    z-index: 100;
 	top: 50px;
+	width: 100%;
+}
+
+.mobile-nav-menu-wrapper {
 	display: none;
 }
 
 #nav-icon {
-	position: fixed;
-    z-index: 100;
-	top: 50px;
-
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 
@@ -29,11 +44,7 @@ nav {
 	}
 }
 
-#mobile-nav {
-	display: none;
-	width: 100%;
-}
-.nav-wrapper {
+.mobile-nav-menu{
 	display: flex;
 	flex-direction: column;
 	width:100%;
@@ -45,38 +56,41 @@ nav {
 		width:100%;
 		align-items: center;
 	.nav-links-wrapper {
-	
-				width:100%;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				margin: 0;
-				padding: 0;
-				list-style: none;
-				background-color: $color__background-nav;
-				color: $color__text-nav;
-				
-				li{
-					width: 90%;
-					font-size: 1.5rem;
-					text-transform: lowercase;
-					border-bottom: 1px solid #A7B5C9;
-
-					a{
-						font-size: 1.5rem;
-						text-decoration: none;
-						color: $color__text-nav;
-					}
-
-					&:last-child {
-						.nav-list-item {
-							border: 0;
-						}
-					}
-				}
+			width:100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			background-color: $color__background-nav;
+			color: $color__text-nav;
 			
+			li{
+				width: 90%;
+				font-size: 1.5rem;
+				text-transform: lowercase;
+				border-bottom: 1px solid #A7B5C9;
+
+				a{
+					font-size: 1.5rem;
+					text-decoration: none;
+					color: $color__text-nav;
+				}
+				&:last-child {
+					border: 0;
+				}	
+			}
 		}
 	}
+}
+
+.bottom-mobile-nav-container {
+	width: 100%;
+}
+
+#bottom-mobile-nav-close-icon {
+	display: none;
 }
 
 .nav-icon {
@@ -149,24 +163,33 @@ nav {
 	font-size: 1.5rem;
 }
 
-.nav-close-wrapper {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.bottom-mobile-nav-bar-wrapper {
+	height: 3rem;
 	position: relative;
-
+	background-color: #3B5998;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
 }
-.nav-close-text {
+
+.bottom-mobile-nav-text{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.bottom-mobile-nav-text {
 	width: 250px;
 	text-align: center;
 	text-transform: uppercase;
 }
-.nav-close-icon {
+#bottom-mobile-nav-open-icon, #bottom-mobile-nav-close-icon {
 	width: 42px;
 	position: absolute;
-	right: 0;
+	right: 2%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 /* Links */
