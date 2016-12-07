@@ -238,10 +238,10 @@ i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0 1.5rem; }
 
 address {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 pre {
   background: #eee;
@@ -525,7 +525,7 @@ body {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   text-decoration: none; }
 
 .cp-learn-about-link {
@@ -536,7 +536,7 @@ body {
   letter-spacing: 2.5px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   width: 20rem; }
   .cp-learn-about-link a {
     text-decoration: none; }
@@ -547,7 +547,7 @@ body {
   font-weight: 100;
   letter-spacing: 2.5px;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   text-decoration: none; }
   .cp-learn-about-link-small a {
     margin-right: 1rem; }
@@ -675,11 +675,11 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 ul,
 ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1.5rem 3rem; }
 
 ul {
   list-style: disc; }
@@ -690,13 +690,13 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 1.5rem; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5em 1.5em; }
+  margin: 0 1.5rem 1.5rem; }
 
 img {
   height: auto;
@@ -705,7 +705,7 @@ img {
   /* Adhere to container width. */ }
 
 table {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   width: 100%; }
 
 /*--------------------------------------------------------------
@@ -902,7 +902,7 @@ nav {
   font-size: 1.5rem; }
 
 .bottom-mobile-nav-bar-wrapper {
-  height: 3rem;
+  height: 5rem;
   position: relative;
   background-color: #3B5998;
   display: -ms-flexbox;
@@ -918,7 +918,9 @@ nav {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  width: 100%; }
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500; }
 
 .bottom-mobile-nav-text {
   width: 250px;
@@ -959,7 +961,7 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 1.5rem;
       left: -999em;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -994,7 +996,7 @@ a {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   overflow: hidden; }
 
 .comment-navigation .nav-previous,
@@ -1046,12 +1048,12 @@ a {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em; }
+  margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em; }
+  margin-left: 1.5rem; }
 
 .aligncenter {
   clear: both;
@@ -1071,7 +1073,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -1088,7 +1090,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -1100,11 +1102,11 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 1.5rem 0 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -1226,11 +1228,22 @@ a {
 .cp-awards {
   background-color: #F5A623;
   font-family: "roboto";
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   text-align: center;
-  padding: 5%; }
+  padding: 10% 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .cp-awards p {
+    margin-bottom: 1.5rem;
+    width: 80%; }
+  .cp-awards .cp-button-link {
+    font-size: 1.6rem; }
 
 .cp-landing-section {
   padding-top: 20vh;
@@ -1247,12 +1260,9 @@ a {
     font-weight: 100;
     font-family: "roboto";
     color: #fff;
-    padding: 10rem 5rem 0;
+    padding: 10rem 26% 0;
     text-align: center;
     margin: 0; }
-  .cp-landing-section .cinderella {
-    padding: 36rem 0 0 2rem;
-    text-align: left; }
   .cp-landing-section .get-involved {
     padding: 10rem 8rem 0; }
   .cp-landing-section .brand-slogan {
@@ -1322,8 +1332,8 @@ a {
   padding: 10%; }
   .cp-history-section .cp-history-copy {
     font-family: "roboto";
-    font-size: 1.4rem;
-    font-weight: 200;
+    font-size: 1.7rem;
+    font-weight: 300;
     font-style: normal;
     text-align: center; }
 
@@ -1335,12 +1345,23 @@ a {
   -ms-flex-align: center;
       align-items: center;
   background-color: #393D53;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-family: "roboto";
-  font-weight: 100;
-  text-align: center; }
-  .cp-purple-section p {
-    width: 80%; }
+  font-weight: 300;
+  text-align: center;
+  padding: 10%; }
+  .cp-purple-section p:after {
+    content: "";
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10%;
+    text-align: center;
+    margin: 0 auto; }
+  .cp-purple-section p:last-of-type:after {
+    display: none; }
+  .cp-purple-section .cp-button-link {
+    margin-top: 10%; }
 
 .cp-marketing-section-small {
   display: -ms-flexbox;
@@ -1366,7 +1387,7 @@ a {
   width: 100%;
   height: inherit; }
   .cp-title-section .cp-title-text {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 300;
     font-family: "roboto";
     color: #fff;
@@ -1434,7 +1455,8 @@ a {
     font-weight: 200;
     font-style: normal; }
     .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value {
-      font-size: 2.5rem; }
+      font-size: 3rem;
+      font-weight: 300; }
       .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value:after {
         width: 2rem;
         border-bottom: 1px solid #fff;
@@ -1492,13 +1514,13 @@ a {
   .cp-description-section br {
     width: 55%;
     border-bottom: 1px solid #fff;
-    margin: 1.5em auto; }
+    margin: 1.5rem auto; }
 
 .bd-photo {
   position: relative; }
 
 .home-section-4 .cp-spacer {
-  height: 36px;
+  height: 5rem;
   width: 100vw;
   background-color: #F5A623; }
 
@@ -1661,7 +1683,7 @@ object {
 
 /* Captions */
 .wp-caption {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
@@ -1675,7 +1697,7 @@ object {
 
 /* Galleries*/
 .gallery {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 .gallery-item {
   display: inline-block;
