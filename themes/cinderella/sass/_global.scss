@@ -66,9 +66,9 @@ body {
 }
 
 .cp-horizontal-line {
-    width: 85%;
-    border-bottom: 3px solid #fff;
-    margin: 5%;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 1rem;
     text-align: center;
 }
 
@@ -113,7 +113,10 @@ body {
     .cp-angle-down {
         font-size: 2.5rem;
         color: #fff;
-        padding: 25% 50%;
+        position:absolute;
+        top: 90vh;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
