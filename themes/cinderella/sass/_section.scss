@@ -50,19 +50,23 @@
  
  .cp-no-gift {
      font-family: $font_roboto;
-     font-weight: 200;
+     font-weight: 300;
      font-style: normal;
      text-align: center;
      background-color: $color_background_4;
      width: 100%;
      height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
      h2 {
-         padding: 10% 0 5% 0;
-         font-size: 1.8rem;
+         padding: 2rem 0 1rem;
+         font-size: 3rem;
      }
      p {
-         font-size: 1.3rem;
-         padding: 0 25% 0 25%;
+         font-size: 1.7rem;
+         padding:0 5rem 1rem;
      }
  }
  
@@ -146,10 +150,10 @@
      justify-content: center;
      height: 100vh;
      .cp-marketing-title {
-         font-size: 3rem;
+         font-size: 4rem;
          font-family: $font_roboto;
          font-style: normal;
-         font-weight: 200;
+         font-weight: 300;
          text-align: center;
          // width: 50%;  
      }
@@ -171,13 +175,13 @@
      .cp-marketing-copy {
          padding: 0 2.5rem;
          text-align: center;
-         font-size: 1.2rem;
+         font-size: 1.4rem;
          font-family: $font_roboto;
          font-style: normal;
-         font-weight: 100;
+         font-weight: 300;
          letter-spacing: 2.3px;
          line-height: 1.5;
-         margin-top: 10%;
+         margin: 2rem 0;
      }
  }
  
@@ -246,10 +250,13 @@
      font-family: $font_roboto;
      font-weight: 200;
      font-style: normal;
+     justify-content: center;
      .cp-quote-wrapper {
-         font-size: 3rem;
-         text-align: left;
-         padding-bottom: 2rem;
+         font-size: 3.2rem;
+         text-align: center;
+         padding: 0 2rem 2rem;
+         line-height: 1.1;
+         font-weight: 300;
          .cp-quote-text {
              padding-left: 2rem;
          }
@@ -273,7 +280,8 @@
          padding-bottom: 5%;
          text-transform: uppercase;
          text-align: center;
-         font-size: 1.2rem;
+         font-size: 1.5rem;
+         font-weight: 300;
      }
  }
  
@@ -340,10 +348,11 @@
              display: flex;
              align-items: center;
              text-align: center;
-             font-size: 1.3rem;
+             font-size: 1.5rem;
              padding: 5%;
+             font-weight: 300;
              .cp-expect-description {
-                 font-size: 1.3rem;
+                 font-size: 1.5rem;
                  text-align: center;
                  margin: 0;
              }
@@ -375,4 +384,16 @@
  
  .bd-photo {
      position: relative;
+ }
+
+ .home-section-4 {
+     .cp-spacer {
+         height: 36px;
+         width: 100vw;
+         background-color: $color_background_3;
+     }
+ }
+
+ .home-section-6 {
+     height: auto;
  }
