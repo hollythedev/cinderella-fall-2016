@@ -11,20 +11,23 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			
 			<div id="fullpage">
-				<section class="section about-section-1 cp-landing-section">
-					<p class="cp-landing-title"><?php echo CFS()->get( 'about_us_title' ); ?></p>
-					<span class="cp-horizontal-line"></span>
-					<i class="cp-angle-down fa fa-angle-down"></i>
+				<section class="section">
+					<section class="about-section-1 cp-section cp-landing-section">
+						<p class="cp-landing-title"><?php echo CFS()->get( 'about_us_title' ); ?></p>
+						<span class="cp-horizontal-line"></span>
+						<i class="cp-angle-down fa fa-angle-down"></i>
+					</section>
 				</section>
 				
-				<section class=" section about-section-2 cp-marketing-section">
-					<h2 class="cp-marketing-title about-page"><?php echo CFS()->get( 'about_us_section_2_title' ); ?></h2>
-					<span class="cp-horizontal-line"></span>
-					<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_section_2_statement' ); ?></p>
-					<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
-				</section>
+				<section class="section fp-auto-height">
+					<section class="about-section-2 cp-section cp-marketing-section">
+						<h2 class="cp-marketing-title about-page"><?php echo CFS()->get( 'about_us_section_2_title' ); ?></h2>
+						<span class="cp-horizontal-line"></span>
+						<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_section_2_statement' ); ?></p>
+						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
+					</section>
 
-				<section class="section fp-auto-height about-section-3">
+
 					<div class="cp-history-section"> 
 						<p class=" cp-history-copy"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
 					</div>
