@@ -1725,10 +1725,7 @@ object {
   font-weight: 200;
   letter-spacing: .1rem; }
 
-.referral-section-1 {
-  height: 100vh; }
-
-.section .cp-marketing-title {
+.cp-marketing-title {
   font-size: 2.8rem;
   font-weight: 100;
   font-family: "roboto";

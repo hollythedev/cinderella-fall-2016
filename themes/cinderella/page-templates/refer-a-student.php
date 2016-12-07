@@ -10,8 +10,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div id="fullpage">
-				<section class="section referral-section-1 cp-section">
-						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'brand_title' ); ?></h2>
+				<section class="section cp-section cp-landing-section">
+						<h2 class="cp-landing-title"><?php echo CFS()->get( 'brand_title' ); ?></h2>
 						<span class="horizontal-line"></span>
 						<i class="angle-down fa fa-angle-down"></i>
 				</section>
