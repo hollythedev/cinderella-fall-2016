@@ -34,7 +34,7 @@ get_header(); ?>
 						<div class="student-download-form">
 							<?php echo CFS()->get( 'ref_student_download' ); ?>
 						</div>
-							<a class="cp-button-link button-color" href="http://localhost:3000/cinderella">Download Referral Form</a>
+							<a class="cp-button-link button-color" href="http://localhost:3000/cinderella">Download Referral Form<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 
 					<section class="cp-marketing-section referral-section-4">

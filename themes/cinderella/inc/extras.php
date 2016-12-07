@@ -47,7 +47,7 @@ function my_styles_method() {
     
 }elseif(is_page( 'refer-a-student' )){
         $urlReferAstudent = CFS()->get('refer_student_background_img');
-        $custom_css = " .cp-landing-section{
+        $custom_css = " .referral-section-1{
                     background: url({$urlReferAstudent}) no-repeat center bottom;
                     background-size: cover;
                 }";

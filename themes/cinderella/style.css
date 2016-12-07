@@ -1811,7 +1811,8 @@ object {
 
 .button-color {
   text-align: center;
-  margin-top: 35px; }
+  margin-top: 35px;
+  background-color: #303346; }
 
 .bd_section_6 {
   background: #393D53;
