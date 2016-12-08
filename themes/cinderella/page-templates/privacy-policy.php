@@ -31,12 +31,13 @@ get_header(); ?>
 					<div class="cp-information-"> 
 						<h2 class="cp-information-you-give"><?php echo CFS()->get( 'information_tittle' ); ?></h2>
             <p class="cp-information-message"><?php echo CFS()->get('information_message'); ?></p>
-            <?php echo CFS()->get('information_message_2'); ?>
+           
 					</div>
 
 					<div class="cp-purple-section">
 						<h2 class="personal-info"><?php echo CFS()->get( 'personal_information_tittle' ); ?></h2>
-            <h2 class="personal-info-message"><?php echo CFS()->get( 'personal_information_message' ); ?></p>
+            <p class="personal-info-message"><?php echo CFS()->get( 'personal_information_message' ); ?></p>
+             <?php echo CFS()->get('personal_information_message_2'); ?>
 					</div>
 
 					<div class="cp-tittle-section">
