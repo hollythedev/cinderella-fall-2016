@@ -219,15 +219,15 @@
  }
 
 .cp-marketing-section-small {
-@include cp-generic-marketing-section($color_background_2);
+    @include cp-generic-marketing-section($color_background_2);
 }
 
 .cp-marketing-section-small-purple {
-@include cp-generic-marketing-section($color_background_4);
+    @include cp-generic-marketing-section($color_background_4);
 
-.footage {
-    margin: 4rem 0;
-}
+    .footage {
+        margin: 4rem 0;
+    }
 }
  
  .cp-title-section {
@@ -455,5 +455,11 @@
          &:last-child {
              margin-bottom:0;
          }
+     }
+ }
+
+ .get-involved-section-1 {
+     .cp-landing-title {
+         width: 40%;
      }
  }
