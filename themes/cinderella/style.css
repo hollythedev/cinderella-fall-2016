@@ -1793,6 +1793,13 @@ a {
 .get-involved-drop-off-donations .description-text {
   font-size: 2rem; }
 
+.section-above-footer:after {
+  content: "";
+  height: 5rem;
+  width: 100%;
+  display: table;
+  padding-bottom: 5rem; }
+
 .page-template-registration {
   background-color: #3B5998; }
   .page-template-registration #wpmem_reg label[for=first_name], .page-template-registration #wpmem_reg label[for=last_name], .page-template-registration #wpmem_reg label[for=user_email], .page-template-registration #wpmem_reg label[for=password], .page-template-registration #wpmem_reg label[for=confirm_password] {
