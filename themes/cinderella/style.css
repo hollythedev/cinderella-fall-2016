@@ -1118,11 +1118,14 @@ a {
   display: block; }
 
 .accordion {
-  width: 90vw; }
+  width: 100%; }
+
+.ui-icon {
+  display: none; }
 
 .ui-accordion-header {
   background-color: #393D53;
-  height: 3rem;
+  height: 5rem;
   font-size: 2rem;
   outline: 0;
   color: #fff;
@@ -1130,20 +1133,30 @@ a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  width: 100%; }
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-left: 2rem;
+  border-bottom: 1px solid #fff; }
+  .ui-accordion-header:last-of-type {
+    border: 0; }
   .ui-accordion-header:after {
     font-family: FontAwesome;
     display: block;
-    float: right;
-    padding-right: 2rem;
+    margin-right: 2rem;
     content: "\f078"; }
 
-.ui-accordion-header-active:after {
-  font-family: FontAwesome;
-  display: block;
-  float: right;
-  padding-right: 2rem;
-  content: "\f077"; }
+.ui-accordion-header-active {
+  border: 0; }
+  .ui-accordion-header-active:after {
+    font-family: FontAwesome;
+    display: block;
+    margin-right: 2rem;
+    content: "\f077"; }
 
 #get-involved-accordion {
   width: 100%; }
@@ -1684,6 +1697,9 @@ a {
   margin-bottom: 2rem; }
   .bd_section_2 p:last-child {
     margin-bottom: 0; }
+
+.get-involved-section-1 .cp-landing-title {
+  width: 40%; }
 
 .page-template-registration {
   background-color: #3B5998; }
