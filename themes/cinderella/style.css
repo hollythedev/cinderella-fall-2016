@@ -714,22 +714,19 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  border-color: #fff;
+  border-radius: 0;
+  background: transparent;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6em 1em .4em; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -737,8 +734,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #aaa #bbb #bbb; }
 
 /* Fields */
 input[type="text"],
@@ -747,9 +743,11 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 1px solid #fff;
+  border-radius: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: transparent; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -763,7 +761,8 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 1rem;
+  background-color: transparent; }
 
 textarea {
   padding-left: 3px;
@@ -1626,7 +1625,8 @@ a {
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .output {
         font-size: 2rem;
         margin: 0 1rem; }
-      .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_pos, .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_neg {
+      .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_pos,
+      .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_neg {
         height: 25px;
         width: 25px;
         border-radius: 50%;
@@ -1777,9 +1777,13 @@ a {
 .donations-tab {
   background-color: #F5A623; }
 
-.donations-section-1, .in-kind-wishlist-background-image, .et-involved-drop-off-donations {
+.donations-section-1,
+.in-kind-wishlist-background-image,
+.et-involved-drop-off-donations {
   height: 80vh; }
-  .donations-section-1 .image-title-text, .in-kind-wishlist-background-image .image-title-text, .et-involved-drop-off-donations .image-title-text {
+  .donations-section-1 .image-title-text,
+  .in-kind-wishlist-background-image .image-title-text,
+  .et-involved-drop-off-donations .image-title-text {
     font-size: 4rem;
     width: 70%;
     line-height: 1; }
@@ -1793,17 +1797,17 @@ a {
 .get-involved-drop-off-donations .description-text {
   font-size: 2rem; }
 
+.support-via-cash h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "roboto"; }
+
 .section-above-footer:after {
   content: "";
   height: 5rem;
   width: 100%;
   display: table;
   padding-bottom: 5rem; }
-
-.page-template-registration {
-  background-color: #3B5998; }
-  .page-template-registration #wpmem_reg label[for=first_name], .page-template-registration #wpmem_reg label[for=last_name], .page-template-registration #wpmem_reg label[for=user_email], .page-template-registration #wpmem_reg label[for=password], .page-template-registration #wpmem_reg label[for=confirm_password] {
-    display: none; }
 
 .home .home-section-4 {
   display: -ms-flexbox;

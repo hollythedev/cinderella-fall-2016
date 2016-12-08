@@ -63,7 +63,7 @@ get_header(); ?>
 									<label for="amount">$</label>
 									<input id="amount" type="text" placeholder="enter amount">
 								</form>
-								<a class="button-link" href="<?php the_permalink(); ?>">Support Us</a>
+								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us</a>
 								<p>or</p>
 								<p>Choose specific donation:</p>								
 								
@@ -154,7 +154,7 @@ get_header(); ?>
 								</div>
 
 							<!--Drop off donations background image and title-->
-							<div class="get-involved-drop-off-donations">							
+							<div class="get-involved-drop-off-locations">							
 								<!--Donation locations loop start-->
 								<?php 
 								$fields = CFS()->get( 'drop_off_locations' );
