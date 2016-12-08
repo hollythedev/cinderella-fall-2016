@@ -19,7 +19,7 @@ get_header(); ?>
 				</section>
 
 				<section class="section fp-auto-height">
-					<section class="section contact-us-section-2">
+					<section class="section contact-us-section-2 section-above-footer">
 						<p class="cp-contactform"><?php echo CFS()->get( 'contact_us_select_menu' ); ?><p>
 							<div class="cp-contact-info">
 								<h2 class="cp-title">The Cinderella Project</h2>
