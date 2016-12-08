@@ -1649,7 +1649,7 @@ a {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     font-family: "roboto";
     font-weight: 200;
     font-style: normal; }
@@ -1797,10 +1797,38 @@ a {
 .get-involved-drop-off-donations .description-text {
   font-size: 2rem; }
 
-.support-via-cash h2 {
-  font-size: 3rem;
-  font-weight: 300;
-  font-family: "roboto"; }
+.support-via-cash {
+  position: relative; }
+  .support-via-cash h2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    font-family: "roboto";
+    padding-bottom: 2rem; }
+  .support-via-cash label {
+    font-size: 2.8rem;
+    margin-right: 1rem; }
+  .support-via-cash input#amount {
+    padding: 1rem 2rem;
+    width: 75%;
+    font-size: 2rem;
+    font-weight: 100; }
+  .support-via-cash p:after {
+    content: "";
+    display: none; }
+  .support-via-cash p.horiz-line {
+    text-transform: uppercase;
+    z-index: 99;
+    background-color: #393D53;
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 2.5px; }
+  .support-via-cash .cp-horizontal-line {
+    position: absolute;
+    top: 29.2%;
+    z-index: 1; }
+
+.cp-donation-grid-wrapper {
+  margin-top: 2rem; }
 
 .section-above-footer:after {
   content: "";

@@ -63,8 +63,9 @@ get_header(); ?>
 									<label for="amount">$</label>
 									<input id="amount" type="text" placeholder="enter amount">
 								</form>
-								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us</a>
-								<p>or</p>
+								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								<p class="horiz-line">or</p>
+								<span class="cp-horizontal-line"></span>
 								<p>Choose specific donation:</p>								
 								
 								<div class="cp-donation-grid-wrapper">
