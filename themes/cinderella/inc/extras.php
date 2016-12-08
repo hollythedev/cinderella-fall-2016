@@ -83,20 +83,29 @@ function my_styles_method() {
         $urlInKindDonation = CFS()->get('donations_section_background_image_2');
         $urlGetInv = CFS()->get('get_involved_background_image');
         $urlDropOff = CFS()->get('drop_off_locations_background_image');
+        $urlDonationImg = CFS()->get('donations_section_background_image_1');
         $urlSponsorImg = CFS()->get('donations_section_background_image_2');
-        $custom_css = " .in-kind-wishlist-background-image{
-            background: url({$urlInKindDonation});
+        $custom_css = " 
+                .in-kind-wishlist-background-image{
+                background: url({$urlInKindDonation}) no-repeat left bottom;
+                background-size: cover;
                 }
                 .get-involved-section-1{
             background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlGetInv}) no-repeat center bottom;
             background-size: cover;
             }
-            .drop-off-donations{
-                background: url({$urlDropOff}); 
+            .get-involved-drop-off-donations{
+                background: url({$urlDropOff}) no-repeat 30% bottom;
+                background-size: cover;
                 }
             .sponsorship-section-1{
-                background: url({$urlSponsorImg})
+                background: url({$urlSponsorImg});
+                }
+                .donations-section-1{
+                background: url({$urlDonationImg}) no-repeat left bottom;
+                background-size: cover;
                 }";
+
   
             wp_add_inline_style( 'red-starter-style', $custom_css );
         return;
