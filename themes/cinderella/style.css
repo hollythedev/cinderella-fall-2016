@@ -1814,11 +1814,12 @@ a {
 .in-kind-wishlist-background-image {
   margin-bottom: 4rem; }
 
-.get-involved-drop-off-donations .image-title-text {
-  font-size: 4.5rem; }
-
-.get-involved-drop-off-donations .description-text {
-  font-size: 2rem; }
+.get-involved-drop-off-donations {
+  margin-top: 4rem; }
+  .get-involved-drop-off-donations .image-title-text {
+    font-size: 4.5rem; }
+  .get-involved-drop-off-donations .description-text {
+    font-size: 2rem; }
 
 .support-via-cash {
   position: relative; }

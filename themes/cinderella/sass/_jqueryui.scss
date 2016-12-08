@@ -1,6 +1,5 @@
 .accordion {
     width: 100%;
-
     .accordion {
         width: 85%;
     }
@@ -23,11 +22,9 @@
     justify-content: space-between;
     padding-left: 2rem;
     border-bottom: 1px solid #fff;
-
-    &:last-of-type{
+    &:last-of-type {
         border: 0;
     }
-
     &:after {
         font-family: FontAwesome;
         display: block;
@@ -43,7 +40,6 @@
         margin-right: 2rem;
         content: "\f077";
     }
-
     border: 0;
 }
 
