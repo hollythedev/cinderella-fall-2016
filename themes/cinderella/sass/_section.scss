@@ -560,3 +560,13 @@
          font-family: $font_roboto;
      }
  }
+ 
+ .section-above-footer {
+     &:after {
+         content: "";
+         height: 5rem;
+         width: 100%;
+         display: table;
+         padding-bottom: 5rem;
+     }
+ }

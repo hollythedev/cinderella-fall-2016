@@ -18,7 +18,7 @@ get_header(); ?>
 				</section>
 			</section>
 
-			<section class="section fp-auto-height cp-resources-section">
+			<section class="section fp-auto-height cp-resources-section section-above-footer">
 				<section class="cp-resources-form">
 					<div class="accordion">
 							<?php    

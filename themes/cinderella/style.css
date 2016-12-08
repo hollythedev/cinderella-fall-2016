@@ -1802,6 +1802,13 @@ a {
   font-weight: 300;
   font-family: "roboto"; }
 
+.section-above-footer:after {
+  content: "";
+  height: 5rem;
+  width: 100%;
+  display: table;
+  padding-bottom: 5rem; }
+
 .home .home-section-4 {
   display: -ms-flexbox;
   display: flex;
