@@ -149,6 +149,7 @@ get_header(); ?>
 
 								<div class="get-involved-drop-off-donations image-title-section grayscale-image">
 									<div class="image-title-text">
+										
 										<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
 										<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
 									</div>
@@ -161,7 +162,9 @@ get_header(); ?>
 								$fields = CFS()->get( 'drop_off_locations' );
 								foreach ( $fields as $field ) :
 								?>
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
 								<div class="business-information">
+									
 									<h3 class="stat-value"><?php echo $field['business_name'];?></h3>
 									<p class="stat-description"><?php echo $field['business_address'];?></p>
 								</div>
