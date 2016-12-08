@@ -834,13 +834,21 @@ nav {
       color: #fff; }
       .mobile-nav-menu div .nav-links-wrapper li {
         width: 90%;
-        font-size: 1.5rem;
+        height: 3.75rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
         text-transform: lowercase;
         border-bottom: 1px solid #A7B5C9; }
         .mobile-nav-menu div .nav-links-wrapper li a {
-          font-size: 1.5rem;
+          font-size: 2rem;
           text-decoration: none;
-          color: #fff; }
+          color: #fff;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center; }
         .mobile-nav-menu div .nav-links-wrapper li:last-child {
           border: 0; }
 
@@ -851,10 +859,10 @@ nav {
   display: none; }
 
 .nav-icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   display: inline-block;
-  margin-right: 1rem; }
+  margin-right: 1.5rem; }
 
 #menu-item-58 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-about.svg");
@@ -891,6 +899,21 @@ nav {
   background-size: contain;
   background-repeat: no-repeat; }
 
+#menu-item-57 .nav-icon {
+  background: url("../../images/assets/nav-icons/cp_dm-icon-home.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#menu-item-145 .nav-icon {
+  background: url("../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#menu-item-189 .nav-icon {
+  background: url("../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 .nav-close-container {
   width: 100%;
   background-color: #393E53;
@@ -915,8 +938,8 @@ nav {
   -ms-flex-pack: center;
       justify-content: center;
   width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500; }
+  font-size: 2rem;
+  font-weight: 200; }
 
 .bottom-mobile-nav-text {
   width: 250px;
