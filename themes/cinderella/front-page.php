@@ -66,7 +66,7 @@ get_header(); ?>
 							<a class="cp-button-link" href="/index.php?p=37">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 						</div>
 
-						<div class="home-section-6 cp-quote-section cp-section">
+						<div class="home-section-6 cp-quote-section cp-section section-above-footer">
 							<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote_2' ); ?></span></h2>
 							<p class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author_2' ); ?></p>
 						</div>

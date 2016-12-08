@@ -59,14 +59,13 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-
      h2 {
          padding: 2rem 0 1rem;
          font-size: 3rem;
      }
      p {
          font-size: 1.7rem;
-         padding:0 5rem 1rem;
+         padding: 0 5rem 1rem;
      }
  }
  
@@ -89,12 +88,10 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-
      p {
          margin-bottom: $base__space-unit;
          width: 80%;
      }
-
      .cp-button-link {
          font-size: 1.6rem;
      }
@@ -107,7 +104,6 @@
      align-items: center;
      width: 100vw;
      height: 100vh;
-
      .cp-landing-title {
          font-size: 2.8rem;
          font-weight: 100;
@@ -136,7 +132,6 @@
          margin-bottom: .5rem;
      }
      .cp-landing-image {}
-
      .cp-landing-top-divider {
          position: absolute;
          top: 50%;
@@ -205,30 +200,32 @@
      }
  }
  
-.cp-turquoise-section {
+ .cp-turquoise-section {
      @include cp-generic-section($color_background_2);
  }
-.cp-orange-section {
+ 
+ .cp-orange-section {
      @include cp-generic-section($color_background_3);
  }
-.cp-purple-section {
+ 
+ .cp-purple-section {
      @include cp-generic-section($color_background_4);
  }
-.cp-dark-purple-section {
+ 
+ .cp-dark-purple-section {
      @include cp-generic-section($color_background_5);
  }
-
-.cp-marketing-section-small {
-    @include cp-generic-marketing-section($color_background_2);
-}
-
-.cp-marketing-section-small-purple {
-    @include cp-generic-marketing-section($color_background_4);
-
-    .footage {
-        margin: 4rem 0;
-    }
-}
+ 
+ .cp-marketing-section-small {
+     @include cp-generic-marketing-section($color_background_2);
+ }
+ 
+ .cp-marketing-section-small-purple {
+     @include cp-generic-marketing-section($color_background_4);
+     .footage {
+         margin: 4rem 0;
+     }
+ }
  
  .cp-title-section {
      justify-content: center;
@@ -253,7 +250,6 @@
      font-weight: 200;
      font-style: normal;
      justify-content: center;
-
      .cp-quote-wrapper {
          font-size: 3.2rem;
          text-align: center;
@@ -330,35 +326,30 @@
          }
      }
  }
-
+ 
  .cp-donation-grid-wrapper {
      .cp-donation-grid {
          display: flex;
          width: 100vw;
-
          .cp-donation-image-wrapper {
              width: 50%;
              padding-bottom: 50%;
              height: 0;
              position: relative;
-
              .counter {
-                 position:absolute;
+                 position: absolute;
                  display: flex;
                  justify-content: center;
                  align-items: center;
-
                  top: 90%;
                  left: 50%;
                  transform: translate(-50%, -100%);
-
                  .output {
                      font-size: 2rem;
                      margin: 0 1rem;
                  }
-
-                 .target_pos, .target_neg {
-
+                 .target_pos,
+                 .target_neg {
                      height: 25px;
                      width: 25px;
                      border-radius: 50%;
@@ -367,7 +358,6 @@
                      display: flex;
                      justify-content: center;
                      align-items: center;
-
                  }
              }
          }
@@ -378,22 +368,20 @@
              flex-direction: column;
              align-items: center;
              justify-content: center;
-             padding: 0 1.5rem;
+             padding: 1.5rem;
              font-family: $font_roboto;
              font-weight: 200;
              font-style: normal;
              .cp-donation-value {
                  font-size: 1.7rem;
                  font-weight: 300;
-
              }
              .cp-donation-description {
                  font-size: 1.4rem;
                  text-align: center;
                  margin: 0;
-                font-weight: 300;
-                                 
-                &:after {
+                 font-weight: 300;
+                 &:after {
                      width: 1rem;
                      border-bottom: 1px solid #fff;
                      content: "";
@@ -403,7 +391,7 @@
              }
          }
          &:nth-child(2n) {
-               .cp-donation-text-wrapper {
+             .cp-donation-text-wrapper {
                  background-color: $color_background_3;
              }
          }
@@ -465,7 +453,7 @@
  .bd-photo {
      position: relative;
  }
-
+ 
  .home-section-4 {
      .cp-spacer {
          height: $nav_bottom_bar_height;
@@ -473,16 +461,15 @@
          background-color: $color_background_3;
      }
  }
-
+ 
  .home-section-6 {
      height: auto;
  }
-
+ 
  .image-title-section {
      height: 100vh;
      width: 100vw;
      position: relative;
-
      .image-title-text {
          font-size: 3rem;
          font-weight: 300;
@@ -492,19 +479,17 @@
          transform: translateY(-115%);
      }
  }
-
+ 
  .gallery-section {
      height: 100vh;
      width: 100vw;
-     position:relative;
-
+     position: relative;
      .carousel-image {
-        height: 100vh;
-        width: 100vw;
-        background-size: 50%;
-        position: relative;
+         height: 100vh;
+         width: 100vw;
+         background-size: 50%;
+         position: relative;
      }
-
      .gallery-bottom-divider {
          position: absolute;
          top: 57%;
@@ -516,57 +501,133 @@
          align-items: center;
          text-align: left;
      }
-
      .carousel-text {
          text-align: left;
          margin-left: 5%;
      }
  }
-
+ 
  .bd_section_2 {
      .cp-marketing-title {
-        padding: 20% 6% 0;
+         padding: 20% 6% 0;
      }
-
      p {
          margin-bottom: 2rem;
-
          &:last-child {
-             margin-bottom:0;
+             margin-bottom: 0;
          }
      }
  }
-
+ 
  .get-involved-section-1 {
      .cp-landing-title {
          width: 40%;
      }
  }
-
- .donations-tab  {
+ 
+ .donations-tab {
      background-color: $color_background_3;
  }
-
- .donations-section-1, .in-kind-wishlist-background-image, .et-involved-drop-off-donations  {
+ 
+ .donations-section-1,
+ .in-kind-wishlist-background-image,
+ .et-involved-drop-off-donations {
      height: 80vh;
-
      .image-title-text {
          font-size: 4rem;
          width: 70%;
          line-height: 1;
-
      }
  }
-
+ 
  .in-kind-wishlist-background-image {
      margin-bottom: 4rem;
  }
-
- .get-involved-drop-off-donations  {
-        .image-title-text {
+ 
+ .get-involved-drop-off-donations {
+     margin-top: 4rem;
+     .image-title-text {
          font-size: 4.5rem;
-        }
+     }
      .description-text {
          font-size: 2rem;
+     }
+ }
+ 
+ .support-via-cash {
+     position: relative;
+     h2 {
+         font-size: 2.8rem;
+         font-weight: 300;
+         font-family: $font_roboto;
+         padding-bottom: 2rem;
+     }
+     label {
+         font-size: 2.8rem;
+         margin-right: 1rem;
+     }
+     input#amount {
+         padding: 1rem 2rem;
+         width: 75%;
+         font-size: 2rem;
+         font-weight: 100;
+     }
+     p {
+         &:after {
+             content: "";
+             display: none;
+         }
+     }
+     p.horiz-line {
+         text-transform: uppercase;
+         z-index: 99;
+         background-color: $color_background_4;
+         padding: 0 1rem;
+         padding-bottom: 1.5rem;
+         letter-spacing: 2.5px
+     }
+     .cp-horizontal-line {
+         position: absolute;
+         top: 29.2%;
+         z-index: 1;
+     }
+ }
+ 
+ .wishlist-section {
+     font-family: $font_roboto;
+     font-style: normal;
+     h3 {
+         font-size: 1.7rem;
+         color: $color_list_item;
+         font-weight: 300;
+         border-top: 1px solid $color__border-abbr;
+         padding: 1rem 1rem .5rem 3rem;
+     }
+     h3:first-child {
+         padding-top: 2rem;
+     }
+     h3:last-child {
+         padding-bottom: 2rem;
+     }
+     li {
+         font-size: 1.3rem;
+         color: $color_list_item;
+         list-style: none;
+         font-weight: 100;
+         line-height: 2;
+     }
+ }
+ 
+ .cp-donation-grid-wrapper {
+     margin-top: 2rem;
+ }
+ 
+ .section-above-footer {
+     &:after {
+         content: "";
+         height: 5rem;
+         width: 100%;
+         display: table;
+         padding-bottom: 5rem;
      }
  }

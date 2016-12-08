@@ -687,7 +687,8 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5rem; }
+  margin-left: 1.5rem;
+  color: #4A4A4A; }
 
 dt {
   font-weight: bold; }
@@ -714,22 +715,19 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  border-color: #fff;
+  border-radius: 0;
+  background: transparent;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6em 1em .4em; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -737,8 +735,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #aaa #bbb #bbb; }
 
 /* Fields */
 input[type="text"],
@@ -747,9 +744,11 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 1px solid #fff;
+  border-radius: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: transparent; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -763,7 +762,8 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 1rem;
+  background-color: transparent; }
 
 textarea {
   padding-left: 3px;
@@ -835,13 +835,21 @@ nav {
       color: #fff; }
       .mobile-nav-menu div .nav-links-wrapper li {
         width: 90%;
-        font-size: 1.5rem;
+        height: 3.75rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
         text-transform: lowercase;
         border-bottom: 1px solid #A7B5C9; }
         .mobile-nav-menu div .nav-links-wrapper li a {
-          font-size: 1.5rem;
+          font-size: 2rem;
           text-decoration: none;
-          color: #fff; }
+          color: #fff;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center; }
         .mobile-nav-menu div .nav-links-wrapper li:last-child {
           border: 0; }
 
@@ -852,10 +860,10 @@ nav {
   display: none; }
 
 .nav-icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   display: inline-block;
-  margin-right: 1rem; }
+  margin-right: 1.5rem; }
 
 #menu-item-58 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-about.svg");
@@ -892,6 +900,21 @@ nav {
   background-size: contain;
   background-repeat: no-repeat; }
 
+#menu-item-57 .nav-icon {
+  background: url("../../images/assets/nav-icons/cp_dm-icon-home.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#menu-item-145 .nav-icon {
+  background: url("../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#menu-item-189 .nav-icon {
+  background: url("../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 .nav-close-container {
   width: 100%;
   background-color: #393E53;
@@ -916,8 +939,8 @@ nav {
   -ms-flex-pack: center;
       justify-content: center;
   width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500; }
+  font-size: 2rem;
+  font-weight: 200; }
 
 .bottom-mobile-nav-text {
   width: 250px;
@@ -1162,6 +1185,10 @@ a {
 
 #get-involved-accordion {
   width: 100%; }
+
+.ui-accordion-content-active {
+  background-color: #fff;
+  height: 100%; }
 
 .get-involved-fundraising {
   font-weight: 200;
@@ -1626,7 +1653,8 @@ a {
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .output {
         font-size: 2rem;
         margin: 0 1rem; }
-      .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_pos, .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_neg {
+      .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_pos,
+      .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_neg {
         height: 25px;
         width: 25px;
         border-radius: 50%;
@@ -1649,7 +1677,7 @@ a {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     font-family: "roboto";
     font-weight: 200;
     font-style: normal; }
@@ -1777,9 +1805,13 @@ a {
 .donations-tab {
   background-color: #F5A623; }
 
-.donations-section-1, .in-kind-wishlist-background-image, .et-involved-drop-off-donations {
+.donations-section-1,
+.in-kind-wishlist-background-image,
+.et-involved-drop-off-donations {
   height: 80vh; }
-  .donations-section-1 .image-title-text, .in-kind-wishlist-background-image .image-title-text, .et-involved-drop-off-donations .image-title-text {
+  .donations-section-1 .image-title-text,
+  .in-kind-wishlist-background-image .image-title-text,
+  .et-involved-drop-off-donations .image-title-text {
     font-size: 4rem;
     width: 70%;
     line-height: 1; }
@@ -1787,16 +1819,72 @@ a {
 .in-kind-wishlist-background-image {
   margin-bottom: 4rem; }
 
-.get-involved-drop-off-donations .image-title-text {
-  font-size: 4.5rem; }
+.get-involved-drop-off-donations {
+  margin-top: 4rem; }
+  .get-involved-drop-off-donations .image-title-text {
+    font-size: 4.5rem; }
+  .get-involved-drop-off-donations .description-text {
+    font-size: 2rem; }
 
-.get-involved-drop-off-donations .description-text {
-  font-size: 2rem; }
-
-.page-template-registration {
-  background-color: #3B5998; }
-  .page-template-registration #wpmem_reg label[for=first_name], .page-template-registration #wpmem_reg label[for=last_name], .page-template-registration #wpmem_reg label[for=user_email], .page-template-registration #wpmem_reg label[for=password], .page-template-registration #wpmem_reg label[for=confirm_password] {
+.support-via-cash {
+  position: relative; }
+  .support-via-cash h2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    font-family: "roboto";
+    padding-bottom: 2rem; }
+  .support-via-cash label {
+    font-size: 2.8rem;
+    margin-right: 1rem; }
+  .support-via-cash input#amount {
+    padding: 1rem 2rem;
+    width: 75%;
+    font-size: 2rem;
+    font-weight: 100; }
+  .support-via-cash p:after {
+    content: "";
     display: none; }
+  .support-via-cash p.horiz-line {
+    text-transform: uppercase;
+    z-index: 99;
+    background-color: #393D53;
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 2.5px; }
+  .support-via-cash .cp-horizontal-line {
+    position: absolute;
+    top: 29.2%;
+    z-index: 1; }
+
+.wishlist-section {
+  font-family: "roboto";
+  font-style: normal; }
+  .wishlist-section h3 {
+    font-size: 1.7rem;
+    color: #4A4A4A;
+    font-weight: 300;
+    border-top: 1px solid #666;
+    padding: 1rem 1rem .5rem 3rem; }
+  .wishlist-section h3:first-child {
+    padding-top: 2rem; }
+  .wishlist-section h3:last-child {
+    padding-bottom: 2rem; }
+  .wishlist-section li {
+    font-size: 1.3rem;
+    color: #4A4A4A;
+    list-style: none;
+    font-weight: 100;
+    line-height: 2; }
+
+.cp-donation-grid-wrapper {
+  margin-top: 2rem; }
+
+.section-above-footer:after {
+  content: "";
+  height: 5rem;
+  width: 100%;
+  display: table;
+  padding-bottom: 5rem; }
 
 .home .home-section-4 {
   display: -ms-flexbox;

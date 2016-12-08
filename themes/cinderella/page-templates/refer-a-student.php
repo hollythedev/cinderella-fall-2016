@@ -46,7 +46,7 @@ get_header(); ?>
 						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'similar_project' ); ?></h2>
 					</section>
 
-					<section class=" referral-section-5">
+					<section class=" referral-section-5 section-above-footer">
 						<h2 class="cp-district-dropdown"><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
 						<span class="cp-organizations"><?php echo CFS()->get( 'organizations' ); ?></span>
 						<a class="cp-button-link" href="http://localhost:3000/cinderella">Find Results</a>

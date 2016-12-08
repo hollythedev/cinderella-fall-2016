@@ -66,7 +66,7 @@ get_header(); ?>
 						<a class="cp-button-link button-color" href="<?php the_permalink(); ?>">Access the kit</a>
 					</section>
 					<!--Dreams come true-->
-					<section class="bd-section-8 cp-marketing-section-small-purple cp-section">
+					<section class="bd-section-8 cp-marketing-section-small-purple cp-section section-above-footer">
 						<h3 class="cp-marketing-small-title">Dreams come true. See for yourself.</h3>
 						<div class="cp-horizontal-line"></div>
 						<p class="bd-message"><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
