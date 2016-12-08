@@ -31,22 +31,21 @@
 }
 
 .navigation {
-  display: flex;
+  columns: 2;
   justify-content: space-between;
-  li {
-    list-style: none;
+  line-height: 2rem;
+  @include desktop{
+    
   }
   a {
-    border-bottom: 1px solid $color_footer_borders;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFF;
   }
-  .nav {
-    margin: 0;
-  }
 }
-
+.all-nav {
+  border-bottom: 1px solid $color_footer_borders;
+}
 .logoDevelopment {
   display: none;
   @include desktop {
@@ -67,13 +66,23 @@
   text-align: center;
   padding-bottom: 0.555rem;
   padding-top: 1.125rem;
+  border-bottom: 1px solid #FFF;
+  position: relative;
   @include desktop {
+    display: none;
+  }
+  .fb-img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:100%;
+    height:3rem;
+     @include desktop {
     text-align: left;
+    }
   }
 }
 
 .information {
-  display: none;
   @include desktop {
     display: flex;
     justify-content: space-between;
@@ -86,4 +95,12 @@
     height: 32px;
     width: 100%;
   }
+}
+.cp-copyright {
+  text-align: center;
+  padding-top: 9%;
+  letter-spacing: .60px;
+}
+.cp-organization {
+  display: none;
 }

@@ -16,20 +16,14 @@
 					</div>
 					
 					<div class="navigation">
-						<div class="nav">
-							<p><a href="#">Home</a></p>
-							<p><a href="#">About</a></p>
-							<p><a href="#">Boutique Day</a></p>
-						</div>
-						<div class="nav-2">
-							<p><a href="#">Get Involved</a></p>
-							<p><a href="#">Refer a Student</a></p>
-							<p><a href="#">Blog</a></p>
-						</div>
-						<div class="nav-3">
-							<p><a href="#">Contact Us</a></p>
-							<p><a href="#">Account</a></p>
-						</div>
+							<p class="all-nav"><a href="#">Home</a></p>
+							<p class="all-nav"><a href="#">About</a></p>
+							<p class="all-nav"><a href="#">Boutique Day</a></p>
+							<p class="all-nav"><a href="#">Get Involved</a></p>
+							<p class="all-nav"><a href="#">Refer a Student</a></p>
+							<p class="all-nav"><a href="#">Resource Kit</a></p>
+							<p class="all-nav"><a href="#">Contact Us</a></p>
+							<p><a href="#">Privacy Policy</a></p>
 						<div class="logoDevelopment">
 							<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/nav-icons/cp_dm-icon-home.svg" alt ="Spark Icon">
 							<h2>The Cinderella <spa>Project<span></h2>
@@ -37,12 +31,12 @@
 					</div>
 
 					<div class="facebook-icon">
-						<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/facebook-icon.svg" alt = "Facebook Icon">
+						<img  class="fb-img" src = "<?php echo get_template_directory_uri(); ?>/images/assets/facebook-icon.svg" alt = "Facebook Icon">
 					</div>
-					
+					<span class="horizontal-line"></span>
 					<div class="information">
 						<p class="cp-copyright"><i class="fa fa-copyright" aria-hidden="true"></i>The Cinderella Project 2016</p>
-						<p>Registered Canadian Charitable Organization BN 86666 0699 RR0001</p>
+						<p class="cp-organization">Registered Canadian Charitable Organization BN 86666 0699 RR0001</p>
 					</div>
 					</div><!-- #content -->
 				</div><!-- .site-info -->

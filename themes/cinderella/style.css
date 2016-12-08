@@ -1790,19 +1790,18 @@ object {
     right: 28%; }
 
 .navigation {
-  display: -ms-flexbox;
-  display: flex;
+  -moz-columns: 2;
+       columns: 2;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .navigation li {
-    list-style: none; }
+      justify-content: space-between;
+  line-height: 2rem; }
   .navigation a {
-    border-bottom: 1px solid #3E3E3E;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFF; }
-  .navigation .nav {
-    margin: 0; }
+
+.all-nav {
+  border-bottom: 1px solid #3E3E3E; }
 
 .logoDevelopment {
   display: none; }
@@ -1821,24 +1820,40 @@ object {
 .facebook-icon {
   text-align: center;
   padding-bottom: 0.555rem;
-  padding-top: 1.125rem; }
+  padding-top: 1.125rem;
+  border-bottom: 1px solid #FFF;
+  position: relative; }
   @media (min-width: 1240px) {
     .facebook-icon {
-      text-align: left; } }
+      display: none; } }
+  .facebook-icon .fb-img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 100%;
+    height: 3rem; }
+    @media (min-width: 1240px) {
+      .facebook-icon .fb-img {
+        text-align: left; } }
 
-.information {
-  display: none; }
-  @media (min-width: 1240px) {
-    .information {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      border-bottom: 2rem; } }
+@media (min-width: 1240px) {
+  .information {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    border-bottom: 2rem; } }
 
 .logged-in .footer-logged-in {
   height: 32px;
   width: 100%; }
+
+.cp-copyright {
+  text-align: center;
+  padding-top: 9%;
+  letter-spacing: .60px; }
+
+.cp-organization {
+  display: none; }
 
 .contact-us-section-1 {
   height: 100vh;
