@@ -45,7 +45,7 @@ get_header(); ?>
 				<!-- Beginning of Menu-->
 					<div class="accordion">
 							<h3>Donations</h3>
-								<section class="donations-tab">
+								<section class="donations-tab cp-section">
 									<div class="donations-section-1">
 										<h3>boutique day is a monumental event…</h3>
 								<!-- First donations background image-->
@@ -205,7 +205,7 @@ get_header(); ?>
 											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 										</div>
 								</section> <!-- end of donations tab -->
-								
+
 							<h3>Volunteer</h3>
 								<section class="volunteer-tab">
 									<div class="volunteer-information">
