@@ -14,7 +14,7 @@ get_header(); ?>
 				<section class="section">
 					<section class="about-section-1 cp-section cp-landing-section">
 						<div class="cp-landing-top-divider">
-							<h2 class="cp-landing-title"><?php echo CFS()->get( 'pp_title' ); ?></h2>
+							<h2 class="cp-landing-tittle"><?php echo CFS()->get( 'pp_tittle' ); ?></h2>
 							<div class="cp-horizontal-line"></div>
 						</div>
 						<i class="cp-angle-down fa fa-angle-down"></i>
@@ -23,23 +23,24 @@ get_header(); ?>
 				
 				<section class="section fp-auto-height">
 					<section class="pivacy-section-2 cp-section cp-marketing-section">
-						<h2 class="cp-marketing-title about-page"><?php echo CFS()->get( 'pp_section_2_title' ); ?></h2>
+						<h2 class="cp-marketing-tittle about-page"><?php echo CFS()->get( 'pp_section_2_tittle' ); ?></h2>
 						<p class="cp-marketing-copy"><?php echo CFS()->get( 'pp_message' ); ?></p>
 					</section>
 
 
 					<div class="cp-information-"> 
-						<h2 class="cp-information-you-give"><?php echo CFS()->get( 'information_title' ); ?></h2>
+						<h2 class="cp-information-you-give"><?php echo CFS()->get( 'information_tittle' ); ?></h2>
             <p class="cp-information-message"><?php echo CFS()->get('information_message'); ?></p>
+            <?php echo CFS()->get('information_message_2'); ?>
 					</div>
 
 					<div class="cp-purple-section">
-						<h2 class="personal-info"><?php echo CFS()->get( 'personal_information_title' ); ?></h2>
+						<h2 class="personal-info"><?php echo CFS()->get( 'personal_information_tittle' ); ?></h2>
             <h2 class="personal-info-message"><?php echo CFS()->get( 'personal_information_message' ); ?></p>
 					</div>
 
-					<div class="cp-title-section">
-						<h2 class="cp-hyperlink-title"><?php echo CFS()->get('hyperlinks_title'); ?></h2>
+					<div class="cp-tittle-section">
+						<h2 class="cp-hyperlink-tittle"><?php echo CFS()->get('hyperlinks_tittle'); ?></h2>
             <p class="cp-hyperlink-message"><?php echo CFS()->get('hyperlinks_message'); ?></p>
 					<?php get_footer(); ?>
 					</div>
