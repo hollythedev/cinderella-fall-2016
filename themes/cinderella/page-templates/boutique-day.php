@@ -13,26 +13,29 @@ get_header(); ?>
 			<div id="fullpage">
 				<section class="section">
 					<section class="boutique-day-section-1 cp-section cp-landing-section">
-						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'bd_message' ); ?></h2>				
-						<div class="horizontal-line"></div>
+						<div class="cp-landing-top-divider">
+							<h2 class="cp-landing-title"><?php echo CFS()->get( 'bd_message' ); ?></h2>	
+							<div class="cp-horizontal-line"></div>
+						</div>
 						<i class="cp-angle-down fa fa-angle-down"></i>
 					</section>
 				</section>
+
 					<!--the most magical day of the year-->
 				<section class="section fp-auto-height">
-					<section class="bd_section_2 section cp-marketing-section">
-						<h2 class="cp-marketing-title boutique-day"><?php echo CFS()->get( 'bd_title' ); ?></h2>
+					<section class="bd_section_2 cp-marketing-section cp-section">
+						<h2 class="cp-marketing-title"><?php echo CFS()->get( 'bd_title' ); ?></h2>
 						<span class="cp-horizontal-line"></span>
 						<div class="cp-marketing-copy"><?php echo CFS()->get( 'bd_description' ); ?></div>
 					</section>
 
 					<!--You made it possible quote-->
-					<section class="bd_section_3 section cp-quote-section">
+					<section class="bd_section_3 cp-section cp-quote-section">
 						<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'bd_quote' ); ?></span></h2>
-						<h3 class="cp-quote-author"><?php echo CFS()->get( 'bd_author' ); ?></h3>
+						<p class="cp-quote-author"><?php echo CFS()->get( 'bd_author' ); ?></p>
 					</section>
 
-					<section class=" cp-title-section">
+					<section class="cp-title-section">
 						<h2 class="cp-title-text">What to expect</h2>
 					</section>
 
@@ -53,17 +56,17 @@ get_header(); ?>
 						</div>
 					</section>
 					<!--The Student resource kit-->
-					<section class="bd_section_6">
+					<section class="bd-section-6 cp-purple-section">
 						<p><?php echo CFS()->get( 'bd_resource_kit' ); ?></p>
 					</section>
-					<section class="bd_section_7">
-						<h3 class="cp-marketing-title">This kit is yours for life</h3>
+					<section class="bd-section-7 cp-marketing-section-small cp-section">
+						<h3 class="cp-marketing-small-title">This kit is yours for life</h3>
 						<span class="cp-horizontal-line"></span>
 						<p class="bd-message">It includes everyday tips and links to community resources.</p>
 						<a class="cp-button-link button-color" href="<?php the_permalink(); ?>">Access the kit</a>
 					</section>
 					<!--Dreams come true-->
-					<section class="bd_section_8">
+					<section class="bd-section-8">
 						<h3 class="cp-marketing-title">Dreams come true. See for yourself.</h3>
 						<p class="bd-message"><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
 						<span class="cp-horizontal-line"></span>
