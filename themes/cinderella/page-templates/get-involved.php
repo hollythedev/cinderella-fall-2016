@@ -13,9 +13,11 @@ get_header(); ?>
 <!-- no gift is too small landing page full screen image-->
 		<div id="fullpage">
 			<section class="section">
-					<section class="get-involved-section-1 cp-landing-section">
-					<p class="cp-landing-title get-involved"><?php echo CFS()->get( 'get_involved_no_gift' ); ?></p>
-					<span class="cp-horizontal-line"></span>
+				<section class="get-involved-section-1 cp-section cp-landing-section">
+					<div class="cp-landing-top-divider">
+						<h2 class="cp-landing-title"><?php echo CFS()->get( 'get_involved_no_gift' ); ?></h2>
+						<div class="cp-horizontal-line"></div>
+					</div>
 					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 			</section>
@@ -203,59 +205,7 @@ get_header(); ?>
 											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 										</div>
 								</section> <!-- end of donations tab -->
-					
-							<h3>Sponsorships</h3>
-								<section class="sponsorship-tab">
-									<div class="sponsorship-section-1">
-										<h3>boutique day is a monumental event…</h3>
-								<!-- First donations background image-->
-									</div>
-									<div class="in-kind-donations-copy">
-										<?php echo CFS()->get( 'sponsorship_in_kind_copy' ); ?>
-									</div>
-								<!-- Sponsorship quote area -->
-									<div class="sponsorship-quote">
-										<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( 'sponsorship_quote' ); ?></span></h2>
-										<h3 class="author"><?php echo CFS()->get( 'sponsorship_quote_author' ); ?></h3>
-									</div>
-									<div class="ideas-donations">
-										<h2>Ideas for other donations?</h2>
-										<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
-									</div>
-								</section> <!-- end of sponsorship tab -->
-
-							<h3>Fundraising</h3>
-								<section class="fundraising-tab">
-									<div class="get-involved-fundraising">
-										<h2>Together, we can make a difference!</h2>
-										<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
-										<div class= "fundraising_gallery">
-											<div class= "carousel">
-												<?php 
-													$fields = CFS()->get( 'fundraising_gallery' );
-													foreach ( $fields as $field ) :
-												?>
-												<img class="carousel-image" src= "<?php echo $field['fundraising_gallery_image'];?>" />
-												<h2 class="carousel-text"><?php	echo $field['fundraising_gallery_message'];?></h2>
-												<?php endforeach ?>
-											</div>
-											
-											<a class="cp-learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
-										</div> <!-- end of fundraising gallery -->
-
-										<div class="cp-marketing-section-small">
-											<h2 class="cp-marketing-title donate">Have an idea and want to get involved?</h2>
-											<span class="cp-horizontal-line"></span>
-											<p class="cp-learn-about-link-small"><a  href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
-											
-
-										</div>
-									</div> <!-- end of get-involved-fundraising -->
-									<div class="fundraising-contact-form">
-										<?php echo CFS()->get( 'fundraising_contact_form' ); ?>
-									</div>
-								</section> <!-- end of fundraising tab -->
-
+								
 							<h3>Volunteer</h3>
 								<section class="volunteer-tab">
 									<div class="volunteer-information">
