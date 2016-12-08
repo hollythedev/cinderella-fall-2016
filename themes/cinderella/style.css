@@ -1257,8 +1257,8 @@ a {
     font-weight: 100;
     font-family: "roboto";
     color: #fff;
-    padding: 10rem 26% 0;
     text-align: center;
+    width: 70%;
     margin: 0; }
   .cp-landing-section .get-involved {
     padding: 10rem 8rem 0; }
@@ -1273,7 +1273,7 @@ a {
     text-align: center;
     margin-top: 65%; }
   .cp-landing-section .brand-logo {
-    width: 275px;
+    width: 230px;
     margin-bottom: .5rem; }
   .cp-landing-section .cp-landing-top-divider {
     position: absolute;
@@ -1368,14 +1368,24 @@ a {
   width: 100%;
   background-color: #69B9C6;
   -ms-flex-pack: center;
-      justify-content: center; }
-  .cp-marketing-section-small .cp-marketing-title {
-    font-size: 1.8rem;
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 200;
+      justify-content: center;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 300; }
+  .cp-marketing-section-small .cp-marketing-small-title {
+    padding-top: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    padding: 5% 25% 0 25%; }
+    width: 50%; }
+  .cp-marketing-section-small .cp-horizontal-line {
+    width: 50%;
+    margin: 1rem 0 2rem; }
+  .cp-marketing-section-small .bd-message {
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center; }
+  .cp-marketing-section-small .cp-button-link {
+    margin-bottom: 4rem; }
 
 .cp-title-section {
   -ms-flex-pack: center;
@@ -1403,11 +1413,9 @@ a {
   .cp-quote-section .cp-quote-wrapper {
     font-size: 3.2rem;
     text-align: center;
-    padding: 0 2rem 2rem;
+    padding-bottom: 2rem;
     line-height: 1.1;
     font-weight: 300; }
-    .cp-quote-section .cp-quote-wrapper .cp-quote-text {
-      padding-left: 2rem; }
     .cp-quote-section .cp-quote-wrapper:before {
       padding-left: -2rem;
       font-family: FontAwesome;
@@ -1561,6 +1569,14 @@ a {
   .gallery-section .carousel-text {
     text-align: left;
     margin-left: 5%; }
+
+.bd_section_2 .cp-marketing-title {
+  padding: 20% 6% 0; }
+
+.bd_section_2 p {
+  margin-bottom: 2rem; }
+  .bd_section_2 p:last-child {
+    margin-bottom: 0; }
 
 .page-template-registration {
   background-color: #3B5998; }
@@ -1947,25 +1963,3 @@ object {
   text-align: center;
   margin-top: 35px;
   background-color: #303346; }
-
-.bd_section_6 {
-  background: #393D53;
-  height: 50vh;
-  width: 100vw; }
-
-.bd_section_7 {
-  background: #69B9C6;
-  height: 100vh;
-  width: 100vw; }
-  .bd_section_7 .button-color {
-    background-color: #77BDC9; }
-
-.bd-message {
-  font-size: 20px;
-  width: 185px;
-  text-align: center;
-  margin: 0 auto; }
-
-.bd_section_8 {
-  background: #393D53;
-  width: 100vw; }
