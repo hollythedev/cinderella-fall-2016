@@ -61,15 +61,16 @@ get_header(); ?>
 					</section>
 					<section class="bd-section-7 cp-marketing-section-small cp-section">
 						<h3 class="cp-marketing-small-title">This kit is yours for life</h3>
-						<span class="cp-horizontal-line"></span>
+						<div class="cp-horizontal-line"></div>
 						<p class="bd-message">It includes everyday tips and links to community resources.</p>
 						<a class="cp-button-link button-color" href="<?php the_permalink(); ?>">Access the kit</a>
 					</section>
 					<!--Dreams come true-->
-					<section class="bd-section-8">
-						<h3 class="cp-marketing-title">Dreams come true. See for yourself.</h3>
+					<section class="bd-section-8 cp-marketing-section-small-purple cp-section">
+						<h3 class="cp-marketing-small-title">Dreams come true. See for yourself.</h3>
+						<div class="cp-horizontal-line"></div>
 						<p class="bd-message"><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
-						<span class="cp-horizontal-line"></span>
+
 						<div class="footage">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/TFmLGlVx7hc" frameborder="0" allowfullscreen></iframe>
 						</div>
