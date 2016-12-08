@@ -1118,11 +1118,16 @@ a {
   display: block; }
 
 .accordion {
-  width: 90vw; }
+  width: 100%; }
+  .accordion .accordion {
+    width: 85%; }
+
+.ui-icon {
+  display: none; }
 
 .ui-accordion-header {
   background-color: #393D53;
-  height: 3rem;
+  height: 5rem;
   font-size: 2rem;
   outline: 0;
   color: #fff;
@@ -1130,20 +1135,30 @@ a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  width: 100%; }
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-left: 2rem;
+  border-bottom: 1px solid #fff; }
+  .ui-accordion-header:last-of-type {
+    border: 0; }
   .ui-accordion-header:after {
     font-family: FontAwesome;
     display: block;
-    float: right;
-    padding-right: 2rem;
+    margin-right: 2rem;
     content: "\f078"; }
 
-.ui-accordion-header-active:after {
-  font-family: FontAwesome;
-  display: block;
-  float: right;
-  padding-right: 2rem;
-  content: "\f077"; }
+.ui-accordion-header-active {
+  border: 0; }
+  .ui-accordion-header-active:after {
+    font-family: FontAwesome;
+    display: block;
+    margin-right: 2rem;
+    content: "\f077"; }
 
 #get-involved-accordion {
   width: 100%; }
@@ -1257,8 +1272,8 @@ a {
     font-weight: 100;
     font-family: "roboto";
     color: #fff;
-    padding: 10rem 26% 0;
     text-align: center;
+    width: 70%;
     margin: 0; }
   .cp-landing-section .get-involved {
     padding: 10rem 8rem 0; }
@@ -1273,7 +1288,7 @@ a {
     text-align: center;
     margin-top: 65%; }
   .cp-landing-section .brand-logo {
-    width: 275px;
+    width: 230px;
     margin-bottom: .5rem; }
   .cp-landing-section .cp-landing-top-divider {
     position: absolute;
@@ -1334,6 +1349,58 @@ a {
     font-style: normal;
     text-align: center; }
 
+.cp-turquoise-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #69B9C6;
+  font-size: 1.7rem;
+  font-family: "roboto";
+  font-weight: 300;
+  text-align: center;
+  padding: 10%; }
+  .cp-turquoise-section p:after {
+    content: "";
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10%;
+    text-align: center;
+    margin: 0 auto; }
+  .cp-turquoise-section p:last-of-type:after {
+    display: none; }
+  .cp-turquoise-section .cp-button-link {
+    margin-top: 10%; }
+
+.cp-orange-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #F5A623;
+  font-size: 1.7rem;
+  font-family: "roboto";
+  font-weight: 300;
+  text-align: center;
+  padding: 10%; }
+  .cp-orange-section p:after {
+    content: "";
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10%;
+    text-align: center;
+    margin: 0 auto; }
+  .cp-orange-section p:last-of-type:after {
+    display: none; }
+  .cp-orange-section .cp-button-link {
+    margin-top: 10%; }
+
 .cp-purple-section {
   display: -ms-flexbox;
   display: flex;
@@ -1360,6 +1427,32 @@ a {
   .cp-purple-section .cp-button-link {
     margin-top: 10%; }
 
+.cp-dark-purple-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #3B5998;
+  font-size: 1.7rem;
+  font-family: "roboto";
+  font-weight: 300;
+  text-align: center;
+  padding: 10%; }
+  .cp-dark-purple-section p:after {
+    content: "";
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10%;
+    text-align: center;
+    margin: 0 auto; }
+  .cp-dark-purple-section p:last-of-type:after {
+    display: none; }
+  .cp-dark-purple-section .cp-button-link {
+    margin-top: 10%; }
+
 .cp-marketing-section-small {
   display: -ms-flexbox;
   display: flex;
@@ -1368,14 +1461,53 @@ a {
   width: 100%;
   background-color: #69B9C6;
   -ms-flex-pack: center;
-      justify-content: center; }
-  .cp-marketing-section-small .cp-marketing-title {
-    font-size: 1.8rem;
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 200;
+      justify-content: center;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 300; }
+  .cp-marketing-section-small .cp-marketing-small-title {
+    padding-top: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    padding: 5% 25% 0 25%; }
+    width: 50%; }
+  .cp-marketing-section-small .cp-horizontal-line {
+    width: 50%;
+    margin: 1rem 0 2rem; }
+  .cp-marketing-section-small .bd-message {
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center; }
+  .cp-marketing-section-small .cp-button-link {
+    margin-bottom: 4rem; }
+
+.cp-marketing-section-small-purple {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  background-color: #393D53;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 300; }
+  .cp-marketing-section-small-purple .cp-marketing-small-title {
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 50%; }
+  .cp-marketing-section-small-purple .cp-horizontal-line {
+    width: 50%;
+    margin: 1rem 0 2rem; }
+  .cp-marketing-section-small-purple .bd-message {
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center; }
+  .cp-marketing-section-small-purple .cp-button-link {
+    margin-bottom: 4rem; }
+  .cp-marketing-section-small-purple .footage {
+    margin: 4rem 0; }
 
 .cp-title-section {
   -ms-flex-pack: center;
@@ -1403,11 +1535,9 @@ a {
   .cp-quote-section .cp-quote-wrapper {
     font-size: 3.2rem;
     text-align: center;
-    padding: 0 2rem 2rem;
+    padding-bottom: 2rem;
     line-height: 1.1;
     font-weight: 300; }
-    .cp-quote-section .cp-quote-wrapper .cp-quote-text {
-      padding-left: 2rem; }
     .cp-quote-section .cp-quote-wrapper:before {
       padding-left: -2rem;
       font-family: FontAwesome;
@@ -1561,6 +1691,20 @@ a {
   .gallery-section .carousel-text {
     text-align: left;
     margin-left: 5%; }
+
+.bd_section_2 .cp-marketing-title {
+  padding: 20% 6% 0; }
+
+.bd_section_2 p {
+  margin-bottom: 2rem; }
+  .bd_section_2 p:last-child {
+    margin-bottom: 0; }
+
+.get-involved-section-1 .cp-landing-title {
+  width: 40%; }
+
+.donations-tab {
+  background-color: #F5A623; }
 
 .page-template-registration {
   background-color: #3B5998; }
@@ -1962,25 +2106,3 @@ object {
   text-align: center;
   margin-top: 35px;
   background-color: #303346; }
-
-.bd_section_6 {
-  background: #393D53;
-  height: 50vh;
-  width: 100vw; }
-
-.bd_section_7 {
-  background: #69B9C6;
-  height: 100vh;
-  width: 100vw; }
-  .bd_section_7 .button-color {
-    background-color: #77BDC9; }
-
-.bd-message {
-  font-size: 20px;
-  width: 185px;
-  text-align: center;
-  margin: 0 auto; }
-
-.bd_section_8 {
-  background: #393D53;
-  width: 100vw; }
