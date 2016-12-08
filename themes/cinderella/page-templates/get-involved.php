@@ -40,19 +40,64 @@ get_header(); ?>
 							</div>
 							<div class="cp-stat-image-wrapper" style="background: url(<?php echo $field['sponsorship_statistic_image'];?>); background-size: cover;"></div>
 						</div>
-						<?php endforeach ?>
+						<?php endforeach;
+						wp_reset_postdata();
+						?>
 					</div>
 				<!-- Beginning of Menu-->
 					<div class="accordion">
 							<h3>Donations</h3>
 								<section class="donations-tab cp-section">
-									<div class="donations-section-1">
-										<h3>boutique day is a monumental event…</h3>
-								<!-- First donations background image-->
+
+								<div class="donations-section-1 image-title-section grayscale-image">
+									<h3 class="image-title-text">boutique day is a monumental event…</h3>
+								</div>
+								
+								<div class="donations-funding-statement cp-orange-section">
+									<p>In order to make it all possible, we rely on cash donations and in-kind donations of student care packages, formal wear, and much more. If you can provide support for any of the below items, we would greatly appreciate your donation! Each has an impact on a student’s experience.</p>
+								</div>
+
+								<div class="support-via-cash cp-purple-section">
+									<h2>Support us with a cash donation</h2>
+								<form class="donation-amount">
+									<label for="amount">$</label>
+									<input id="amount" type="text" placeholder="enter amount">
+								</form>
+								<a class="button-link" href="<?php the_permalink(); ?>">Support Us</a>
+								<p>or</p>
+								<p>Choose specific donation:</p>								
+								
+								<div class="cp-donation-grid-wrapper">
+							<?php 
+									$fields = CFS()->get( 'specific_donation_grid' );
+									foreach ( $fields as $field ) :
+								?>
+
+							<div class="cp-donation-grid">
+								<div class="cp-donation-text-wrapper">
+									<h3 class="cp-donation-description"><?php echo $field['donation_package_description'];?></h3>
+									<p class="cp-donation-value"><?php echo $field['donation_package_amount'];?></p>
+								</div>
+								<div class="cp-donation-image-wrapper" style="background: url(<?php echo $field['donation_package_image'];?>); background-size: cover;">
+
+									<div class="counter">
+										<div class="target_pos"><span class="button-symbol">+</span></div>
+										<div class="output">0</div>
+										<div class="target_neg"><span class="button-symbol">-</span></div>
 									</div>
+								</div>
+							</div>		
+
+ 								<?php endforeach ?>
+							</div>
+								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us</a>
+							</div>
+
+								<div class="in-kind-wishlist-background-image image-title-section grayscale-image">
+									<h3 class="image-title-text"><?php echo CFS()->get( 'background_image_title_2' ); ?></h3>
+								</div>
 
 
-							
 							<div class="accordion">
 								<!-- arguments for the custom query, used to grab all wishlist posts -->
 								<?php $args = array(
@@ -100,12 +145,16 @@ get_header(); ?>
 									?>
 							</div>
 
+
+								<div class="get-involved-drop-off-donations image-title-section grayscale-image">
+									<div class="image-title-text">
+										<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
+										<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
+									</div>
+								</div>
+
 							<!--Drop off donations background image and title-->
 							<div class="get-involved-drop-off-donations">							
-								<div class="drop-off-donations">
-									<?php echo CFS()->get( 'drop_off_locations_title' ); ?>
-									<?php echo CFS()->get( 'drop_off_locations_dates' ); ?>
-								</div>
 								<!--Donation locations loop start-->
 								<?php 
 								$fields = CFS()->get( 'drop_off_locations' );
