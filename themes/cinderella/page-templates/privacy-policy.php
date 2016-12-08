@@ -28,21 +28,22 @@ get_header(); ?>
 					</section>
 
 
-					<div class="cp-information-"> 
+					<section class="cp-information-"> 
 						<h2 class="cp-information-you-give"><?php echo CFS()->get( 'information_title' ); ?></h2>
             <p class="cp-information-message"><?php echo CFS()->get('information_message'); ?></p>
-					</div>
+					</section>
 
-					<div class="cp-purple-section">
+					<section class="cp-purple-section">
 						<h2 class="personal-info"><?php echo CFS()->get( 'personal_information_title' ); ?></h2>
             <h2 class="personal-info-message"><?php echo CFS()->get( 'personal_information_message' ); ?></p>
-					</div>
+					</section>
 
-					<div class="cp-title-section">
+					<section class="cp-title-section section-above-footer">
 						<h2 class="cp-hyperlink-title"><?php echo CFS()->get('hyperlinks_title'); ?></h2>
             <p class="cp-hyperlink-message"><?php echo CFS()->get('hyperlinks_message'); ?></p>
+					
+					</section>
 					<?php get_footer(); ?>
-					</div>
 				</section> <!--end of section fp-auto-height -->
 		</div>
 	</main><!-- #main -->

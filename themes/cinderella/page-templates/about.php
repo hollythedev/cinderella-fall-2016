@@ -30,32 +30,32 @@ get_header(); ?>
 					</section>
 
 
-					<div class="cp-history-section"> 
+					<section class="cp-history-section"> 
 						<p class=" cp-history-copy"><?php echo CFS()->get( 'about_us_history_block' ); ?></p>
-					</div>
+					</section>
 
-					<div class="cp-purple-section">
+					<section class="cp-purple-section">
 						<?php echo CFS()->get( 'about_us_impact_statement' ); ?>
-					</div>
+					</section>
 
-					<div class="cp-title-section">
+					<section class="cp-title-section">
 						<h2 class="cp-title-text">Our main event</h2>
-					</div>
+					</section>
 
-					<div class="cp-awards">
+					<section class="cp-awards">
 						<?php echo CFS()->get( 'about_us_awards_block' ); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">More on Boutique Day<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-					</div>
+					</section>
 					
-					<div class="about-section-5 image-title-section grayscale-image">
+					<section class="about-section-5 image-title-section grayscale-image">
 						<h3 class="image-title-text"><?php echo CFS()->get( 'about_us_cinderella_title' ); ?></h3>
-					</div>
+					</section>
 
-					<div class="cinderella-section-referrals cp-purple-section">
+					<section class="cinderella-section-referrals cp-purple-section">
 						<?php echo CFS()->get( 'about_us_cinderella_referral_block' ); ?>
-					</div>
+					</section>
 
-					<div class="about-section-6 cp-stat-grid-wrapper">
+					<section class="about-section-6 cp-stat-grid-wrapper">
 						<?php 
 						$fields = CFS()->get( 'about_us_referral_grid' );
 						foreach ( $fields as $field ) :
@@ -70,17 +70,17 @@ get_header(); ?>
 							</div>
 								<?php endforeach ?>
 						
-					</div>
-					<div class="about-cinderellas cp-purple-section">
+					</section>
+					<section class="about-cinderellas cp-purple-section">
 						<?php echo CFS()->get( 'about_us_recipients' ); ?>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
-					</div>
+					</section>
 					
-					<div class="cp-title-section">
+					<section class="cp-title-section">
 						<h2 class="cp-title-text">We're so proud</h2>
-					</div>
+					</section>
 
-					<div class= "about-section-8 gallery-section">
+					<section class= "about-section-8 gallery-section">
 							<div class= "carousel">
 								<?php 
 									$fields = CFS()->get( 'about_us_awards_gallery' );
@@ -94,14 +94,14 @@ get_header(); ?>
 									</div>	
 								<?php endforeach ?>
 							</div>	
-					</div> <!-- end of about page awards gallery -->
+					</section> <!-- end of about page awards gallery -->
 						<!--awards gallery goes here -->
 
-					<div class="about-section-10 ways-to-help cp-no-gift">
+					<section class="about-section-10 ways-to-help cp-no-gift section-above-footer">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
 						<a class="cp-button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
-					</div>
+					</section>
 					
 					<?php get_footer(); ?>
 					</div>
