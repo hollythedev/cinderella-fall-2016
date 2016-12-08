@@ -1,0 +1,33 @@
+.cp-orange-section {
+  p:after {
+content:none;
+  }
+}
+.cp-turquoise-section {
+  p:after{
+    content: none;
+  }
+}
+.cp-purple-section {
+  p:after {
+    content: none;
+  }
+}
+.cp-privacy-section{
+  height: auto !important;
+  .cp-privacy-title{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+  }
+  .cp-marketing-copy{
+    letter-spacing: 1.3px;
+    padding: 0 0.5rem;
+  }
+}
+.title{
+  padding-top:30px;
+}
+.personal-info-message{
+  padding-bottom: 1.5rem;
+}
