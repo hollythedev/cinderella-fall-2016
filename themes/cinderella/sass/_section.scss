@@ -205,72 +205,30 @@
      }
  }
  
- .cp-purple-section {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     background-color: $color_background_4;
-     font-size: 1.7rem;
-     font-family: $font_roboto;
-     font-weight: 300;
-     text-align: center;
-    padding: 10%;
-     p {
-         &:after {
-            content: "";
-            display: block;
-            width: 80%;
-            border-bottom: 1px solid #fff;
-            padding-top: 10%;
-            text-align: center;
-            margin: 0 auto;
-         }
-
-         &:last-of-type {
-             &:after {
-                 display: none;
-             }
-         }
-     }
-
-     .cp-button-link {
-         margin-top: 10%;
-     }
+.cp-turquoise-section {
+     @include cp-generic-section($color_background_2);
  }
- 
- .cp-marketing-section-small {
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-     background-color: $color_background_2;
-     justify-content: center;
-     font-family: $font_roboto;
-     font-style: normal;
-     font-weight: 300;
-
-     .cp-marketing-small-title {
-         padding-top: 3rem;
-         font-size: 2.5rem;
-         text-align: center;
-         width: 50%
-         // width: 50%;  
-     }
-
-     .cp-horizontal-line {
-         width: 50%;
-         margin: 1rem 0 2rem;
-     }
-
-     .bd-message {
-         font-size: 1.5rem;
-         width: 50%;
-         text-align: center;
-     }
-
-     .cp-button-link{
-         margin-bottom: 4rem;
-     }
+.cp-orange-section {
+     @include cp-generic-section($color_background_3);
  }
+.cp-purple-section {
+     @include cp-generic-section($color_background_4);
+ }
+.cp-dark-purple-section {
+     @include cp-generic-section($color_background_5);
+ }
+
+.cp-marketing-section-small {
+@include cp-generic-marketing-section($color_background_2);
+}
+
+.cp-marketing-section-small-purple {
+@include cp-generic-marketing-section($color_background_4);
+
+.footage {
+    margin: 4rem 0;
+}
+}
  
  .cp-title-section {
      justify-content: center;
