@@ -914,7 +914,7 @@ nav {
   background-repeat: no-repeat; }
 
 #menu-item-189 .nav-icon {
-  background: url("../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg");
+  background: url("../../images/assets/nav-icons/cp_dm-icon-privacyPolicy.svg");
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -1834,6 +1834,16 @@ a {
   .get-involved-drop-off-donations .description-text {
     font-size: 2rem; }
 
+.donations-section-1 {
+  height: 70vh;
+  width: 100%; }
+
+.sponsorship-section-1 {
+  height: 70vh; }
+  .sponsorship-section-1 .image-title-text {
+    width: 80%;
+    font-size: 4.5rem; }
+
 .support-via-cash {
   position: relative; }
   .support-via-cash h2 {
@@ -1887,27 +1897,12 @@ a {
 .cp-donation-grid-wrapper {
   margin-top: 2rem; }
 
-<<<<<<< HEAD
-.donations-section-1 {
-  height: 70vh;
-  width: 100%; }
-
-.sponsorship-section-1 {
-  height: 70vh; }
-  .sponsorship-section-1 .image-title-text {
-    width: 80%;
-    font-size: 4.5rem; }
-
-.support-via-cash h2 {
-  font-size: 3rem;
-=======
 .get-involved-drop-off-locations {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   font-family: "roboto";
->>>>>>> d4d407d9c8c3d2c02f574e2eaa1f97e62316abac
   font-weight: 300;
   font-style: normal;
   padding-top: 2rem; }
@@ -2289,24 +2284,6 @@ object {
   font-weight: 200;
   letter-spacing: .1rem; }
 
-.cp-orange-section p:after {
-  content: none; }
-
-.cp-turquoise-section p:after {
-  content: none; }
-
-.cp-purple-section p:after {
-  content: none; }
-
-.cp-privacy-title {
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.04rem;
-  padding: 0 0 1.5rem 0; }
-
-.personal-information p {
-  padding-bottom: 1rem; }
-
 .referral-section-1 {
   height: 100vh; }
 
@@ -2367,7 +2344,6 @@ object {
   text-align: center;
   margin-top: 35px;
   background-color: #303346; }
-  
   .button-color .fp-scroller {
     -ms-flex-align: left;
         align-items: left; }
@@ -2381,18 +2357,11 @@ object {
 .cp-purple-section p:after {
   content: none; }
 
-.cp-privacy-section {
-  height: auto !important; }
-  .cp-privacy-section .cp-privacy-title {
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 0.04rem; }
-  .cp-privacy-section .cp-marketing-copy {
-    letter-spacing: 1.3px;
-    padding: 0 0.5rem; }
+.cp-privacy-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  padding: 0 0 1.5rem 0; }
 
-.title {
-  padding-top: 30px; }
-
-.personal-info-message {
-  padding-bottom: 1.5rem; }
+.personal-information p {
+  padding-bottom: 1rem; }
