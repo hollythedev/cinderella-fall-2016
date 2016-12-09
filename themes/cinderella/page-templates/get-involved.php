@@ -64,8 +64,9 @@ get_header(); ?>
 									<label for="amount">$</label>
 									<input id="amount" type="text" placeholder="enter amount">
 								</form>
-								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us</a>
-								<p>or</p>
+								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								<p class="horiz-line">or</p>
+								<span class="cp-horizontal-line"></span>
 								<p>Choose specific donation:</p>								
 								
 								<div class="cp-donation-grid-wrapper">
@@ -147,10 +148,20 @@ get_header(); ?>
 									?>
 							</div>
 
+<<<<<<< HEAD
 							<div class="get-involved-drop-off-donations image-title-section grayscale-image">
 								<div class="image-title-text">
 									<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
 									<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
+=======
+
+								<div class="get-involved-drop-off-donations image-title-section grayscale-image">
+									<div class="image-title-text">
+										
+										<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
+										<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
+									</div>
+>>>>>>> d4d407d9c8c3d2c02f574e2eaa1f97e62316abac
 								</div>
 							</div>
 
@@ -161,7 +172,9 @@ get_header(); ?>
 								$fields = CFS()->get( 'drop_off_locations' );
 								foreach ( $fields as $field ) :
 								?>
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
 								<div class="business-information">
+									
 									<h3 class="stat-value"><?php echo $field['business_name'];?></h3>
 									<p class="stat-description"><?php echo $field['business_address'];?></p>
 								</div>
@@ -196,6 +209,25 @@ get_header(); ?>
 							</div>
 						</section> <!-- end of sponsorship tab -->
 
+<<<<<<< HEAD
+=======
+					<h3>Fundraising</h3>
+						<section class="fundraising-tab">
+							<div class="get-involved-fundraising">
+								<h2>Together, we can make a difference!</h2>
+								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
+								<div class= "fundraising_gallery">
+									<div class="in-kind-wishlist-background-image">
+										<?php echo CFS()->get( 'background_image_title_2' ); ?>
+									</div>	
+								</div>
+								<div class="ideas-donations">
+									<h2>Ideas for other donations?</h2>
+									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								</div>
+								</section> <!-- end of fundraising tab -->
+
+>>>>>>> d4d407d9c8c3d2c02f574e2eaa1f97e62316abac
 							<h3>Volunteer</h3>
 								<section class="volunteer-tab cp-section">
 									<section class="volunteer-information cp-turquoise-section">

@@ -687,7 +687,8 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5rem; }
+  margin-left: 1.5rem;
+  color: #4A4A4A; }
 
 dt {
   font-weight: bold; }
@@ -830,7 +831,9 @@ nav {
       margin: 0;
       padding: 0;
       list-style: none;
-      background-color: #4A4A4A;
+      background-color: #393D53;
+      font-family: "roboto";
+      font-style: normal;
       color: #fff; }
       .mobile-nav-menu div .nav-links-wrapper li {
         width: 90%;
@@ -848,7 +851,8 @@ nav {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+          font-weight: 200; }
         .mobile-nav-menu div .nav-links-wrapper li:last-child {
           border: 0; }
 
@@ -923,7 +927,7 @@ nav {
 .bottom-mobile-nav-bar-wrapper {
   height: 5rem;
   position: relative;
-  background-color: #3B5998;
+  background-color: #393D53;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -938,15 +942,18 @@ nav {
   -ms-flex-pack: center;
       justify-content: center;
   width: 100%;
-  font-size: 2rem;
-  font-weight: 200; }
+  font-family: "roboto";
+  font-style: normal;
+  font-size: 1.7rem;
+  font-weight: 100; }
 
 .bottom-mobile-nav-text {
   width: 250px;
   text-align: center;
   text-transform: uppercase; }
 
-#bottom-mobile-nav-open-icon, #bottom-mobile-nav-close-icon {
+#bottom-mobile-nav-open-icon,
+#bottom-mobile-nav-close-icon {
   width: 42px;
   position: absolute;
   right: 2%;
@@ -1185,6 +1192,10 @@ a {
 #get-involved-accordion {
   width: 100%; }
 
+.ui-accordion-content-active {
+  background-color: #fff;
+  height: 100%; }
+
 .get-involved-fundraising {
   font-weight: 200;
   font-family: "roboto";
@@ -1338,7 +1349,8 @@ a {
     font-family: "roboto";
     font-style: normal;
     font-weight: 300;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.4; }
   .cp-marketing-section .front-page {
     padding: 10% 30% 0 30%; }
   .cp-marketing-section .about-page {
@@ -1359,7 +1371,8 @@ a {
     font-weight: 300;
     letter-spacing: 2.3px;
     line-height: 1.5;
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    letter-spacing: 1.5; }
 
 .cp-history-section {
   background-color: #F5A623;
@@ -1672,7 +1685,7 @@ a {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     font-family: "roboto";
     font-weight: 200;
     font-style: normal; }
@@ -1814,12 +1827,67 @@ a {
 .in-kind-wishlist-background-image {
   margin-bottom: 4rem; }
 
-.get-involved-drop-off-donations .image-title-text {
-  font-size: 4.5rem; }
+.get-involved-drop-off-donations {
+  margin-top: 4rem; }
+  .get-involved-drop-off-donations .image-title-text {
+    font-size: 4.5rem; }
+  .get-involved-drop-off-donations .description-text {
+    font-size: 2rem; }
 
-.get-involved-drop-off-donations .description-text {
-  font-size: 2rem; }
+.support-via-cash {
+  position: relative; }
+  .support-via-cash h2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    font-family: "roboto";
+    padding-bottom: 2rem; }
+  .support-via-cash label {
+    font-size: 2.8rem;
+    margin-right: 1rem; }
+  .support-via-cash input#amount {
+    padding: 1rem 2rem;
+    width: 75%;
+    font-size: 2rem;
+    font-weight: 100; }
+  .support-via-cash p:after {
+    content: "";
+    display: none; }
+  .support-via-cash p.horiz-line {
+    text-transform: uppercase;
+    z-index: 99;
+    background-color: #393D53;
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 2.5px; }
+  .support-via-cash .cp-horizontal-line {
+    position: absolute;
+    top: 29.2%;
+    z-index: 1; }
 
+.wishlist-section {
+  font-family: "roboto";
+  font-style: normal; }
+  .wishlist-section h3 {
+    font-size: 1.7rem;
+    color: #4A4A4A;
+    font-weight: 300;
+    border-top: 1px solid #666;
+    padding: 1rem 1rem .5rem 3rem; }
+  .wishlist-section h3:first-child {
+    padding-top: 2rem; }
+  .wishlist-section h3:last-child {
+    padding-bottom: 2rem; }
+  .wishlist-section li {
+    font-size: 1.3rem;
+    color: #4A4A4A;
+    list-style: none;
+    font-weight: 100;
+    line-height: 2; }
+
+.cp-donation-grid-wrapper {
+  margin-top: 2rem; }
+
+<<<<<<< HEAD
 .donations-section-1 {
   height: 70vh;
   width: 100%; }
@@ -1832,8 +1900,28 @@ a {
 
 .support-via-cash h2 {
   font-size: 3rem;
+=======
+.get-involved-drop-off-locations {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  font-family: "roboto";
+>>>>>>> d4d407d9c8c3d2c02f574e2eaa1f97e62316abac
   font-weight: 300;
-  font-family: "roboto"; }
+  font-style: normal;
+  padding-top: 2rem; }
+  .get-involved-drop-off-locations .fa {
+    width: 15%;
+    font-size: 4rem;
+    padding: 1.5rem 1.5rem 0 3rem; }
+  .get-involved-drop-off-locations .business-information {
+    width: 80%;
+    padding: 1rem 1rem 1rem 2rem; }
+    .get-involved-drop-off-locations .business-information h3 {
+      font-size: 2rem; }
+    .get-involved-drop-off-locations .business-information p {
+      font-size: 1.7rem; }
 
 .section-above-footer:after {
   content: "";
@@ -2201,12 +2289,32 @@ object {
   font-weight: 200;
   letter-spacing: .1rem; }
 
+.cp-orange-section p:after {
+  content: none; }
+
+.cp-turquoise-section p:after {
+  content: none; }
+
+.cp-purple-section p:after {
+  content: none; }
+
+.cp-privacy-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  padding: 0 0 1.5rem 0; }
+
+.personal-information p {
+  padding-bottom: 1rem; }
+
 .referral-section-1 {
   height: 100vh; }
 
 .referral-section-2 {
-  width: 100vw;
-  height: 100vh; }
+  padding: 6rem 3rem;
+  height: auto; }
+  .referral-section-2 .r-a-s-title {
+    font-size: 4.5rem; }
 
 .referral-section-3 {
   background: #393D53;
@@ -2214,19 +2322,15 @@ object {
   width: 100vw; }
   .referral-section-3 .cp-referral-student-message {
     font-size: 16px;
-    width: 252px;
-    height: 120px;
     line-height: 24px;
     text-align: center;
     margin: 27px; }
+  .referral-section-3 .city-district {
+    font-size: 15px;
+    padding-left: 2rem;
+    line-height: 1.8;
+    text-align: left; }
 
-.city-district {
-  font-size: 18px;
-  line-height: 1.75; }
-
-/*.city-district {
-  font-size: 40px;
-}*/
 .student-download-form {
   font-size: 24px;
   width: 284px;
@@ -2234,16 +2338,7 @@ object {
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 35px; }
-
-.referral-section-4 {
-  background: #F5A623;
-  height: 100vh;
-  width: 100vw; }
-  .referral-section-4 .cp-marketing-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 10vh; }
+  margin-top: 20px; }
 
 .referral-section-5 {
   background: #393D53;
@@ -2272,3 +2367,32 @@ object {
   text-align: center;
   margin-top: 35px;
   background-color: #303346; }
+  
+  .button-color .fp-scroller {
+    -ms-flex-align: left;
+        align-items: left; }
+
+.cp-orange-section p:after {
+  content: none; }
+
+.cp-turquoise-section p:after {
+  content: none; }
+
+.cp-purple-section p:after {
+  content: none; }
+
+.cp-privacy-section {
+  height: auto !important; }
+  .cp-privacy-section .cp-privacy-title {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem; }
+  .cp-privacy-section .cp-marketing-copy {
+    letter-spacing: 1.3px;
+    padding: 0 0.5rem; }
+
+.title {
+  padding-top: 30px; }
+
+.personal-info-message {
+  padding-bottom: 1.5rem; }
