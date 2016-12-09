@@ -2391,6 +2391,8 @@ object {
 .info {
   font-family: "roboto";
   font-weight: 200; }
+  .info p:nth-child(n+2) {
+    padding-bottom: 5px; }
 
 .cp-contacts {
   font-family: "roboto";
