@@ -109,7 +109,14 @@ function my_styles_method() {
                 background-size: cover;
                 }";
         
-    }
+    }elseif(is_page('resource-kit')){
+        $urlResourceKit = CFS()->get('resource_kit_background_image');
+        $custom_css = " 
+                .resource-kit-section-1{
+            background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url({$urlResourceKit}) no-repeat center bottom;
+            background-size: cover;
+            };";
+    }   
   wp_add_inline_style( 'cp-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
