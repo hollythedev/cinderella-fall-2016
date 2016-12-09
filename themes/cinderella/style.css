@@ -831,7 +831,7 @@ nav {
       margin: 0;
       padding: 0;
       list-style: none;
-      background-color: #393D53;
+      background-color: #696969;
       font-family: "roboto";
       font-style: normal;
       color: #fff; }
@@ -920,14 +920,14 @@ nav {
 
 .nav-close-container {
   width: 100%;
-  background-color: #393E53;
+  background-color: #4A4A4A;
   color: #fff;
   font-size: 1.5rem; }
 
 .bottom-mobile-nav-bar-wrapper {
   height: 5rem;
   position: relative;
-  background-color: #393D53;
+  background-color: #3B5998;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
