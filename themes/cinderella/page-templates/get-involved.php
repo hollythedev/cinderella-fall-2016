@@ -44,18 +44,19 @@ get_header(); ?>
 						wp_reset_postdata();
 						?>
 					</div>
+
 				<!-- Beginning of Menu-->
 					<div class="accordion">
 							<h3>Donations</h3>
 								<section class="donations-tab cp-section">
 
-								<div class="donations-section-1 image-title-section grayscale-image">
+								<section class="donations-section-1 image-title-section grayscale-image">
 									<h3 class="image-title-text">boutique day is a monumental event…</h3>
-								</div>
+								</section>
 								
-								<div class="donations-funding-statement cp-orange-section">
+								<section class="donations-funding-statement cp-orange-section">
 									<p>In order to make it all possible, we rely on cash donations and in-kind donations of student care packages, formal wear, and much more. If you can provide support for any of the below items, we would greatly appreciate your donation! Each has an impact on a student’s experience.</p>
-								</div>
+								</section>
 
 								<div class="support-via-cash cp-purple-section">
 									<h2>Support us with a cash donation</h2>
@@ -101,6 +102,7 @@ get_header(); ?>
 
 							<div class="accordion">
 								<!-- arguments for the custom query, used to grab all wishlist posts -->
+								
 								<?php $args = array(
 									'posts_per_page'   => 0,
 									'post_type'        => 'wishlist',
@@ -146,6 +148,12 @@ get_header(); ?>
 									?>
 							</div>
 
+<<<<<<< HEAD
+							<div class="get-involved-drop-off-donations image-title-section grayscale-image">
+								<div class="image-title-text">
+									<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
+									<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
+=======
 
 								<div class="get-involved-drop-off-donations image-title-section grayscale-image">
 									<div class="image-title-text">
@@ -153,7 +161,9 @@ get_header(); ?>
 										<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
 										<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
 									</div>
+>>>>>>> d4d407d9c8c3d2c02f574e2eaa1f97e62316abac
 								</div>
+							</div>
 
 							<!--Drop off donations background image and title-->
 							<div class="get-involved-drop-off-locations">							
@@ -174,25 +184,28 @@ get_header(); ?>
 									<h2>Ideas for other donations?</h2>
 									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
 								</div>
+							</div>
 						</section> <!-- end of donations tab -->
 			
 					<h3>Sponsorships</h3>
 						<section class="sponsorship-tab">
-							<div class="sponsorship-section-1">
-								<h3>boutique day is a monumental event…</h3>
-						<!-- First donations background image-->
+							<div class="sponsorship-section-1 image-title-section grayscale-image">
+								<h3 class="image-title-text">boutique day is a monumental event…</h3>
 							</div>
-							<div class="in-kind-donations-copy">
+
+							<div class="in-kind-donations-copy cp-turquoise-section">
 								<?php echo CFS()->get( 'sponsorship_in_kind_copy' ); ?>
 							</div>
 						<!-- Sponsorship quote area -->
-							<div class="sponsorship-quote">
-								<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( 'sponsorship_quote' ); ?></span></h2>
-								<h3 class="author"><?php echo CFS()->get( 'sponsorship_quote_author' ); ?></h3>
+							<div class="sponsorship-quote cp-section cp-quote-section">
+								<h2 class="cp-quote-wrapper"><span class="quote-text"><?php echo CFS()->get( 'sponsorship_quote' ); ?></span></h2>
+								<p class="cp-quote-author"><?php echo CFS()->get( 'sponsorship_quote_author' ); ?></p>
 							</div>
-							<div class="ideas-donations">
-								<h2>Ideas for other donations?</h2>
-								<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+
+							<div class="ideas-section">
+								<h2 class="ideas-title">Ideas for other donations?</h2>
+								<div class="cp-horizontal-line"></div>
+								<p class="cp-learn-about-link"><a href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 							</div>
 						</section> <!-- end of sponsorship tab -->
 
@@ -213,47 +226,42 @@ get_header(); ?>
 								</section> <!-- end of fundraising tab -->
 
 							<h3>Volunteer</h3>
-								<section class="volunteer-tab">
-									<div class="volunteer-information">
-										<?php echo CFS()->get( 'volunteer_information' ); ?>
-									</div>
+								<section class="volunteer-tab cp-section">
+									<section class="volunteer-information cp-turquoise-section">
+										<p><?php echo CFS()->get( 'volunteer_information' ); ?></p>
+									</section>
 
-									<div class="volunteer-quote">
-										<h2 class="quote"><span class="quote-text"><?php echo CFS()->get( 'volunteer_quote' ); ?></span></h2>
-										<h3 class="author"><?php echo CFS()->get( 'volunteer_quote_author' ); ?></h3>
-									</div>
+									<section class="volunteer-quote cp-section cp-quote-section">
+										<h2 class="cp-quote-wrapper"><span class="quote-text"><?php echo CFS()->get( 'volunteer_quote' ); ?></span></h2>
+										<p class="cp-quote-author"><?php echo CFS()->get( 'volunteer_quote_author' ); ?></p>
+									</section>
 
-									<h2>Some of our Volunteers</h2>
-									<div class= "volunteer_gallery">
-										<div class= "carousel">
-											<?php 
-												$fields = CFS()->get( 'volunteer_gallery' );
-												foreach ( $fields as $field ) :
-											?>
-											<img class="carousel-image" src = "<?php echo $field['volunteer_gallery_image'];?>" />
-											<h2 class="carousel-text"><?php echo $field['volunteer_gallery_message'];?></h2>
-											<?php endforeach ?>
-										</div>	
-										<a class="learn-about-link" href="<?php the_permalink(); ?>">Learn about the Cinderella Project</a>
-									</div> <!-- end of volunteer gallery -->
-									<div class="get-in-touch">
-										<div class="get-in-touch-wrapper">
-											<h2>Want to get involved?</h2>
-											<span class="cp-horizontal-line"></span>
-											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-										</div>
-									</div>
+									<section class="cp-purple-section volunteer-gallery-wrapper">
+										<h2 class="volunteer-title">Some of our Volunteers</h2>
 
-									<div class="volunteer-contact-form">
-									<?php echo CFS()->get( 'volunteer_contact_form' ); ?>
-									</div>
+										<div class= "volunteer_gallery gallery-section accordion-carousel-wrapper">
+											<div class= "carousel accordion-carousel">
+												<?php 
+													$fields = CFS()->get( 'volunteer_gallery' );
+													foreach ( $fields as $field ) :
+												?>
+												<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['volunteer_gallery_image'];?>) center no-repeat; background-size: cover;">
+													<div class="gallery-bottom-divider">
+														<h2 class="carousel-text"><?php echo $field['volunteer_gallery_message'];?></h2>
+													</div>
+												</div>	
+												<?php endforeach ?>
+											</div>												
+										</div> <!-- end of volunteer gallery -->
+									</section>
+
+									<section class="ideas-section">
+										<h2 class="ideas-title">Want to get involved?</h2>
+										<div class="cp-horizontal-line"></div>
+										<p class="cp-learn-about-link"><a href="<?php the_permalink(); ?>">Get in touch!<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+									</section>
 								</section> <!-- end of volunteer tab -->
 						</div>
 					<?php get_footer(); ?>
-				</section>
-			</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
 
 
