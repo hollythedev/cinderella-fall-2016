@@ -114,6 +114,10 @@ body {
     width: 284px;
     height: 62px;
     border-radius: 0;
+    font-size: 20px;
+    padding-left: .5rem;
+    font-family: $font_roboto;
+    font-weight: 300;
 }
 
 .wpcf7-form {
@@ -126,6 +130,12 @@ body {
         width: 285px;
         height: 57px;
         background: 0 0;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 1rem;
+        color: #FFF;
+        font-family: $font_roboto;
+        font-weight: 300;
     }
     input[type="submit"] {
         width: 285.25px;
@@ -134,18 +144,26 @@ body {
         box-shadow: none;
         text-shadow: none;
         display: flex;
-        color: white;
+        color: #FFF;
         font-size: 19px;
         text-transform: uppercase;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.3rem;
         justify-content: center;
         margin: 0 auto;
+        font-family: $font_roboto;
+        font-weight: 300;
     }
 }
 
 textarea.wpcf7-textarea {
     height: 180px;
     width: 285px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 1rem;
+    color: #FFF;
+    font-family: $font_roboto;
+    font-weight: 300;
 }
 
 .grayscale-image {

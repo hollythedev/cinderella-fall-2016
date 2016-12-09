@@ -594,7 +594,11 @@ body .flickity-page-dots {
   background: 0 0;
   width: 284px;
   height: 62px;
-  border-radius: 0; }
+  border-radius: 0;
+  font-size: 20px;
+  padding-left: .5rem;
+  font-family: "roboto";
+  font-weight: 300; }
 
 .wpcf7-form {
   padding-top: 25%; }
@@ -604,7 +608,13 @@ body .flickity-page-dots {
     padding: 6px;
     width: 285px;
     height: 57px;
-    background: 0 0; }
+    background: 0 0;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 1rem;
+    color: #FFF;
+    font-family: "roboto";
+    font-weight: 300; }
   .wpcf7-form input[type="submit"] {
     width: 285.25px;
     height: 57px;
@@ -613,17 +623,25 @@ body .flickity-page-dots {
     text-shadow: none;
     display: -ms-flexbox;
     display: flex;
-    color: white;
+    color: #FFF;
     font-size: 19px;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
     -ms-flex-pack: center;
         justify-content: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-family: "roboto";
+    font-weight: 300; }
 
 textarea.wpcf7-textarea {
   height: 180px;
-  width: 285px; }
+  width: 285px;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 1rem;
+  color: #FFF;
+  font-family: "roboto";
+  font-weight: 300; }
 
 .grayscale-image {
   filter: gray;
@@ -830,7 +848,7 @@ nav {
       margin: 0;
       padding: 0;
       list-style: none;
-      background-color: #393D53;
+      background-color: #696969;
       font-family: "roboto";
       font-style: normal;
       color: #fff; }
@@ -913,20 +931,20 @@ nav {
   background-repeat: no-repeat; }
 
 #menu-item-189 .nav-icon {
-  background: url("../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg");
+  background: url("../../images/assets/nav-icons/cp_dm-icon-privacyPolicy.svg");
   background-size: contain;
   background-repeat: no-repeat; }
 
 .nav-close-container {
   width: 100%;
-  background-color: #393E53;
+  background-color: #4A4A4A;
   color: #fff;
   font-size: 1.5rem; }
 
 .bottom-mobile-nav-bar-wrapper {
   height: 5rem;
   position: relative;
-  background-color: #393D53;
+  background-color: #3B5998;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1789,14 +1807,17 @@ a {
     font-size: 3rem;
     font-weight: 300;
     position: absolute;
+    line-height: 1.2;
     left: 5%;
     top: 100%;
-    transform: translateY(-115%); }
+    transform: translateY(-105%); }
 
 .gallery-section {
   height: 100vh;
   width: 100vw;
   position: relative; }
+  .gallery-section .carousel-cell {
+    width: 100%; }
   .gallery-section .carousel-image {
     height: 100vh;
     width: 100vw;
@@ -1815,9 +1836,6 @@ a {
     -ms-flex-align: center;
         align-items: center;
     text-align: left; }
-  .gallery-section .carousel-text {
-    text-align: left;
-    margin-left: 5%; }
 
 .bd_section_2 .cp-marketing-title {
   padding: 20% 6% 0; }
@@ -1853,6 +1871,16 @@ a {
     font-size: 4.5rem; }
   .get-involved-drop-off-donations .description-text {
     font-size: 2rem; }
+
+.donations-section-1 {
+  height: 70vh;
+  width: 100%; }
+
+.sponsorship-section-1 {
+  height: 70vh; }
+  .sponsorship-section-1 .image-title-text {
+    width: 80%;
+    font-size: 4.5rem; }
 
 .support-via-cash {
   position: relative; }
@@ -1934,6 +1962,41 @@ a {
   width: 100%;
   display: table;
   padding-bottom: 5rem; }
+
+.ideas-section {
+  padding: 15%;
+  background-color: #69B9C6;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .ideas-section .ideas-title {
+    text-align: center;
+    font-size: 3rem; }
+  .ideas-section .cp-horizontal-line {
+    margin: 2rem 0;
+    padding: 0; }
+
+.cp-quote-section.volunteer-quote {
+  height: auto; }
+
+.volunteer-gallery-wrapper .carousel {
+  width: 100vw; }
+
+.volunteer-gallery-wrapper .cp-learn-about-link {
+  margin-top: 15%; }
+
+.volunteer-gallery-wrapper .volunteer-title {
+  font-size: 2.4rem;
+  margin-bottom: 15%; }
+
+.volunteer-gallery-wrapper .gallery-section .gallery-bottom-divider {
+  top: 50%;
+  transform: translate(-50%); }
 
 .home .home-section-4 {
   display: -ms-flexbox;
@@ -2223,60 +2286,6 @@ object {
 .cp-organization {
   display: none; }
 
-.contact-us-section-1 {
-  height: 100vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
-  .contact-us-section-1 .cp-marketing-title {
-    font-size: 2.8rem;
-    font-weight: 100;
-    font-family: "roboto";
-    color: #fff;
-    padding: 10rem 5rem 0;
-    text-align: center;
-    margin: 0; }
-
-.contact-us-section-2 {
-  background: #393D53;
-  width: 100vw;
-  height: 100vh; }
-
-.cp-contact-info {
-  text-align: center; }
-  .cp-contact-info .cp-title {
-    font-size: 24px;
-    font-family: "roboto";
-    font-weight: 300;
-    padding-bottom: 6%; }
-
-.cp-contacts {
-  font-family: "roboto";
-  font-weight: 200;
-  letter-spacing: .1rem; }
-
-.cp-orange-section p:after {
-  content: none; }
-
-.cp-turquoise-section p:after {
-  content: none; }
-
-.cp-purple-section p:after {
-  content: none; }
-
-.cp-privacy-title {
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.04rem;
-  padding: 0 0 1.5rem 0; }
-
-.personal-information p {
-  padding-bottom: 1rem; }
-
 .referral-section-3 {
   background: #393D53;
   width: 100vw;
@@ -2335,3 +2344,58 @@ object {
   background-color: #303346;
   padding: 10% 5%;
   margin: 5% 0 10%; }
+
+.cp-orange-section p:after {
+  content: none; }
+
+.cp-turquoise-section p:after {
+  content: none; }
+
+.cp-purple-section p:after {
+  content: none; }
+
+.cp-privacy-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  padding: 0 0 1.5rem 0; }
+
+.personal-information p {
+  padding-bottom: 1rem; }
+
+.contact-us-section-1 {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .contact-us-section-1 .cp-marketing-title {
+    font-size: 2.8rem;
+    font-weight: 100;
+    font-family: "roboto";
+    color: #fff;
+    padding: 10rem 5rem 0;
+    text-align: center;
+    margin: 0; }
+
+.cp-title {
+  font-size: 24px;
+  font-family: "roboto";
+  font-weight: 200;
+  padding-bottom: 6%;
+  letter-spacing: .1rem; }
+
+.info {
+  font-family: "roboto";
+  font-weight: 200; }
+
+.cp-contacts {
+  font-family: "roboto";
+  font-weight: 200;
+  letter-spacing: .1rem; }
+
+.section-above-footer:after {
+  display: none; }

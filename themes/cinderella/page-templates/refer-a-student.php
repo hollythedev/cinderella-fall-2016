@@ -21,15 +21,19 @@ get_header(); ?>
 				</section>
 
 				<section class="section fp-auto-height">
+
 					<section class="cp-title-section referral-section-2">
 						<h2 class="cp-title-refer-student-text"><?php echo CFS()->get( 'referral_message' ); ?></h2>
+
 					</section>
 
 					<section class="referral-section-3">
 						<div class="cp-referral-student-message">
 						<?php echo CFS()->get( 'ref_a_student_message' ); ?>
 						</div>
+
 							<div class="cp-horizontal-line"></div>
+
 						<div class="city-district">
 							<?php echo CFS()->get( 'city_district' ); ?>
 							<span class="bracket"><?php echo CFS()->get( 'cities_in_bracket' ); ?></span>
@@ -41,14 +45,18 @@ get_header(); ?>
 							<a class="cp-button-link button-color" href="#">Download Referral Form<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 
+
 					<section class="cp-title-orange-section referral-section-4">
 						<h2 class="cp-title-text"><?php echo CFS()->get( 'similar_project' ); ?></h2>
+
 					</section>
 
 					<section class=" referral-section-5 section-above-footer">
 						<h2 class="cp-district-dropdown"><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
 						<span class="cp-organizations"><?php echo CFS()->get( 'organizations' ); ?></span>
+
 						<a class="cp-button-link" href="#">Find Results</a>
+
 					</section>
 					<?php get_footer(); ?>
 				</section><!-- end of fp-auto-height -->	
