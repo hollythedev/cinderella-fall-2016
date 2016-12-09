@@ -2214,8 +2214,10 @@ object {
   height: 100vh; }
 
 .referral-section-2 {
-  width: 100vw;
-  height: 100vh; }
+  padding: 6rem 3rem;
+  height: auto; }
+  .referral-section-2 .r-a-s-title {
+    font-size: 4.5rem; }
 
 .referral-section-3 {
   background: #393D53;
@@ -2223,19 +2225,15 @@ object {
   width: 100vw; }
   .referral-section-3 .cp-referral-student-message {
     font-size: 16px;
-    width: 252px;
-    height: 120px;
     line-height: 24px;
     text-align: center;
     margin: 27px; }
+  .referral-section-3 .city-district {
+    font-size: 15px;
+    padding-left: 2rem;
+    line-height: 1.8;
+    text-align: left; }
 
-.city-district {
-  font-size: 18px;
-  line-height: 1.75; }
-
-/*.city-district {
-  font-size: 40px;
-}*/
 .student-download-form {
   font-size: 24px;
   width: 284px;
@@ -2243,16 +2241,7 @@ object {
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 35px; }
-
-.referral-section-4 {
-  background: #F5A623;
-  height: 100vh;
-  width: 100vw; }
-  .referral-section-4 .cp-marketing-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 10vh; }
+  margin-top: 20px; }
 
 .referral-section-5 {
   background: #393D53;
@@ -2281,6 +2270,9 @@ object {
   text-align: center;
   margin-top: 35px;
   background-color: #303346; }
+  .button-color .fp-scroller {
+    -ms-flex-align: left;
+        align-items: left; }
 
 .cp-orange-section p:after {
   content: none; }
