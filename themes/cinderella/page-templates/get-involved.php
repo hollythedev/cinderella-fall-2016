@@ -209,8 +209,6 @@ get_header(); ?>
 							</div>
 						</section> <!-- end of sponsorship tab -->
 
-<<<<<<< HEAD
-=======
 					<h3>Fundraising</h3>
 						<section class="fundraising-tab">
 							<div class="get-involved-fundraising">
@@ -227,7 +225,6 @@ get_header(); ?>
 								</div>
 								</section> <!-- end of fundraising tab -->
 
->>>>>>> d4d407d9c8c3d2c02f574e2eaa1f97e62316abac
 							<h3>Volunteer</h3>
 								<section class="volunteer-tab cp-section">
 									<section class="volunteer-information cp-turquoise-section">
