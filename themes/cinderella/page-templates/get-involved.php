@@ -204,14 +204,25 @@ get_header(); ?>
 							<div class="get-involved-fundraising">
 								<h2>Together, we can make a difference!</h2>
 								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
-								<div class= "fundraising_gallery">
-									<div class="in-kind-wishlist-background-image">
-										<?php echo CFS()->get( 'background_image_title_2' ); ?>
-									</div>	
-								</div>
-								<div class="ideas-donations">
-									<h2>Ideas for other donations?</h2>
-									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+
+								<div class= "fundraising_gallery gallery-section accordion-carousel-wrapper">
+									<div class= "carousel accordion-carousel">
+										<?php 
+											$fields = CFS()->get( 'fundraising_gallery' );
+											foreach ( $fields as $field ) :
+										?>
+										<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['fundraising_gallery_image'];?>) center no-repeat; background-size: cover;">
+											<div class="gallery-bottom-divider">
+												<h2 class="carousel-text"><?php echo $field['fundraising_gallery_message'];?></h2>
+											</div>
+										</div>	
+										<?php endforeach ?>
+									</div>												
+								</div> <!-- end of volunteer gallery -->
+
+								<div class="ideas-section">
+									<h2 class="ideas-title">Ideas for other donations?</h2>
+									<a class="cp-learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 								</div>
 								</section> <!-- end of fundraising tab -->
 
