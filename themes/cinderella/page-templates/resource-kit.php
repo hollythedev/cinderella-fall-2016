@@ -10,58 +10,63 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div id="fullpage">
+
 			<section class="section">
-				<section class="cp-section cp-landing-section">
-				Landing Page
-				<span class="cp-horizontal-line"></span>
-				<i class="cp-angle-down fa fa-angle-down"></i>
+				<section class="resource-kit-section-1 cp-section cp-landing-section">
+					<div class="cp-landing-top-divider">
+						<h2 class="cp-landing-title"><?php echo CFS()->get( 'resource_kit_section_1' ); ?></h2>
+						<div class="cp-horizontal-line"></div>
+					</div>
+					<i class="cp-angle-down fa fa-angle-down"></i>
 				</section>
 			</section>
 
 			<section class="section fp-auto-height cp-resources-section section-above-footer">
-				<section class="cp-resources-form">
-					<div class="accordion">
-							<?php    
-								$terms = get_terms( array(
-													'taxonomy' => 'resource_category',
-													'orderby' => 'name', ));
-								foreach ($terms as $term) :           
-							?>  
-							<h3><?php echo $term->name; ?></h3>
-							<ul class="resource-list">
+				<section class="cp-resources">
+					<div class="accordion">	
+						<?php $args = array(
+							'posts_per_page'   => 0,
+							'post_type'        => 'resource',
+						);
+						$resource_loop = new WP_Query($args);
+							// loop through all wishlist posts
+							while( $resource_loop->have_posts() ): $resource_loop->the_post();
+							?>
+								<h3><?php the_title();?></h3>
+								<div class="accordion">
+								
+								<?php 
+									$secondary_categories = CFS()->get( 'resource_secondary_category_loop' );
+									foreach ( $secondary_categories as $secondary_category ) :
+								?>
+									<h3><?php echo $secondary_category['resource_secondary_category'];?></h3>
+									
+									<?php 
+									$resources = $secondary_category['resource_information'];
+									if( isset($resources) ) :
+									?>
+									<section class="cp-resource-item">
+										<?php
+									foreach ( $resources as $resource ) :
+									?>
+										<p><?php echo $resource['resource_business_name'];?></p>
+										<p><?php echo $resource['resource_business_address'];?></p>
+										<p><?php echo $resource['resource_business_phone'];?></p>
+										<p><?php echo $resource['resource_business_website'];?></p>
+										<p><?php echo $resource['resource_description'];?></p>
+
+									<?php endforeach ?>
+									</section>
 								<?php
-										$resource_query = new WP_Query( array(
-											'post_type' => 'resource',
-											'tax_query' => array(
-												array(
-													'taxonomy' => 'resource_category',
-													'field' => 'slug',
-													'terms' => array( $term->slug ),
-													'operator' => 'IN'
-												)
-											)
-										) );
-										?>
-										<ul>
-										<?php
-										if ( $resource_query->have_posts() ) : while ( $resource_query->have_posts() ) : $resource_query->the_post(); ?>
-											<li class="resource-item">
-											<h3><?php echo the_title(); ?></h3>
-
-											</li>
-										<?php endwhile; endif; ?>
-										</ul>
-										<?php
-											$resource_query = null;
-											wp_reset_postdata();
-										?>
-							<?php endforeach; ?>
-						</div>
-
-				</section>
-				<?php get_footer(); ?>
-			</section>
-		</div>
-	</main><!-- #main -->
-</div><!-- #primary -->
-
+								endif;
+								endforeach;
+								?>
+							</div>
+							<?php
+							endwhile;
+						// because we used a custom WP_Query() we need to reset the postdata for all other query calls below
+						wp_reset_postdata();
+						?>
+					</div> <!-- end of outter accordion -->
+				</section> <!-- end of cp-resources-->
+			<?php get_footer(); ?>
