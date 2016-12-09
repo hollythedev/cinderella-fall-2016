@@ -72,7 +72,6 @@ body {
     text-align: center;
 }
 
-
 .carousel-text {
     color: #fff;
     z-index: 99;
@@ -91,25 +90,22 @@ textarea {
     border-radius: 0;
 }
 
-
-
 // body needed to increase style weight and override font-awesome's default font-size
 body {
     .cp-angle-down {
         font-size: 2.5rem;
         color: #fff;
-        position:absolute;
+        position: absolute;
         top: 90vh;
         left: 50%;
         transform: translateX(-50%);
     }
-
     .flickity-page-dots {
-    bottom: 25px;
-    .dot {
-        background: #fff;
+        bottom: 25px;
+        .dot {
+            background: #fff;
+        }
     }
-}
 }
 
 // Contact form 7
@@ -121,8 +117,7 @@ body {
 }
 
 .wpcf7-form {
-    text-align: center;
-    padding-top: 5%;
+    padding-top: 25%;
     input[type=email],
     input[type=text],
     {
@@ -154,7 +149,9 @@ textarea.wpcf7-textarea {
 }
 
 .grayscale-image {
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Old WebKit */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Old WebKit */
     filter: grayscale(1);
 }

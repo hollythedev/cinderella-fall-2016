@@ -11,7 +11,6 @@
     margin-right: auto;
 }
 
-
 //mobile 
 $iphone6-width: 375px;
 $iphone6-plus-width: 414px;
@@ -23,13 +22,13 @@ $mobile-width: 600px;
 }
 
 @mixin iphone6-plus-width {
-        @media (min-width: $iphone6-plus-width) {
+    @media (min-width: $iphone6-plus-width) {
         @content;
     }
 }
 
 @mixin mobile-width {
-        @media (min-width: $mobile-width) {
+    @media (min-width: $mobile-width) {
         @content;
     }
 }
@@ -43,19 +42,18 @@ $desktop-width: 1240px;
 }
 
 @mixin cp-generic-section($background_color) {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     background-color: $background_color;
-     font-size: 1.7rem;
-     font-family: $font_roboto;
-     font-weight: 300;
-     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background_color;
+    font-size: 1.7rem;
+    font-family: $font_roboto;
+    font-weight: 300;
+    text-align: center;
     padding: 10%;
-    width:100%;
-    
-     p {
-         &:after {
+    width: 100%;
+    p {
+        &:after {
             content: "";
             display: block;
             width: 80%;
@@ -63,49 +61,59 @@ $desktop-width: 1240px;
             padding-top: 10%;
             text-align: center;
             margin: 0 auto;
-         }
-         &:last-of-type {
-             &:after {
-                 display: none;
-             }
-         }
-     }
-     .cp-button-link {
-         margin-top: 10%;
-     }
- }
+        }
+        &:last-of-type {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .cp-button-link {
+        margin-top: 10%;
+    }
+}
 
+@mixin cp-generic-title-section($color) {
+    justify-content: center;
+    background-color: $color;
+    width: 100%;
+    height: inherit;
+}
+
+@mixin cp-generic-title-text($padding:30%) {
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: $font_roboto;
+    color: #fff;
+    text-align: center;
+    padding: $padding;
+}
 
 @mixin cp-generic-marketing-section($background_color, $title_font_size: 2.5rem) {
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-     background-color: $background_color;
-     justify-content: center;
-     font-family: $font_roboto;
-     font-style: normal;
-     font-weight: 300;
-
-     .cp-marketing-small-title {
-         padding-top: 3rem;
-         font-size: $title_font_size;
-         text-align: center;
-         width: 50%
-         // width: 50%;  
-     }
-
-     .cp-horizontal-line {
-         width: 50%;
-         margin: 1rem 0 2rem;
-     }
-
-     .bd-message {
-         font-size: 1.5rem;
-         width: 50%;
-         text-align: center;
-     }
-
-     .cp-button-link{
-         margin-bottom: 4rem;
-     }
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $background_color;
+    justify-content: center;
+    font-family: $font_roboto;
+    font-style: normal;
+    font-weight: 300;
+    .cp-marketing-small-title {
+        padding-top: 3rem;
+        font-size: $title_font_size;
+        text-align: center;
+        width: 50%
+    }
+    .cp-horizontal-line {
+        width: 50%;
+        margin: 1rem 0 2rem;
+    }
+    .bd-message {
+        font-size: 1.5rem;
+        width: 50%;
+        text-align: center;
+    }
+    .cp-button-link {
+        margin-bottom: 4rem;
+    }
 }

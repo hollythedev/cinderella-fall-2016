@@ -229,17 +229,19 @@
  }
  
  .cp-title-section {
-     justify-content: center;
-     background-color: $color_background_2;
-     width: 100%;
-     height: inherit;
+     @include cp-generic-title-section($color_background_2);
      .cp-title-text {
-         font-size: 3.5rem;
-         font-weight: 300;
-         font-family: $font_roboto;
-         color: #fff;
-         text-align: center;
-         padding: 30%;
+         @include cp-generic-title-text(30%);
+     }
+     .cp-title-refer-student-text {
+         @include cp-generic-title-text(35% 20% 20% 20%);
+     }
+ }
+ 
+ .cp-title-orange-section {
+     @include cp-generic-title-section($color_background_3);
+     .cp-title-text {
+         @include cp-generic-title-text(30%);
      }
  }
  
