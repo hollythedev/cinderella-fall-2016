@@ -23,7 +23,7 @@
 							<p class="all-nav"><a href="#">Refer a Student</a></p>
 							<p class="all-nav"><a href="#">Resource Kit</a></p>
 							<p class="all-nav"><a href="#">Contact Us</a></p>
-							<p><a href="#">Privacy Policy</a></p>
+							<p class="all-nav"><a href="#">Privacy Policy</a></p>
 						<div class="logoDevelopment">
 							<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/nav-icons/cp_dm-icon-home.svg" alt="Spark Icon" />
 							<h2>The Cinderella <span>Project</span></h2>
