@@ -619,17 +619,10 @@ body .flickity-page-dots {
     width: 285.25px;
     height: 57px;
     background-color: #0C0E1B;
-    box-shadow: none;
-    text-shadow: none;
-    display: -ms-flexbox;
-    display: flex;
     color: #FFF;
     font-size: 19px;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    -ms-flex-pack: center;
-        justify-content: center;
-    margin: 0 auto;
     font-family: "roboto";
     font-weight: 300; }
 
@@ -2260,7 +2253,7 @@ object {
 .facebook-icon {
   text-align: center;
   padding-bottom: 0.555rem;
-  padding-top: 1.125rem;
+  padding-top: 2.125rem;
   border-bottom: 1px solid #979797;
   position: relative; }
   @media (min-width: 1240px) {
@@ -2410,5 +2403,5 @@ object {
   font-weight: 200;
   letter-spacing: .1rem; }
 
-.section-above-footer:after {
-  display: none; }
+::-webkit-input-placeholder {
+  color: #FFF; }
