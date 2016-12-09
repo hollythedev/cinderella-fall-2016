@@ -796,13 +796,16 @@ nav {
   top: 0; }
 
 .logged-in nav {
-  top: 32px; }
+  top: 45px; }
+  @media (min-width: 783px) {
+    .logged-in nav {
+      top: 32px; } }
 
-.logged-in #wpadminbar {
-  width: 100%;
-  position: fixed;
-  z-index: 99;
-  top: 0; }
+.logged-in #fp-nav ul {
+  transform: translateY(45px); }
+  @media (min-width: 783px) {
+    .logged-in #fp-nav ul {
+      transform: translateY(32px); } }
 
 #fp-nav {
   top: 50%;
@@ -1342,7 +1345,8 @@ a {
     width: 7rem;
     line-height: 2;
     text-align: center;
-    margin-top: 50%; }
+    position: absolute;
+    top: 65%; }
   .cp-landing-section .brand-logo {
     width: 230px;
     margin-bottom: .5rem; }
@@ -2016,7 +2020,7 @@ a {
 .home #fp-nav {
   display: block; }
   .home #fp-nav ul {
-    height: 200px;
+    height: 130px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
