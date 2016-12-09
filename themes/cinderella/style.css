@@ -831,7 +831,9 @@ nav {
       margin: 0;
       padding: 0;
       list-style: none;
-      background-color: #4A4A4A;
+      background-color: #393D53;
+      font-family: "roboto";
+      font-style: normal;
       color: #fff; }
       .mobile-nav-menu div .nav-links-wrapper li {
         width: 90%;
@@ -849,7 +851,8 @@ nav {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+          font-weight: 200; }
         .mobile-nav-menu div .nav-links-wrapper li:last-child {
           border: 0; }
 
@@ -924,7 +927,7 @@ nav {
 .bottom-mobile-nav-bar-wrapper {
   height: 5rem;
   position: relative;
-  background-color: #3B5998;
+  background-color: #393D53;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -939,15 +942,18 @@ nav {
   -ms-flex-pack: center;
       justify-content: center;
   width: 100%;
-  font-size: 2rem;
-  font-weight: 200; }
+  font-family: "roboto";
+  font-style: normal;
+  font-size: 1.7rem;
+  font-weight: 100; }
 
 .bottom-mobile-nav-text {
   width: 250px;
   text-align: center;
   text-transform: uppercase; }
 
-#bottom-mobile-nav-open-icon, #bottom-mobile-nav-close-icon {
+#bottom-mobile-nav-open-icon,
+#bottom-mobile-nav-close-icon {
   width: 42px;
   position: absolute;
   right: 2%;
@@ -1343,7 +1349,8 @@ a {
     font-family: "roboto";
     font-style: normal;
     font-weight: 300;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.4; }
   .cp-marketing-section .front-page {
     padding: 10% 30% 0 30%; }
   .cp-marketing-section .about-page {
@@ -1364,7 +1371,8 @@ a {
     font-weight: 300;
     letter-spacing: 2.3px;
     line-height: 1.5;
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    letter-spacing: 1.5; }
 
 .cp-history-section {
   background-color: #F5A623;
@@ -1879,6 +1887,27 @@ a {
 .cp-donation-grid-wrapper {
   margin-top: 2rem; }
 
+.get-involved-drop-off-locations {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  font-family: "roboto";
+  font-weight: 300;
+  font-style: normal;
+  padding-top: 2rem; }
+  .get-involved-drop-off-locations .fa {
+    width: 15%;
+    font-size: 4rem;
+    padding: 1.5rem 1.5rem 0 3rem; }
+  .get-involved-drop-off-locations .business-information {
+    width: 80%;
+    padding: 1rem 1rem 1rem 2rem; }
+    .get-involved-drop-off-locations .business-information h3 {
+      font-size: 2rem; }
+    .get-involved-drop-off-locations .business-information p {
+      font-size: 1.7rem; }
+
 .section-above-footer:after {
   content: "";
   height: 5rem;
@@ -2210,6 +2239,24 @@ object {
   font-weight: 200;
   letter-spacing: .1rem; }
 
+.cp-orange-section p:after {
+  content: none; }
+
+.cp-turquoise-section p:after {
+  content: none; }
+
+.cp-purple-section p:after {
+  content: none; }
+
+.cp-privacy-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  padding: 0 0 1.5rem 0; }
+
+.personal-information p {
+  padding-bottom: 1rem; }
+
 .referral-section-1 {
   height: 100vh; }
 
@@ -2270,6 +2317,7 @@ object {
   text-align: center;
   margin-top: 35px;
   background-color: #303346; }
+  
   .button-color .fp-scroller {
     -ms-flex-align: left;
         align-items: left; }
