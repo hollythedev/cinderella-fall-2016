@@ -498,9 +498,6 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
   height: auto !important; }
 
-html {
-  margin: 0 !important; }
-
 body {
   background-color: black; }
 
