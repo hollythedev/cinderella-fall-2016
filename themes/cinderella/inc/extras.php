@@ -99,10 +99,11 @@ function my_styles_method() {
                 background-size: cover;
                 }
             .sponsorship-section-1{
-                background: url({$urlSponsorImg});
+                background: url({$urlSponsorImg}) no-repeat 30% bottom;
+                background-size: cover;
                 }
                 .donations-section-1{
-                background: url({$urlDonationImg}) no-repeat left bottom;
+                background: url({$urlDonationImg}) no-repeat 30% bottom;
                 background-size: cover;
                 }";
 
