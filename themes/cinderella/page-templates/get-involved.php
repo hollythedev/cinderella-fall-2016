@@ -150,18 +150,12 @@ get_header(); ?>
 									?>
 							</div>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> b8cbf261bf678c69b51e90e7d89c89d45ecd660a
 							<div class="get-involved-drop-off-donations image-title-section grayscale-image">
 								<div class="image-title-text">
 									<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
 									<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
-<<<<<<< HEAD
 
-=======
->>>>>>> b8cbf261bf678c69b51e90e7d89c89d45ecd660a
 								</div>
 							</div>
 
