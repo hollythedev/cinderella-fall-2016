@@ -4,15 +4,22 @@
 
 nav {
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 99;
     top: 0;
 }
 
 .logged-in {
-    #mobile-nav {
-        top: 45px;
+    nav {
+        top: 32px;
     }
+
+#wpadminbar {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
 }
 
 #fp-nav {
