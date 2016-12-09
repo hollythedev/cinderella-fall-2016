@@ -474,9 +474,10 @@
          font-size: 3rem;
          font-weight: 300;
          position: absolute;
+         line-height: 1.2;
          left: 5%;
          top: 100%;
-         transform: translateY(-115%);
+         transform: translateY(-105%);
      }
  }
  
@@ -484,6 +485,10 @@
      height: 100vh;
      width: 100vw;
      position: relative;
+
+     .carousel-cell {
+         width: 100%;
+     }
      .carousel-image {
          height: 100vh;
          width: 100vw;
@@ -502,8 +507,7 @@
          text-align: left;
      }
      .carousel-text {
-         text-align: left;
-         margin-left: 5%;
+
      }
  }
  
@@ -544,7 +548,7 @@
      margin-bottom: 4rem;
  }
  
- .get-involved-drop-off-donations {
+ .get-involved-drop-off-donations{
      .image-title-text {
          font-size: 4.5rem;
      }
@@ -552,7 +556,19 @@
          font-size: 2rem;
      }
  }
+
+ .donations-section-1 {
+     height: 70vh;
+     width: 100%;
+ }
  
+ .sponsorship-section-1  {
+     height: 70vh;
+     .image-title-text {
+         width: 80%;
+         font-size: 4.5rem;
+     }
+ }
  .support-via-cash {
      h2 {
          font-size: 3rem;
@@ -570,3 +586,49 @@
          padding-bottom: 5rem;
      }
  }
+
+ .ideas-section {
+     padding: 15%;
+     background-color: $color_background_2;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     .ideas-title {
+         text-align: center;
+         font-size: 3rem;
+     }
+
+     .cp-horizontal-line {
+         margin: 2rem 0;
+         padding: 0;
+     }
+ }
+
+ .cp-quote-section.volunteer-quote {
+    height: auto;
+}
+
+.volunteer-gallery-wrapper {
+
+    .carousel {
+        width: 100vw;
+    }
+
+    .cp-learn-about-link {
+        margin-top: 15%;
+    }
+    .volunteer-title {
+        font-size: 2.4rem;
+        margin-bottom: 15%;
+    }
+    .gallery-section {
+
+        .gallery-bottom-divider {
+            top: 50%;
+            transform: translate(-50%);
+        }
+    }
+}
+
