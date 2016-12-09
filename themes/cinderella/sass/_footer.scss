@@ -45,6 +45,9 @@
 }
 .all-nav {
   border-bottom: 1px solid $color_footer_borders;
+  font-family: $font_roboto;
+  font-weight: 100;
+  letter-spacing: .60px;
 }
 .logoDevelopment {
   display: none;
@@ -65,8 +68,8 @@
 .facebook-icon {
   text-align: center;
   padding-bottom: 0.555rem;
-  padding-top: 1.125rem;
-  border-bottom: 1px solid #FFF;
+  padding-top: 2.125rem;
+  border-bottom: 1px solid #979797;
   position: relative;
   @include desktop {
     display: none;
@@ -99,7 +102,10 @@
 .cp-copyright {
   text-align: center;
   padding-top: 9%;
-  letter-spacing: .60px;
+  letter-spacing: 1px;
+  font-family:$font_roboto;
+  font-weight: 100;
+
 }
 .cp-organization {
   display: none;
