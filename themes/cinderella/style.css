@@ -602,7 +602,7 @@ body .flickity-page-dots {
 
 .wpcf7-form {
   text-align: center;
-  padding-top: 20%; }
+  padding-top: 12%; }
   .wpcf7-form input[type=email],
   .wpcf7-form input[type=text] {
     border-radius: 0;
@@ -652,6 +652,10 @@ textarea.wpcf7-textarea {
 
 ::-webkit-input-placeholder {
   color: white; }
+
+.info:nth-child(n+2) {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -2379,6 +2383,8 @@ object {
 .info {
   font-family: "roboto";
   font-weight: 200; }
+  .info p:nth-child(n+2) {
+    padding-bottom: 5px; }
 
 .cp-contacts {
   font-family: "roboto";

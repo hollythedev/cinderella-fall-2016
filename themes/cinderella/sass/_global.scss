@@ -126,7 +126,7 @@ body {
 
 .wpcf7-form {
     text-align: center;
-    padding-top: 20%;
+    padding-top: 12%;
     input[type=email],
     input[type=text],
     {
@@ -180,4 +180,9 @@ textarea.wpcf7-textarea {
 ::-webkit-input-placeholder {
     color: white;
 }
-
+.info{
+    &:nth-child(n+2){
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
