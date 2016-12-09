@@ -22,29 +22,28 @@ get_header(); ?>
 				</section>
 				
 				<section class="section fp-auto-height">
-					<section class="cp-privacy-section cp-orange-section cp-section cp-marketing-section">
-						<h2 class="cp-marketing-title cp-privacy-title title"><?php echo CFS()->get( 'pp_section_2_title' ); ?></h2>
-            <div class="cp-marketing-copy"><?php echo CFS()->get( 'pp_message' ); ?></div>
+					<section class="cp-orange-section">
+						<h2 class="cp-privacy-title"><?php echo CFS()->get( 'pp_section_2_title' ); ?></h2>
+            <p><?php echo CFS()->get( 'pp_message' ); ?></p>
 					</section>
 
-          <section class="cp-privacy-section section cp-turquoise-section cp-marketing-section">
+          <section class="cp-turquoise-section">
             <div class="cp-information"> 
-              <h2 class="cp-marketing-title cp-privacy-title"><?php echo CFS()->get( 'information_title' ); ?></h2>
-              <div class="cp-marketing-copy"><?php echo CFS()->get('information_message'); ?></div>
+              <h2 class="cp-privacy-title"><?php echo CFS()->get( 'information_title' ); ?></h2>
+              <p><?php echo CFS()->get('information_message'); ?></p>
             </div>
           </section>
 
-          <section class="cp-privacy-section section cp-purple-section cp-marketing-section">
+          <section class="cp-purple-section">
             <div class="personal-information">
-              <h2 class="cp-marketing-title cp-privacy-title"><?php echo CFS()->get( 'personal_information_title' ); ?></h2>
-              <div class="personal-info-message cp-marketing-copy"><?php echo CFS()->get( 'personal_information_message' ); ?></div>
-              <div class="cp-marketing-copy"><?php echo CFS()->get('personal_information_message_2'); ?></div>
+              <h2 class="cp-privacy-title"><?php echo CFS()->get( 'personal_information_title' ); ?></h2>
+              <p><?php echo CFS()->get( 'personal_information_message' ); ?></p>
             </div>
           </section>
 
-          <section class="cp-privacy-section section cp-orange-section cp-marketing-section">
-              <h2 class="cp-marketing-title cp-privacy-title"><?php echo CFS()->get('hyperlinks_title'); ?></h2>
-              <div class="cp-hyperlink-message cp-marketing-copy"><?php echo CFS()->get('hyperlinks_message'); ?></div>
+          <section class="cp-orange-section">
+              <h2 class="cp-privacy-title"><?php echo CFS()->get('hyperlinks_title'); ?></h2>
+              <p><?php echo CFS()->get('hyperlinks_message'); ?></p>
           </section>
           <?php get_footer(); ?>
 				</section> <!--end of section fp-auto-height -->

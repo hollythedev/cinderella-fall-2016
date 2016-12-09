@@ -2240,21 +2240,14 @@ object {
 .cp-purple-section p:after {
   content: none; }
 
-.cp-privacy-section {
-  height: auto !important; }
-  .cp-privacy-section .cp-privacy-title {
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 0.04rem; }
-  .cp-privacy-section .cp-marketing-copy {
-    letter-spacing: 1.3px;
-    padding: 0 0.5rem; }
+.cp-privacy-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  padding: 0 0 1.5rem 0; }
 
-.title {
-  padding-top: 30px; }
-
-.personal-info-message {
-  padding-bottom: 1.5rem; }
+.personal-information p {
+  padding-bottom: 1rem; }
 
 .referral-section-1 {
   height: 100vh; }
