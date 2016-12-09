@@ -1756,14 +1756,17 @@ a {
     font-size: 3rem;
     font-weight: 300;
     position: absolute;
+    line-height: 1.2;
     left: 5%;
     top: 100%;
-    transform: translateY(-115%); }
+    transform: translateY(-105%); }
 
 .gallery-section {
   height: 100vh;
   width: 100vw;
   position: relative; }
+  .gallery-section .carousel-cell {
+    width: 100%; }
   .gallery-section .carousel-image {
     height: 100vh;
     width: 100vw;
@@ -1782,9 +1785,6 @@ a {
     -ms-flex-align: center;
         align-items: center;
     text-align: left; }
-  .gallery-section .carousel-text {
-    text-align: left;
-    margin-left: 5%; }
 
 .bd_section_2 .cp-marketing-title {
   padding: 20% 6% 0; }
@@ -1820,6 +1820,16 @@ a {
 .get-involved-drop-off-donations .description-text {
   font-size: 2rem; }
 
+.donations-section-1 {
+  height: 70vh;
+  width: 100%; }
+
+.sponsorship-section-1 {
+  height: 70vh; }
+  .sponsorship-section-1 .image-title-text {
+    width: 80%;
+    font-size: 4.5rem; }
+
 .support-via-cash h2 {
   font-size: 3rem;
   font-weight: 300;
@@ -1831,6 +1841,41 @@ a {
   width: 100%;
   display: table;
   padding-bottom: 5rem; }
+
+.ideas-section {
+  padding: 15%;
+  background-color: #69B9C6;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .ideas-section .ideas-title {
+    text-align: center;
+    font-size: 3rem; }
+  .ideas-section .cp-horizontal-line {
+    margin: 2rem 0;
+    padding: 0; }
+
+.cp-quote-section.volunteer-quote {
+  height: auto; }
+
+.volunteer-gallery-wrapper .carousel {
+  width: 100vw; }
+
+.volunteer-gallery-wrapper .cp-learn-about-link {
+  margin-top: 15%; }
+
+.volunteer-gallery-wrapper .volunteer-title {
+  font-size: 2.4rem;
+  margin-bottom: 15%; }
+
+.volunteer-gallery-wrapper .gallery-section .gallery-bottom-divider {
+  top: 50%;
+  transform: translate(-50%); }
 
 .home .home-section-4 {
   display: -ms-flexbox;
