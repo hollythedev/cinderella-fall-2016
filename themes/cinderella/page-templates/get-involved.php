@@ -65,8 +65,10 @@ get_header(); ?>
 									<input id="amount" type="text" placeholder="enter amount">
 								</form>
 								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-								<p class="horiz-line">or</p>
-								<span class="cp-horizontal-line"></span>
+								<div class="or-section">
+									<p class="horiz-line">or</p>
+									<span class="cp-horizontal-line"></span>
+								</div>
 								<p>Choose specific donation:</p>								
 								
 								<div class="cp-donation-grid-wrapper">
@@ -148,20 +150,12 @@ get_header(); ?>
 									?>
 							</div>
 
-<<<<<<< HEAD
+
 							<div class="get-involved-drop-off-donations image-title-section grayscale-image">
 								<div class="image-title-text">
 									<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
 									<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
-=======
 
-								<div class="get-involved-drop-off-donations image-title-section grayscale-image">
-									<div class="image-title-text">
-										
-										<h3 class="title-text"><?php echo CFS()->get( 'drop_off_locations_title' ); ?></h3>
-										<p class="description-text"><?php echo CFS()->get( 'drop_off_locations_dates' ); ?></p>
-									</div>
->>>>>>> d4d407d9c8c3d2c02f574e2eaa1f97e62316abac
 								</div>
 							</div>
 

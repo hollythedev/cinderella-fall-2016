@@ -1882,35 +1882,38 @@ a {
     width: 80%;
     font-size: 4.5rem; }
 
-.support-via-cash {
-  position: relative; }
-  .support-via-cash h2 {
-    font-size: 2.8rem;
-    font-weight: 300;
-    font-family: "roboto";
-    padding-bottom: 2rem; }
-  .support-via-cash label {
-    font-size: 2.8rem;
-    margin-right: 1rem; }
-  .support-via-cash input#amount {
-    padding: 1rem 2rem;
-    width: 75%;
-    font-size: 2rem;
-    font-weight: 100; }
-  .support-via-cash p:after {
-    content: "";
-    display: none; }
-  .support-via-cash p.horiz-line {
-    text-transform: uppercase;
-    z-index: 99;
-    background-color: #393D53;
-    padding: 0 1rem;
-    padding-bottom: 1.5rem;
-    letter-spacing: 2.5px; }
-  .support-via-cash .cp-horizontal-line {
-    position: absolute;
-    top: 29.2%;
-    z-index: 1; }
+.support-via-cash h2 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  font-family: "roboto";
+  padding-bottom: 2rem; }
+
+.support-via-cash label {
+  font-size: 2.8rem;
+  margin-right: 1rem; }
+
+.support-via-cash input#amount {
+  padding: 1rem 2rem;
+  width: 75%;
+  font-size: 2rem;
+  font-weight: 100; }
+
+.support-via-cash p:after {
+  content: "";
+  display: none; }
+
+.support-via-cash p.horiz-line {
+  text-transform: uppercase;
+  z-index: 99;
+  background-color: #393D53;
+  padding: 0 1rem;
+  padding-bottom: 1.5rem;
+  letter-spacing: 2.5px; }
+
+.support-via-cash .cp-horizontal-line {
+  position: absolute;
+  top: 29.2%;
+  z-index: 1; }
 
 .wishlist-section {
   font-family: "roboto";
@@ -2312,6 +2315,7 @@ object {
 
 .student-download-form {
   font-size: 2rem;
+  font-weight: 300;
   line-height: 1.5;
   text-align: center;
   width: 80%;
@@ -2319,25 +2323,23 @@ object {
 
 .referral-section-5 {
   background: #393D53;
-  width: 100vw; }
-
-.cp-district-dropdown {
-  font-size: 24px;
-  width: 284px;
-  height: 46px;
-  line-height: 24px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 70px;
-  font-family: "moonlight"; }
-
-.cp-organizations {
-  font-size: 16px;
-  width: 252px;
-  height: 120px;
-  line-height: 24px;
-  text-align: center;
-  margin: 0 auto; }
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 200;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .referral-section-5 .district {
+    text-align: center;
+    padding: 10%; }
+    .referral-section-5 .district h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    .referral-section-5 .district p {
+      font-size: 1.7rem; }
 
 .button-color {
   text-align: center;
@@ -2398,6 +2400,3 @@ object {
   font-family: "roboto";
   font-weight: 200;
   letter-spacing: .1rem; }
-
-.section-above-footer:after {
-  display: none; }

@@ -1,42 +1,40 @@
 .contact-us-section-1 {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  .cp-marketing-title {
-    font-size: 2.8rem;
-    font-weight: 100;
-    font-family: $font_roboto;
-    color: $color__text-main;
-    padding: 10rem 5rem 0;
-    text-align: center;
-    margin: 0;
-  }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    .cp-marketing-title {
+        font-size: 2.8rem;
+        font-weight: 100;
+        font-family: $font_roboto;
+        color: $color__text-main;
+        padding: 10rem 5rem 0;
+        text-align: center;
+        margin: 0;
+    }
 }
 
-  .cp-title {
+.cp-title {
     font-size: 24px;
     font-family: $font_roboto;
     font-weight: 200;
     padding-bottom: 6%;
     letter-spacing: .1rem
-  }
-.info{
-  font-family: $font_roboto;
-  font-weight: 200;
-   p{
-     &:nth-child(n+2){
-       padding-bottom: 5px;
-     }
-   }
+}
+
+.info {
+    font-family: $font_roboto;
+    font-weight: 200;
+    p {
+        &:nth-child(n+2) {
+            padding-bottom: 5px;
+        }
+    }
 }
 
 .cp-contacts {
-  font-family: $font_roboto;
-  font-weight: 200;
-  letter-spacing: .1rem;
-}
-.section-above-footer:after {
-  display: none;
+    font-family: $font_roboto;
+    font-weight: 200;
+    letter-spacing: .1rem;
 }

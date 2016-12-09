@@ -42,19 +42,23 @@ get_header(); ?>
 						<div class="student-download-form">
 							<?php echo CFS()->get( 'ref_student_download' ); ?>
 						</div>
-							<a class="cp-button-link button-color" href="#">Download Referral Form<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+							<!--<a class="cp-button-link button-color" href="#">Download Referral Form<i class="fa fa-caret-right" aria-hidden="true"></i></a>-->
+							<a class="cp-button-link button-color" href="/index.php?p=55">Contact Us<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 
 
 					<section class="cp-title-orange-section referral-section-4">
-						<h2 class="cp-title-text"><?php echo CFS()->get( 'similar_project' ); ?></h2>
-
+							<h2 class="cp-title-text">similar projects</h2>
 					</section>
 
-					<section class=" referral-section-5 section-above-footer">
-						<h2 class="cp-district-dropdown"><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
-						<span class="cp-organizations"><?php echo CFS()->get( 'organizations' ); ?></span>
-
+					<section class="referral-section-5 section-above-footer">
+						<div class="district">
+							<h2>Don’t see your District?</h2>
+							<p>Don’t see your District? There may be a similar organization near you.</p>
+							<h2><?php echo CFS()->get( 'dont_see_your_district' ); ?></h2>
+							<p><?php echo CFS()->get( 'organizations' ); ?></p>
+						</div>
+						<!-- accordion of Districts goes here-->
 						<a class="cp-button-link" href="#">Find Results</a>
 
 					</section>

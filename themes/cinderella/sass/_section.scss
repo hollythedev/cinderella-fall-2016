@@ -488,7 +488,6 @@
      height: 100vh;
      width: 100vw;
      position: relative;
-
      .carousel-cell {
          width: 100%;
      }
@@ -509,9 +508,7 @@
          align-items: center;
          text-align: left;
      }
-     .carousel-text {
-
-     }
+     .carousel-text {}
  }
  
  .bd_section_2 {
@@ -560,21 +557,21 @@
          font-size: 2rem;
      }
  }
-
+ 
  .donations-section-1 {
      height: 70vh;
      width: 100%;
  }
  
- .sponsorship-section-1  {
+ .sponsorship-section-1 {
      height: 70vh;
      .image-title-text {
          width: 80%;
          font-size: 4.5rem;
      }
  }
+ 
  .support-via-cash {
-     position: relative;
      h2 {
          font-size: 2.8rem;
          font-weight: 300;
@@ -674,7 +671,7 @@
          padding-bottom: 5rem;
      }
  }
-
+ 
  .ideas-section {
      padding: 15%;
      background-color: $color_background_2;
@@ -682,41 +679,35 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-
      .ideas-title {
          text-align: center;
          font-size: 3rem;
      }
-
      .cp-horizontal-line {
          margin: 2rem 0;
          padding: 0;
      }
  }
-
+ 
  .cp-quote-section.volunteer-quote {
-    height: auto;
-}
-
-.volunteer-gallery-wrapper {
-
-    .carousel {
-        width: 100vw;
-    }
-
-    .cp-learn-about-link {
-        margin-top: 15%;
-    }
-    .volunteer-title {
-        font-size: 2.4rem;
-        margin-bottom: 15%;
-    }
-    .gallery-section {
-
-        .gallery-bottom-divider {
-            top: 50%;
-            transform: translate(-50%);
-        }
-    }
-}
-
+     height: auto;
+ }
+ 
+ .volunteer-gallery-wrapper {
+     .carousel {
+         width: 100vw;
+     }
+     .cp-learn-about-link {
+         margin-top: 15%;
+     }
+     .volunteer-title {
+         font-size: 2.4rem;
+         margin-bottom: 15%;
+     }
+     .gallery-section {
+         .gallery-bottom-divider {
+             top: 50%;
+             transform: translate(-50%);
+         }
+     }
+ }
