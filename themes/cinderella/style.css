@@ -594,18 +594,27 @@ body .flickity-page-dots {
   background: 0 0;
   width: 284px;
   height: 62px;
-  border-radius: 0; }
+  border-radius: 0;
+  font-size: 20px;
+  padding-left: .5rem;
+  font-family: "roboto";
+  font-weight: 300; }
 
 .wpcf7-form {
-  text-align: center;
-  padding-top: 5%; }
+  padding-top: 25%; }
   .wpcf7-form input[type=email],
   .wpcf7-form input[type=text] {
     border-radius: 0;
     padding: 6px;
     width: 285px;
     height: 57px;
-    background: 0 0; }
+    background: 0 0;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 1rem;
+    color: #FFF;
+    font-family: "roboto";
+    font-weight: 300; }
   .wpcf7-form input[type="submit"] {
     width: 285.25px;
     height: 57px;
@@ -614,17 +623,25 @@ body .flickity-page-dots {
     text-shadow: none;
     display: -ms-flexbox;
     display: flex;
-    color: white;
+    color: #FFF;
     font-size: 19px;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
     -ms-flex-pack: center;
         justify-content: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-family: "roboto";
+    font-weight: 300; }
 
 textarea.wpcf7-textarea {
   height: 180px;
-  width: 285px; }
+  width: 285px;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 1rem;
+  color: #FFF;
+  font-family: "roboto";
+  font-weight: 300; }
 
 .grayscale-image {
   filter: gray;
@@ -1567,6 +1584,27 @@ a {
     color: #fff;
     text-align: center;
     padding: 30%; }
+  .cp-title-section .cp-title-refer-student-text {
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: "roboto";
+    color: #fff;
+    text-align: center;
+    padding: 35% 20% 20% 20%; }
+
+.cp-title-orange-section {
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #F5A623;
+  width: 100%;
+  height: inherit; }
+  .cp-title-orange-section .cp-title-text {
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: "roboto";
+    color: #fff;
+    text-align: center;
+    padding: 30%; }
 
 .cp-quote-section {
   background-color: #F5A623;
@@ -2254,78 +2292,39 @@ object {
 .cp-organization {
   display: none; }
 
-.contact-us-section-1 {
-  height: 100vh;
+.referral-section-3 {
+  background: #393D53;
+  width: 100vw;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  width: 100vw; }
-  .contact-us-section-1 .cp-marketing-title {
-    font-size: 2.8rem;
-    font-weight: 100;
-    font-family: "roboto";
-    color: #fff;
-    padding: 10rem 5rem 0;
-    text-align: center;
-    margin: 0; }
-
-.contact-us-section-2 {
-  background: #393D53;
-  width: 100vw;
-  height: 100vh; }
-
-.cp-contact-info {
-  text-align: center; }
-  .cp-contact-info .cp-title {
-    font-size: 24px;
-    font-family: "roboto";
-    font-weight: 300;
-    padding-bottom: 6%; }
-
-.cp-contacts {
+  font-weight: 200;
   font-family: "roboto";
   font-weight: 200;
-  letter-spacing: .1rem; }
-
-.referral-section-1 {
-  height: 100vh; }
-
-.referral-section-2 {
-  padding: 6rem 3rem;
-  height: auto; }
-  .referral-section-2 .r-a-s-title {
-    font-size: 4.5rem; }
-
-.referral-section-3 {
-  background: #393D53;
-  height: 100vh;
-  width: 100vw; }
+  font-style: normal; }
   .referral-section-3 .cp-referral-student-message {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.7rem;
+    line-height: 1.5;
     text-align: center;
-    margin: 27px; }
-  .referral-section-3 .city-district {
-    font-size: 15px;
-    padding-left: 2rem;
-    line-height: 1.8;
-    text-align: left; }
+    margin: 10% 5% 5%; }
+
+.city-district {
+  font-size: 1.7rem;
+  line-height: 1.75;
+  padding: 5%; }
 
 .student-download-form {
-  font-size: 24px;
-  width: 284px;
-  height: 46px;
-  line-height: 24px;
+  font-size: 2rem;
+  line-height: 1.5;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 20px; }
+  width: 80%;
+  margin-bottom: 5%; }
 
 .referral-section-5 {
   background: #393D53;
-  height: 100vh;
   width: 100vw; }
 
 .cp-district-dropdown {
@@ -2348,11 +2347,9 @@ object {
 
 .button-color {
   text-align: center;
-  margin-top: 35px;
-  background-color: #303346; }
-  .button-color .fp-scroller {
-    -ms-flex-align: left;
-        align-items: left; }
+  background-color: #303346;
+  padding: 10% 5%;
+  margin: 5% 0 10%; }
 
 .cp-orange-section p:after {
   content: none; }
@@ -2371,3 +2368,42 @@ object {
 
 .personal-information p {
   padding-bottom: 1rem; }
+
+.contact-us-section-1 {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .contact-us-section-1 .cp-marketing-title {
+    font-size: 2.8rem;
+    font-weight: 100;
+    font-family: "roboto";
+    color: #fff;
+    padding: 10rem 5rem 0;
+    text-align: center;
+    margin: 0; }
+
+.cp-title {
+  font-size: 24px;
+  font-family: "roboto";
+  font-weight: 200;
+  padding-bottom: 6%;
+  letter-spacing: .1rem; }
+
+.info {
+  font-family: "roboto";
+  font-weight: 200; }
+  .info p:nth-child(n+2) {
+    padding-bottom: 5px; }
+
+.cp-contacts {
+  font-family: "roboto";
+  font-weight: 200;
+  letter-spacing: .1rem; }
+
+.section-above-footer:after {
+  display: none; }

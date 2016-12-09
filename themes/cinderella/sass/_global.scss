@@ -72,7 +72,6 @@ body {
     text-align: center;
 }
 
-
 .carousel-text {
     color: #fff;
     z-index: 99;
@@ -91,25 +90,22 @@ textarea {
     border-radius: 0;
 }
 
-
-
 // body needed to increase style weight and override font-awesome's default font-size
 body {
     .cp-angle-down {
         font-size: 2.5rem;
         color: #fff;
-        position:absolute;
+        position: absolute;
         top: 90vh;
         left: 50%;
         transform: translateX(-50%);
     }
-
     .flickity-page-dots {
-    bottom: 25px;
-    .dot {
-        background: #fff;
+        bottom: 25px;
+        .dot {
+            background: #fff;
+        }
     }
-}
 }
 
 // Contact form 7
@@ -118,11 +114,14 @@ body {
     width: 284px;
     height: 62px;
     border-radius: 0;
+    font-size: 20px;
+    padding-left: .5rem;
+    font-family: $font_roboto;
+    font-weight: 300;
 }
 
 .wpcf7-form {
-    text-align: center;
-    padding-top: 5%;
+    padding-top: 25%;
     input[type=email],
     input[type=text],
     {
@@ -131,6 +130,12 @@ body {
         width: 285px;
         height: 57px;
         background: 0 0;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 1rem;
+        color: #FFF;
+        font-family: $font_roboto;
+        font-weight: 300;
     }
     input[type="submit"] {
         width: 285.25px;
@@ -139,22 +144,32 @@ body {
         box-shadow: none;
         text-shadow: none;
         display: flex;
-        color: white;
+        color: #FFF;
         font-size: 19px;
         text-transform: uppercase;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.3rem;
         justify-content: center;
         margin: 0 auto;
+        font-family: $font_roboto;
+        font-weight: 300;
     }
 }
 
 textarea.wpcf7-textarea {
     height: 180px;
     width: 285px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 1rem;
+    color: #FFF;
+    font-family: $font_roboto;
+    font-weight: 300;
 }
 
 .grayscale-image {
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Old WebKit */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Old WebKit */
     filter: grayscale(1);
 }

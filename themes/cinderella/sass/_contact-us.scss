@@ -15,24 +15,28 @@
   }
 }
 
-.contact-us-section-2 {
-  background: $color_background_4;
-  width: 100vw;
-  height: 100vh;
-}
-
-.cp-contact-info {
-  text-align: center;
   .cp-title {
     font-size: 24px;
     font-family: $font_roboto;
-    font-weight: 300;
+    font-weight: 200;
     padding-bottom: 6%;
+    letter-spacing: .1rem
   }
+.info{
+  font-family: $font_roboto;
+  font-weight: 200;
+   p{
+     &:nth-child(n+2){
+       padding-bottom: 5px;
+     }
+   }
 }
 
 .cp-contacts {
   font-family: $font_roboto;
   font-weight: 200;
   letter-spacing: .1rem;
+}
+.section-above-footer:after {
+  display: none;
 }
