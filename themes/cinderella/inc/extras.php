@@ -25,6 +25,7 @@ Custom Home Page background Image
 */
 
 function my_styles_method() {
+    $custom_css = "";
     if(is_page( 'Home' )){
          $urlHome = CFS()->get('home_background_image');
          $custom_css = "
@@ -32,8 +33,7 @@ function my_styles_method() {
         background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url( {$urlHome}) no-repeat center bottom;
          background-size: cover;
         }";
-        wp_add_inline_style( 'red-starter-style', $custom_css );
-        return;
+       
         
     }elseif(is_page( 'privacy-policy' )){
         $urlPrivacyPolicy = CFS()->get('privacy_policy_img');
@@ -42,9 +42,7 @@ function my_styles_method() {
          background-size: cover;
                 }";
   
-            wp_add_inline_style( 'red-starter-style', $custom_css );
-        return;
-     
+         
     
 }elseif(is_page( 'boutique-day' )){
         $urlBoutiqueDay = CFS()->get('boutique_day_background_img');
@@ -53,8 +51,7 @@ function my_styles_method() {
          background-size: cover;
                 }";
   
-            wp_add_inline_style( 'red-starter-style', $custom_css );
-        return;
+          
     
 }elseif(is_page( 'refer-a-student' )){
         $urlReferAstudent = CFS()->get('refer_student_background_img');
@@ -63,9 +60,6 @@ function my_styles_method() {
                     background-size: cover;
                 }";
   
-            wp_add_inline_style( 'red-starter-style', $custom_css );
-        return;
-    
     } elseif(is_page( 'contact-us' )){
         $urlContactUs = CFS()->get('contact_us_background_image');
         $custom_css = " .contact-us-section-1{
@@ -73,8 +67,7 @@ function my_styles_method() {
                     background-size: cover;
                 }";
   
-            wp_add_inline_style( 'red-starter-style', $custom_css );
-        return;
+         
 
     } elseif(is_page('about')){
         $urlImpact = CFS()->get('about_us_background_image');
@@ -88,8 +81,6 @@ function my_styles_method() {
                     background-size: cover;
                 ";
   
-            wp_add_inline_style( 'red-starter-style', $custom_css );
-        return;
     }elseif(is_page('get-involved')){
         $urlInKindDonation = CFS()->get('donations_section_background_image_2');
         $urlGetInv = CFS()->get('get_involved_background_image');
@@ -116,12 +107,9 @@ function my_styles_method() {
                 background: url({$urlDonationImg}) no-repeat left bottom;
                 background-size: cover;
                 }";
-
-  
-            wp_add_inline_style( 'red-starter-style', $custom_css );
-        return;
+        
     }
-
+  wp_add_inline_style( 'cp-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
 

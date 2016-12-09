@@ -202,62 +202,15 @@ get_header(); ?>
 								<h2>Together, we can make a difference!</h2>
 								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
 								<div class= "fundraising_gallery">
-									<div class= "fundraising_photo">
-									<?php 
-										$fields = CFS()->get( 'specific_donation_grid' );
-
-										foreach ( $fields as $field ) :
-										?>
-										<div class="donation-grid-container">
-											<div class="image-wrapper" style="background: url(<?php echo $field['donation_package_image'];?>); background-size: cover;"></div>
-											<div class="stat-text-wrapper">
-												<h3 class="stat-value"><?php echo $field['donation_package_description'];?></h3>
-												<p class="stat-description"><?php echo $field['donation_package_amount'];?></p>
-											</div>
-										</div>
-										<div class="counter">
-											<button class="target_pos" type="button">+</button>
-											<div class="output">0</div>
-											<button class="target_neg" type="button">-</button>
-										</div>
-										<?php endforeach ?>
-										<a class="button-link" href="<?php the_permalink(); ?>">Support Us</a>
-									</div>
-
 									<div class="in-kind-wishlist-background-image">
 										<?php echo CFS()->get( 'background_image_title_2' ); ?>
 									</div>	
-
-									<div class="get-involved-wishlist">	
-										<div class="wishlist-menu">
-												<!--most-needed/care package items/men's attire/women's attire/supplies/decorations-->
-											<ul>
-												add donations-wishlist menu items loop here
-											</ul> 
-										</div>
-									</div>
-									<!--Drop off donations background image and title-->
-									<div class="get-involved-drop-off-donations">							
-										<div class="drop-off-donations">
-											<?php echo CFS()->get( 'drop_off_locations_title' ); ?>
-											<?php echo CFS()->get( 'drop_off_locations_dates' ); ?>
-										</div>
-										<!--Donation locations loop start-->
-										<?php 
-										$fields = CFS()->get( 'drop_off_locations' );
-										foreach ( $fields as $field ) :
-										?>
-										<div class="business-information">
-											<h3 class="stat-value"><?php echo $field['business_name'];?></h3>
-											<p class="stat-description"><?php echo $field['business_address'];?></p>
-										</div>
-										<?php endforeach ?>
-									<!-- end of donations location here-->
-										<div class="ideas-donations">
-											<h2>Ideas for other donations?</h2>
-											<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-										</div>
-								</section> <!-- end of donations tab -->
+								</div>
+								<div class="ideas-donations">
+									<h2>Ideas for other donations?</h2>
+									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								</div>
+								</section> <!-- end of fundraising tab -->
 
 							<h3>Volunteer</h3>
 								<section class="volunteer-tab">
