@@ -11,15 +11,18 @@ nav {
 
 .logged-in {
     nav {
-        top: 32px;
-    }
+        top: $wploginbar-thick-height;
+        @media (min-width: $wploginbar-height-change) {
+            top: $wploginbar-thin-height;
+        }
+    } 
 
-#wpadminbar {
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    top: 0;
-}
+    #fp-nav ul {
+          transform: translateY($wploginbar-thick-height);
+        @media (min-width: $wploginbar-height-change) {
+            transform: translateY($wploginbar-thin-height);
+        }
+    }
 }
 
 #fp-nav {
