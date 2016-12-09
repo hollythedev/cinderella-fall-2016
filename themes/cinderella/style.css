@@ -498,6 +498,9 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
   height: auto !important; }
 
+html {
+  margin: 0 !important; }
+
 body {
   background-color: black; }
 
@@ -774,12 +777,18 @@ textarea {
 --------------------------------------------------------------*/
 nav {
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 99;
   top: 0; }
 
-.logged-in #mobile-nav {
-  top: 45px; }
+.logged-in nav {
+  top: 32px; }
+
+.logged-in #wpadminbar {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0; }
 
 #fp-nav {
   top: 50%;
@@ -1193,7 +1202,7 @@ a {
   width: 100%; }
 
 .ui-accordion-content-active {
-  background-color: #fff;
+  background-color: #000;
   height: 100%; }
 
 .get-involved-fundraising {
@@ -1319,7 +1328,7 @@ a {
     width: 7rem;
     line-height: 2;
     text-align: center;
-    margin-top: 65%; }
+    margin-top: 50%; }
   .cp-landing-section .brand-logo {
     width: 230px;
     margin-bottom: .5rem; }
