@@ -680,9 +680,12 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     width: 100%;
+
      .ideas-title {
          text-align: center;
          font-size: 3rem;
+         font-weight: 300;
      }
      .cp-horizontal-line {
          margin: 2rem 0;
@@ -691,24 +694,27 @@
  }
  
  .cp-quote-section.volunteer-quote {
-     height: auto;
- }
- 
- .volunteer-gallery-wrapper {
-     .carousel {
-         width: 100vw;
-     }
-     .cp-learn-about-link {
-         margin-top: 15%;
-     }
-     .volunteer-title {
-         font-size: 2.4rem;
-         margin-bottom: 15%;
-     }
-     .gallery-section {
-         .gallery-bottom-divider {
-             top: 50%;
-             transform: translate(-50%);
-         }
-     }
- }
+    height: auto;
+}
+
+.volunteer-gallery-wrapper, .get-involved-fundraising{
+
+    .carousel {
+        width: 100vw;
+    }
+
+    .cp-learn-about-link {
+        margin-top: 15%;
+    }
+    .volunteer-title {
+        font-size: 2.4rem;
+        margin-bottom: 15%;
+    }
+    .gallery-section {
+
+        .gallery-bottom-divider {
+            top: 50%;
+            transform: translate(-50%);
+        }
+    }
+}

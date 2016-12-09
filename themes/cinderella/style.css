@@ -1979,10 +1979,12 @@ a {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 100%; }
   .ideas-section .ideas-title {
     text-align: center;
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-weight: 300; }
   .ideas-section .cp-horizontal-line {
     margin: 2rem 0;
     padding: 0; }
@@ -1990,28 +1992,19 @@ a {
 .cp-quote-section.volunteer-quote {
   height: auto; }
 
-.volunteer-gallery-wrapper .carousel {
+.volunteer-gallery-wrapper .carousel, .get-involved-fundraising .carousel {
   width: 100vw; }
 
-.volunteer-gallery-wrapper .cp-learn-about-link {
+.volunteer-gallery-wrapper .cp-learn-about-link, .get-involved-fundraising .cp-learn-about-link {
   margin-top: 15%; }
 
-.volunteer-gallery-wrapper .volunteer-title {
+.volunteer-gallery-wrapper .volunteer-title, .get-involved-fundraising .volunteer-title {
   font-size: 2.4rem;
   margin-bottom: 15%; }
 
-.volunteer-gallery-wrapper .gallery-section .gallery-bottom-divider {
+.volunteer-gallery-wrapper .gallery-section .gallery-bottom-divider, .get-involved-fundraising .gallery-section .gallery-bottom-divider {
   top: 50%;
   transform: translate(-50%); }
-
-.home .home-section-4 {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
 
 .home #fp-nav {
   display: block; }
