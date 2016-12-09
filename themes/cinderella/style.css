@@ -650,6 +650,9 @@ textarea.wpcf7-textarea {
   /* Old WebKit */
   filter: grayscale(1); }
 
+::-webkit-input-placeholder {
+  color: white; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -2266,42 +2269,6 @@ object {
 .cp-organization {
   display: none; }
 
-.contact-us-section-1 {
-  height: 100vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
-  .contact-us-section-1 .cp-marketing-title {
-    font-size: 2.8rem;
-    font-weight: 100;
-    font-family: "roboto";
-    color: #fff;
-    padding: 10rem 5rem 0;
-    text-align: center;
-    margin: 0; }
-
-.contact-us-section-2 {
-  background: #393D53;
-  width: 100vw;
-  height: 100vh; }
-
-.cp-contact-info {
-  text-align: center; }
-  .cp-contact-info .cp-title {
-    font-size: 24px;
-    font-family: "roboto";
-    font-weight: 300;
-    padding-bottom: 6%; }
-
-.cp-contacts {
-  font-family: "roboto";
-  font-weight: 200;
-  letter-spacing: .1rem; }
-
 .referral-section-1 {
   height: 100vh; }
 
@@ -2384,3 +2351,39 @@ object {
 .personal-information p {
   padding-bottom: 1rem; }
 
+.contact-us-section-1 {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw; }
+  .contact-us-section-1 .cp-marketing-title {
+    font-size: 2.8rem;
+    font-weight: 100;
+    font-family: "roboto";
+    color: #fff;
+    padding: 10rem 5rem 0;
+    text-align: center;
+    margin: 0; }
+
+.cp-title {
+  font-size: 24px;
+  font-family: "roboto";
+  font-weight: 200;
+  padding-bottom: 6%;
+  letter-spacing: .1rem; }
+
+.info {
+  font-family: "roboto";
+  font-weight: 200; }
+
+.cp-contacts {
+  font-family: "roboto";
+  font-weight: 200;
+  letter-spacing: .1rem; }
+
+.section-above-footer:after {
+  display: none; }

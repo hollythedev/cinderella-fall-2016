@@ -177,3 +177,7 @@ textarea.wpcf7-textarea {
     -webkit-filter: grayscale(1); /* Old WebKit */
     filter: grayscale(1);
 }
+::-webkit-input-placeholder {
+    color: white;
+}
+
