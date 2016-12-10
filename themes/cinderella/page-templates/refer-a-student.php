@@ -59,11 +59,46 @@ get_header(); ?>
 							<p><?php echo CFS()->get( 'organizations' ); ?></p>
 						</div>
 						<!-- accordion of Districts goes here-->
-						<a class="cp-button-link" href="#">Find Results</a>
+						<section class="cp-resources">
+							<div class="accordion">	
+								<?php $args = array(
+									'posts_per_page'   => 0,
+									'post_type'        => 'district',
+								);
+								$similar_projects_loop = new WP_Query($args);
+									// loop through all wishlist posts
+									while( $similar_projects_loop->have_posts() ): $similar_projects_loop->the_post();
+									?>
+										<h3><?php the_title();?></h3>
+										<div class="accordion">
+										
+										<?php 
+											$projects = CFS()->get( 'district_loop' );
+											if( isset($projects) ) :
+											foreach ( $projects as $project ) :
+										?>
+											<h3><?php echo $project['project_city'];?></h3>
+											<section class="cp-similar-project">
+												<p><?php echo $project['project_name'];?></p>
+												<p><?php echo $project['project_contact'];?></p>
+												<p><?php echo $project['project_email'];?></p>
+												<p><?php echo $project['project_phone'];?></p>
+												<p><?php echo $project['project_website'];?></p>
+											</section>
+										<?php
+										
+										endforeach;
+										endif;
+										?>
+									</div>
+									<?php
+									endwhile;
+								// because we used a custom WP_Query() we need to reset the postdata for all other query calls below
+								wp_reset_postdata();
+								?>
+							</div> <!-- end of outter accordion -->
+						</section> <!-- end of cp-resources-->
 
 					</section>
 					<?php get_footer(); ?>
-				</section><!-- end of fp-auto-height -->	
-			</div>				
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
