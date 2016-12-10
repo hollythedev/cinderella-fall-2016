@@ -158,26 +158,39 @@ get_header(); ?>
 							</div>
 
 							<!--Drop off donations background image and title-->
+
+
 							<div class="get-involved-drop-off-locations">							
 								<!--Donation locations loop start-->
+
 								<?php 
 								$fields = CFS()->get( 'drop_off_locations' );
 								foreach ( $fields as $field ) :
 								?>
 								<i class="fa fa-map-marker" aria-hidden="true"></i>
 								<div class="business-information">
-									
-									<h3 class="stat-value"><?php echo $field['business_name'];?></h3>
-									<p class="stat-description"><?php echo $field['business_address'];?></p>
+									<h3><?php echo $field['business_name'];?></h3>
+									<p><?php echo $field['business_address'];?></p>
 								</div>
+								
 								<?php endforeach ?>
 							<!-- end of donations location here-->
+<<<<<<< HEAD
+								<div class="ideas-donations">
+									<h2>Ideas for other donations?</h2>
+
+									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+=======
 								<div class="ideas-section">
 									<h2 class="ideas-title">Ideas for other donations?</h2>
 									<p class="cp-learn-about-link"><a  href="<?php the_permalink(); ?>">Get in touch!</a></p>
+>>>>>>> 5718c8a593a75ae24181be51eac55786d180b871
 								</div>
 							</div>
+
 						</section> <!-- end of donations tab -->
+
+
 			
 					<h3>Sponsorships</h3>
 						<section class="sponsorship-tab">
@@ -207,6 +220,7 @@ get_header(); ?>
 								<h2>Together, we can make a difference!</h2>
 								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
 
+
 								<div class= "fundraising_gallery gallery-section accordion-carousel-wrapper">
 									<div class= "carousel accordion-carousel">
 										<?php 
@@ -225,6 +239,7 @@ get_header(); ?>
 								<div class="ideas-section">
 									<h2 class="ideas-title">Ideas for other donations?</h2>
 									<a class="cp-learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+
 								</div>
 								</section> <!-- end of fundraising tab -->
 
