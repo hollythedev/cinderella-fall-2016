@@ -166,9 +166,8 @@ get_header(); ?>
 								?>
 								<i class="fa fa-map-marker" aria-hidden="true"></i>
 								<div class="business-information">
-									
-									<h3 class="stat-value"><?php echo $field['business_name'];?></h3>
-									<p class="stat-description"><?php echo $field['business_address'];?></p>
+									<h3><?php echo $field['business_name'];?></h3>
+									<p><?php echo $field['business_address'];?></p>
 								</div>
 								<?php endforeach ?>
 							<!-- end of donations location here-->

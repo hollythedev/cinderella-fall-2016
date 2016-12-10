@@ -26,7 +26,7 @@ get_header(); ?>
 						<h2 class="cp-marketing-title about-page"><?php echo CFS()->get( 'about_us_section_2_title' ); ?></h2>
 						<span class="cp-horizontal-line"></span>
 						<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_section_2_statement' ); ?></p>
-						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
+						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Get Involved</a>
 					</section>
 
 
@@ -44,7 +44,7 @@ get_header(); ?>
 
 					<section class="cp-awards">
 						<?php echo CFS()->get( 'about_us_awards_block' ); ?>
-						<a class="cp-button-link" href="<?php the_permalink(); ?>">More on Boutique Day<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+						<a class="cp-button-link" href="<?php the_permalink(26); ?>">More on Boutique Day<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 					
 					<section class="about-section-5 image-title-section grayscale-image">
@@ -73,7 +73,7 @@ get_header(); ?>
 					</section>
 					<section class="about-cinderellas cp-purple-section">
 						<?php echo CFS()->get( 'about_us_recipients' ); ?>
-						<a class="cp-button-link" href="<?php the_permalink(); ?>">Get Involved</a>
+						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Get Involved</a>
 					</section>
 					
 					<section class="cp-title-section">
@@ -100,7 +100,7 @@ get_header(); ?>
 					<section class="about-section-10 ways-to-help cp-no-gift section-above-footer">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
-						<a class="cp-button-link" href="<?php the_permalink(); ?>">Ways to Help</a>
+						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help</a>
 					</section>
 					
 					<?php get_footer(); ?>
