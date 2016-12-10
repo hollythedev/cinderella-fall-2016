@@ -850,7 +850,7 @@ nav {
       margin: 0;
       padding: 0;
       list-style: none;
-      background-color: #696969;
+      background-color: #393D53;
       font-family: "roboto";
       font-style: normal;
       color: #fff; }
@@ -1857,7 +1857,7 @@ a {
 .donations-section-1,
 .in-kind-wishlist-background-image,
 .et-involved-drop-off-donations {
-  height: 80vh; }
+  height: 85vh; }
   .donations-section-1 .image-title-text,
   .in-kind-wishlist-background-image .image-title-text,
   .et-involved-drop-off-donations .image-title-text {
@@ -1982,7 +1982,8 @@ a {
       align-items: center; }
   .ideas-section .ideas-title {
     text-align: center;
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-weight: 200; }
   .ideas-section .cp-horizontal-line {
     margin: 2rem 0;
     padding: 0; }

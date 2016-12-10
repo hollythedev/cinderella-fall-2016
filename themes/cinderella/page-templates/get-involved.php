@@ -174,9 +174,9 @@ get_header(); ?>
 								</div>
 								<?php endforeach ?>
 							<!-- end of donations location here-->
-								<div class="ideas-donations">
-									<h2>Ideas for other donations?</h2>
-									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+								<div class="ideas-section">
+									<h2 class="ideas-title">Ideas for other donations?</h2>
+									<p class="cp-learn-about-link"><a  href="<?php the_permalink(); ?>">Get in touch!</a></p>
 								</div>
 							</div>
 						</section> <!-- end of donations tab -->
@@ -209,13 +209,13 @@ get_header(); ?>
 								<h2>Together, we can make a difference!</h2>
 								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
 								<div class= "fundraising_gallery">
-									<div class="in-kind-wishlist-background-image">
-										<?php echo CFS()->get( 'background_image_title_2' ); ?>
+									<div class="in-kind-wishlist-background-image image-title-section">
+										<h3 class="image-title-text"><?php echo CFS()->get( 'background_image_title_2' ); ?></h3>
 									</div>	
 								</div>
-								<div class="ideas-donations">
-									<h2>Ideas for other donations?</h2>
-									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								<div class="ideas-section">
+									<h2 class="ideas-title">Ideas for other donations?</h2>
+									<p class="cp-learn-about-link"><a  href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 								</div>
 								</section> <!-- end of fundraising tab -->
 

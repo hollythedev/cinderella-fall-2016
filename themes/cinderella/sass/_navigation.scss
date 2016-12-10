@@ -15,10 +15,9 @@ nav {
         @media (min-width: $wploginbar-height-change) {
             top: $wploginbar-thin-height;
         }
-    } 
-
+    }
     #fp-nav ul {
-          transform: translateY($wploginbar-thick-height);
+        transform: translateY($wploginbar-thick-height);
         @media (min-width: $wploginbar-height-change) {
             transform: translateY($wploginbar-thin-height);
         }
