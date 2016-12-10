@@ -28,8 +28,8 @@ get_header(); ?>
 						<h2 class="cp-marketing-title front-page"><?php echo CFS()->get( 'section_2_title' ); ?></h2>
 						<div class="cp-horizontal-line"></div>
 						<p class="cp-marketing-copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
-						<a class="cp-button-link" href="/index.php?p=26">About Boutique Day</a>
-						<p class="cp-learn-about-link"><a  href="/index.php?p=35">Learn about the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+						<a class="cp-button-link" href="<?php the_permalink(26); ?>">About Boutique Day</a>
+						<p class="cp-learn-about-link" ><a href="<?php the_permalink(35); ?>">Learn about the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 					</section>
 				</section>
 
@@ -64,9 +64,8 @@ get_header(); ?>
 						<section class=" home-section-5 cp-no-gift">
 							<h2>No gift is too small</h2>
 							<p>	Help us contribute to these student’s stories.</p>
-							<a class="cp-button-link" href="/index.php?p=37">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-						</section>
-
+							<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>						</section>
+												
 						<section class="home-section-6 cp-quote-section cp-section section-above-footer">
 							<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote_2' ); ?></span></h2>
 							<p class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author_2' ); ?></p>

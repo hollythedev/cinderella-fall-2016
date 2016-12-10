@@ -850,7 +850,7 @@ nav {
       margin: 0;
       padding: 0;
       list-style: none;
-      background-color: #696969;
+      background-color: #4A4A4A;
       font-family: "roboto";
       font-style: normal;
       color: #fff; }
@@ -946,7 +946,7 @@ nav {
 .bottom-mobile-nav-bar-wrapper {
   height: 5rem;
   position: relative;
-  background-color: #3B5998;
+  background-color: #393D53;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -2312,7 +2312,9 @@ object {
 .city-district {
   font-size: 1.7rem;
   line-height: 1.75;
-  padding: 5%; }
+  padding: 5% 10%;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
 
 .student-download-form {
   font-size: 2rem;
@@ -2332,7 +2334,8 @@ object {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 100%; }
   .referral-section-5 .district {
     text-align: center;
     padding: 10%; }

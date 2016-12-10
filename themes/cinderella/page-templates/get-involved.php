@@ -59,18 +59,16 @@ get_header(); ?>
 								</section>
 
 								<div class="support-via-cash cp-purple-section">
-									<h2>Support us with a cash donation</h2>
-								<form class="donation-amount">
-									<label for="amount">$</label>
-									<input id="amount" type="text" placeholder="enter amount">
-								</form>
-								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-								<div class="or-section">
-									<p class="horiz-line">or</p>
-									<span class="cp-horizontal-line"></span>
-								</div>
-								<p>Choose specific donation:</p>								
-								
+										<h2>Support us with a cash donation</h2>
+										<form class="donation-amount">
+											<label for="amount">$</label>
+											<input id="amount" type="text" placeholder="enter amount">
+										</form>
+										<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+											<p>or</p>
+										<div class="cp-horizontal-line"></div>
+										
+										<p>Choose specific donation:</p>								
 								<div class="cp-donation-grid-wrapper">
 							<?php 
 									$fields = CFS()->get( 'specific_donation_grid' );
@@ -178,10 +176,16 @@ get_header(); ?>
 								
 								<?php endforeach ?>
 							<!-- end of donations location here-->
+<<<<<<< HEAD
 								<div class="ideas-donations">
 									<h2>Ideas for other donations?</h2>
 
 									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
+=======
+								<div class="ideas-section">
+									<h2 class="ideas-title">Ideas for other donations?</h2>
+									<p class="cp-learn-about-link"><a  href="<?php the_permalink(); ?>">Get in touch!</a></p>
+>>>>>>> 5718c8a593a75ae24181be51eac55786d180b871
 								</div>
 							</div>
 
@@ -217,6 +221,7 @@ get_header(); ?>
 								<h2>Together, we can make a difference!</h2>
 								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
 
+
 								<div class= "fundraising_gallery gallery-section accordion-carousel-wrapper">
 									<div class= "carousel accordion-carousel">
 										<?php 
@@ -235,6 +240,7 @@ get_header(); ?>
 								<div class="ideas-section">
 									<h2 class="ideas-title">Ideas for other donations?</h2>
 									<a class="cp-learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+
 								</div>
 								</section> <!-- end of fundraising tab -->
 
