@@ -1368,7 +1368,7 @@ a {
     font-size: 4rem;
     font-family: "roboto";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     line-height: 1.4; }
   .cp-marketing-section .front-page {
@@ -1992,17 +1992,21 @@ a {
 .cp-quote-section.volunteer-quote {
   height: auto; }
 
-.volunteer-gallery-wrapper .carousel, .get-involved-fundraising .carousel {
+.volunteer-gallery-wrapper .carousel,
+.get-involved-fundraising .carousel {
   width: 100vw; }
 
-.volunteer-gallery-wrapper .cp-learn-about-link, .get-involved-fundraising .cp-learn-about-link {
+.volunteer-gallery-wrapper .cp-learn-about-link,
+.get-involved-fundraising .cp-learn-about-link {
   margin-top: 15%; }
 
-.volunteer-gallery-wrapper .volunteer-title, .get-involved-fundraising .volunteer-title {
+.volunteer-gallery-wrapper .volunteer-title,
+.get-involved-fundraising .volunteer-title {
   font-size: 2.4rem;
   margin-bottom: 15%; }
 
-.volunteer-gallery-wrapper .gallery-section .gallery-bottom-divider, .get-involved-fundraising .gallery-section .gallery-bottom-divider {
+.volunteer-gallery-wrapper .gallery-section .gallery-bottom-divider,
+.get-involved-fundraising .gallery-section .gallery-bottom-divider {
   top: 50%;
   transform: translate(-50%); }
 
@@ -2312,7 +2316,9 @@ object {
 .city-district {
   font-size: 1.7rem;
   line-height: 1.75;
-  padding: 5%; }
+  padding: 5% 10%;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
 
 .student-download-form {
   font-size: 2rem;
@@ -2332,7 +2338,8 @@ object {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 100%; }
   .referral-section-5 .district {
     text-align: center;
     padding: 10%; }
