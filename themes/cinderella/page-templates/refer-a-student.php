@@ -43,7 +43,7 @@ get_header(); ?>
 							<?php echo CFS()->get( 'ref_student_download' ); ?>
 						</div>
 							<!--<a class="cp-button-link button-color" href="#">Download Referral Form<i class="fa fa-caret-right" aria-hidden="true"></i></a>-->
-							<a class="cp-button-link button-color" href="/index.php?p=55">Contact Us<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+							<a class="cp-button-link button-color" href="/index.php?p=55">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 
 

@@ -73,7 +73,7 @@ function my_styles_method() {
         $urlImpact = CFS()->get('about_us_background_image');
         $urlCinderellas = CFS()->get('about_us_cinderella_background_image');
         $custom_css = " .about-section-1{
-                background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlImpact}) no-repeat center bottom;
+                background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url({$urlImpact}) no-repeat center bottom;
                     background-size: cover;
                 }
                 .about-section-5{

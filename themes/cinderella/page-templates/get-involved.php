@@ -59,18 +59,16 @@ get_header(); ?>
 								</section>
 
 								<div class="support-via-cash cp-purple-section">
-									<h2>Support us with a cash donation</h2>
-								<form class="donation-amount">
-									<label for="amount">$</label>
-									<input id="amount" type="text" placeholder="enter amount">
-								</form>
-								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-								<div class="or-section">
-									<p class="horiz-line">or</p>
-									<span class="cp-horizontal-line"></span>
-								</div>
-								<p>Choose specific donation:</p>								
-								
+										<h2>Support us with a cash donation</h2>
+										<form class="donation-amount">
+											<label for="amount">$</label>
+											<input id="amount" type="text" placeholder="enter amount">
+										</form>
+										<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+											<p>or</p>
+										<div class="cp-horizontal-line"></div>
+										
+										<p>Choose specific donation:</p>								
 								<div class="cp-donation-grid-wrapper">
 							<?php 
 									$fields = CFS()->get( 'specific_donation_grid' );
@@ -208,14 +206,27 @@ get_header(); ?>
 							<div class="get-involved-fundraising">
 								<h2>Together, we can make a difference!</h2>
 								<p>Various small groups, clubs, organizations and institutions have creatively helped us raise money to make the Cinderella Project possible year after year.</p>
-								<div class= "fundraising_gallery">
-									<div class="in-kind-wishlist-background-image image-title-section">
-										<h3 class="image-title-text"><?php echo CFS()->get( 'background_image_title_2' ); ?></h3>
-									</div>	
-								</div>
+
+
+								<div class= "fundraising_gallery gallery-section accordion-carousel-wrapper">
+									<div class= "carousel accordion-carousel">
+										<?php 
+											$fields = CFS()->get( 'fundraising_gallery' );
+											foreach ( $fields as $field ) :
+										?>
+										<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['fundraising_gallery_image'];?>) center no-repeat; background-size: cover;">
+											<div class="gallery-bottom-divider">
+												<h2 class="carousel-text"><?php echo $field['fundraising_gallery_message'];?></h2>
+											</div>
+										</div>	
+										<?php endforeach ?>
+									</div>												
+								</div> <!-- end of volunteer gallery -->
+
 								<div class="ideas-section">
 									<h2 class="ideas-title">Ideas for other donations?</h2>
-									<p class="cp-learn-about-link"><a  href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+									<a class="cp-learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+
 								</div>
 								</section> <!-- end of fundraising tab -->
 

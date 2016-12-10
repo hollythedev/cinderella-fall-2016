@@ -1368,7 +1368,7 @@ a {
     font-size: 4rem;
     font-family: "roboto";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     line-height: 1.4; }
   .cp-marketing-section .front-page {
@@ -1857,7 +1857,7 @@ a {
 .donations-section-1,
 .in-kind-wishlist-background-image,
 .et-involved-drop-off-donations {
-  height: 85vh; }
+  height: 80vh; }
   .donations-section-1 .image-title-text,
   .in-kind-wishlist-background-image .image-title-text,
   .et-involved-drop-off-donations .image-title-text {
@@ -1885,134 +1885,106 @@ a {
     width: 80%;
     font-size: 4.5rem; }
 
-.support-via-cash h2 {
-  font-size: 2.8rem;
-  font-weight: 300;
-  font-family: "roboto";
-  padding-bottom: 2rem; }
-
-.support-via-cash label {
-  font-size: 2.8rem;
-  margin-right: 1rem; }
-
-.support-via-cash input#amount {
-  padding: 1rem 2rem;
-  width: 75%;
-  font-size: 2rem;
-  font-weight: 100; }
-
-.support-via-cash p:after {
-  content: "";
-  display: none; }
-
-.support-via-cash p.horiz-line {
-  text-transform: uppercase;
-  z-index: 99;
-  background-color: #393D53;
-  padding: 0 1rem;
-  padding-bottom: 1.5rem;
-  letter-spacing: 2.5px; }
-
-.support-via-cash .cp-horizontal-line {
-  position: absolute;
-  top: 29.2%;
-  z-index: 1; }
-
-.wishlist-section {
-  font-family: "roboto";
-  font-style: normal; }
-  .wishlist-section h3 {
-    font-size: 1.7rem;
-    color: #4A4A4A;
+.support-via-cash {
+  position: relative; }
+  .support-via-cash h2 {
+    font-size: 2.8rem;
     font-weight: 300;
-    border-top: 1px solid #666;
-    padding: 1rem 1rem .5rem 3rem; }
-  .wishlist-section h3:first-child {
-    padding-top: 2rem; }
-  .wishlist-section h3:last-child {
+    font-family: "roboto";
     padding-bottom: 2rem; }
-  .wishlist-section li {
-    font-size: 1.3rem;
-    color: #4A4A4A;
-    list-style: none;
-    font-weight: 100;
-    line-height: 2; }
-
-.cp-donation-grid-wrapper {
-  margin-top: 2rem; }
-
-.get-involved-drop-off-locations {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  font-family: "roboto";
-  font-weight: 300;
-  font-style: normal;
-  padding-top: 2rem; }
-  .get-involved-drop-off-locations .fa {
-    width: 15%;
-    font-size: 4rem;
-    padding: 1.5rem 1.5rem 0 3rem; }
-  .get-involved-drop-off-locations .business-information {
-    width: 80%;
-    padding: 1rem 1rem 1rem 2rem; }
-    .get-involved-drop-off-locations .business-information h3 {
-      font-size: 2rem; }
-    .get-involved-drop-off-locations .business-information p {
-      font-size: 1.7rem; }
-
-.section-above-footer:after {
-  content: "";
-  height: 5rem;
-  width: 100%;
-  display: table;
-  padding-bottom: 5rem; }
-
-.ideas-section {
-  padding: 15%;
-  background-color: #69B9C6;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-  .ideas-section .ideas-title {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 200; }
-  .ideas-section .cp-horizontal-line {
-    margin: 2rem 0;
-    padding: 0; }
-
-.cp-quote-section.volunteer-quote {
-  height: auto; }
-
-.volunteer-gallery-wrapper .carousel {
-  width: 100vw; }
-
-.volunteer-gallery-wrapper .cp-learn-about-link {
-  margin-top: 15%; }
-
-.volunteer-gallery-wrapper .volunteer-title {
-  font-size: 2.4rem;
-  margin-bottom: 15%; }
-
-.volunteer-gallery-wrapper .gallery-section .gallery-bottom-divider {
-  top: 50%;
-  transform: translate(-50%); }
-
-.home .home-section-4 {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100vw; }
+  .support-via-cash label {
+    font-size: 2.8rem;
+    margin-right: 1rem; }
+  .support-via-cash input#amount {
+    padding: 1rem 2rem;
+    width: 75%;
+    font-size: 2rem;
+    font-weight: 100; }
+  .support-via-cash p:after {
+    content: "";
+    display: none; }
+  .support-via-cash .wishlist-section {
+    font-family: "roboto";
+    font-style: normal; }
+    .support-via-cash .wishlist-section h3 {
+      font-size: 1.7rem;
+      color: #4A4A4A;
+      font-weight: 300;
+      border-top: 1px solid #666;
+      padding: 1rem 1rem .5rem 3rem; }
+    .support-via-cash .wishlist-section h3:first-child {
+      padding-top: 2rem; }
+    .support-via-cash .wishlist-section h3:last-child {
+      padding-bottom: 2rem; }
+    .support-via-cash .wishlist-section li {
+      font-size: 1.3rem;
+      color: #4A4A4A;
+      list-style: none;
+      font-weight: 100;
+      line-height: 2; }
+  .support-via-cash .cp-donation-grid-wrapper {
+    margin-top: 2rem; }
+  .support-via-cash .get-involved-drop-off-locations {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    font-family: "roboto";
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 2rem; }
+    .support-via-cash .get-involved-drop-off-locations .fa {
+      width: 15%;
+      font-size: 4rem;
+      padding: 1.5rem 1.5rem 0 3rem; }
+    .support-via-cash .get-involved-drop-off-locations .business-information {
+      width: 80%;
+      padding: 1rem 1rem 1rem 2rem; }
+      .support-via-cash .get-involved-drop-off-locations .business-information h3 {
+        font-size: 2rem; }
+      .support-via-cash .get-involved-drop-off-locations .business-information p {
+        font-size: 1.7rem; }
+  .support-via-cash .section-above-footer:after {
+    content: "";
+    height: 5rem;
+    width: 100%;
+    display: table;
+    padding-bottom: 5rem; }
+  .support-via-cash .ideas-section {
+    padding: 15%;
+    background-color: #69B9C6;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%; }
+    .support-via-cash .ideas-section .ideas-title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 300; }
+    .support-via-cash .ideas-section .cp-horizontal-line {
+      margin: 2rem 0;
+      padding: 0; }
+  .support-via-cash .cp-quote-section.volunteer-quote {
+    height: auto; }
+  .support-via-cash .volunteer-gallery-wrapper .carousel,
+  .support-via-cash .get-involved-fundraising .carousel {
+    width: 100vw; }
+  .support-via-cash .volunteer-gallery-wrapper .cp-learn-about-link,
+  .support-via-cash .get-involved-fundraising .cp-learn-about-link {
+    margin-top: 15%; }
+  .support-via-cash .volunteer-gallery-wrapper .volunteer-title,
+  .support-via-cash .get-involved-fundraising .volunteer-title {
+    font-size: 2.4rem;
+    margin-bottom: 15%; }
+  .support-via-cash .volunteer-gallery-wrapper .gallery-section .gallery-bottom-divider,
+  .support-via-cash .get-involved-fundraising .gallery-section .gallery-bottom-divider {
+    top: 50%;
+    transform: translate(-50%); }
 
 .home #fp-nav {
   display: block; }
@@ -2320,7 +2292,9 @@ object {
 .city-district {
   font-size: 1.7rem;
   line-height: 1.75;
-  padding: 5%; }
+  padding: 5% 10%;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
 
 .student-download-form {
   font-size: 2rem;
@@ -2340,7 +2314,8 @@ object {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 100%; }
   .referral-section-5 .district {
     text-align: center;
     padding: 10%; }
