@@ -160,8 +160,11 @@ get_header(); ?>
 							</div>
 
 							<!--Drop off donations background image and title-->
+
+
 							<div class="get-involved-drop-off-locations">							
 								<!--Donation locations loop start-->
+
 								<?php 
 								$fields = CFS()->get( 'drop_off_locations' );
 								foreach ( $fields as $field ) :
@@ -172,14 +175,19 @@ get_header(); ?>
 									<h3 class="stat-value"><?php echo $field['business_name'];?></h3>
 									<p class="stat-description"><?php echo $field['business_address'];?></p>
 								</div>
+								
 								<?php endforeach ?>
 							<!-- end of donations location here-->
 								<div class="ideas-donations">
 									<h2>Ideas for other donations?</h2>
+
 									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
 								</div>
 							</div>
+
 						</section> <!-- end of donations tab -->
+
+
 			
 					<h3>Sponsorships</h3>
 						<section class="sponsorship-tab">
