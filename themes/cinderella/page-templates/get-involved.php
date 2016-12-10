@@ -175,23 +175,15 @@ get_header(); ?>
 								
 								<?php endforeach ?>
 							<!-- end of donations location here-->
-<<<<<<< HEAD
-								<div class="ideas-donations">
-									<h2>Ideas for other donations?</h2>
 
-									<a class="learn-about-link" href="<?php the_permalink(); ?>">Get in touch!</a>
-=======
 								<div class="ideas-section">
 									<h2 class="ideas-title">Ideas for other donations?</h2>
 									<p class="cp-learn-about-link"><a  href="<?php the_permalink(); ?>">Get in touch!</a></p>
->>>>>>> 5718c8a593a75ae24181be51eac55786d180b871
 								</div>
 							</div>
 
 						</section> <!-- end of donations tab -->
 
-
-			
 					<h3>Sponsorships</h3>
 						<section class="sponsorship-tab">
 							<div class="sponsorship-section-1 image-title-section grayscale-image">
