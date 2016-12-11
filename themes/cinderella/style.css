@@ -1769,6 +1769,9 @@ a {
     font-size: 1.5rem;
     padding: 5%;
     font-weight: 300; }
+    @media (min-width: 1240px) {
+      .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper {
+        display: none; } }
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper .cp-expect-description {
       font-size: 1.5rem;
       text-align: center;
