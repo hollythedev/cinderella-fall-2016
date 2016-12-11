@@ -57,17 +57,17 @@ get_header(); ?>
 								<section class="donations-funding-statement cp-orange-section">
 									<p>In order to make it all possible, we rely on cash donations and in-kind donations of student care packages, formal wear, and much more. If you can provide support for any of the below items, we would greatly appreciate your donation! Each has an impact on a student’s experience.</p>
 								</section>
-
+									<!--this should link to paypal-->
 								<div class="support-via-cash cp-purple-section">
 										<h2>Support us with a cash donation</h2>
 										<form class="donation-amount">
 											<label for="amount">$</label>
 											<input id="amount" type="text" placeholder="enter amount">
 										</form>
-										<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-											<p>or</p>
-										<div class="cp-horizontal-line"></div>
-										
+										<a class="cp-button-link" href="#">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+										<div class="strike">
+											<p><span>or</span></p>
+										</div>
 										<p>Choose specific donation:</p>								
 								<div class="cp-donation-grid-wrapper">
 							<?php 
