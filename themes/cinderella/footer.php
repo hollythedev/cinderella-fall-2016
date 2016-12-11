@@ -16,14 +16,14 @@
 					</div>
 					
 					<div class="navigation">
-							<p class="all-nav"><a href="#">Home</a></p>
-							<p class="all-nav"><a href="#">About</a></p>
-							<p class="all-nav"><a href="#">Boutique Day</a></p>
-							<p class="all-nav"><a href="#">Get Involved</a></p>
-							<p class="all-nav"><a href="#">Refer a Student</a></p>
-							<p class="all-nav"><a href="#">Resource Kit</a></p>
-							<p class="all-nav"><a href="#">Contact Us</a></p>
-							<p class="all-nav"><a href="#">Privacy Policy</a></p>
+							<p class="all-nav"><a href="<?php the_permalink(7); ?>">Home</a></p>
+							<p class="all-nav"><a href="<?php the_permalink(35); ?>">About</a></p>
+							<p class="all-nav"><a href="<?php the_permalink(26); ?>">Boutique Day</a></p>
+							<p class="all-nav"><a href="<?php the_permalink(37); ?>">Get Involved</a></p>
+							<p class="all-nav"><a href="<?php the_permalink(53); ?>">Refer a Student</a></p>
+							<p class="all-nav"><a href="<?php the_permalink(129); ?>">Resource Kit</a></p>
+							<p class="all-nav"><a href="<?php the_permalink(55); ?>">Contact Us</a></p>
+							<p class="all-nav"><a href="<?php the_permalink(185); ?>">Privacy Policy</a></p>
 						<div class="logoDevelopment">
 							<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/nav-icons/cp_dm-icon-home.svg" alt="Spark Icon" />
 							<h2>The Cinderella <span>Project</span></h2>

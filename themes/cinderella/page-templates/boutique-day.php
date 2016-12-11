@@ -72,7 +72,7 @@ get_header(); ?>
 						<p class="bd-message"><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
 
 						<div class="footage">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/TFmLGlVx7hc" frameborder="0" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/9xj8Iylpod4" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</section>
 					<?php get_footer(); ?>
