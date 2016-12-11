@@ -37,10 +37,9 @@ get_header(); ?>
 
 					<section class="cp-title-section">
 						<h2 class="cp-title-text">What to expect</h2>
-					</section>
 
 					<!--What to expect image and copy grid-->
-					<section class="bd_section_5">
+					
 						<div class="cp-expect-grid-wrapper">
 						<?php 
 							$fields = CFS()->get( 'bd_what_to_expect' );
