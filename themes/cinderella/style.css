@@ -2420,3 +2420,11 @@ object {
   font-family: "roboto";
   font-weight: 200;
   letter-spacing: .1rem; }
+
+.cp-404-title {
+  font-size: 2rem;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.4; }
