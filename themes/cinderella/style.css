@@ -2428,3 +2428,6 @@ object {
   font-weight: 300;
   text-align: center;
   line-height: 1.4; }
+
+.cp-errors {
+  text-align: center; }
