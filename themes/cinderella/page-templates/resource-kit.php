@@ -21,12 +21,6 @@ get_header(); ?>
 				</section>
 			</section>
 
-<<<<<<< HEAD
-=======
-
-			<section class="section fp-auto-height cp-resources-section ">
-
->>>>>>> 49fc9f21068ec1233d4206053597952a9200d263
 			<section class="section fp-auto-height cp-resources-section first-auto-height-section cp-purple-section">
 
 				<section class="cp-resources">
