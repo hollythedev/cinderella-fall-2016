@@ -46,8 +46,22 @@ $font__line-height-pre: 1.6;
 $font_marieThin:'st_marie_thinthin';
 $font_moonlight:'moonlight';
 $font_roboto:'roboto';
-$nav_bottom_bar_height: 5rem;
-$wploginbar-height-change: 783px;
-$wploginbar-thick-height: 45px;
-$wploginbar-thin-height: 32px;
 //
+
+
+$default_title_line_height: 1.5;
+$default_title_font_size: 4rem;
+$default_paragraph_font_size: 1.7rem;
+$default_paragraph_letting_spacing: 1.5px;
+$cp_title_bottom_margin: 2.5rem;
+$cp_base_bottom_margin: 2.7rem;
+$default_text_line_height: 1.4;
+$default_text_font_weight: 200;
+$default_quote_horizontal_padding: 5rem;
+$base_section_horizontal_padding: 2.5rem;
+$footer_globe_size: 52px;
+
+$nav_bottom_bar_height: 55px;
+$wploginbar-height-change: 783px;
+$wploginbar-thick-height: 46px;
+$wploginbar-thin-height: 32px;

@@ -789,13 +789,13 @@ nav {
   top: 0; }
 
 .logged-in nav {
-  top: 45px; }
+  top: 46px; }
   @media (min-width: 783px) {
     .logged-in nav {
       top: 32px; } }
 
 .logged-in #fp-nav ul {
-  transform: translateY(45px); }
+  transform: translateY(46px); }
   @media (min-width: 783px) {
     .logged-in #fp-nav ul {
       transform: translateY(32px); } }
@@ -966,7 +966,7 @@ nav {
   width: 90%; }
 
 .bottom-mobile-nav-wrapper {
-  height: 5rem;
+  height: 55px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -1236,6 +1236,9 @@ a {
 .ui-accordion-content-active {
   background-color: #fff;
   height: 100%; }
+
+.cp-purple-section {
+  background-color: #393D53; }
 
 .get-involved-fundraising {
   font-weight: 200;
@@ -1605,7 +1608,7 @@ a {
     font-family: "roboto";
     color: #fff;
     text-align: center;
-    padding: 35% 20% 20% 20%; }
+    padding: 20% 20% 20% 20%; }
 
 .cp-title-orange-section {
   -ms-flex-pack: center;
@@ -1813,7 +1816,7 @@ a {
   position: relative; }
 
 .home-section-4 .cp-spacer {
-  height: 5rem;
+  height: 55px;
   width: 100vw;
   background-color: #F5A623; }
 
@@ -2043,7 +2046,16 @@ a {
   transform: translate(-50%); }
 
 .cp-resources {
-  width: 100%; }
+  width: 100%;
+  padding-top: 5rem; }
+
+.first-auto-height-section {
+  padding-top: 55px; }
+  .logged-in .first-auto-height-section {
+    padding-top: 101px; }
+    @media (min-width: 783px) {
+      .logged-in .first-auto-height-section {
+        padding-top: 87px; } }
 
 .home #fp-nav {
   display: block; }
