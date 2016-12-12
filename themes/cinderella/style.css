@@ -878,6 +878,15 @@ nav {
 .bottom-mobile-nav-container {
   width: 100%; }
 
+.bottom-mobile-nav-wrapper {
+  width: 90%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 #bottom-mobile-nav-close-icon {
   display: none; }
 
@@ -943,17 +952,29 @@ nav {
   color: #fff;
   font-size: 1.5rem; }
 
-.bottom-mobile-nav-bar-wrapper {
+.bottom-mobile-nav-container {
+  background-color: #393D53;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%; }
+
+.bottom-mobile-nav-icon-container {
+  width: 90%; }
+
+.bottom-mobile-nav-wrapper {
   height: 5rem;
   position: relative;
-  background-color: #393D53;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%; }
+  width: 90%; }
 
 .bottom-mobile-nav-text {
   display: -ms-flexbox;
