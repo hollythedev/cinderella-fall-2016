@@ -423,9 +423,6 @@
              font-size: 1.5rem;
              padding: 5%;
              font-weight: 300;
-             @include desktop {
-                 display: none;
-             }
              .cp-expect-description {
                  font-size: 1.5rem;
                  text-align: center;
