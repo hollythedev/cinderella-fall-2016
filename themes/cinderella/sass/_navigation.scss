@@ -104,6 +104,13 @@ nav {
     width: 100%;
 }
 
+.bottom-mobile-nav-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #bottom-mobile-nav-close-icon {
     display: none;
 }
@@ -202,14 +209,25 @@ nav {
     font-size: 1.5rem;
 }
 
-.bottom-mobile-nav-bar-wrapper {
+
+.bottom-mobile-nav-container{
+    background-color: $color_bottom_nav;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+}
+.bottom-mobile-nav-icon-container{
+    width: 90%;
+}
+
+.bottom-mobile-nav-wrapper {
     height: $nav_bottom_bar_height;
     position: relative;
-    background-color: $color_bottom_nav;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 .bottom-mobile-nav-text {

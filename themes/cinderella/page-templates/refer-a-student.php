@@ -69,7 +69,7 @@ get_header(); ?>
 									// loop through all wishlist posts
 									while( $similar_projects_loop->have_posts() ): $similar_projects_loop->the_post();
 									?>
-										<h3><?php the_title();?></h3>
+										<h2><?php the_title();?></h2>
 										<div class="accordion">
 										
 										<?php 
