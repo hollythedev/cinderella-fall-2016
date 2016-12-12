@@ -810,13 +810,13 @@ nav {
   top: 0; }
 
 .logged-in nav {
-  top: 45px; }
+  top: 46px; }
   @media (min-width: 783px) {
     .logged-in nav {
       top: 32px; } }
 
 .logged-in #fp-nav ul {
-  transform: translateY(45px); }
+  transform: translateY(46px); }
   @media (min-width: 783px) {
     .logged-in #fp-nav ul {
       transform: translateY(32px); } }
@@ -902,6 +902,15 @@ nav {
 .bottom-mobile-nav-container {
   width: 100%; }
 
+.bottom-mobile-nav-wrapper {
+  width: 90%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 #bottom-mobile-nav-close-icon {
   display: none; }
 
@@ -967,17 +976,29 @@ nav {
   color: #fff;
   font-size: 1.5rem; }
 
-.bottom-mobile-nav-bar-wrapper {
-  height: 5rem;
-  position: relative;
+.bottom-mobile-nav-container {
   background-color: #393D53;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%; }
+
+.bottom-mobile-nav-icon-container {
+  width: 90%; }
+
+.bottom-mobile-nav-wrapper {
+  height: 55px;
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%; }
+  width: 90%; }
 
 .bottom-mobile-nav-text {
   display: -ms-flexbox;
@@ -1283,6 +1304,9 @@ a {
 .ui-accordion-content-active {
   background-color: #fff;
   height: 100%; }
+
+.cp-purple-section {
+  background-color: #393D53; }
 
 .get-involved-fundraising {
   font-weight: 200;
@@ -1664,7 +1688,7 @@ a {
     font-family: "roboto";
     color: #fff;
     text-align: center;
-    padding: 35% 20% 20% 20%; }
+    padding: 20% 20% 20% 20%; }
 
 .cp-title-orange-section {
   -ms-flex-pack: center;
@@ -1899,7 +1923,7 @@ a {
   position: relative; }
 
 .home-section-4 .cp-spacer {
-  height: 5rem;
+  height: 55px;
   width: 100vw;
   background-color: #F5A623; }
 
@@ -2128,12 +2152,26 @@ a {
   top: 50%;
   transform: translate(-50%); }
 
+<<<<<<< HEAD
 .cp-resource-item {
   padding: 2rem; }
   .cp-resource-item p {
     color: black;
     font-size: 1.3rem;
     padding: .5rem 0; }
+=======
+.cp-resources {
+  width: 100%;
+  padding-top: 5rem; }
+
+.first-auto-height-section {
+  padding-top: 55px; }
+  .logged-in .first-auto-height-section {
+    padding-top: 101px; }
+    @media (min-width: 783px) {
+      .logged-in .first-auto-height-section {
+        padding-top: 87px; } }
+>>>>>>> 42282513ba6c38774523d258413bb75b15bf0746
 
 .home #fp-nav {
   display: block; }
@@ -2326,7 +2364,6 @@ object {
   background-color: #4A4A4A;
   width: 100vw;
   padding: 4rem 3rem 0;
-  height: 230px;
   border-top: 1px solid #fff;
   position: relative; }
 
@@ -2575,10 +2612,23 @@ object {
       justify-content: center; }
 
 @media (min-width: 1240px) {
-  .text-wrapper {
+  .cp-grid {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (min-width: 1240px) {
+  .cp-grid .cp-expect-text-wrapper.text-wrapper {
     display: none; } }
 
 @media (min-width: 1240px) {
   .cp-grid-wrapper {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+@media (min-width: 1240px) {
+  .cp-title-text.bd-title-text {
+    padding: 0; } }

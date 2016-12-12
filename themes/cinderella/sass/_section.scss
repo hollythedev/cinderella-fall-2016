@@ -1,3 +1,7 @@
+ .cp-purple-section {
+     background-color: $color_background_4;
+ }
+
  .get-involved-fundraising {
      font-weight: 200;
      font-family: $font_roboto;
@@ -241,7 +245,7 @@
          @include cp-generic-title-text(30%);
      }
      .cp-title-refer-student-text {
-         @include cp-generic-title-text(35% 20% 20% 20%);
+         @include cp-generic-title-text(20% 20% 20% 20%);
      }
  }
  
@@ -766,6 +770,7 @@
          }
      }
  }
+<<<<<<< HEAD
  
  .cp-resource-item {
      padding: 2rem;
@@ -775,3 +780,25 @@
          padding: .5rem 0;
      }
  }
+=======
+
+ .cp-resources {
+     width: 100%;
+     padding-top: 5rem;
+ }
+
+.first-auto-height-section {
+    // if not logged in
+    padding-top: $nav_bottom_bar_height;
+
+    .logged-in & {
+        // if logged in and in mobile
+        padding-top: $wploginbar-thick-height + $nav_bottom_bar_height;
+        @media (min-width: $wploginbar-height-change) {
+            // if logged in and in desktop
+            padding-top: $wploginbar-thin-height + $nav_bottom_bar_height;
+        }
+    }
+}
+ 
+>>>>>>> 42282513ba6c38774523d258413bb75b15bf0746
