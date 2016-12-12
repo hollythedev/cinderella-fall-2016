@@ -41,6 +41,7 @@ get_header(); ?>
 					<!--What to expect image and copy grid-->
 					
 						<div class="cp-expect-grid-wrapper cp-grid-wrapper">
+							<div class="container">
 						<?php 
 							$fields = CFS()->get( 'bd_what_to_expect' );
 							foreach ( $fields as $field ) :
@@ -52,6 +53,7 @@ get_header(); ?>
 								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
 							</div>
 						<?php endforeach ?>
+						</div>
 						</div>
 					</section>
 					<!--The Student resource kit-->
