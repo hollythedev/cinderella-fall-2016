@@ -368,7 +368,8 @@ html.fp-enabled,
 
 .fp-scrollable {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 100vh !important; }
 
 .fp-scroller {
   overflow: hidden; }
@@ -1305,8 +1306,11 @@ a {
   background-color: #fff;
   height: 100%; }
 
-.cp-purple-section {
+.cp-purple {
   background-color: #393D53; }
+
+.cp-orange {
+  background-color: #F5A623; }
 
 .get-involved-fundraising {
   font-weight: 200;
@@ -1867,11 +1871,6 @@ a {
   font-family: "roboto";
   font-weight: 200;
   font-style: normal; }
-  @media (min-width: 1240px) {
-    .cp-expect-grid-wrapper .cp-expect-grid {
-      width: 50%; }
-      .cp-expect-grid-wrapper .cp-expect-grid:last-child {
-        display: none; } }
   .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-image-wrapper {
     width: 50%;
     padding-bottom: 50%;
@@ -1901,6 +1900,26 @@ a {
     background-color: #69B9C6;
     -ms-flex-order: 2;
         order: 2; }
+  @media (min-width: 1240px) {
+    .cp-expect-grid-wrapper .cp-expect-grid {
+      width: 50%; }
+      .cp-expect-grid-wrapper .cp-expect-grid p {
+        text-align: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        font-size: 2rem; }
+      .cp-expect-grid-wrapper .cp-expect-grid:after {
+        content: "";
+        padding-bottom: 100%;
+        display: table; }
+      .cp-expect-grid-wrapper .cp-expect-grid:last-child {
+        display: none; }
+      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(1) .cp-expect-text-wrapper, .cp-expect-grid-wrapper .cp-expect-grid:nth-child(4) .cp-expect-text-wrapper {
+        background-color: #F5A623; }
+      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2) .cp-expect-text-wrapper, .cp-expect-grid-wrapper .cp-expect-grid:nth-child(3) .cp-expect-text-wrapper {
+        background-color: #69B9C6; } }
 
 .cp-description-section {
   background-color: #393D53;
