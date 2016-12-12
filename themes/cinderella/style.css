@@ -2628,11 +2628,11 @@ object {
     width: 70rem;
     height: 35rem; } }
 
-.boxbox {
+.container {
   width: 100%;
   height: 100%; }
   @media (min-width: 1240px) {
-    .boxbox {
+    .container {
       width: 70%;
       display: -ms-flexbox;
       display: flex;
