@@ -765,7 +765,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #fff; }
 
 input[type="text"],
 input[type="email"],
@@ -1168,15 +1168,16 @@ a {
 .accordion {
   width: 100%; }
   .accordion .accordion {
-    width: 85%; }
+    width: 95%; }
 
 .ui-icon {
   display: none; }
 
 .ui-accordion-header {
   background-color: #393D53;
-  height: 5rem;
-  font-size: 2rem;
+  height: 8rem;
+  font-size: 1.5rem;
+  font-weight: 200;
   outline: 0;
   color: #fff;
   -webkit-user-select: none;
@@ -1376,10 +1377,6 @@ a {
   .cp-marketing-section .about-page {
     padding: 15% 15% 0 15%;
     line-height: 1.3; }
-  .cp-marketing-section .donate {
-    text-align: center;
-    padding: 5%;
-    font-size: 1.8rem; }
   .cp-marketing-section .boutique-day {
     padding: 20% 10% 0 10%; }
   .cp-marketing-section .cp-marketing-copy {
@@ -1905,25 +1902,27 @@ a {
   content: "";
   display: none; }
 
-.support-via-cash .strike p {
-  position: relative;
-  text-transform: uppercase;
-  padding: 0 10rem; }
-  .support-via-cash .strike p span {
-    background: #393D53;
-    padding: 0 1rem;
+.support-via-cash .strike {
+  margin-bottom: 1.5rem; }
+  .support-via-cash .strike p {
     position: relative;
-    z-index: 1; }
-  .support-via-cash .strike p:before {
-    background: #fff;
-    content: "";
-    display: block;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    width: 100%; }
-  .support-via-cash .strike p:before {
-    left: 0; }
+    text-transform: uppercase;
+    padding: 0 10rem; }
+    .support-via-cash .strike p span {
+      background: #393D53;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 1; }
+    .support-via-cash .strike p:before {
+      background: #fff;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      width: 100%; }
+    .support-via-cash .strike p:before {
+      left: 0; }
 
 .support-via-cash .cp-horizontal-line {
   position: absolute;
@@ -2332,13 +2331,13 @@ object {
   -ms-flex-item-align: start;
       align-self: flex-start; }
 
-.student-download-form {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.5;
-  text-align: center;
-  width: 80%;
-  margin-bottom: 5%; }
+.cp-similar-project {
+  padding: 1rem 2rem;
+  line-height: 2;
+  font-weight: 300; }
+  .cp-similar-project p {
+    color: black;
+    font-size: 1.3rem; }
 
 .referral-section-5 {
   background: #393D53;

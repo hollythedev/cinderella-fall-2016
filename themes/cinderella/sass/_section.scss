@@ -168,11 +168,12 @@
          padding: 15% 15% 0 15%;
          line-height: 1.3;
      }
-     .donate {
-         text-align: center;
-         padding: 5%;
-         font-size: 1.8rem;
-     }
+     //delete this, not being used
+     //  .donate {
+     //      text-align: center;
+     //      padding: 5%;
+     //      font-size: 1.8rem;
+     //  }
      .boutique-day {
          padding: 20% 10% 0 10%;
      }
@@ -595,7 +596,9 @@
              display: none;
          }
      }
+     //strikethrough or on get involved/donations
      .strike {
+         margin-bottom: 1.5rem;
          p {
              position: relative;
              text-transform: uppercase;
@@ -620,14 +623,6 @@
              }
          }
      }
-     //  p.horiz-line {
-     //      text-transform: uppercase;
-     //      z-index: 99;
-     //      background-color: $color_background_4;
-     //      padding: 0 1rem;
-     //      padding-bottom: 1.5rem;
-     //      letter-spacing: 2.5px
-     //  }
      .cp-horizontal-line {
          position: absolute;
          top: 29.2%;
