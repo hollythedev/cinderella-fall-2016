@@ -20,7 +20,7 @@ get_header(); ?>
           <h2 class="error-message"><?php esc_html_e('Sorry! We must’ve run out of fairy dust for that link', 'Divi'); ?></h2>
 					<p class"message-404"><?php esc_html_e('Error Code: 404', 'Divi'); ?></p>
 				</section>
-				<a class="cp-button-link button-color" href="<?php the_permalink(7); ?>">Get Back Home"<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+				<a class="cp-button-link button-color" href="<?php the_permalink(7); ?>">Get Back Home<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->

@@ -14,9 +14,15 @@
   text-align: center;
   .error-message{
     font-size: 24px;
+    padding:4rem;
+    font-family:$font_roboto;
+    font-weight: 300;
+
   }
   .message-404{
     font-size: 12px;
+    font-family: $font_roboto;
+    font-weight: 100;
   }
 }
 .error-image {

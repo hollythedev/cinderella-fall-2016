@@ -2436,9 +2436,14 @@ object {
 .cp-errors {
   text-align: center; }
   .cp-errors .error-message {
-    font-size: 24px; }
+    font-size: 24px;
+    padding: 4rem;
+    font-family: "roboto";
+    font-weight: 300; }
   .cp-errors .message-404 {
-    font-size: 12px; }
+    font-size: 12px;
+    font-family: "roboto";
+    font-weight: 100; }
 
 .error-image {
   background-image: linear-gradient(rgba(57, 62, 83, 0.3), rgba(0, 0, 0, 0.5)), url("../../images/assets/starryNight.jpg");
