@@ -2021,6 +2021,9 @@ a {
   top: 50%;
   transform: translate(-50%); }
 
+.cp-resources {
+  width: 100%; }
+
 .home #fp-nav {
   display: block; }
   .home #fp-nav ul {
