@@ -21,11 +21,8 @@ get_header(); ?>
 				</section>
 			</section>
 
-<<<<<<< HEAD
-			<section class="section fp-auto-height cp-resources-section ">
-=======
 			<section class="section fp-auto-height cp-resources-section first-auto-height-section cp-purple-section">
->>>>>>> 42282513ba6c38774523d258413bb75b15bf0746
+
 				<section class="cp-resources">
 					<div class="accordion">	
 						<?php $args = array(
