@@ -6,14 +6,22 @@
   text-align: center;
   line-height: 1.4;
 }
+.not-found-wand{
+  width: 150px;
+  height: 78px;
+}
 .cp-errors{
   text-align: center;
+  .error-message{
+    font-size: 24px;
+  }
+  .message-404{
+    font-size: 12px;
+  }
 }
 .error-image {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/assets/starryNight.jpg');
-    background-repeat: no-repeat;
+    background-image: linear-gradient( rgba(57,62,83,0.3), rgba(0, 0, 0, 0.5)), url('../../images/assets/starryNight.jpg');
     background-size: cover;
-    height: 100vh;
     display: flex;
     justify-content: center;
 }
