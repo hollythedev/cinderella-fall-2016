@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Page not found (not found).
+ * The template name: Page not found
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
@@ -12,41 +12,15 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="error-404 not-found">
+			<section class="error-404 not-found cp-landing-section error-image">
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					<img  class="not-found-wand" src="<?php echo get_template_directory_uri() . '/images/assets/cp_404-fairyDust.svg'; ?>" alt="Fairy Dust Logo" />
 				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
-
-					<?php get_search_form(); ?>
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
-
-					<?php
-						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
-				</div><!-- .page-content -->
+				<section class="cp-errors">
+          <h2 class="error-message"><?php esc_html_e('Sorry! We must’ve run out of fairy dust for that link', 'Divi'); ?></h2>
+					<p class"message-404"><?php esc_html_e('Error Code: 404', 'Divi'); ?></p>
+				</section>
+				<a class="cp-button-link button-color" href="<?php the_permalink(7); ?>">Get Back Home<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->

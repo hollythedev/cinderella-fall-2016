@@ -21,15 +21,18 @@ get_header(); ?>
 				<section class="section fp-auto-height">
 					<section class="cp-purple-section section-above-footer">
 						<div class="cp-contactform"><?php echo CFS()->get( 'contact_us_select_menu' ); ?><div>
-								<h2 class="cp-title">The Cinderella Project</h2>
-									<div class="info">
-										<?php echo CFS()->get('contact_address'); ?>
-										<?php echo CFS()->get('contact_number') ?>
-										<?php echo CFS()->get('contact_email'); ?>
-									</div>
+							<h2 class="cp-title">The Cinderella Project</h2>
+							<div class="info">
+								<?php echo CFS()->get('contact_address'); ?>
+								<?php echo CFS()->get('contact_number') ?>
+								<?php echo CFS()->get('contact_email'); ?>
+							</div>
+						</div>
 					</section>
 					<?php get_footer(); ?>
 				</section>  
 			</div><!-- #end of fullpage -->	
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+

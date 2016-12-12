@@ -1,0 +1,10 @@
+.text-wrapper{
+  @include desktop{
+    display: none;
+  }
+}
+.cp-grid-wrapper {
+  @include desktop{
+    display: flex;
+  }
+}

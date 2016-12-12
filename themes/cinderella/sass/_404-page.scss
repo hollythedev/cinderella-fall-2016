@@ -1,0 +1,33 @@
+.cp-404-title {
+  font-size: 2rem;
+  font-family: $font_roboto;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.4;
+}
+.not-found-wand{
+  width: 150px;
+  height: 78px;
+}
+.cp-errors{
+  text-align: center;
+  .error-message{
+    font-size: 24px;
+    padding:4rem;
+    font-family:$font_roboto;
+    font-weight: 300;
+
+  }
+  .message-404{
+    font-size: 12px;
+    font-family: $font_roboto;
+    font-weight: 100;
+  }
+}
+.error-image {
+    background-image: linear-gradient( rgba(57,62,83,0.3), rgba(0, 0, 0, 0.5)), url('../../images/assets/starryNight.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}

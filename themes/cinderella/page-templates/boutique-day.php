@@ -37,18 +37,17 @@ get_header(); ?>
 
 					<section class="cp-title-section">
 						<h2 class="cp-title-text">What to expect</h2>
-					</section>
 
 					<!--What to expect image and copy grid-->
-					<section class="bd_section_5">
-						<div class="cp-expect-grid-wrapper">
+					
+						<div class="cp-expect-grid-wrapper cp-grid-wrapper">
 						<?php 
 							$fields = CFS()->get( 'bd_what_to_expect' );
 							foreach ( $fields as $field ) :
 							?>
-							<div class="cp-expect-grid">
-								<div class="cp-expect-text-wrapper">
-									<p class="cp-expect-description"><?php echo $field['bd_what_to_expect_copy'];?></p>
+							<div class="cp-expect-grid text-wrapper">
+								<div class="cp-expect-text-wrapper text-wrapper">
+									<p class="cp-expect-description text-wrapper"><?php echo $field['bd_what_to_expect_copy'];?></p>
 								</div>
 								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
 							</div>

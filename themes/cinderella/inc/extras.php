@@ -35,7 +35,14 @@ function my_styles_method() {
         }";
        
         
-    }elseif(is_page( 'privacy-policy' )){
+    }elseif(is_page( '404' )){
+        $urlPageNotFound = CFS()->get('404_background_image');
+        $custom_css = ".404-image{
+        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url( {$urlPageNotFound}) no-repeat center bottom;
+         background-size: cover;
+                }";
+    
+}elseif(is_page( 'privacy-policy' )){
         $urlPrivacyPolicy = CFS()->get('privacy_policy_img');
         $custom_css = ".privacy-section-1{
         background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url( {$urlPrivacyPolicy}) no-repeat center bottom;
