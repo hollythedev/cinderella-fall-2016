@@ -27,7 +27,7 @@
 							</div>
 						</div>
 						<div class="bottom-mobile-nav-container">
-							<div class="bottom-mobile-nav-bar-wrapper">
+							<div class="bottom-mobile-nav-wrapper">
 								<span class="bottom-mobile-nav-text">
 									<?php if (! is_front_page()) : ?>
 										<?php echo get_the_title(); ?>
