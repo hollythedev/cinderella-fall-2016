@@ -2488,10 +2488,23 @@ object {
       justify-content: center; }
 
 @media (min-width: 1240px) {
-  .text-wrapper {
+  .cp-grid {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (min-width: 1240px) {
+  .cp-grid .cp-expect-text-wrapper.text-wrapper {
     display: none; } }
 
 @media (min-width: 1240px) {
   .cp-grid-wrapper {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+@media (min-width: 1240px) {
+  .cp-title-text.bd-title-text {
+    padding: 0; } }

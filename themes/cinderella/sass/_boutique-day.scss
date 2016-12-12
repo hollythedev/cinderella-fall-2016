@@ -1,10 +1,23 @@
-.text-wrapper{
-  @include desktop{
-    display: none;
+ 
+  .cp-grid{
+    @include desktop{
+      flex-basis:50%;
+      justify-content: space-around;
+    }
+    .cp-expect-text-wrapper.text-wrapper{
+    @include desktop{
+      display: none;
+      }
+    }
   }
-}
-.cp-grid-wrapper {
+  .cp-grid-wrapper {
+    @include desktop{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  } 
+.cp-title-text.bd-title-text {
   @include desktop{
-    display: flex;
+    padding:0;
   }
 }
