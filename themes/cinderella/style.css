@@ -2432,8 +2432,18 @@ object {
 .cp-errors {
   text-align: center; }
 
+.error-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/assets/starryNight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 @media (min-width: 1240px) {
-  #cp-text-wrapper {
+  .text-wrapper {
     display: none; } }
 
 @media (min-width: 1240px) {
