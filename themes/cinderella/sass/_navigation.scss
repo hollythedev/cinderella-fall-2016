@@ -212,15 +212,15 @@ nav {
     font-size: 1.5rem;
 }
 
-
-.bottom-mobile-nav-container{
+.bottom-mobile-nav-container {
     background-color: $color_bottom_nav;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
-.bottom-mobile-nav-icon-container{
+
+.bottom-mobile-nav-icon-container {
     width: 90%;
 }
 
@@ -272,7 +272,6 @@ nav {
         font-style: normal;
         font-weight: 200;
         color: $color__text-nav;
-        background-color: $color_desktop_nav;
         height: 4rem;
         .cp-logo-img {
             height: 100px;
