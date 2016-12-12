@@ -178,7 +178,7 @@ get_header(); ?>
 
 								<div class="ideas-section">
 									<h2 class="ideas-title">Ideas for other donations?</h2>
-									<p class="cp-learn-about-link"><a  href="<?php the_permalink(); ?>">Get in touch!</a></p>
+									<p class="cp-learn-about-link"><a  href="<?php the_permalink(55); ?>">Get in touch!</a></p>
 								</div>
 							</div>
 
@@ -202,7 +202,7 @@ get_header(); ?>
 							<div class="ideas-section">
 								<h2 class="ideas-title">Ideas for other donations?</h2>
 								<div class="cp-horizontal-line"></div>
-								<p class="cp-learn-about-link"><a href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+								<p class="cp-learn-about-link"><a href="<?php the_permalink(55); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 							</div>
 						</section> <!-- end of sponsorship tab -->
 
@@ -230,7 +230,7 @@ get_header(); ?>
 
 								<div class="ideas-section">
 									<h2 class="ideas-title">Ideas for other donations?</h2>
-									<a class="cp-learn-about-link" href="<?php the_permalink(); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+									<a class="cp-learn-about-link" href="<?php the_permalink(55); ?>">Get in touch! <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 
 								</div>
 								</section> <!-- end of fundraising tab -->
@@ -268,7 +268,7 @@ get_header(); ?>
 									<section class="ideas-section">
 										<h2 class="ideas-title">Want to get involved?</h2>
 										<div class="cp-horizontal-line"></div>
-										<p class="cp-learn-about-link"><a href="<?php the_permalink(); ?>">Get in touch!<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+										<p class="cp-learn-about-link"><a href="<?php the_permalink(55); ?>">Get in touch!<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 									</section>
 								</section> <!-- end of volunteer tab -->
 						</div>

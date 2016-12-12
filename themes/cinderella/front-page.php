@@ -28,8 +28,12 @@ get_header(); ?>
 						<h2 class="cp-marketing-title front-page"><?php echo CFS()->get( 'section_2_title' ); ?></h2>
 						<div class="cp-horizontal-line"></div>
 						<p class="cp-marketing-copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
+						<!--<p class="cp-learn-about-link-" ><a href="<?php the_permalink(35); ?>">Learn about the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+						<a class="cp-button-link" href="<?php the_permalink(26); ?>">About Boutique Day</a>-->
+						<div class="desktop-cta">
+						<p class="cp-learn-about-link" ><a href="<?php the_permalink(35); ?>">About the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 						<a class="cp-button-link" href="<?php the_permalink(26); ?>">About Boutique Day</a>
-						<p class="cp-learn-about-link" ><a href="<?php the_permalink(35); ?>">Learn about the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+						</div> <!--CTA buttons for desktop -->
 					</section>
 				</section>
 
@@ -52,12 +56,13 @@ get_header(); ?>
 							?>
 							<div class="cp-expect-grid">
 								
-									<p class="cp-expect-text-wrapper "><?php echo $field['what_to_expect_details'];?></p>
+								<p class="cp-expect-text-wrapper "><?php echo $field['what_to_expect_details'];?></p>
 								
 								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['image_what_to_expect'];?>); background-size: cover;"></div>
 							</div>
 							<?php endforeach ?>
 							</div>
+							
 						</section>
 
 

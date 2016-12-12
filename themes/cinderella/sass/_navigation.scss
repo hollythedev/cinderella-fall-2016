@@ -40,6 +40,9 @@ nav {
     position: fixed;
     z-index: 100;
     width: 100%;
+    @include desktop {
+        display: none;
+    }
 }
 
 .mobile-nav-menu-wrapper {
@@ -256,6 +259,57 @@ nav {
 }
 
 
+/* Desktop Navigation */
+
+#desktop-nav {
+    display: none;
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        font-family: $font_roboto;
+        font-style: normal;
+        font-weight: 200;
+        color: $color__text-nav;
+        background-color: $color_desktop_nav;
+        height: 4rem;
+        .cp-logo-img {
+            height: 100px;
+            padding-left: 5rem;
+        }
+        span.nav-icon {
+            visibility: hidden;
+        }
+        ul {
+            margin: 0;
+        }
+        li {
+            display: inline;
+            list-style: none;
+            width: 80%;
+            &:first-child {
+                display: none;
+            }
+            &:last-child {
+                display: none;
+            }
+        }
+        a {
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+    }
+}
+
+.cp-logo {
+    display: flex;
+    p {
+        text-transform: uppercase;
+    }
+}
+
+
 /* Links */
 
 a {
@@ -267,6 +321,7 @@ a {
     &:focus,
     &:active {
         color: $color__link-hover;
+        font-weight: 300;
     }
     &:focus {
         outline: thin dotted;

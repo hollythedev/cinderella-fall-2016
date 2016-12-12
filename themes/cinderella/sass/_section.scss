@@ -1,3 +1,7 @@
+ .cp-purple-section {
+     background-color: $color_background_4;
+ }
+ 
  .get-involved-fundraising {
      font-weight: 200;
      font-family: $font_roboto;
@@ -59,6 +63,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
+     padding: 1rem;
      h2 {
          padding: 2rem 0 1rem;
          font-size: 3rem;
@@ -168,12 +173,6 @@
          padding: 15% 15% 0 15%;
          line-height: 1.3;
      }
-     //delete this, not being used
-     //  .donate {
-     //      text-align: center;
-     //      padding: 5%;
-     //      font-size: 1.8rem;
-     //  }
      .boutique-day {
          padding: 20% 10% 0 10%;
      }
@@ -188,6 +187,28 @@
          line-height: 1.5;
          margin: 2rem 0;
          letter-spacing: 1.5;
+         @include desktop {
+             width: 60%;
+             font-size: 2rem;
+             font-weight: 200;
+         }
+     }
+ }
+ 
+ .desktop-cta {
+     display: flex;
+     flex-direction: column;
+     .cp-learn-about-link {
+         order: 2;
+     }
+     @include desktop {
+         display: flex;
+         flex-direction: row;
+         width: 50%;
+         justify-content: space-between;
+         .cp-learn-about-link {
+             order: 1;
+         }
      }
  }
  
@@ -236,7 +257,7 @@
          @include cp-generic-title-text(30%);
      }
      .cp-title-refer-student-text {
-         @include cp-generic-title-text(35% 20% 20% 20%);
+         @include cp-generic-title-text(20% 20% 20% 20%);
      }
  }
  
@@ -276,12 +297,16 @@
          }
      }
      .cp-quote-author {
+         @include desktop {
+             align-self: flex-end;
+             text-align: right;
+         }
          width: 70%;
          text-align: right;
          padding-bottom: 5%;
          text-transform: uppercase;
          text-align: center;
-         font-size: 1.5rem;
+         font-size: 1rem;
          font-weight: 300;
      }
  }
@@ -404,16 +429,29 @@
  }
  
  .cp-expect-grid-wrapper {
+     @include desktop {
+         display: flex;
+         flex-flow: row wrap;
+     }
      .cp-expect-grid {
          display: flex;
          width: 100vw;
          font-family: $font_roboto;
          font-weight: 200;
          font-style: normal;
+         @include desktop {
+             width: 50%;
+             &:last-child {
+                 display: none;
+             }
+         }
          .cp-expect-image-wrapper {
              width: 50%;
              padding-bottom: 50%;
              height: 0;
+             @include desktop {
+                 display: none;
+             }
          }
          .cp-expect-text-wrapper {
              background-color: $color_background_3;
@@ -424,6 +462,9 @@
              font-size: 1.5rem;
              padding: 5%;
              font-weight: 300;
+             @include desktop {
+                 width: 100%;
+             }
              .cp-expect-description {
                  font-size: 1.5rem;
                  text-align: center;
@@ -735,7 +776,30 @@
          }
      }
  }
-
+ 
+ .cp-resource-item {
+     padding: 2rem;
+     p {
+         color: black;
+         font-size: 1.3rem;
+         padding: .5rem 0;
+     }
+ }
+ 
  .cp-resources {
      width: 100%;
+     padding-top: 5rem;
+ }
+ 
+ .first-auto-height-section {
+     // if not logged in
+     padding-top: $nav_bottom_bar_height;
+     .logged-in & {
+         // if logged in and in mobile
+         padding-top: $wploginbar-thick-height + $nav_bottom_bar_height;
+         @media (min-width: $wploginbar-height-change) {
+             // if logged in and in desktop
+             padding-top: $wploginbar-thin-height + $nav_bottom_bar_height;
+         }
+     }
  }

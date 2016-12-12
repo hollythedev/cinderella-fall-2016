@@ -12,7 +12,7 @@ get_header(); ?>
 		<div id="fullpage">
 
 			<section class="section">
-				<section class="resource-kit-section-1 cp-section cp-landing-section">
+				<section class="resource-kit-section-1 cp-section cp-landing-section ">
 					<div class="cp-landing-top-divider">
 						<h2 class="cp-landing-title"><?php echo CFS()->get( 'resource_kit_section_1' ); ?></h2>
 						<div class="cp-horizontal-line"></div>
@@ -21,7 +21,8 @@ get_header(); ?>
 				</section>
 			</section>
 
-			<section class="section fp-auto-height cp-resources-section section-above-footer">
+			<section class="section fp-auto-height cp-resources-section first-auto-height-section cp-purple-section">
+
 				<section class="cp-resources">
 					<div class="accordion">	
 						<?php $args = array(
