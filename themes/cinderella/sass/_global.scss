@@ -9,6 +9,10 @@ body {
 }
 
 .cp-button-link {
+    @include desktop {
+        width: 50%;
+        font-size: 1.3rem;
+    }
     width: 85%;
     height: 5rem;
     background-color: $color_buttons;
@@ -28,7 +32,9 @@ body {
 }
 
 .cp-learn-about-link {
-    // width: 280px;
+    @include desktop {
+        display: none;
+    }
     color: #fff;
     font-size: 1.2rem;
     line-height: 2;
@@ -55,6 +61,24 @@ body {
     text-decoration: none;
     a {
         margin-right: 1rem;
+        &:hover,
+        &focus {}
+    }
+}
+
+.cp-learn-about-link-desktop {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: $base__space-unit;
+    width: 20rem;
+    border: 2px solid;
+    a {
+        text-decoration: none;
         &:hover,
         &focus {}
     }
@@ -149,7 +173,6 @@ body {
         font-weight: 300;
     }
 }
-
 
 textarea.wpcf7-textarea {
     height: 180px;

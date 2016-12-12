@@ -527,6 +527,10 @@ body {
       align-items: center;
   margin-bottom: 1.5rem;
   text-decoration: none; }
+  @media (min-width: 1240px) {
+    .cp-button-link {
+      width: 50%;
+      font-size: 1.3rem; } }
 
 .cp-learn-about-link {
   color: #fff;
@@ -538,6 +542,9 @@ body {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
   width: 20rem; }
+  @media (min-width: 1240px) {
+    .cp-learn-about-link {
+      display: none; } }
   .cp-learn-about-link a {
     text-decoration: none; }
 
@@ -551,6 +558,20 @@ body {
   text-decoration: none; }
   .cp-learn-about-link-small a {
     margin-right: 1rem; }
+
+.cp-learn-about-link-desktop {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  width: 20rem;
+  border: 2px solid; }
+  .cp-learn-about-link-desktop a {
+    text-decoration: none; }
 
 .fa-caret-right {
   font-size: 1.2rem;
@@ -812,6 +833,9 @@ nav {
   position: fixed;
   z-index: 100;
   width: 100%; }
+  @media (min-width: 1240px) {
+    #mobile-nav {
+      display: none; } }
 
 .mobile-nav-menu-wrapper {
   display: none; }
@@ -979,13 +1003,57 @@ nav {
   top: 50%;
   transform: translateY(-50%); }
 
+/* Desktop Navigation */
+#desktop-nav {
+  display: none; }
+  @media (min-width: 1240px) {
+    #desktop-nav {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      font-size: 1.2rem;
+      font-family: "roboto";
+      font-style: normal;
+      font-weight: 200;
+      color: #fff;
+      background-color: #393D53;
+      height: 4rem; }
+      #desktop-nav .cp-logo-img {
+        height: 100px;
+        padding-left: 5rem; }
+      #desktop-nav span.nav-icon {
+        visibility: hidden; }
+      #desktop-nav ul {
+        margin: 0; }
+      #desktop-nav li {
+        display: inline;
+        list-style: none;
+        width: 80%; }
+        #desktop-nav li:first-child {
+          display: none; }
+        #desktop-nav li:last-child {
+          display: none; }
+      #desktop-nav a {
+        text-decoration: none;
+        padding: 0 1rem; } }
+
+.cp-logo {
+  display: -ms-flexbox;
+  display: flex; }
+  .cp-logo p {
+    text-transform: uppercase; }
+
 /* Links */
 a {
   color: #fff; }
   a:visited {
     color: #fff; }
   a:hover, a:focus, a:active {
-    color: #fff; }
+    color: #fff;
+    font-weight: 300; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1390,6 +1458,18 @@ a {
     line-height: 1.5;
     margin: 2rem 0;
     letter-spacing: 1.5; }
+    @media (min-width: 1240px) {
+      .cp-marketing-section .cp-marketing-copy {
+        width: 60%;
+        font-size: 2rem;
+        font-weight: 200; } }
+
+.desktop-cta {
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .cp-history-section {
   background-color: #F5A623;
@@ -1632,8 +1712,13 @@ a {
     padding-bottom: 5%;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300; }
+    @media (min-width: 1240px) {
+      .cp-quote-section .cp-quote-author {
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+        text-align: right; } }
 
 .cp-stat-grid-wrapper .cp-stat-grid {
   display: -ms-flexbox;
@@ -1744,6 +1829,13 @@ a {
   .cp-donation-grid-wrapper .cp-donation-grid:nth-child(2n) .cp-donation-text-wrapper {
     background-color: #F5A623; }
 
+@media (min-width: 1240px) {
+  .cp-expect-grid-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap; } }
+
 .cp-expect-grid-wrapper .cp-expect-grid {
   display: -ms-flexbox;
   display: flex;
@@ -1751,10 +1843,18 @@ a {
   font-family: "roboto";
   font-weight: 200;
   font-style: normal; }
+  @media (min-width: 1240px) {
+    .cp-expect-grid-wrapper .cp-expect-grid {
+      width: 50%; }
+      .cp-expect-grid-wrapper .cp-expect-grid:last-child {
+        display: none; } }
   .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-image-wrapper {
     width: 50%;
     padding-bottom: 50%;
     height: 0; }
+    @media (min-width: 1240px) {
+      .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-image-wrapper {
+        display: none; } }
   .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper {
     background-color: #F5A623;
     width: 50%;
@@ -1766,10 +1866,17 @@ a {
     font-size: 1.5rem;
     padding: 5%;
     font-weight: 300; }
+    @media (min-width: 1240px) {
+      .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper {
+        width: 100%; } }
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper .cp-expect-description {
       font-size: 1.5rem;
       text-align: center;
       margin: 0; }
+  @media (min-width: 1240px) {
+    .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2n):nth-child(1) p,
+    .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2n):nth-child(4) p {
+      background-color: #F5A623; } }
   .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2n) .cp-expect-text-wrapper {
     background-color: #69B9C6;
     -ms-flex-order: 2;
@@ -2020,6 +2127,13 @@ a {
 .get-involved-fundraising .gallery-section .gallery-bottom-divider {
   top: 50%;
   transform: translate(-50%); }
+
+.cp-resource-item {
+  padding: 2rem; }
+  .cp-resource-item p {
+    color: black;
+    font-size: 1.3rem;
+    padding: .5rem 0; }
 
 .home #fp-nav {
   display: block; }
@@ -2330,6 +2444,14 @@ object {
   padding: 5% 10%;
   -ms-flex-item-align: start;
       align-self: flex-start; }
+
+.student-download-form {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 5%; }
 
 .cp-similar-project {
   padding: 1rem 2rem;
