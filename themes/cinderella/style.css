@@ -510,13 +510,13 @@ body {
       align-items: center; }
 
 .cp-button-link {
-  width: 85%;
+  width: 100%;
   height: 5rem;
   background-color: #313445;
   border: 1px solid #fff;
   color: #fff;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.3rem;
   letter-spacing: 1.1px;
   font-weight: 300;
   display: -ms-flexbox;
@@ -530,7 +530,7 @@ body {
   @media (min-width: 1240px) {
     .cp-button-link {
       width: 50%;
-      font-size: 1.3rem; } }
+      font-size: 1.7rem; } }
 
 .cp-learn-about-link {
   color: #fff;
@@ -544,7 +544,8 @@ body {
   width: 20rem; }
   @media (min-width: 1240px) {
     .cp-learn-about-link {
-      display: none; } }
+      color: #fff;
+      border: 2px solid; } }
   .cp-learn-about-link a {
     text-decoration: none; }
 
@@ -558,20 +559,6 @@ body {
   text-decoration: none; }
   .cp-learn-about-link-small a {
     margin-right: 1rem; }
-
-.cp-learn-about-link-desktop {
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 2;
-  font-weight: 100;
-  letter-spacing: 2.5px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  width: 20rem;
-  border: 2px solid; }
-  .cp-learn-about-link-desktop a {
-    text-decoration: none; }
 
 .fa-caret-right {
   font-size: 1.2rem;
@@ -1491,9 +1478,23 @@ a {
 .desktop-cta {
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .desktop-cta .cp-learn-about-link {
+    -ms-flex-order: 2;
+        order: 2; }
+  @media (min-width: 1240px) {
+    .desktop-cta {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      width: 50%;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .desktop-cta .cp-learn-about-link {
+        -ms-flex-order: 1;
+            order: 1; } }
 
 .cp-history-section {
   background-color: #F5A623;
@@ -2166,17 +2167,6 @@ a {
     @media (min-width: 783px) {
       .logged-in .first-auto-height-section {
         padding-top: 87px; } }
-
-.home #fp-nav {
-  display: block; }
-  .home #fp-nav ul {
-    height: 130px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
 
 /*! Flickity v2.0.4
 http://flickity.metafizzy.co

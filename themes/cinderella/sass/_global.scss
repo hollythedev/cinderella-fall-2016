@@ -11,15 +11,15 @@ body {
 .cp-button-link {
     @include desktop {
         width: 50%;
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
-    width: 85%;
+    width: 100%;
     height: 5rem;
     background-color: $color_buttons;
     border: 1px solid #fff;
     color: #fff;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.3rem;
     letter-spacing: 1.1px;
     font-weight: 300;
     display: flex;
@@ -33,7 +33,8 @@ body {
 
 .cp-learn-about-link {
     @include desktop {
-        display: none;
+        color: #fff;
+        border: 2px solid;
     }
     color: #fff;
     font-size: 1.2rem;
@@ -66,24 +67,23 @@ body {
     }
 }
 
-.cp-learn-about-link-desktop {
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 2;
-    font-weight: 100;
-    letter-spacing: 2.5px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: $base__space-unit;
-    width: 20rem;
-    border: 2px solid;
-    a {
-        text-decoration: none;
-        &:hover,
-        &focus {}
-    }
-}
-
+// .cp-learn-about-link-desktop {
+//     color: #fff;
+//     font-size: 1.2rem;
+//     line-height: 2;
+//     font-weight: 100;
+//     letter-spacing: 2.5px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     margin-bottom: $base__space-unit;
+//     width: 20rem;
+//     border: 2px solid;
+//     a {
+//         text-decoration: none;
+//         &:hover,
+//         &focus {}
+//     }
+// }
 .fa-caret-right {
     font-size: 1.2rem;
     padding-left: .5rem;

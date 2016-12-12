@@ -196,8 +196,19 @@
  
  .desktop-cta {
      display: flex;
-     width: 50%;
-     justify-content: space-between;
+     flex-direction: column;
+     .cp-learn-about-link {
+         order: 2;
+     }
+     @include desktop {
+         display: flex;
+         flex-direction: row;
+         width: 50%;
+         justify-content: space-between;
+         .cp-learn-about-link {
+             order: 1;
+         }
+     }
  }
  
  .cp-history-section {
