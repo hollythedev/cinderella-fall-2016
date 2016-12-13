@@ -2485,7 +2485,8 @@ object {
   width: 100vw;
   padding: 3rem 3rem 0;
   border-top: 1px solid #fff;
-  position: relative; }
+  position: relative;
+  font-size: 1rem; }
 
 .globe-logo-wrapper {
   position: absolute;
