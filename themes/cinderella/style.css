@@ -511,7 +511,7 @@ body {
       align-items: center; }
 
 .cp-button-link {
-  width: 85%;
+  width: 100%;
   height: 5rem;
   background-color: #313445;
   border: 1px solid #fff;
@@ -1361,6 +1361,9 @@ a {
   width: 100%;
   padding: 25% 10% 25% 10%;
   background-color: #F5A623; }
+  @media (min-width: 1240px) {
+    .cp-message {
+      padding: 10rem; } }
 
 .cp-no-gift {
   font-family: "roboto";
@@ -1507,7 +1510,7 @@ a {
     .cp-marketing-section .cp-horizontal-line {
       width: 50%; } }
   @media (min-width: 1240px) {
-    .cp-marketing-section.bd_section_2 .cp-marketing-title {
+    .cp-marketing-section.bd-section-2 .cp-marketing-title {
       width: 600px; } }
   .cp-marketing-section .cp-marketing-copy {
     padding: 0 2.5rem;
@@ -1531,12 +1534,13 @@ a {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .desktop-cta .cp-button-link {
-    width: 45%; }
-  .desktop-cta .cp-learn-about-link {
-    -ms-flex-order: 2;
-        order: 2;
-    width: 45%; }
+  @media (min-width: 1240px) {
+    .desktop-cta .cp-button-link {
+      width: 320px; }
+    .desktop-cta .cp-learn-about-link {
+      -ms-flex-order: 2;
+          order: 2;
+      width: 320px; } }
   @media (min-width: 1240px) {
     .desktop-cta {
       display: -ms-flexbox;
@@ -1649,6 +1653,8 @@ a {
       display: none; }
   .cp-purple-section .cp-button-link {
     margin-top: 10%; }
+  .cp-purple-section.cp-resources-section {
+    padding-bottom: 0; }
 
 .cp-dark-purple-section {
   display: -ms-flexbox;
@@ -2080,12 +2086,18 @@ a {
         align-items: center;
     text-align: left; }
 
-.bd_section_2 .cp-marketing-title {
+.bd-section-5 {
+  display: none; }
+  @media (min-width: 1240px) {
+    .bd-section-5 {
+      display: block; } }
+
+.bd-section-2 .cp-marketing-title {
   padding-top: 5rem; }
 
-.bd_section_2 p {
+.bd-section-2 p {
   margin-bottom: 2rem; }
-  .bd_section_2 p:last-child {
+  .bd-section-2 p:last-child {
     margin-bottom: 0; }
 
 .get-involved-section-1 .cp-landing-title {
@@ -2203,7 +2215,7 @@ a {
   font-family: "roboto";
   font-weight: 300;
   font-style: normal;
-  padding-top: 2rem; }
+  padding: 2rem 0; }
   .get-involved-drop-off-locations .fa {
     width: 15%;
     font-size: 4rem;
@@ -2215,6 +2227,11 @@ a {
       font-size: 2rem; }
     .get-involved-drop-off-locations .business-information p {
       font-size: 1.7rem; }
+
+.locations-list {
+  width: 33.3%;
+  display: -ms-flexbox;
+  display: flex; }
 
 .section-above-footer:after {
   content: "";
@@ -2654,11 +2671,6 @@ object {
     .referral-section-5 .district p {
       font-size: 1.7rem; }
 
-.button-color {
-  text-align: center;
-  background-color: #303346;
-  margin: 5% 0 10%; }
-
 .cp-orange-section p:after {
   content: none; }
 
@@ -2752,47 +2764,13 @@ object {
   background-position-x: 50%; }
 
 @media (min-width: 1240px) {
-  .cp-grid {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
-    margin: 0 auto;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .cp-grid:nth-child(4n) {
-      margin-right: 0; }
-    .cp-grid:nth-child(5n) {
-      margin-left: 0; } }
-
-@media (min-width: 1240px) {
-  .cp-grid .cp-expect-text-wrapper.text-wrapper {
+  .cp-grid-wrapper {
     display: none; } }
 
 @media (min-width: 1240px) {
-  .cp-grid-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+  .footage iframe {
+    width: 70rem;
+    height: 35rem; } }
 
-@media (min-width: 1240px) {
-  .cp-title-text.bd-title-text {
-    padding: 0; } }
-
-.footage iframe {
+iframe {
   overflow: hidden; }
-  @media (min-width: 1240px) {
-    .footage iframe {
-      width: 70rem;
-      height: 35rem; } }
-
-.boxbox {
-  width: 100%;
-  height: 100%; }
-  @media (min-width: 1240px) {
-    .boxbox {
-      width: 70%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      margin: 0 auto; } }

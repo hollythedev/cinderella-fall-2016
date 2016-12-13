@@ -53,6 +53,9 @@
      text-align: center;
      width: 100%;
      padding: 25% 10% 25% 10%;
+     @include desktop {
+         padding: 10rem;
+     }
      background-color: $color_background_3;
  }
  
@@ -209,7 +212,7 @@
              width: 50%;
          }
      }
-     &.bd_section_2 {
+     &.bd-section-2 {
          @include desktop {
              .cp-marketing-title {
                  width: 600px;
@@ -238,12 +241,14 @@
  .desktop-cta {
      display: flex;
      flex-direction: column;
-     .cp-button-link {
-         width: 45%;
-     }
-     .cp-learn-about-link {
-         order: 2;
-         width: 45%;
+     @include desktop {
+         .cp-button-link {
+             width: 320px;
+         }
+         .cp-learn-about-link {
+             order: 2;
+             width: 320px;
+         }
      }
      @include desktop {
          display: flex;
@@ -278,6 +283,9 @@
  
  .cp-purple-section {
      @include cp-generic-section($color_background_4);
+     &.cp-resources-section {
+         padding-bottom: 0;
+     }
  }
  
  .cp-dark-purple-section {
@@ -624,10 +632,16 @@
          align-items: center;
          text-align: left;
      }
-     .carousel-text {}
  }
  
- .bd_section_2 {
+ &.bd-section-5 {
+     display: none;
+     @include desktop {
+         display: block;
+     }
+ }
+ 
+ .bd-section-2 {
      .cp-marketing-title {
          padding-top: 5rem;
      }
@@ -779,7 +793,7 @@
      font-family: $font_roboto;
      font-weight: 300;
      font-style: normal;
-     padding-top: 2rem;
+     padding: 2rem 0;
      .fa {
          width: 15%;
          font-size: 4rem;
@@ -795,6 +809,11 @@
              font-size: 1.7rem;
          }
      }
+ }
+ 
+ .locations-list {
+     width: 33.3%;
+     display: flex;
  }
  
  .section-above-footer {

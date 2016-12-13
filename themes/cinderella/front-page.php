@@ -31,7 +31,7 @@ get_header(); ?>
 						<!--<p class="cp-learn-about-link-" ><a href="<?php the_permalink(35); ?>">Learn about the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 						<a class="cp-button-link" href="<?php the_permalink(26); ?>">About Boutique Day</a>-->
 						<div class="desktop-cta">
-						<p class="cp-learn-about-link" ><a href="<?php the_permalink(35); ?>">About the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+						<p class="cp-learn-about-link " ><a href="<?php the_permalink(35); ?>">About the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
 						<a class="cp-button-link" href="<?php the_permalink(26); ?>">About Boutique Day</a>
 						</div> <!--CTA buttons for desktop -->
 					</section>
