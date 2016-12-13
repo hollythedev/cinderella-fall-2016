@@ -438,10 +438,11 @@
      @include desktop {
          display: flex;
          flex-flow: row wrap;
+         width:100%;
      }
      .cp-expect-grid {
          display: flex;
-         width: 100vw;
+         width: 100%;
          font-family: $font_roboto;
          font-weight: 200;
          font-style: normal;
