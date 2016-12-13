@@ -1034,6 +1034,7 @@ nav {
     #desktop-nav {
       display: -ms-flexbox;
       display: flex;
+      width: 100%;
       -ms-flex-pack: justify;
           justify-content: space-between;
       -ms-flex-align: center;
@@ -1062,6 +1063,10 @@ nav {
       #desktop-nav a {
         text-decoration: none;
         padding: 0 1rem; } }
+
+.desktop-nav-wrapper {
+  position: fixed;
+  width: 100%; }
 
 .cp-logo {
   display: -ms-flexbox;
@@ -1500,7 +1505,10 @@ a {
     padding: 10% 10% 0 10%; }
   @media (min-width: 1240px) {
     .cp-marketing-section .cp-horizontal-line {
-      display: none; } }
+      width: 50%; } }
+  @media (min-width: 1240px) {
+    .cp-marketing-section.bd_section_2 .cp-marketing-title {
+      width: 600px; } }
   .cp-marketing-section .cp-marketing-copy {
     padding: 0 2.5rem;
     text-align: center;
@@ -1738,7 +1746,7 @@ a {
     .cp-title-section {
       display: -ms-flexbox;
       display: flex;
-      height: 50vh;
+      height: 60vh;
       -ms-flex-align: center;
           align-items: center; } }
   .cp-title-section .cp-title-text {
@@ -1750,7 +1758,8 @@ a {
     padding: 30%; }
     @media (min-width: 1240px) {
       .cp-title-section .cp-title-text {
-        padding: 0; } }
+        padding: 0;
+        width: 50%; } }
   .cp-title-section .cp-title-refer-student-text {
     font-size: 3.5rem;
     font-weight: 300;
@@ -1760,7 +1769,8 @@ a {
     padding: 20% 20% 20% 20%; }
     @media (min-width: 1240px) {
       .cp-title-section .cp-title-refer-student-text {
-        padding: 0; } }
+        padding: 0;
+        width: 50%; } }
 
 .cp-title-orange-section {
   -ms-flex-pack: center;
@@ -1772,7 +1782,7 @@ a {
     .cp-title-orange-section {
       display: -ms-flexbox;
       display: flex;
-      height: 50vh;
+      height: 60vh;
       -ms-flex-align: center;
           align-items: center; } }
   .cp-title-orange-section .cp-title-text {
@@ -1784,7 +1794,8 @@ a {
     padding: 30%; }
     @media (min-width: 1240px) {
       .cp-title-orange-section .cp-title-text {
-        padding: 0; } }
+        padding: 0;
+        width: 50%; } }
 
 .cp-quote-section {
   background-color: #F5A623;
@@ -1825,6 +1836,9 @@ a {
         -ms-flex-item-align: end;
             align-self: flex-end;
         text-align: right; } }
+  @media (min-width: 1240px) {
+    .cp-quote-section.bd_section_3 {
+      height: 50vh; } }
 
 .cp-stat-grid-wrapper .cp-stat-grid {
   display: -ms-flexbox;
@@ -1863,7 +1877,7 @@ a {
     .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
       font-size: 1.3rem;
       text-align: center;
-      margin: 0; }
+      margin: 0 auto; }
   .cp-stat-grid-wrapper .cp-stat-grid:nth-child(2n) .cp-stat-text-wrapper {
     background-color: #F5A623;
     -ms-flex-order: 2;
@@ -1926,7 +1940,7 @@ a {
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description {
       font-size: 1.4rem;
       text-align: center;
-      margin: 0;
+      margin: 0 auto;
       font-weight: 300; }
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description:after {
         width: 1rem;
@@ -1976,7 +1990,7 @@ a {
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper .cp-expect-description {
       font-size: 1.5rem;
       text-align: center;
-      margin: 0; }
+      margin: 0 auto; }
   .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2n) .cp-expect-text-wrapper {
     background-color: #69B9C6;
     -ms-flex-order: 2;
@@ -2067,7 +2081,7 @@ a {
     text-align: left; }
 
 .bd_section_2 .cp-marketing-title {
-  padding: 20% 6% 0; }
+  padding-top: 5rem; }
 
 .bd_section_2 p {
   margin-bottom: 2rem; }
@@ -2587,6 +2601,9 @@ object {
     line-height: 1.5;
     text-align: center;
     margin: 10% 5% 5%; }
+    @media (min-width: 1240px) {
+      .referral-section-3 .cp-referral-student-message {
+        width: 50%; } }
 
 .city-district {
   font-size: 1.7rem;
@@ -2594,14 +2611,19 @@ object {
   padding: 5% 10%;
   -ms-flex-item-align: start;
       align-self: flex-start; }
+  @media (min-width: 1240px) {
+    .city-district {
+      text-align: center;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; } }
 
 .student-download-form {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.5;
   text-align: center;
-  width: 80%;
-  margin-bottom: 5%; }
+  width: 80%; }
 
 .cp-similar-project {
   padding: 1rem 2rem;
@@ -2625,7 +2647,7 @@ object {
   width: 100%; }
   .referral-section-5 .district {
     text-align: center;
-    padding: 10%; }
+    padding-top: 10rem; }
     .referral-section-5 .district h2 {
       font-size: 2rem;
       margin-bottom: 1rem; }
@@ -2635,7 +2657,6 @@ object {
 .button-color {
   text-align: center;
   background-color: #303346;
-  padding: 10% 5%;
   margin: 5% 0 10%; }
 
 .cp-orange-section p:after {

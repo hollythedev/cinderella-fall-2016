@@ -22,7 +22,7 @@ get_header(); ?>
 
 				<section class="section fp-auto-height">
 
-					<section class="cp-title-section referral-section-2 first-auto-height-section">
+					<section class="cp-title-section referral-section-2 ">
 						<h2 class="cp-title-refer-student-text"><?php echo CFS()->get( 'referral_message' ); ?></h2>
 
 					</section>

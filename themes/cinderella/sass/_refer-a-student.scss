@@ -13,6 +13,9 @@
         line-height: 1.5;
         text-align: center;
         margin: 10% 5% 5%;
+        @include desktop {
+            width: 50%;
+        }
     }
 }
 
@@ -21,6 +24,10 @@
     line-height: 1.75;
     padding: 5% 10%;
     align-self: flex-start;
+    @include desktop {
+        text-align: center;
+        align-self: center;
+    }
 }
 
 .student-download-form {
@@ -29,7 +36,6 @@
     line-height: 1.5;
     text-align: center;
     width: 80%;
-    margin-bottom: 5%;
 }
 
 .cp-similar-project {
@@ -53,7 +59,7 @@
     width: 100%;
     .district {
         text-align: center;
-        padding: 10%;
+        padding-top: 10rem;
         h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
@@ -67,6 +73,5 @@
 .button-color {
     text-align: center;
     background-color: #303346;
-    padding: 10% 5%;
     margin: 5% 0 10%;
 }
