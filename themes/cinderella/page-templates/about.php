@@ -99,6 +99,7 @@ get_header(); ?>
 
 					<section class="about-section-10 ways-to-help cp-no-gift section-above-footer">
 						<h2>No gift is too small</h2>
+						<span class="cp-horizontal-line"></span>
 						<p>	Help us contribute to these student’s stories.</p>
 						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help</a>
 					</section>
