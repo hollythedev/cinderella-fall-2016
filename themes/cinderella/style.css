@@ -1836,7 +1836,7 @@ a {
     .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
       font-size: 1.3rem;
       text-align: center;
-      margin: 0; }
+      margin: 0 auto; }
   .cp-stat-grid-wrapper .cp-stat-grid:nth-child(2n) .cp-stat-text-wrapper {
     background-color: #F5A623;
     -ms-flex-order: 2;
@@ -1899,7 +1899,7 @@ a {
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description {
       font-size: 1.4rem;
       text-align: center;
-      margin: 0;
+      margin: 0 auto;
       font-weight: 300; }
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description:after {
         width: 1rem;
@@ -1949,7 +1949,7 @@ a {
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper .cp-expect-description {
       font-size: 1.5rem;
       text-align: center;
-      margin: 0; }
+      margin: 0 auto; }
   .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2n) .cp-expect-text-wrapper {
     background-color: #69B9C6;
     -ms-flex-order: 2;
@@ -2580,7 +2580,6 @@ object {
 .button-color {
   text-align: center;
   background-color: #303346;
-  padding: 10% 5%;
   margin: 5% 0 10%; }
 
 .cp-orange-section p:after {
