@@ -175,3 +175,9 @@ textarea.wpcf7-textarea {
     /* Old WebKit */
     filter: grayscale(1);
 }
+
+.carousel-text {
+    @include desktop {
+        font-size: 4rem !important;
+    }
+}
