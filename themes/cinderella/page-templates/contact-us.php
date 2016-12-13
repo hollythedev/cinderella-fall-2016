@@ -22,12 +22,12 @@ get_header(); ?>
 
 				<section class="section fp-auto-height">
 					<section class="cp-purple-section section-above-footer">
-						<div class="cp-contactform"><?php echo CFS()->get( 'contact_us_select_menu' ); ?><div>
-							<h2 class="cp-title">The Cinderella Project</h2>
+						<div class="cp-contact-form"><?php echo CFS()->get( 'contact_us_select_menu' ); ?><div>
 							<div class="info">
-								<?php echo CFS()->get('contact_address'); ?>
-								<?php echo CFS()->get('contact_number') ?>
-								<?php echo CFS()->get('contact_email'); ?>
+								<h2 class="cp-title">The Cinderella Project</h2>
+									<?php echo CFS()->get('contact_address'); ?>
+									<?php echo CFS()->get('contact_number') ?>
+									<?php echo CFS()->get('contact_email'); ?>
 							</div>
 						</div>
 					</section>
