@@ -167,20 +167,22 @@ get_header(); ?>
 								$fields = CFS()->get( 'drop_off_locations' );
 								foreach ( $fields as $field ) :
 								?>
-								<i class="fa fa-map-marker" aria-hidden="true"></i>
-								<div class="business-information">
-									<h3><?php echo $field['business_name'];?></h3>
-									<p><?php echo $field['business_address'];?></p>
+								<div class="locations-list">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<div class="business-information">
+										<h3><?php echo $field['business_name'];?></h3>
+										<p><?php echo $field['business_address'];?></p>
+								</div>
 								</div>
 								
 								<?php endforeach ?>
 							<!-- end of donations location here-->
-
+							</div>
 								<div class="ideas-section">
 									<h2 class="ideas-title">Ideas for other donations?</h2>
 									<p class="cp-learn-about-link"><a  href="<?php the_permalink(55); ?>">Get in touch!</a></p>
 								</div>
-							</div>
+							
 
 						</section> <!-- end of donations tab -->
 
