@@ -51,8 +51,8 @@ get_header(); ?>
 								</div>
 								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
 							</div>
-						<?php endforeach ?>
-						
+							<?php endforeach ?>
+
 						</div>
 					</section>
 					<!-- Desktop Gallery-->
@@ -82,7 +82,6 @@ get_header(); ?>
 						<h3 class="cp-marketing-small-title">Dreams come true. See for yourself.</h3>
 						<div class="cp-horizontal-line"></div>
 						<p class="bd-message"><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
-
 						<div class="footage">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/9xj8Iylpod4" frameborder="0" allowfullscreen scrolling="no"></iframe>
 						</div>

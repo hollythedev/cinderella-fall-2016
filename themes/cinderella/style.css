@@ -608,9 +608,13 @@ body .flickity-page-dots {
   padding-left: .5rem;
   font-family: "roboto";
   font-weight: 300; }
+  @media (min-width: 1240px) {
+    .wpcf7-select {
+      width: 50rem;
+      height: 50px; } }
 
 .wpcf7-form {
-  padding-top: 25%; }
+  padding-top: 20%; }
   .wpcf7-form input[type=email],
   .wpcf7-form input[type=text] {
     border-radius: 0;
@@ -624,6 +628,11 @@ body .flickity-page-dots {
     color: #FFF;
     font-family: "roboto";
     font-weight: 300; }
+    @media (min-width: 1240px) {
+      .wpcf7-form input[type=email],
+      .wpcf7-form input[type=text] {
+        width: 50rem;
+        height: 50px; } }
   .wpcf7-form input[type="submit"] {
     width: 285.25px;
     height: 57px;
@@ -644,6 +653,9 @@ textarea.wpcf7-textarea {
   color: #FFF;
   font-family: "roboto";
   font-weight: 300; }
+  @media (min-width: 1240px) {
+    textarea.wpcf7-textarea {
+      width: 50rem; } }
 
 .grayscale-image {
   filter: gray;
@@ -1830,6 +1842,9 @@ a {
         -ms-flex-item-align: end;
             align-self: flex-end;
         text-align: right; } }
+  @media (min-width: 1240px) {
+    .cp-quote-section.bd_section_3 {
+      height: 50vh; } }
 
 .cp-stat-grid-wrapper .cp-stat-grid {
   display: -ms-flexbox;
@@ -1868,7 +1883,7 @@ a {
     .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
       font-size: 1.3rem;
       text-align: center;
-      margin: 0; }
+      margin: 0 auto; }
   .cp-stat-grid-wrapper .cp-stat-grid:nth-child(2n) .cp-stat-text-wrapper {
     background-color: #F5A623;
     -ms-flex-order: 2;
@@ -1931,7 +1946,7 @@ a {
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description {
       font-size: 1.4rem;
       text-align: center;
-      margin: 0;
+      margin: 0 auto;
       font-weight: 300; }
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description:after {
         width: 1rem;
@@ -1981,7 +1996,7 @@ a {
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper .cp-expect-description {
       font-size: 1.5rem;
       text-align: center;
-      margin: 0; }
+      margin: 0 auto; }
   .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2n) .cp-expect-text-wrapper {
     background-color: #69B9C6;
     -ms-flex-order: 2;
@@ -2697,18 +2712,25 @@ object {
   font-family: "roboto";
   font-weight: 200;
   padding-bottom: 6%;
+  padding-top: 6%;
   letter-spacing: .1rem; }
 
 .info {
   font-family: "roboto";
   font-weight: 200; }
+  @media (min-width: 1240px) {
+    .info {
+      display: none; } }
   .info p:nth-child(n+2) {
     padding-bottom: 5px; }
 
-.cp-contacts {
+.cp-contact-form {
   font-family: "roboto";
   font-weight: 200;
   letter-spacing: .1rem; }
+
+.cp-purple-section.section-above-footer {
+  padding: 0; }
 
 .cp-404-title {
   font-size: 2rem;

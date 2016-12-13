@@ -14,7 +14,6 @@
      h2 {
          text-align: center;
          font-size: 1.8rem;
-         ;
          padding: 5% 5% 0 5%;
      }
      p {
@@ -329,6 +328,7 @@
      font-weight: 200;
      font-style: normal;
      justify-content: center;
+
      .cp-quote-wrapper {
          font-size: 3.2rem;
          text-align: center;
@@ -361,6 +361,11 @@
          text-align: center;
          font-size: 1rem;
          font-weight: 300;
+     }
+     &.bd_section_3 {
+         @include desktop{
+            height: 50vh;
+         }
      }
  }
  
@@ -401,7 +406,7 @@
              .cp-stat-description {
                  font-size: 1.3rem;
                  text-align: center;
-                 margin: 0;
+                 margin: 0 auto;
              }
          }
          &:nth-child(2n) {
@@ -465,7 +470,7 @@
              .cp-donation-description {
                  font-size: 1.4rem;
                  text-align: center;
-                 margin: 0;
+                 margin: 0 auto;
                  font-weight: 300;
                  &:after {
                      width: 1rem;
@@ -519,7 +524,7 @@
              .cp-expect-description {
                  font-size: 1.5rem;
                  text-align: center;
-                 margin: 0;
+                 margin: 0 auto;
              }
          }
          &:nth-child(2n) {
