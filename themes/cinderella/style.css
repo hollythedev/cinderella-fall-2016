@@ -578,7 +578,17 @@ body {
   font-weight: 100;
   font-style: normal;
   font-size: 3rem;
-  text-align: center; }
+  text-align: center;
+  width: 80%;
+  text-align: left;
+  padding-right: 10%;
+  margin-top: 1rem; }
+  @media (min-width: 1240px) {
+    .carousel-text {
+      font-size: 4rem !important;
+      width: 100%;
+      text-align: center;
+      padding-right: 0; } }
 
 textarea {
   background: 0;
@@ -678,10 +688,6 @@ body .flickity-page-dots {
   /* IE6-9 */
   /* Old WebKit */
   filter: grayscale(1); }
-
-@media (min-width: 1240px) {
-  .carousel-text {
-    font-size: 4rem !important; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -954,7 +960,8 @@ nav {
 #menu-item-63 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-refer.svg");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 3px; }
 
 #menu-item-66 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-account.svg");
@@ -964,7 +971,8 @@ nav {
 #menu-item-60 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-contactUs.svg");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 10px; }
 
 #menu-item-57 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-home.svg");
@@ -979,7 +987,8 @@ nav {
 #menu-item-145 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 5px; }
 
 #menu-item-189 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-privacyPolicy.svg");
@@ -1832,7 +1841,7 @@ a {
 
 .cp-quote-section {
   background-color: #F5A623;
-  padding: 15%;
+  padding: 0 15%;
   height: 100vh;
   font-family: "roboto";
   font-weight: 200;
@@ -1874,7 +1883,7 @@ a {
       height: 50vh; } }
 
 .cp-stat-grid-wrapper {
-  width: 100%; }
+  width: 100vw; }
   .cp-stat-grid-wrapper .cp-stat-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1919,7 +1928,7 @@ a {
           order: 2; }
 
 .cp-donation-grid-wrapper {
-  width: 100%; }
+  width: 100vw; }
   .cp-donation-grid-wrapper .cp-donation-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1989,7 +1998,7 @@ a {
       background-color: #F5A623; }
 
 .cp-expect-grid-wrapper {
-  width: 100%; }
+  width: 100vw; }
   @media (min-width: 1240px) {
     .cp-expect-grid-wrapper {
       display: -ms-flexbox;
