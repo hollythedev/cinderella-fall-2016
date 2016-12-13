@@ -207,7 +207,14 @@
      }
      .cp-horizontal-line {
          @include desktop {
-             display: none;
+             width: 50%;
+         }
+     }
+     &.bd_section_2 {
+         @include desktop {
+             .cp-marketing-title {
+                 width: 600px;
+             }
          }
      }
      .cp-marketing-copy {
@@ -473,7 +480,7 @@
      @include desktop {
          display: flex;
          flex-flow: row wrap;
-         width:100%;
+         width: 100%;
      }
      .cp-expect-grid {
          display: flex;
@@ -617,7 +624,7 @@
  
  .bd_section_2 {
      .cp-marketing-title {
-         padding: 20% 6% 0;
+         padding-top: 5rem;
      }
      p {
          margin-bottom: 2rem;

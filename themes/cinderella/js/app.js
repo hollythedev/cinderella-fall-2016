@@ -7,7 +7,7 @@
             active: false,
             heightStyle: 'content',
             activate: function(event, ui) {
-                if(!$.isEmptyObject(ui.newHeader.offset())) {
+                if (!$.isEmptyObject(ui.newHeader.offset())) {
                     $('html:not(:animated), body:not(:animated)').animate({ scrollTop: ui.newHeader.offset().top - 55 }, 0);
                 }
             }
@@ -122,17 +122,20 @@
     // changing navigation bar on scrollBar
     //switch nav
     var bottomHero = $('.cp-landing-section').offset().top + $('.cp-landing-section').height();
-
+    console.log(bottomHero);
     // on scroll
     $(window).on('scroll', function() {
 
+
         // we round here to reduce a little workload
         stop = Math.round($(window).scrollTop());
+        console.log(stop)
         if (stop > bottomHero) {
 
-            $('#desktop-nav').addClass('#desktop-nav-rev');
+            $('#desktop-nav').addClass('cp-purple');
         } else {
-            $('#desktop-nav').removeClass('#desktop-nav-rev');
+            $('#desktop-nav').removeClass('cp-purple');
+
         }
 
     });

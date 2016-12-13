@@ -78,7 +78,7 @@ $desktop-width: 1240px;
 @mixin cp-generic-title-section($color) {
     @include desktop {
         display: flex;
-        height: 50vh;
+        height: 60vh;
         align-items: center;
     }
     justify-content: center;
@@ -96,6 +96,7 @@ $desktop-width: 1240px;
     padding: $padding;
     @include desktop {
         padding: 0;
+        width: 50%;
     }
 }
 
