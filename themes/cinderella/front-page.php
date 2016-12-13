@@ -28,11 +28,9 @@ get_header(); ?>
 						<h2 class="cp-marketing-title front-page"><?php echo CFS()->get( 'section_2_title' ); ?></h2>
 						<div class="cp-horizontal-line"></div>
 						<p class="cp-marketing-copy"><?php echo CFS()->get( 'home_section_2_copy' ); ?></p>
-						<!--<p class="cp-learn-about-link-" ><a href="<?php the_permalink(35); ?>">Learn about the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
-						<a class="cp-button-link" href="<?php the_permalink(26); ?>">About Boutique Day</a>-->
 						<div class="desktop-cta">
-						<p class="cp-learn-about-link " ><a href="<?php the_permalink(35); ?>">About the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
-						<a class="cp-button-link" href="<?php the_permalink(26); ?>">About Boutique Day</a>
+							<p class="cp-learn-about-link " ><a href="<?php the_permalink(35); ?>">About the Cinderella Project<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+							<a class="cp-button-link" href="<?php the_permalink(26); ?>">About Boutique Day</a>
 						</div> <!--CTA buttons for desktop -->
 					</section>
 				</section>
@@ -44,8 +42,7 @@ get_header(); ?>
 					<p class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author' ); ?></p>
 					</section>
 				</section>
-
-
+				<!-- mobile expect grid with images-->
 				<section class="section fp-auto-height cp-orange">
 					<section class="cp-section home-section-4 first-auto-height-section ">
 						<div class="cp-expect-grid-wrapper">
@@ -57,19 +54,35 @@ get_header(); ?>
 								
 								<p class="cp-expect-text-wrapper "><?php echo $field['what_to_expect_details'];?></p>
 								
-								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['image_what_to_expect'];?>); background-size: cover;"></div>
+								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['image_what_to_expect'];?>); background-size: cover;  background-position-x: 65%;"></div>
 							</div>
 							<?php endforeach ?>
 							</div>
 							
-						</section>
+					</section>
+				<!-- desktop stat grid with no images -->
+				<section class="fp-auto-height cp-orange">
+					<section class="cp-section home-section-4-desktop first-auto-height-section ">
+						<div class="cp-expect-grid-wrapper">
+							<?php 
+							$fields = CFS()->get( 'home_desktop_statistics_grid' );
+							foreach ( $fields as $field ) :
+							?>
+							<div class="cp-expect-grid">
+								<div class="cp-expect-text-wrapper">
+									<p class="desktop-stat"><?php echo $field['home_desktop_statistic'];?></p>
+									<p><?php echo $field['home_desktop_statistic_description'];?></p>
+								</div>
+							</div>
+							<?php endforeach ?>
+						</div>
+					</section>
 
-
-						<section class=" home-section-5 cp-no-gift section-above-footer">
-							<h2>No gift is too small</h2>
-							<p>	Help us contribute to these student’s stories.</p>
-							<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-						</section>
+					<section class=" home-section-5 cp-no-gift section-above-footer">
+						<h2>No gift is too small</h2>
+						<p>	Help us contribute to these student’s stories.</p>
+						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+					</section>
 												
 						<?php get_footer(); ?>
 
