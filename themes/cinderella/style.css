@@ -1338,6 +1338,7 @@ a {
   font-family: "roboto";
   font-style: normal;
   text-align: center;
+  width: 100%;
   padding: 25% 10% 25% 10%;
   background-color: #F5A623; }
 
@@ -1753,9 +1754,11 @@ a {
   display: flex;
   width: 100vw; }
   .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-image-wrapper {
-    width: 50%;
-    padding-bottom: 50%;
-    height: 0; }
+    width: 50%; }
+    .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-image-wrapper:after {
+      padding-bottom: 100%;
+      display: table;
+      content: ''; }
   .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper {
     width: 50%;
     background-color: #69B9C6;

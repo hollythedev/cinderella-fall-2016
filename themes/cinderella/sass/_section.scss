@@ -51,6 +51,7 @@
      font-family: $font_roboto;
      font-style: normal;
      text-align: center;
+     width: 100%;
      padding: 25% 10% 25% 10%;
      background-color: $color_background_3;
  }
@@ -319,8 +320,11 @@
          width: 100vw;
          .cp-stat-image-wrapper {
              width: 50%;
-             padding-bottom: 50%;
-             height: 0;
+             &:after {
+                 padding-bottom: 100%;
+                 display: table;
+                 content: '';
+             }
          }
          .cp-stat-text-wrapper {
              width: 50%;
