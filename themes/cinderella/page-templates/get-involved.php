@@ -11,7 +11,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 <!-- no gift is too small landing page full screen image-->
-		<div id="fullpage">
+
 			<section class="section">
 				<section class="get-involved-section-1 cp-section cp-landing-section">
 					<div class="cp-landing-top-divider">

@@ -9,7 +9,6 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div id="fullpage">
 
 			<section class="section">
 				<section class="resource-kit-section-1 cp-section cp-landing-section ">

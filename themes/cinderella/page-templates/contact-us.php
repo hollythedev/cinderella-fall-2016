@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div id="fullpage">
+
 				<section class="section">
 					<section class="contact-us-section-1 cp-section cp-landing-section">
 						<h2 class="cp-landing-title"><?php echo CFS()->get( 'contact_us_message' ); ?></h2>
