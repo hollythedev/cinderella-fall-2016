@@ -9,8 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<div id="fullpage">
+			
 				<section class="section">
 					<section class="boutique-day-section-1 cp-section cp-landing-section">
 						<div class="cp-landing-top-divider">

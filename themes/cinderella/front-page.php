@@ -46,9 +46,8 @@ get_header(); ?>
 				</section>
 
 
-				<section class="section fp-auto-height">
-					<section class="cp-section home-section-4">
-						<div class="cp-spacer"></div>
+				<section class="section fp-auto-height cp-orange">
+					<section class="cp-section home-section-4 first-auto-height-section ">
 						<div class="cp-expect-grid-wrapper">
 							<?php 
 							$fields = CFS()->get( 'what_to_expect' );
@@ -66,16 +65,12 @@ get_header(); ?>
 						</section>
 
 
-						<section class=" home-section-5 cp-no-gift">
+						<section class=" home-section-5 cp-no-gift section-above-footer">
 							<h2>No gift is too small</h2>
 							<p>	Help us contribute to these student’s stories.</p>
-							<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>						</section>
-												
-						<section class="home-section-6 cp-quote-section cp-section section-above-footer">
-							<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote_2' ); ?></span></h2>
-							<p class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author_2' ); ?></p>
+							<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 						</section>
-
+												
 						<?php get_footer(); ?>
 
 

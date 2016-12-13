@@ -7,7 +7,9 @@
             active: false,
             heightStyle: 'content',
             activate: function(event, ui) {
-                $.fn.fullpage.reBuild();
+                if(!$.isEmptyObject(ui.newHeader.offset())) {
+                    $('html:not(:animated), body:not(:animated)').animate({ scrollTop: ui.newHeader.offset().top - 55 }, 0);
+                }
             }
         });
 
@@ -98,8 +100,16 @@
             lazyLoading: true,
 
             //events
-            onLeave: function(index, nextIndex, direction) {},
-            afterLoad: function(anchorLink, index) {},
+            onLeave: function(index, nextIndex, direction) {
+                if (index === 2 && direction === 'up') {
+                    $('#desktop-nav').css({ "background-color": "" });
+                }
+            },
+            afterLoad: function(anchorLink, index) {
+                if (index === 2) {
+                    $('#desktop-nav').css({ "background-color": "#393D53" });
+                }
+            },
             afterRender: function() {},
             afterResize: function() {},
             afterResponsive: function(isResponsive) {},
@@ -108,21 +118,23 @@
         });
     });
 
+
     // changing navigation bar on scrollBar
     //switch nav
     var bottomHero = $('.cp-landing-section').offset().top + $('.cp-landing-section').height();
 
-    // on scroll, 
+    // on scroll
     $(window).on('scroll', function() {
 
         // we round here to reduce a little workload
         stop = Math.round($(window).scrollTop());
         if (stop > bottomHero) {
-            console.log('hello');
-            $('#desktop-nav').css({ "background": "red" });
+
+            $('#desktop-nav').addClass('#desktop-nav-rev');
         } else {
-            $('#desktop-nav').css({ "background": "transparent" });
+            $('#desktop-nav').removeClass('#desktop-nav-rev');
         }
 
     });
+
 })(jQuery);
