@@ -511,7 +511,7 @@ body {
       align-items: center; }
 
 .cp-button-link {
-  width: 100%;
+  width: 85%;
   height: 5rem;
   background-color: #313445;
   border: 1px solid #fff;
@@ -796,6 +796,9 @@ nav {
   position: absolute;
   z-index: 99;
   top: 0; }
+
+#wpadminbar {
+  position: fixed !important; }
 
 .logged-in nav {
   top: 46px; }
