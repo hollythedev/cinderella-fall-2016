@@ -614,7 +614,7 @@ body .flickity-page-dots {
       height: 50px; } }
 
 .wpcf7-form {
-  padding-top: 20%; }
+  padding-top: 10%; }
   .wpcf7-form input[type=email],
   .wpcf7-form input[type=text] {
     border-radius: 0;
@@ -2705,10 +2705,8 @@ object {
 
 .info {
   font-family: "roboto";
-  font-weight: 200; }
-  @media (min-width: 1240px) {
-    .info {
-      display: none; } }
+  font-weight: 200;
+  padding-top: 10%; }
   .info p:nth-child(n+2) {
     padding-bottom: 5px; }
 
@@ -2750,7 +2748,8 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  background-position-x: 50%; }
 
 @media (min-width: 1240px) {
   .cp-grid {
