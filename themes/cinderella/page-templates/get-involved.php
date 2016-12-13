@@ -158,8 +158,6 @@ get_header(); ?>
 							</div>
 
 							<!--Drop off donations background image and title-->
-
-
 							<div class="get-involved-drop-off-locations">							
 								<!--Donation locations loop start-->
 
