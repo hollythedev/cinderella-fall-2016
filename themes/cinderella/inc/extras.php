@@ -70,7 +70,7 @@ function my_styles_method() {
     } elseif(is_page( 'contact-us' )){
         $urlContactUs = CFS()->get('contact_us_background_image');
         $custom_css = " .contact-us-section-1{
-                    background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlContactUs}) no-repeat center bottom;
+                    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url({$urlContactUs}) no-repeat center bottom;
                     background-size: cover;
                 }";
   
