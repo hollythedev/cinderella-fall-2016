@@ -57,7 +57,7 @@ get_header(); ?>
 								
 								<p class="cp-expect-text-wrapper "><?php echo $field['what_to_expect_details'];?></p>
 								
-								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['image_what_to_expect'];?>); background-size: cover;"></div>
+								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['image_what_to_expect'];?>); background-size: cover;  background-position-x: 65%;"></div>
 							</div>
 							<?php endforeach ?>
 							</div>

@@ -49,7 +49,7 @@ get_header(); ?>
 								<div class="text-wrapper cp-expect-text-wrapper">
 									<p class="cp-expect-description"><?php echo $field['bd_what_to_expect_copy'];?></p>
 								</div>
-								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
+								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover; background-position-x: 65%;"></div>
 							</div>
 							<?php endforeach ?>
 
