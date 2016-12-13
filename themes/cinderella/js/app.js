@@ -98,8 +98,16 @@
             lazyLoading: true,
 
             //events
-            onLeave: function(index, nextIndex, direction) {},
-            afterLoad: function(anchorLink, index) {},
+            onLeave: function(index, nextIndex, direction) {
+                if(index===2 && direction==='up'){
+                     $('#desktop-nav').css({ "background-color": "" });
+                }
+            },
+            afterLoad: function(anchorLink, index) {
+                if(index===2){
+                     $('#desktop-nav').css({ "background-color": "#393D53" });
+                }
+            },
             afterRender: function() {},
             afterResize: function() {},
             afterResponsive: function(isResponsive) {},
@@ -108,6 +116,7 @@
         });
     });
 
+<<<<<<< HEAD
     // changing navigation bar on scrollBar
     //switch nav
     var bottomHero = $('.cp-landing-section').offset().top + $('.cp-landing-section').height();
@@ -125,4 +134,6 @@
         }
 
     });
+=======
+>>>>>>> fbe3609ab9071b15a16d06a43b03da66077761a6
 })(jQuery);

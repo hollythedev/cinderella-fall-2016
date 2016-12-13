@@ -46,9 +46,8 @@ get_header(); ?>
 				</section>
 
 
-				<section class="section fp-auto-height">
-					<section class="cp-section home-section-4">
-						<div class="cp-spacer"></div>
+				<section class="section fp-auto-height cp-orange">
+					<section class="cp-section home-section-4 first-auto-height-section ">
 						<div class="cp-expect-grid-wrapper">
 							<?php 
 							$fields = CFS()->get( 'what_to_expect' );

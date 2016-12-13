@@ -110,6 +110,7 @@ html.fp-enabled,
 .fp-scrollable {
     overflow: hidden;
     position: relative;
+    height: 100vh !important;
 }
 
 .fp-scroller {

@@ -90,6 +90,7 @@ function cp_starter_scripts() {
 	
 	wp_enqueue_script( 'jquery3', get_template_directory_uri() . '/build/js/jquery-3.1.1.min.js', array(), null, true );
 	wp_enqueue_script( 'jquery-ui-accordion', array('jquery3'), null, true );
+	wp_enqueue_script( 'jquery-scrollTo', get_template_directory_uri() . '/build/js/jquery.scrollTo.min.js', array('jquery3'), null, true );
 	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/build/js/flickity.min.js', array('jquery3'), null, true );
 	wp_enqueue_script( 'scrollOverflow', get_template_directory_uri() . '/build/js/scrolloverflow.min.js', array('jquery3'), null, true );
 	wp_enqueue_script( 'fullPage', get_template_directory_uri() . '/build/js/jquery.fullpage.min.js', array('jquery3', 'scrollOverflow'), null, true );
