@@ -87,6 +87,16 @@ body {
     font-style: normal;
     font-size: 3rem;
     text-align: center;
+    width: 80%;
+    text-align: left;
+    padding-right: 10%;
+    margin-top: 1rem;
+    @include desktop {
+        font-size: 4rem !important;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
 }
 
 //flickity         
@@ -215,10 +225,4 @@ body {
     -webkit-filter: grayscale(1);
     /* Old WebKit */
     filter: grayscale(1);
-}
-
-.carousel-text {
-    @include desktop {
-        font-size: 4rem !important;
-    }
 }
