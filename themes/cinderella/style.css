@@ -2447,7 +2447,7 @@ object {
 .site-info {
   background-color: #4A4A4A;
   width: 100vw;
-  padding: 4rem 3rem 0;
+  padding: 3rem 3rem 0;
   border-top: 1px solid #fff;
   position: relative; }
 
@@ -2469,12 +2469,26 @@ object {
     top: 25%;
     right: 28%; }
 
+@media (min-width: 1240px) {
+  .footer-nav-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%; } }
+
 .navigation {
   -moz-columns: 2;
        columns: 2;
   -ms-flex-pack: justify;
       justify-content: space-between;
   line-height: 2rem; }
+  @media (min-width: 1240px) {
+    .navigation {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   .navigation a {
     text-decoration: none;
     text-transform: uppercase;
@@ -2485,6 +2499,11 @@ object {
   font-family: "roboto";
   font-weight: 100;
   letter-spacing: .60px; }
+  @media (min-width: 1240px) {
+    .all-nav {
+      text-align: center;
+      width: 40%;
+      margin: 0 5%; } }
 
 .logoDevelopment {
   display: none; }
@@ -2492,13 +2511,21 @@ object {
     .logoDevelopment {
       display: -ms-flexbox;
       display: flex;
-      width: 317px;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      margin-top: .5rem;
+      width: 100%;
       height: 80px; }
       .logoDevelopment img {
-        width: 5.5rem;
-        height: 5.5rem; }
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-right: 1rem; }
       .logoDevelopment h2 {
-        font-size: 2.1rem; } }
+        font-size: 2.1rem;
+        font-family: "roboto";
+        font-weight: 100; } }
 
 .facebook-icon {
   text-align: center;
@@ -2506,25 +2533,21 @@ object {
   padding-top: 2.125rem;
   border-bottom: 1px solid #979797;
   position: relative; }
-  @media (min-width: 1240px) {
-    .facebook-icon {
-      display: none; } }
   .facebook-icon .fb-img {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 100%;
-    height: 3rem; }
-    @media (min-width: 1240px) {
-      .facebook-icon .fb-img {
-        text-align: left; } }
+    height: 2.5rem; }
 
-@media (min-width: 1240px) {
-  .information {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    border-bottom: 2rem; } }
+.information {
+  padding-top: 1rem;
+  padding-bottom: 1.3rem; }
+  @media (min-width: 1240px) {
+    .information {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .logged-in .footer-logged-in {
   height: 32px;
@@ -2532,13 +2555,18 @@ object {
 
 .cp-copyright {
   text-align: center;
-  padding-top: 9%;
   letter-spacing: 1px;
   font-family: "roboto";
   font-weight: 100; }
 
 .cp-organization {
   display: none; }
+  @media (min-width: 1240px) {
+    .cp-organization {
+      text-align: center;
+      display: initial;
+      font-family: "roboto";
+      font-weight: 100; } }
 
 .referral-section-3 {
   background: #393D53;
@@ -2734,11 +2762,14 @@ object {
     width: 70rem;
     height: 35rem; } }
 
-.container {
+iframe {
+  overflow: hidden; }
+
+.boxbox {
   width: 100%;
   height: 100%; }
   @media (min-width: 1240px) {
-    .container {
+    .boxbox {
       width: 70%;
       display: -ms-flexbox;
       display: flex;
