@@ -39,7 +39,7 @@ get_header(); ?>
 
 
 				<section class="section">
-					<section class="home-section-3 cp-section cp-quote-section">
+					<section class="home-section-3 cp-section cp-quote-section first-auto-height-section">
 					<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'home_quote' ); ?></span></h2>
 					<p class="cp-quote-author"><?php echo CFS()->get( 'home_quote_author' ); ?></p>
 					</section>
