@@ -15,6 +15,7 @@
 						</div>
 					</div>
 					
+					<div class="footer-nav-wrapper">
 					<div class="navigation">
 							<p class="all-nav"><a href="<?php the_permalink(7); ?>">Home</a></p>
 							<p class="all-nav"><a href="<?php the_permalink(35); ?>">About</a></p>
@@ -24,11 +25,12 @@
 							<p class="all-nav"><a href="<?php the_permalink(129); ?>">Resource Kit</a></p>
 							<p class="all-nav"><a href="<?php the_permalink(55); ?>">Contact Us</a></p>
 							<p class="all-nav"><a href="<?php the_permalink(185); ?>">Privacy Policy</a></p>
+					</div>
+					</div>
 						<div class="logoDevelopment">
 							<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/nav-icons/cp_dm-icon-home.svg" alt="Spark Icon" />
 							<h2>The Cinderella <span>Project</span></h2>
 						</div>
-					</div>
 
 					<div class="facebook-icon">
 						<img class="fb-img" src="<?php echo get_template_directory_uri(); ?>/images/assets/facebook-icon.svg" alt="Facebook Icon" />
