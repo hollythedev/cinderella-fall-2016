@@ -101,13 +101,13 @@
 
             //events
             onLeave: function(index, nextIndex, direction) {
-                if(index===2 && direction==='up'){
-                     $('#desktop-nav').css({ "background-color": "" });
+                if (index === 2 && direction === 'up') {
+                    $('#desktop-nav').css({ "background-color": "" });
                 }
             },
             afterLoad: function(anchorLink, index) {
-                if(index===2){
-                     $('#desktop-nav').css({ "background-color": "#393D53" });
+                if (index === 2) {
+                    $('#desktop-nav').css({ "background-color": "#393D53" });
                 }
             },
             afterRender: function() {},
@@ -116,6 +116,25 @@
             afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
         });
+    });
+
+
+    // changing navigation bar on scrollBar
+    //switch nav
+    var bottomHero = $('.cp-landing-section').offset().top + $('.cp-landing-section').height();
+
+    // on scroll
+    $(window).on('scroll', function() {
+
+        // we round here to reduce a little workload
+        stop = Math.round($(window).scrollTop());
+        if (stop > bottomHero) {
+
+            $('#desktop-nav').addClass('#desktop-nav-rev');
+        } else {
+            $('#desktop-nav').removeClass('#desktop-nav-rev');
+        }
+
     });
 
 })(jQuery);
