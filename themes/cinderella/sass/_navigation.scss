@@ -20,19 +20,12 @@ nav {
             top: $wploginbar-thin-height;
         }
     }
-    #fp-nav ul {
-        transform: translateY($wploginbar-thick-height);
-        @media (min-width: $wploginbar-height-change) {
-            transform: translateY($wploginbar-thin-height);
-        }
-    }
 }
 
 #fp-nav {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    display: none;
     ul {
         li {
             margin-bottom: 0;
@@ -158,6 +151,7 @@ nav {
         background: url('../../images/assets/nav-icons/cp_dm-icon-refer.svg');
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top: 3px;
     }
 }
 
@@ -174,6 +168,7 @@ nav {
         background: url('../../images/assets/nav-icons/cp_dm-icon-contactUs.svg');
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top: 10px;
     }
 }
 
@@ -198,6 +193,7 @@ nav {
         background: url('../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg');
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top: 5px;
     }
 }
 
@@ -222,10 +218,12 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
+    
 }
 
-.bottom-mobile-nav-icon-container {
-    width: 90%;
+.bottom-mobile-nav-icon-wrapper {
+    height: 22px;
+
 }
 
 .bottom-mobile-nav-wrapper {
@@ -250,6 +248,7 @@ nav {
 .bottom-mobile-nav-text {
     width: 250px;
     text-align: center;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -257,12 +256,25 @@ nav {
 #bottom-mobile-nav-close-icon {
     width: 42px;
     position: absolute;
-    right: -2%;
+    right: -3%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 
+#bottom-mobile-nav-close-icon {
+    height: 30px;
+    img {
+    height: 30px;
+    }
+}
+
+#bottom-mobile-nav-open-icon {
+    height: 21px;
+    img {
+    height: 21px;
+    }
+}
 /* Desktop Navigation */
 
 #desktop-nav {

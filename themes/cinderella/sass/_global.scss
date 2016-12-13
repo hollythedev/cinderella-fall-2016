@@ -34,7 +34,6 @@ body {
 .cp-learn-about-link {
     @include desktop {
         color: #fff;
-        border: 2px solid;
     }
     color: #fff;
     font-size: 1.2rem;
@@ -49,6 +48,11 @@ body {
         text-decoration: none;
         &:hover,
         &focus {}
+    }
+    &.cp-learn-about-link-home {
+        @include desktop {
+            border: 2px solid;
+        }
     }
 }
 
@@ -86,9 +90,16 @@ body {
     font-weight: 100;
     font-style: normal;
     font-size: 3rem;
-    width: 75%;
+    text-align: center;
+    width: 80%;
+    text-align: left;
+    padding-right: 10%;
+    margin-top: 1rem;
     @include desktop {
         font-size: 4rem !important;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
     }
 }
 
@@ -211,3 +222,4 @@ body {
     /* Old WebKit */
     filter: grayscale(1);
 }
+

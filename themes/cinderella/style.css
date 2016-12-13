@@ -545,10 +545,12 @@ body {
   width: 20rem; }
   @media (min-width: 1240px) {
     .cp-learn-about-link {
-      color: #fff;
-      border: 2px solid; } }
+      color: #fff; } }
   .cp-learn-about-link a {
     text-decoration: none; }
+  @media (min-width: 1240px) {
+    .cp-learn-about-link.cp-learn-about-link-home {
+      border: 2px solid; } }
 
 .cp-learn-about-link-small {
   color: #fff;
@@ -578,10 +580,18 @@ body {
   font-weight: 100;
   font-style: normal;
   font-size: 3rem;
-  width: 75%; }
+  text-align: center;
+  width: 80%;
+  text-align: left;
+  padding-right: 10%;
+  margin-top: 1rem; }
   @media (min-width: 1240px) {
     .carousel-text {
-      font-size: 4rem !important; } }
+      font-size: 4rem !important;
+      width: 100%;
+      text-align: center;
+      padding-right: 0; } }
+
 
 textarea {
   background: 0;
@@ -839,17 +849,10 @@ nav {
     .logged-in nav {
       top: 32px; } }
 
-.logged-in #fp-nav ul {
-  transform: translateY(46px); }
-  @media (min-width: 783px) {
-    .logged-in #fp-nav ul {
-      transform: translateY(32px); } }
-
 #fp-nav {
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
-  display: none; }
+  left: 0; }
   #fp-nav ul li {
     margin-bottom: 0; }
 
@@ -962,7 +965,8 @@ nav {
 #menu-item-63 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-refer.svg");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 3px; }
 
 #menu-item-66 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-account.svg");
@@ -972,7 +976,8 @@ nav {
 #menu-item-60 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-contactUs.svg");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 10px; }
 
 #menu-item-57 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-home.svg");
@@ -987,7 +992,8 @@ nav {
 #menu-item-145 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-resourceKit.svg");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 5px; }
 
 #menu-item-189 .nav-icon {
   background: url("../../images/assets/nav-icons/cp_dm-icon-privacyPolicy.svg");
@@ -1010,8 +1016,8 @@ nav {
       justify-content: center;
   width: 100%; }
 
-.bottom-mobile-nav-icon-container {
-  width: 90%; }
+.bottom-mobile-nav-icon-wrapper {
+  height: 22px; }
 
 .bottom-mobile-nav-wrapper {
   height: 55px;
@@ -1038,15 +1044,26 @@ nav {
 .bottom-mobile-nav-text {
   width: 250px;
   text-align: center;
+  font-size: 2rem;
   text-transform: uppercase; }
 
 #bottom-mobile-nav-open-icon,
 #bottom-mobile-nav-close-icon {
   width: 42px;
   position: absolute;
-  right: -2%;
+  right: -3%;
   top: 50%;
   transform: translateY(-50%); }
+
+#bottom-mobile-nav-close-icon {
+  height: 30px; }
+  #bottom-mobile-nav-close-icon img {
+    height: 30px; }
+
+#bottom-mobile-nav-open-icon {
+  height: 21px; }
+  #bottom-mobile-nav-open-icon img {
+    height: 21px; }
 
 /* Desktop Navigation */
 #desktop-nav {
@@ -1403,8 +1420,7 @@ a {
   padding: 1rem; }
   .cp-no-gift h2 {
     padding: 2rem 0 1rem;
-    font-size: 3rem;
-    font-weight: 300; }
+    font-size: 3rem; }
     @media (min-width: 1240px) {
       .cp-no-gift h2 {
         font-size: 2rem; } }
@@ -1515,7 +1531,7 @@ a {
     font-size: 4rem;
     font-family: "roboto";
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     line-height: 1.4; }
     @media (min-width: 1240px) {
@@ -1541,7 +1557,7 @@ a {
     font-family: "roboto";
     font-style: normal;
     font-weight: 300;
-    letter-spacing: 0.2rem;
+    letter-spacing: 2.3px;
     line-height: 1.5;
     margin: 2rem 0;
     letter-spacing: 1.5; }
@@ -1731,7 +1747,8 @@ a {
   .cp-marketing-section-small .bd-message {
     font-size: 1.5rem;
     width: 50%;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 1.5rem; }
   .cp-marketing-section-small .cp-button-link {
     margin-bottom: 4rem; }
 
@@ -1758,7 +1775,8 @@ a {
   .cp-marketing-section-small-purple .bd-message {
     font-size: 1.5rem;
     width: 50%;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 1.5rem; }
   .cp-marketing-section-small-purple .cp-button-link {
     margin-bottom: 4rem; }
   .cp-marketing-section-small-purple .footage {
@@ -1827,7 +1845,7 @@ a {
 
 .cp-quote-section {
   background-color: #F5A623;
-  padding: 15%;
+  padding: 0 15%;
   height: 100vh;
   font-family: "roboto";
   font-weight: 200;
@@ -1867,6 +1885,7 @@ a {
   @media (min-width: 1240px) {
     .cp-quote-section.bd_section_3 {
       height: 50vh; } }
+
 
 .cp-stat-grid-wrapper .cp-stat-grid {
   display: -ms-flexbox;
@@ -1950,6 +1969,7 @@ a {
   .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper {
     width: 50%;
     background-color: #69B9C6;
+
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -2011,10 +2031,24 @@ a {
     text-align: center;
     font-size: 1.5rem;
     padding: 5%;
-    font-weight: 100; }
+    font-weight: 300; }
+    .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper p.desktop-stat {
+      font-size: 3rem; }
+      .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper p.desktop-stat:after {
+        width: 2rem;
+        border-bottom: 1px solid #fff;
+        content: "";
+        display: block;
+        margin: .5rem auto; }
     @media (min-width: 1240px) {
       .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper {
-        width: 100%; } }
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+            justify-content: center; } }
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper .cp-expect-description {
       font-size: 1.5rem;
       text-align: center;
@@ -2028,23 +2062,29 @@ a {
       width: 50%; }
       .cp-expect-grid-wrapper .cp-expect-grid p {
         text-align: center;
-        display: -ms-flexbox;
-        display: flex;
         -ms-flex-pack: center;
             justify-content: center;
         font-size: 2rem; }
       .cp-expect-grid-wrapper .cp-expect-grid:after {
         content: "";
         padding-bottom: 100%;
-        display: table; }
-      .cp-expect-grid-wrapper .cp-expect-grid:last-child {
-        display: none; }
-      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(1) .cp-expect-text-wrapper,
-      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(4) .cp-expect-text-wrapper {
-        background-color: #F5A623; }
-      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2) .cp-expect-text-wrapper,
-      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(3) .cp-expect-text-wrapper {
-        background-color: #69B9C6; } }
+        display: table; } }
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(1) .cp-expect-text-wrapper,
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(4) .cp-expect-text-wrapper {
+    background-color: #F5A623; }
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2) .cp-expect-text-wrapper,
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(3) .cp-expect-text-wrapper {
+    background-color: #69B9C6; }
+
+@media (min-width: 1240px) {
+  .home-section-4 {
+    display: none; } }
+
+.home-section-4-desktop {
+  display: none; }
+  @media (min-width: 1240px) {
+    .home-section-4-desktop {
+      display: block; } }
 
 .cp-description-section {
   background-color: #393D53;
@@ -2308,7 +2348,8 @@ a {
   .cp-resource-item p {
     color: black;
     font-size: 1.3rem;
-    padding: .5rem 0; }
+    padding: .5rem 0;
+    text-align: left; }
 
 .cp-resources {
   width: 100%;
@@ -2635,7 +2676,8 @@ object {
   font-weight: 200;
   font-family: "roboto";
   font-weight: 200;
-  font-style: normal; }
+  font-style: normal;
+  padding: 2rem; }
   .referral-section-3 .cp-referral-student-message {
     font-size: 1.7rem;
     line-height: 1.5;
@@ -2663,7 +2705,8 @@ object {
   font-weight: 300;
   line-height: 1.5;
   text-align: center;
-  width: 80%; }
+  width: 80%;
+  margin-bottom: 1.5rem; }
 
 .cp-similar-project {
   padding: 1rem 2rem;

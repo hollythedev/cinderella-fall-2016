@@ -62,7 +62,7 @@ get_header(); ?>
 							$fields = CFS()->get( 'bd_what_to_expect' );
 							foreach ( $fields as $field ) :
 							?>
-								<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['bd_what_to_expect_image'];?>) center no-repeat; background-size: cover;"></div>
+								<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['bd_what_to_expect_image'];?>) 25% 15% no-repeat; background-size: cover;"></div>
 						<?php endforeach ?>
 							
 					</div>

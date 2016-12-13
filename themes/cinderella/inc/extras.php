@@ -21,7 +21,7 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 /*
-Custom Home Page background Image
+Custom Landing Page Background Images
 */
 
 function my_styles_method() {
@@ -73,14 +73,11 @@ function my_styles_method() {
                     background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url({$urlContactUs}) no-repeat center bottom;
                     background-size: cover;
                 }";
-  
-         
-
     } elseif(is_page('about')){
         $urlImpact = CFS()->get('about_us_background_image');
         $urlCinderellas = CFS()->get('about_us_cinderella_background_image');
         $custom_css = " .about-section-1{
-                background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url({$urlImpact}) no-repeat center bottom;
+                background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url({$urlImpact}) no-repeat 25% 70%;
                     background-size: cover;
                 }
                 .about-section-5{
@@ -100,8 +97,8 @@ function my_styles_method() {
                 background-size: cover;
                 }
                 .get-involved-section-1{
-            background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlGetInv}) no-repeat center bottom;
-            background-size: cover;
+                background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$urlGetInv}) no-repeat center bottom;
+                background-size: cover;
             }
             .get-involved-drop-off-donations{
                 background: url({$urlDropOff}) no-repeat 30% bottom;
@@ -120,8 +117,8 @@ function my_styles_method() {
         $urlResourceKit = CFS()->get('resource_kit_background_image');
         $custom_css = " 
                 .resource-kit-section-1{
-            background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url({$urlResourceKit}) no-repeat center bottom;
-            background-size: cover;
+                background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url({$urlResourceKit}) no-repeat center bottom;
+                background-size: cover;
             };";
     }   
   wp_add_inline_style( 'cp-style', $custom_css );
