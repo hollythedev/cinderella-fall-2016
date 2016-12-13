@@ -12,8 +12,10 @@ get_header(); ?>
 
 				<section class="section">
 					<section class="contact-us-section-1 cp-section cp-landing-section">
-						<h2 class="cp-landing-title"><?php echo CFS()->get( 'contact_us_message' ); ?></h2>
-						<span class="cp-horizontal-line"></span>
+						<div class="cp-landing-top-divider">
+							<h2 class="cp-landing-title"><?php echo CFS()->get( 'contact_us_message' ); ?></h2>
+							<div class="cp-horizontal-line"></div>
+						</div>
 						<i class="cp-angle-down fa fa-angle-down fa-3x"></i>
 					</section>
 				</section>
