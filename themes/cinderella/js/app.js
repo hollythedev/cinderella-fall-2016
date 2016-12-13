@@ -7,7 +7,9 @@
             active: false,
             heightStyle: 'content',
             activate: function(event, ui) {
-                $.fn.fullpage.reBuild();
+                if(!$.isEmptyObject(ui.newHeader.offset())) {
+                    $('html:not(:animated), body:not(:animated)').animate({ scrollTop: ui.newHeader.offset().top - 55 }, 0);
+                }
             }
         });
 
