@@ -838,17 +838,10 @@ nav {
     .logged-in nav {
       top: 32px; } }
 
-.logged-in #fp-nav ul {
-  transform: translateY(46px); }
-  @media (min-width: 783px) {
-    .logged-in #fp-nav ul {
-      transform: translateY(32px); } }
-
 #fp-nav {
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
-  display: none; }
+  left: 0; }
   #fp-nav ul li {
     margin-bottom: 0; }
 
@@ -2762,8 +2755,7 @@ object {
 
 .info {
   font-family: "roboto";
-  font-weight: 200;
-  padding-top: 10%; }
+  font-weight: 200; }
   .info p:nth-child(n+2) {
     padding-bottom: 5px; }
 
