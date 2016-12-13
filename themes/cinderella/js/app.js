@@ -108,4 +108,21 @@
         });
     });
 
+    // changing navigation bar on scrollBar
+    //switch nav
+    var bottomHero = $('.cp-landing-section').offset().top + $('.cp-landing-section').height();
+
+    // on scroll, 
+    $(window).on('scroll', function() {
+
+        // we round here to reduce a little workload
+        stop = Math.round($(window).scrollTop());
+        if (stop > bottomHero) {
+            console.log('hello');
+            $('#desktop-nav').css({ "background": "red" });
+        } else {
+            $('#desktop-nav').css({ "background": "transparent" });
+        }
+
+    });
 })(jQuery);

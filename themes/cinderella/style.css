@@ -1027,7 +1027,6 @@ nav {
       font-style: normal;
       font-weight: 200;
       color: #fff;
-      background-color: #393D53;
       height: 4rem; }
       #desktop-nav .cp-logo-img {
         height: 100px;
@@ -1391,7 +1390,6 @@ a {
     font-size: 1.6rem; }
 
 .cp-landing-section {
-  padding-top: 20vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
