@@ -34,7 +34,10 @@
     height:35rem;
   }
 }
-.container{
+iframe {
+  overflow: hidden; 
+}
+.boxbox{
   width: 100%;
   height:100%;
   @include desktop{

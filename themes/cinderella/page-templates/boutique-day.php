@@ -41,7 +41,7 @@ get_header(); ?>
 					<!--What to expect image and copy grid-->
 					
 						<div class="cp-expect-grid-wrapper cp-grid-wrapper">
-							<div class="container">
+							<div class="boxbox">
 						<?php 
 							$fields = CFS()->get( 'bd_what_to_expect' );
 							foreach ( $fields as $field ) :
@@ -73,7 +73,7 @@ get_header(); ?>
 						<p class="bd-message"><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
 
 						<div class="footage">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/9xj8Iylpod4" frameborder="0" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/9xj8Iylpod4" frameborder="0" allowfullscreen scrolling="no"></iframe>
 						</div>
 					</section>
 					<?php get_footer(); ?>
