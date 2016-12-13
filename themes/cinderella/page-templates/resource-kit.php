@@ -20,7 +20,7 @@ get_header(); ?>
 				</section>
 			</section>
 
-			<section class="section fp-auto-height cp-resources-section first-auto-height-section cp-purple-section">
+			<section class="cp-resources-section cp-purple-section">
 
 				<section class="cp-resources">
 					<div class="accordion">	
