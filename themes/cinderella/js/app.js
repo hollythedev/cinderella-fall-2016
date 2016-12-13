@@ -98,8 +98,16 @@
             lazyLoading: true,
 
             //events
-            onLeave: function(index, nextIndex, direction) {},
-            afterLoad: function(anchorLink, index) {},
+            onLeave: function(index, nextIndex, direction) {
+                if(index===2 && direction==='up'){
+                     $('#desktop-nav').css({ "background-color": "" });
+                }
+            },
+            afterLoad: function(anchorLink, index) {
+                if(index===2){
+                     $('#desktop-nav').css({ "background-color": "#393D53" });
+                }
+            },
             afterRender: function() {},
             afterResize: function() {},
             afterResponsive: function(isResponsive) {},
@@ -108,21 +116,4 @@
         });
     });
 
-    // changing navigation bar on scrollBar
-    //switch nav
-    var bottomHero = $('.cp-landing-section').offset().top + $('.cp-landing-section').height();
-
-    // on scroll, 
-    $(window).on('scroll', function() {
-
-        // we round here to reduce a little workload
-        stop = Math.round($(window).scrollTop());
-        if (stop > bottomHero) {
-            console.log('hello');
-            $('#desktop-nav').css({ "background": "red" });
-        } else {
-            $('#desktop-nav').css({ "background": "transparent" });
-        }
-
-    });
 })(jQuery);
