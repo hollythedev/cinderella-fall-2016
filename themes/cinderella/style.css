@@ -1709,7 +1709,8 @@ a {
   .cp-marketing-section-small .bd-message {
     font-size: 1.5rem;
     width: 50%;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 1.5rem; }
   .cp-marketing-section-small .cp-button-link {
     margin-bottom: 4rem; }
 
@@ -1736,7 +1737,8 @@ a {
   .cp-marketing-section-small-purple .bd-message {
     font-size: 1.5rem;
     width: 50%;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 1.5rem; }
   .cp-marketing-section-small-purple .cp-button-link {
     margin-bottom: 4rem; }
   .cp-marketing-section-small-purple .footage {
@@ -1990,9 +1992,23 @@ a {
     font-size: 1.5rem;
     padding: 5%;
     font-weight: 300; }
+    .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper p.desktop-stat {
+      font-size: 3rem; }
+      .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper p.desktop-stat:after {
+        width: 2rem;
+        border-bottom: 1px solid #fff;
+        content: "";
+        display: block;
+        margin: .5rem auto; }
     @media (min-width: 1240px) {
       .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper {
-        width: 100%; } }
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+            justify-content: center; } }
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper .cp-expect-description {
       font-size: 1.5rem;
       text-align: center;
@@ -2006,23 +2022,29 @@ a {
       width: 50%; }
       .cp-expect-grid-wrapper .cp-expect-grid p {
         text-align: center;
-        display: -ms-flexbox;
-        display: flex;
         -ms-flex-pack: center;
             justify-content: center;
         font-size: 2rem; }
       .cp-expect-grid-wrapper .cp-expect-grid:after {
         content: "";
         padding-bottom: 100%;
-        display: table; }
-      .cp-expect-grid-wrapper .cp-expect-grid:last-child {
-        display: none; }
-      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(1) .cp-expect-text-wrapper,
-      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(4) .cp-expect-text-wrapper {
-        background-color: #F5A623; }
-      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2) .cp-expect-text-wrapper,
-      .cp-expect-grid-wrapper .cp-expect-grid:nth-child(3) .cp-expect-text-wrapper {
-        background-color: #69B9C6; } }
+        display: table; } }
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(1) .cp-expect-text-wrapper,
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(4) .cp-expect-text-wrapper {
+    background-color: #F5A623; }
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(2) .cp-expect-text-wrapper,
+  .cp-expect-grid-wrapper .cp-expect-grid:nth-child(3) .cp-expect-text-wrapper {
+    background-color: #69B9C6; }
+
+@media (min-width: 1240px) {
+  .home-section-4 {
+    display: none; } }
+
+.home-section-4-desktop {
+  display: none; }
+  @media (min-width: 1240px) {
+    .home-section-4-desktop {
+      display: block; } }
 
 .cp-description-section {
   background-color: #393D53;
@@ -2612,7 +2634,8 @@ object {
   font-weight: 200;
   font-family: "roboto";
   font-weight: 200;
-  font-style: normal; }
+  font-style: normal;
+  padding: 2rem; }
   .referral-section-3 .cp-referral-student-message {
     font-size: 1.7rem;
     line-height: 1.5;
@@ -2640,7 +2663,8 @@ object {
   font-weight: 300;
   line-height: 1.5;
   text-align: center;
-  width: 80%; }
+  width: 80%;
+  margin-bottom: 1.5rem; }
 
 .cp-similar-project {
   padding: 1rem 2rem;
