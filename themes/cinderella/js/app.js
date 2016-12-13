@@ -118,10 +118,10 @@
         // we round here to reduce a little workload
         stop = Math.round($(window).scrollTop());
         if (stop > bottomHero) {
-            console.log('hello');
-            $('#desktop-nav').css({ "background": "red" });
+
+            $('#desktop-nav').addClass('#desktop-nav-rev');
         } else {
-            $('#desktop-nav').css({ "background": "transparent" });
+            $('#desktop-nav').removeClass('#desktop-nav-rev');
         }
 
     });
