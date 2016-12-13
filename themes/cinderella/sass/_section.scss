@@ -325,7 +325,7 @@
  
  .cp-quote-section {
      background-color: $color_background_3;
-     padding: 15%;
+     padding: 0 15%;
      height: 100vh;
      font-family: $font_roboto;
      font-weight: 200;
@@ -372,7 +372,7 @@
  }
  
  .cp-stat-grid-wrapper {
-     width: 100%;
+     width: 100vw;
      .cp-stat-grid {
          display: flex;
          width: 100vw;
@@ -422,7 +422,7 @@
  }
  
  .cp-donation-grid-wrapper {
-      width: 100%;
+      width: 100vw;
      .cp-donation-grid {
          display: flex;
          width: 100vw;
@@ -494,7 +494,7 @@
  }
  
  .cp-expect-grid-wrapper {
-      width: 100%;
+      width: 100vw;
      @include desktop {
          display: flex;
          flex-flow: row wrap;
