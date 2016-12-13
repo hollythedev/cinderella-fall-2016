@@ -94,6 +94,9 @@ $desktop-width: 1240px;
     color: #fff;
     text-align: center;
     padding: $padding;
+    @include desktop {
+        padding: 0;
+    }
 }
 
 @mixin cp-generic-marketing-section($background_color, $title_font_size: 2.5rem) {
