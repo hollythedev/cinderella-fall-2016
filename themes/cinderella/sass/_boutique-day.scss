@@ -1,49 +1,50 @@
+ .cp-grid {
+   @include desktop {
+     flex-basis: 33%;
+     margin: 0 auto;
+     justify-content: space-around;
+     &:nth-child(4n) {
+       margin-right: 0;
+     }
+     &:nth-child(5n) {
+       margin-left: 0;
+     }
+   }
+   .cp-expect-text-wrapper.text-wrapper {
+     @include desktop {
+       display: none;
+     }
+   }
+ }
  
-  .cp-grid{
-    @include desktop{
-      flex-basis:33%;
-      margin: 0 auto;
-      justify-content: space-around;
-      &:nth-child(4n){
-        margin-right: 0;
-      }
-      &:nth-child(5n){
-        margin-left: 0;
-      }
-    }
-    .cp-expect-text-wrapper.text-wrapper{
-    @include desktop{
-      display: none;
-      }
-    }
-  }
-  .cp-grid-wrapper {
-    @include desktop{
-      display: flex;
-      flex-wrap: wrap;
-    }
-  } 
-.cp-title-text.bd-title-text {
-  @include desktop{
-    padding:0;
-  }
-}
-.footage iframe {
-  @include desktop {
-    width:70rem;
-    height:35rem;
-  }
-}
-iframe {
-  overflow: hidden; 
-}
-.boxbox{
-  width: 100%;
-  height:100%;
-  @include desktop{
-    width: 70%;
+ .cp-grid-wrapper {
+   @include desktop {
      display: flex;
-      flex-wrap: wrap;  
-    margin: 0 auto;
-  }
-}
+     flex-wrap: wrap;
+   }
+ }
+ 
+ .cp-title-text.bd-title-text {
+   @include desktop {
+     padding: 0;
+   }
+ }
+ 
+ .footage iframe {
+   overflow: hidden;
+   @include desktop {
+     width: 70rem;
+     height: 35rem;
+   }
+ }
+ 
+ .boxbox {
+   width: 100%;
+   height: 100%;
+   @include desktop {
+     width: 70%;
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 auto;
+   }
+ }

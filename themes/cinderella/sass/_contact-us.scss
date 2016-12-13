@@ -20,12 +20,16 @@
     font-family: $font_roboto;
     font-weight: 200;
     padding-bottom: 6%;
+    padding-top: 6%;
     letter-spacing: .1rem
 }
 
 .info {
     font-family: $font_roboto;
     font-weight: 200;
+    @include desktop {
+        display: none;
+    }
     p {
         &:nth-child(n+2) {
             padding-bottom: 5px;
@@ -33,8 +37,12 @@
     }
 }
 
-.cp-contacts {
+.cp-contact-form {
     font-family: $font_roboto;
     font-weight: 200;
     letter-spacing: .1rem;
+}
+
+.cp-purple-section.section-above-footer {
+    padding: 0;
 }

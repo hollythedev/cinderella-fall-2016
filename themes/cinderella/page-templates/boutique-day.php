@@ -40,19 +40,17 @@ get_header(); ?>
 					<!--What to expect image and copy grid-->
 					
 						<div class="cp-expect-grid-wrapper cp-grid-wrapper">
-							<div class="boxbox">
-						<?php 
-							$fields = CFS()->get( 'bd_what_to_expect' );
-							foreach ( $fields as $field ) :
-							?>
-							<div class="cp-expect-grid cp-grid">
-								<div class="text-wrapper cp-expect-text-wrapper">
-									<p class="cp-expect-description"><?php echo $field['bd_what_to_expect_copy'];?></p>
+							<?php 
+								$fields = CFS()->get( 'bd_what_to_expect' );
+								foreach ( $fields as $field ) :
+								?>
+								<div class="cp-expect-grid cp-grid">
+									<div class="text-wrapper cp-expect-text-wrapper">
+										<p class="cp-expect-description"><?php echo $field['bd_what_to_expect_copy'];?></p>
+									</div>
+									<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
 								</div>
-								<div class="cp-expect-image-wrapper" style="background: url(<?php echo $field['bd_what_to_expect_image'];?>); background-size: cover;"></div>
-							</div>
-						<?php endforeach ?>
-						</div>
+							<?php endforeach ?>
 						</div>
 					</section>
 					<!--The Student resource kit-->
@@ -70,7 +68,6 @@ get_header(); ?>
 						<h3 class="cp-marketing-small-title">Dreams come true. See for yourself.</h3>
 						<div class="cp-horizontal-line"></div>
 						<p class="bd-message"><?php echo CFS()->get( 'bd_footage_call_to_action' ); ?></p>
-
 						<div class="footage">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/9xj8Iylpod4" frameborder="0" allowfullscreen scrolling="no"></iframe>
 						</div>
