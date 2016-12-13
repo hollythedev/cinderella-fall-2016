@@ -380,7 +380,7 @@
              .cp-stat-description {
                  font-size: 1.3rem;
                  text-align: center;
-                 margin: 0;
+                 margin: 0 auto;
              }
          }
          &:nth-child(2n) {
@@ -444,7 +444,7 @@
              .cp-donation-description {
                  font-size: 1.4rem;
                  text-align: center;
-                 margin: 0;
+                 margin: 0 auto;
                  font-weight: 300;
                  &:after {
                      width: 1rem;
@@ -498,7 +498,7 @@
              .cp-expect-description {
                  font-size: 1.5rem;
                  text-align: center;
-                 margin: 0;
+                 margin: 0 auto;
              }
          }
          &:nth-child(2n) {
