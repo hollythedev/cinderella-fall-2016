@@ -37,10 +37,10 @@
 								</span>
 								<div class="bottom-mobile-nav-icon-wrapper">
 									<div id="bottom-mobile-nav-open-icon">
-										<i class="fa fa-bars fa-3x"></i> 
+										<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/nav-icons/cp_dm-icon-hamburger.svg" alt="Spark Icon" />  
 									</div>
 									<div id="bottom-mobile-nav-close-icon">
-										<i class="fa fa-times-circle-o fa-3x"></i> 
+										<img src = "<?php echo get_template_directory_uri(); ?>/images/assets/nav-icons/cp_dm-icon-closeMenu.svg" alt="Spark Icon" />  
 									</div>
 								</div>
 							</div>
