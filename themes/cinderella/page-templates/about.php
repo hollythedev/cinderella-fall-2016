@@ -86,7 +86,7 @@ get_header(); ?>
 									$fields = CFS()->get( 'about_us_awards_gallery' );
 									foreach ( $fields as $field ) :
 									?>
-									<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['about_us_awards_gallery_image'];?>) center no-repeat; background-size: cover;">
+									<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['about_us_awards_gallery_image'];?>) top center no-repeat; background-size: cover;">
 										<div class="gallery-bottom-divider">
 											<div class="cp-horizontal-line"></div>
 											<h2 class="carousel-text"><?php echo $field['about_awards'];?></h2>
