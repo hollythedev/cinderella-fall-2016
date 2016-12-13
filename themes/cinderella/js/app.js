@@ -26,24 +26,26 @@
             $("#bottom-mobile-nav-open-icon").show();
             $('.mobile-nav-menu-wrapper').animate({ height: 'hide' }, 500, function() {});
         });
-
+        // Set up for Paypal integration
+        //Donation Section on Get Involved page
+        //Calculates package donation amounts by multiples of $300, $1000 and $5000.
         var donation_total = 0;
         $('.target_pos').click(function() {
             $(this).next().html(function(i, val) { return val * 1 >= 0 ? val * 1 + 1 : 0 });
 
-            var value = $(this).closest('.cp-donation-grid').find('.cp-donation-value').html().replace(/\D/g,'');
+            var value = $(this).closest('.cp-donation-grid').find('.cp-donation-value').html().replace(/\D/g, '');
             donation_total += value * 1;
         });
 
         $('.target_neg').click(function() {
-            $(this).prev().html(function(i, val) { 
+            $(this).prev().html(function(i, val) {
                 if (val * 1 - 1 >= 0) {
-                    var value = $(this).closest('.cp-donation-grid').find('.cp-donation-value').html().replace(/\D/g,'');
+                    var value = $(this).closest('.cp-donation-grid').find('.cp-donation-value').html().replace(/\D/g, '');
                     donation_total -= value * 1;
                     return val * 1 - 1;
                 }
                 return 0;
-             });
+            });
         });
 
         $('.carousel').flickity({
@@ -130,7 +132,7 @@
     });
 
 
-    // changing navigation bar on scrollBar
+    // changing navigation bar on scroll
     //switch nav
     var bottomHero = $('.cp-landing-section').offset().top + $('.cp-landing-section').height();
     console.log(bottomHero);
