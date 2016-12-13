@@ -1011,7 +1011,7 @@ nav {
 #bottom-mobile-nav-close-icon {
   width: 42px;
   position: absolute;
-  right: 2%;
+  right: -2%;
   top: 50%;
   transform: translateY(-50%); }
 
@@ -1868,12 +1868,13 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
-        flex-flow: row wrap; } }
+        flex-flow: row wrap;
+    width: 100%; } }
 
 .cp-expect-grid-wrapper .cp-expect-grid {
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  width: 100%;
   font-family: "roboto";
   font-weight: 200;
   font-style: normal; }
