@@ -575,7 +575,7 @@ body {
   color: #fff;
   z-index: 99;
   font-family: "roboto";
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   font-size: 3rem;
   text-align: center; }
@@ -1367,7 +1367,7 @@ a {
 
 .cp-no-gift {
   font-family: "roboto";
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   text-align: center;
   background-color: #393D53;
@@ -1382,7 +1382,8 @@ a {
   padding: 1rem; }
   .cp-no-gift h2 {
     padding: 2rem 0 1rem;
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-weight: 300; }
     @media (min-width: 1240px) {
       .cp-no-gift h2 {
         font-size: 2rem; } }
@@ -1493,7 +1494,7 @@ a {
     font-size: 4rem;
     font-family: "roboto";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 100;
     text-align: center;
     line-height: 1.4; }
     @media (min-width: 1240px) {
@@ -1519,7 +1520,7 @@ a {
     font-family: "roboto";
     font-style: normal;
     font-weight: 300;
-    letter-spacing: 2.3px;
+    letter-spacing: 0.2rem;
     line-height: 1.5;
     margin: 2rem 0;
     letter-spacing: 1.5; }
@@ -1989,7 +1990,7 @@ a {
     text-align: center;
     font-size: 1.5rem;
     padding: 5%;
-    font-weight: 300; }
+    font-weight: 100; }
     @media (min-width: 1240px) {
       .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-text-wrapper {
         width: 100%; } }
@@ -2774,3 +2775,6 @@ object {
 
 iframe {
   overflow: hidden; }
+
+.bd-section-8 p {
+  padding-top: 1rem; }
