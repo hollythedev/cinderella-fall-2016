@@ -86,7 +86,10 @@ body {
     font-weight: 100;
     font-style: normal;
     font-size: 3rem;
-    text-align: center;
+    width: 75%;
+    @include desktop {
+        font-size: 4rem !important;
+    }
 }
 
 //flickity         
@@ -115,18 +118,18 @@ body {
     }
 }
 
-.cp-contact-form{
+.cp-contact-form {
     width: 85%;
     @include desktop {
         width: 50rem;
     }
 }
+
 .wpcf7-form {
     padding-top: 10%;
     input[type=email],
     input[type=text],
-    select
-    {
+    select {
         border-radius: 0;
         padding: 6px;
         width: 100%;
@@ -143,12 +146,12 @@ body {
             height: 50px;
         }
     }
-    .your-name, .your-email {
+    .your-name,
+    .your-email {
         .wpcf7-not-valid-tip {
             margin-top: 8px;
         }
     }
-
     input[type="submit"] {
         width: 100%;
         height: 57px;
@@ -160,20 +163,16 @@ body {
         font-family: $font_roboto;
         font-weight: 300;
         margin-top: 8px;
-        
     }
-
-    .wpcf7-validation-errors{
+    .wpcf7-validation-errors {
         border-color: $color_background_3;
     }
-
     .wpcf7-not-valid-tip {
         color: $color_background_3;
         text-align: right;
         width: 100%;
         font-size: 1.2rem;
     }
-
     // Contact form 7
     .wpcf7-select {
         background: 0 0;
@@ -189,12 +188,12 @@ body {
             height: 50px;
         }
     }
-
     textarea.wpcf7-textarea {
         height: 180px;
         width: 100%;
         text-align: left;
         font-size: 20px;
+        padding-top:.4rem;
         padding-left: 1rem;
         color: #FFF;
         font-family: $font_roboto;
@@ -202,12 +201,8 @@ body {
         @include desktop {
             width: 100%;
         }
+    }
 }
-
-
-}
-
-
 
 .grayscale-image {
     filter: gray;
@@ -215,10 +210,4 @@ body {
     -webkit-filter: grayscale(1);
     /* Old WebKit */
     filter: grayscale(1);
-}
-
-.carousel-text {
-    @include desktop {
-        font-size: 4rem !important;
-    }
 }
