@@ -20,19 +20,12 @@ nav {
             top: $wploginbar-thin-height;
         }
     }
-    #fp-nav ul {
-        transform: translateY($wploginbar-thick-height);
-        @media (min-width: $wploginbar-height-change) {
-            transform: translateY($wploginbar-thin-height);
-        }
-    }
 }
 
 #fp-nav {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    display: none;
     ul {
         li {
             margin-bottom: 0;
