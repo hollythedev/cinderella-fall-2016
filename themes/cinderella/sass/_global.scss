@@ -115,30 +115,21 @@ body {
     }
 }
 
-// Contact form 7
-.wpcf7-select {
-    background: 0 0;
-    width: 284px;
-    height: 62px;
-    border-radius: 0;
-    font-size: 20px;
-    padding-left: .5rem;
-    font-family: $font_roboto;
-    font-weight: 300;
+.cp-contact-form{
+    width: 85%;
     @include desktop {
         width: 50rem;
-        height: 50px;
     }
 }
-
 .wpcf7-form {
     padding-top: 10%;
     input[type=email],
     input[type=text],
+    select
     {
         border-radius: 0;
         padding: 6px;
-        width: 285px;
+        width: 100%;
         height: 57px;
         background: 0 0;
         font-size: 20px;
@@ -148,12 +139,18 @@ body {
         font-family: $font_roboto;
         font-weight: 300;
         @include desktop {
-            width: 50rem;
+            width: 100%;
             height: 50px;
         }
     }
+    .your-name, .your-email {
+        .wpcf7-not-valid-tip {
+            margin-top: 8px;
+        }
+    }
+
     input[type="submit"] {
-        width: 285.25px;
+        width: 100%;
         height: 57px;
         background-color: $color__send__buttons;
         color: #FFF;
@@ -162,22 +159,55 @@ body {
         letter-spacing: 0.3rem;
         font-family: $font_roboto;
         font-weight: 300;
+        margin-top: 8px;
+        
     }
+
+    .wpcf7-validation-errors{
+        border-color: $color_background_3;
+    }
+
+    .wpcf7-not-valid-tip {
+        color: $color_background_3;
+        text-align: right;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    // Contact form 7
+    .wpcf7-select {
+        background: 0 0;
+        width: 100%;
+        height: 62px;
+        border-radius: 0;
+        font-size: 20px;
+        padding-left: .5rem;
+        font-family: $font_roboto;
+        font-weight: 300;
+        @include desktop {
+            width: 100%;
+            height: 50px;
+        }
+    }
+
+    textarea.wpcf7-textarea {
+        height: 180px;
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        padding-left: 1rem;
+        color: #FFF;
+        font-family: $font_roboto;
+        font-weight: 300;
+        @include desktop {
+            width: 100%;
+        }
 }
 
-textarea.wpcf7-textarea {
-    height: 180px;
-    width: 285px;
-    text-align: left;
-    font-size: 20px;
-    padding-left: 1rem;
-    color: #FFF;
-    font-family: $font_roboto;
-    font-weight: 300;
-    @include desktop {
-        width: 50rem;
-    }
+
 }
+
+
 
 .grayscale-image {
     filter: gray;
