@@ -1002,8 +1002,8 @@ nav {
       justify-content: center;
   width: 100%; }
 
-.bottom-mobile-nav-icon-container {
-  width: 90%; }
+.bottom-mobile-nav-icon-wrapper {
+  height: 22px; }
 
 .bottom-mobile-nav-wrapper {
   height: 55px;
@@ -1030,15 +1030,26 @@ nav {
 .bottom-mobile-nav-text {
   width: 250px;
   text-align: center;
+  font-size: 2rem;
   text-transform: uppercase; }
 
 #bottom-mobile-nav-open-icon,
 #bottom-mobile-nav-close-icon {
   width: 42px;
   position: absolute;
-  right: -2%;
+  right: -3%;
   top: 50%;
   transform: translateY(-50%); }
+
+#bottom-mobile-nav-close-icon {
+  height: 30px; }
+  #bottom-mobile-nav-close-icon img {
+    height: 30px; }
+
+#bottom-mobile-nav-open-icon {
+  height: 21px; }
+  #bottom-mobile-nav-open-icon img {
+    height: 21px; }
 
 /* Desktop Navigation */
 #desktop-nav {
