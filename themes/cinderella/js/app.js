@@ -27,12 +27,23 @@
             $('.mobile-nav-menu-wrapper').animate({ height: 'hide' }, 500, function() {});
         });
 
+        var donation_total = 0;
         $('.target_pos').click(function() {
             $(this).next().html(function(i, val) { return val * 1 >= 0 ? val * 1 + 1 : 0 });
+
+            var value = $(this).closest('.cp-donation-grid').find('.cp-donation-value').html().replace(/\D/g,'');
+            donation_total += value * 1;
         });
 
         $('.target_neg').click(function() {
-            $(this).prev().html(function(i, val) { return val * 1 - 1 >= 0 ? val * 1 - 1 : 0 });
+            $(this).prev().html(function(i, val) { 
+                if (val * 1 - 1 >= 0) {
+                    var value = $(this).closest('.cp-donation-grid').find('.cp-donation-value').html().replace(/\D/g,'');
+                    donation_total -= value * 1;
+                    return val * 1 - 1;
+                }
+                return 0;
+             });
         });
 
         $('.carousel').flickity({
