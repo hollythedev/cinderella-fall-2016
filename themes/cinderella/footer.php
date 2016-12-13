@@ -42,7 +42,10 @@
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 				</section> <!-- end of section fp-auto-height -->
+
+			<?php if(is_home()) : ?>
 			</div> <!-- #fullpage -->
+			<?php endif ?>
 			</main>
 		</div><!-- #page -->
 		</div>
