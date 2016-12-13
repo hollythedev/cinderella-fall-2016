@@ -1813,6 +1813,9 @@ a {
         -ms-flex-item-align: end;
             align-self: flex-end;
         text-align: right; } }
+  @media (min-width: 1240px) {
+    .cp-quote-section.bd_section_3 {
+      height: 50vh; } }
 
 .cp-stat-grid-wrapper .cp-stat-grid {
   display: -ms-flexbox;
