@@ -160,6 +160,8 @@
          text-align: center;
          position: absolute;
          top: 65%;
+         left: 50%;
+         transform: translateX(-50%);
      }
      .brand-logo {
          width: 230px;
@@ -370,6 +372,7 @@
  }
  
  .cp-stat-grid-wrapper {
+     width: 100%;
      .cp-stat-grid {
          display: flex;
          width: 100vw;
@@ -419,6 +422,7 @@
  }
  
  .cp-donation-grid-wrapper {
+      width: 100%;
      .cp-donation-grid {
          display: flex;
          width: 100vw;
@@ -490,6 +494,7 @@
  }
  
  .cp-expect-grid-wrapper {
+      width: 100%;
      @include desktop {
          display: flex;
          flex-flow: row wrap;
@@ -514,6 +519,7 @@
              width: 50%;
              display: flex;
              align-items: center;
+             justify-content: center;
              text-align: center;
              font-size: 1.5rem;
              padding: 5%;
