@@ -29,7 +29,7 @@ get_header(); ?>
 					</section>
 
 					<!--You made it possible quote-->
-					<section class="bd_section_3 cp-section cp-quote-section">
+					<section class="bd_section_3 cp-section cp-quote-section desktop-height">
 						<h2 class="cp-quote-wrapper"><span class="cp-quote-text"><?php echo CFS()->get( 'bd_quote' ); ?></span></h2>
 						<p class="cp-quote-author"><?php echo CFS()->get( 'bd_author' ); ?></p>
 					</section>
