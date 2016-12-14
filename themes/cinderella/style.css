@@ -1933,7 +1933,6 @@ a {
   width: 100vw; }
   .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper {
     width: 50%;
-    padding-bottom: 50%;
     position: relative; }
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper:after {
       content: "";

@@ -423,9 +423,8 @@
         width: 100vw;
         .cp-donation-image-wrapper {
             width: 50%;
-            padding-bottom: 50%;
             position: relative;
-             &:after {
+            &:after {
                 content: "";
                 padding-bottom: 100%;
                 display: table;
