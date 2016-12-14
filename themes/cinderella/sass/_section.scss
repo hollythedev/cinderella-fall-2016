@@ -201,11 +201,11 @@
         padding: 10% 30% 0 30%;
     }
     .about-page {
-        padding: 10rem 10rem 0 15%;
+        padding: 4rem 4rem 0 4rem;
         line-height: 1.3;
     }
     .boutique-day {
-        padding: 10rem 10rem 0 10rem;
+        padding: 4rem 4rem 0 4rem;
     }
     .cp-horizontal-line {
         @include desktop {
@@ -263,7 +263,7 @@
 
 .cp-history-section {
     background-color: $color_background_3;
-    padding: 10%;
+    padding: 3.2rem;
     .cp-history-copy {
         font-family: $font_roboto;
         font-size: 1.7rem;
@@ -322,7 +322,7 @@
 
 .cp-quote-section {
     background-color: $color_background_3;
-    padding: 11rem;
+    padding: 5rem;
     height: 100vh;
     font-family: $font_roboto;
     font-weight: 200;
@@ -862,7 +862,7 @@
 }
 
 .ideas-section {
-    padding: 15%;
+    padding: 5rem;
     background-color: $color_background_2;
     display: flex;
     flex-direction: column;
