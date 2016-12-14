@@ -286,7 +286,8 @@
 
 .cp-purple-section {
     @include cp-generic-section($color_background_4);
-    &.cp-resources-section {
+    &.cp-resources-section,
+    &.volunteer-gallery-wrapper {
         padding-bottom: 0;
     }
 }

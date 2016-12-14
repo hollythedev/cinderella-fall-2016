@@ -25,7 +25,7 @@ get_header(); ?>
 						<h2 class="cp-marketing-title about-page"><?php echo CFS()->get( 'about_us_section_2_title' ); ?></h2>
 						<span class="cp-horizontal-line"></span>
 						<p class="cp-marketing-copy"><?php echo CFS()->get( 'about_us_section_2_statement' ); ?></p>
-						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Get Involved</a>
+						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Get Involved<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 
 
@@ -72,7 +72,7 @@ get_header(); ?>
 					</section>
 					<section class="about-cinderellas cp-purple-section">
 						<?php echo CFS()->get( 'about_us_recipients' ); ?>
-						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Get Involved</a>
+						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Get Involved<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 					
 					<section class="cp-title-section">
@@ -100,7 +100,7 @@ get_header(); ?>
 						<h2>No gift is too small</h2>
 						<span class="cp-horizontal-line"></span>
 						<p>	Help us contribute to these student’s stories.</p>
-						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help</a>
+						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help<i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 					
 					<?php get_footer(); ?>
