@@ -243,11 +243,11 @@
     flex-direction: column;
     @include desktop {
         .cp-button-link {
-            width: 320px;
+            width: 300px;
         }
         .cp-learn-about-link {
             order: 2;
-            width: 320px;
+            width: 300px;
         }
     }
     @include desktop {
@@ -493,7 +493,6 @@
     @include desktop {
         display: flex;
         flex-flow: row wrap;
-        
     }
     .cp-expect-grid {
         display: flex;
@@ -840,7 +839,6 @@
 }
 
 .locations-list {
-    
     display: flex;
     width: 100%;
     @include desktop {

@@ -1572,11 +1572,11 @@ a {
       flex-direction: column; }
   @media (min-width: 1240px) {
     .desktop-cta .cp-button-link {
-      width: 320px; }
+      width: 300px; }
     .desktop-cta .cp-learn-about-link {
       -ms-flex-order: 2;
           order: 2;
-      width: 320px; } }
+      width: 300px; } }
   @media (min-width: 1240px) {
     .desktop-cta {
       display: -ms-flexbox;
