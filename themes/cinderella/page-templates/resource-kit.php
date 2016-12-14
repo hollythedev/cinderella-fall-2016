@@ -54,6 +54,7 @@ get_header(); ?>
 										<p><?php echo $resource['resource_business_phone'];?></p>
 										<p><?php echo $resource['resource_business_website'];?></p>
 										<p><?php echo $resource['resource_description'];?></p>
+										<div class="cp-horizontal-line-black"></div>
 
 									<?php endforeach ?>
 									</section>
