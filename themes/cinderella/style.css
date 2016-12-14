@@ -592,7 +592,6 @@ body {
       text-align: center;
       padding-right: 0; } }
 
-
 textarea {
   background: 0;
   width: 284px;
@@ -1890,20 +1889,9 @@ a {
     .cp-quote-section.bd_section_3 {
       height: 50vh; } }
 
-
-.cp-stat-grid-wrapper .cp-stat-grid {
-  display: -ms-flexbox;
-  display: flex;
+.cp-stat-grid-wrapper {
   width: 100vw; }
-  .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-image-wrapper {
-    width: 50%; }
-    .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-image-wrapper:after {
-      padding-bottom: 100%;
-      display: table;
-      content: ''; }
-  .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper {
-    width: 50%;
-    background-color: #69B9C6;
+  .cp-stat-grid-wrapper .cp-stat-grid {
     display: -ms-flexbox;
     display: flex;
     width: 100vw; }
@@ -1991,7 +1979,6 @@ a {
             justify-content: center;
         -ms-flex-align: center;
             align-items: center; }
-
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper {
       width: 50%;
       background-color: #69B9C6;
