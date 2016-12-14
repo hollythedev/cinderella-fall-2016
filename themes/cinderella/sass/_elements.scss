@@ -12,6 +12,9 @@ html {
     @include iphone6-plus-width {
         font-size: 12px;
     }
+    @include mobile-width {
+        font-size: 14px;
+    }
 }
 
 *,
