@@ -423,7 +423,6 @@
         width: 100vw;
         .cp-donation-image-wrapper {
             width: 50%;
-            padding-bottom: 50%;
             position: relative;
              &:after {
                 content: "";
@@ -930,6 +929,42 @@
         @media (min-width: $wploginbar-height-change) {
             // if logged in and in desktop
             padding-top: $wploginbar-thin-height + $nav_bottom_bar_height;
+        }
+    }
+}
+
+.cp-resources-section.cp-purple-section {
+    padding-right: 0;
+    padding-left: 0;
+    
+    .cp-resources {
+        background-color: orange;
+        padding-top: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .resource-description {
+            color: red;
+
+            &:after {
+                border-bottom: 1px solid #000;
+                margin-bottom: .5rem;
+                padding: .5rem;
+            }
+        }
+
+        .cp-resource-item {
+            div:last-of-type {
+                display: none;
+            }
         }
     }
 }

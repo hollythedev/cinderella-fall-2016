@@ -83,6 +83,12 @@ body {
     text-align: center;
 }
 
+.cp-horizontal-line-black {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    padding-top: 1rem;
+}
+
 .carousel-text {
     color: #fff;
     z-index: 99;
@@ -137,7 +143,7 @@ body {
 }
 
 .wpcf7-form {
-    padding-top: 10%;
+    padding-top: 2rem;
     input[type=email],
     input[type=text],
     select {
