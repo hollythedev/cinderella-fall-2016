@@ -592,15 +592,24 @@ body {
   font-style: normal;
   font-size: 3rem !important;
   text-align: center;
+<<<<<<< HEAD
   width: 80%;
+=======
+>>>>>>> be9f50c7d6f457cf795a617e88efb62c0ed79edf
   padding-right: 10%;
   margin-top: 1rem; }
+  .carousel-text.about-carousel-text {
+    width: 80%;
+    text-align: left; }
   @media (min-width: 1240px) {
     .carousel-text {
       font-size: 4rem !important;
       width: 100%;
       text-align: center;
-      padding-right: 0; } }
+      padding-right: 0; }
+      .carousel-text.about-carousel-text {
+        width: 100%;
+        text-align: center; } }
 
 textarea {
   background: 0;
@@ -1373,8 +1382,10 @@ a {
     padding: 5% 5% 0 5%; }
   .get-involved-fundraising p {
     text-align: center;
-    padding: 5%;
     font-size: 1.5rem; }
+
+.fundraising-message {
+  padding: 2.5rem 0; }
 
 .get-in-touch {
   background-color: #393D53;
@@ -2360,10 +2371,6 @@ a {
 .volunteer-gallery-wrapper .carousel,
 .get-involved-fundraising .carousel {
   width: 100vw; }
-
-.volunteer-gallery-wrapper .cp-learn-about-link,
-.get-involved-fundraising .cp-learn-about-link {
-  margin-top: 15%; }
 
 .volunteer-gallery-wrapper .volunteer-title,
 .get-involved-fundraising .volunteer-title {

@@ -18,9 +18,12 @@
     }
     p {
         text-align: center;
-        padding: 5%;
         font-size: 1.5rem;
     }
+}
+
+.fundraising-message {
+    padding: 2.5rem 0;
 }
 
 .get-in-touch {
@@ -903,9 +906,6 @@
 .get-involved-fundraising {
     .carousel {
         width: 100vw;
-    }
-    .cp-learn-about-link {
-        margin-top: 15%;
     }
     .volunteer-title {
         font-size: 2.4rem;

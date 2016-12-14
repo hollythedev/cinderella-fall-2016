@@ -88,7 +88,7 @@ get_header(); ?>
 									<div class="carousel-image grayscale-image" style="background:url(<?php echo $field['about_us_awards_gallery_image'];?>) top center no-repeat; background-size: cover;">
 										<div class="gallery-bottom-divider">
 											<div class="cp-horizontal-line"></div>
-											<h2 class="carousel-text"><?php echo $field['about_awards'];?></h2>
+											<h2 class="carousel-text about-carousel-text"><?php echo $field['about_awards'];?></h2>
 										</div>
 									</div>	
 								<?php endforeach ?>
