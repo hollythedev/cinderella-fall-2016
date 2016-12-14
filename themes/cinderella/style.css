@@ -1934,8 +1934,11 @@ a {
   .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper {
     width: 50%;
     padding-bottom: 50%;
-    height: 0;
     position: relative; }
+    .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper:after {
+      content: "";
+      padding-bottom: 100%;
+      display: table; }
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter {
       position: absolute;
       display: -ms-flexbox;

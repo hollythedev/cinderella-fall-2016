@@ -424,8 +424,12 @@
         .cp-donation-image-wrapper {
             width: 50%;
             padding-bottom: 50%;
-            height: 0;
             position: relative;
+             &:after {
+                content: "";
+                padding-bottom: 100%;
+                display: table;
+            }
             .counter {
                 position: absolute;
                 display: flex;
