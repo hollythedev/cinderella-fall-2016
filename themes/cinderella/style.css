@@ -7,6 +7,7 @@ Description: A beautiful theme lovingly built for the Cinderella Project..
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Cinderella Project
 Tags: 
 
 This theme, like WordPress, is licensed under the GPL.
@@ -1916,16 +1917,25 @@ a {
     .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value {
       font-size: 3rem;
       font-weight: 300; }
+      @media (min-width: 1240px) {
+        .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value {
+          font-size: 4.25rem; } }
       .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value:after {
         width: 2rem;
         border-bottom: 1px solid #fff;
         content: "";
         display: block;
         margin: .5rem auto; }
+        @media (min-width: 1240px) {
+          .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value:after {
+            width: 3rem; } }
     .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
       font-size: 1.3rem;
       text-align: center;
       margin: 0 auto; }
+      @media (min-width: 1240px) {
+        .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
+          font-size: 1.5rem; } }
   .cp-stat-grid-wrapper .cp-stat-grid:nth-child(2n) .cp-stat-text-wrapper {
     background-color: #F5A623;
     -ms-flex-order: 2;
@@ -1992,13 +2002,19 @@ a {
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-value {
       font-size: 1.7rem;
       font-weight: 300; }
+      @media (min-width: 1240px) {
+        .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-value {
+          font-size: 2rem; } }
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description {
       font-size: 1.4rem;
       text-align: center;
       margin: 0 auto;
       font-weight: 300; }
+      @media (min-width: 1240px) {
+        .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description {
+          font-size: 1.6rem; } }
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description:after {
-        width: 1rem;
+        width: 2rem;
         border-bottom: 1px solid #fff;
         content: "";
         display: block;
@@ -2380,30 +2396,31 @@ a {
 .cp-resources-section.cp-purple-section {
   padding-right: 0;
   padding-left: 0; }
-  .cp-resources-section.cp-purple-section .cp-resources {
-    background-color: orange;
-    padding-top: 0;
+
+.cp-resources {
+  background-color: orange;
+  padding-top: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .cp-resources .accordion {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
-    .cp-resources-section.cp-purple-section .cp-resources .accordion {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-align: center;
-          align-items: center; }
-    .cp-resources-section.cp-purple-section .cp-resources .resource-description {
-      color: red; }
-      .cp-resources-section.cp-purple-section .cp-resources .resource-description:after {
-        border-bottom: 1px solid #000;
-        margin-bottom: .5rem;
-        padding: .5rem; }
-    .cp-resources-section.cp-purple-section .cp-resources .cp-resource-item div:last-of-type {
-      display: none; }
+  .cp-resources .resource-description {
+    color: red; }
+    .cp-resources .resource-description:after {
+      border-bottom: 1px solid #000;
+      margin-bottom: .5rem;
+      padding: .5rem; }
+  .cp-resources .cp-resource-item div:last-of-type {
+    display: none; }
 
 /*! Flickity v2.0.4
 http://flickity.metafizzy.co
@@ -2731,7 +2748,8 @@ object {
 .cp-similar-project {
   padding: 1rem 2rem;
   line-height: 2;
-  font-weight: 300; }
+  font-weight: 300;
+  width: 100%; }
   .cp-similar-project p {
     color: black;
     font-size: 1.3rem; }
