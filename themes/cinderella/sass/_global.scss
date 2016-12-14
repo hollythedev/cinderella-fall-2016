@@ -89,7 +89,7 @@ body {
     font-family: $font_roboto;
     font-weight: 100;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 3rem !important;
     text-align: center;
     width: 80%;
     text-align: left;
@@ -223,3 +223,6 @@ body {
     filter: grayscale(1);
 }
 
+    .cp-learn-about-link {
+        text-decoration: none;
+    }

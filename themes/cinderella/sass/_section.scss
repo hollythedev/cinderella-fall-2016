@@ -840,8 +840,12 @@
 }
 
 .locations-list {
-    width: 33.3%;
+    
     display: flex;
+    width: 100%;
+    @include desktop {
+        width: 33.3%;
+    }
 }
 
 .section-above-footer {
@@ -899,6 +903,7 @@
 
 .cp-resource-item {
     padding: 2rem;
+    word-wrap: break-word;
     p {
         color: black;
         font-size: 1.3rem;

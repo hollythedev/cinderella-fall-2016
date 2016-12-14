@@ -579,7 +579,7 @@ body {
   font-family: "roboto";
   font-weight: 100;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 3rem !important;
   text-align: center;
   width: 80%;
   text-align: left;
@@ -692,6 +692,9 @@ body .flickity-page-dots {
   /* IE6-9 */
   /* Old WebKit */
   filter: grayscale(1); }
+
+.cp-learn-about-link {
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -2287,9 +2290,12 @@ a {
       font-size: 1.7rem; }
 
 .locations-list {
-  width: 33.3%;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 100%; }
+  @media (min-width: 1240px) {
+    .locations-list {
+      width: 33.3%; } }
 
 .section-above-footer:after {
   content: "";
@@ -2340,7 +2346,8 @@ a {
   transform: translate(-50%); }
 
 .cp-resource-item {
-  padding: 2rem; }
+  padding: 2rem;
+  word-wrap: break-word; }
   .cp-resource-item p {
     color: black;
     font-size: 1.3rem;
