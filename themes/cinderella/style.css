@@ -533,6 +533,11 @@ body {
     .cp-button-link {
       width: 45%;
       font-size: 1.7rem; } }
+  .cp-button-link.button-shrink {
+    width: 85%; }
+    @media (min-width: 1240px) {
+      .cp-button-link.button-shrink {
+        width: 45%; } }
 
 .cp-learn-about-link {
   color: #fff;
@@ -588,7 +593,6 @@ body {
   font-size: 3rem !important;
   text-align: center;
   width: 80%;
-  text-align: left;
   padding-right: 10%;
   margin-top: 1rem; }
   @media (min-width: 1240px) {
@@ -1541,7 +1545,7 @@ a {
       .cp-marketing-section .cp-marketing-title {
         width: 80%; } }
   .cp-marketing-section .front-page {
-    padding: 10% 30% 0 30%; }
+    padding: 0 30% 0 30%; }
   .cp-marketing-section .about-page {
     padding: 4rem 4rem 0 4rem;
     line-height: 1.3; }
@@ -1848,7 +1852,7 @@ a {
 
 .cp-quote-section {
   background-color: #F5A623;
-  padding: 5rem;
+  padding: 6rem;
   height: 100vh;
   font-family: "roboto";
   font-weight: 200;
@@ -2038,8 +2042,7 @@ a {
     font-weight: 200;
     font-style: normal; }
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-image-wrapper {
-      width: 50%;
-      padding-bottom: 50%; }
+      width: 50%; }
       .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-image-wrapper:after {
         content: "";
         padding-bottom: 100%;
@@ -2196,11 +2199,11 @@ a {
 
 .donations-section-1,
 .in-kind-wishlist-background-image,
-.et-involved-drop-off-donations {
+.get-involved-drop-off-donations {
   height: 80vh; }
   .donations-section-1 .image-title-text,
   .in-kind-wishlist-background-image .image-title-text,
-  .et-involved-drop-off-donations .image-title-text {
+  .get-involved-drop-off-donations .image-title-text {
     font-size: 4rem;
     width: 70%;
     line-height: 1; }
