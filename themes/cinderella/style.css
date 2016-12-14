@@ -1916,16 +1916,25 @@ a {
     .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value {
       font-size: 3rem;
       font-weight: 300; }
+      @media (min-width: 1240px) {
+        .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value {
+          font-size: 4.25rem; } }
       .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value:after {
         width: 2rem;
         border-bottom: 1px solid #fff;
         content: "";
         display: block;
         margin: .5rem auto; }
+        @media (min-width: 1240px) {
+          .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-value:after {
+            width: 3rem; } }
     .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
       font-size: 1.3rem;
       text-align: center;
       margin: 0 auto; }
+      @media (min-width: 1240px) {
+        .cp-stat-grid-wrapper .cp-stat-grid .cp-stat-text-wrapper .cp-stat-description {
+          font-size: 1.5rem; } }
   .cp-stat-grid-wrapper .cp-stat-grid:nth-child(2n) .cp-stat-text-wrapper {
     background-color: #F5A623;
     -ms-flex-order: 2;
@@ -1992,13 +2001,19 @@ a {
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-value {
       font-size: 1.7rem;
       font-weight: 300; }
+      @media (min-width: 1240px) {
+        .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-value {
+          font-size: 2rem; } }
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description {
       font-size: 1.4rem;
       text-align: center;
       margin: 0 auto;
       font-weight: 300; }
+      @media (min-width: 1240px) {
+        .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description {
+          font-size: 1.6rem; } }
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-text-wrapper .cp-donation-description:after {
-        width: 1rem;
+        width: 2rem;
         border-bottom: 1px solid #fff;
         content: "";
         display: block;
