@@ -1422,7 +1422,7 @@ a {
         font-size: 2rem; } }
   .cp-no-gift p {
     font-size: 1.7rem;
-    padding: 0 5rem 1rem; }
+    padding: 1rem 5rem 1rem; }
     @media (min-width: 1240px) {
       .cp-no-gift p {
         font-size: 1.5rem; } }
@@ -1934,9 +1934,16 @@ a {
   .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper {
     width: 50%;
     padding-bottom: 50%;
-    height: 0;
     position: relative; }
+    .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper:after {
+      content: "";
+      padding-bottom: 100%;
+      display: table; }
     .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter {
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
       position: absolute;
       display: -ms-flexbox;
       display: flex;
@@ -1952,6 +1959,7 @@ a {
         margin: 0 1rem; }
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_pos,
       .cp-donation-grid-wrapper .cp-donation-grid .cp-donation-image-wrapper .counter .target_neg {
+        cursor: pointer;
         height: 25px;
         width: 25px;
         border-radius: 50%;
