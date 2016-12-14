@@ -38,7 +38,7 @@ get_header(); ?>
 								<h3 class="cp-stat-value"><?php echo $field['sponsorship_statistic'];?></h3>
 								<p class="cp-stat-description"><?php echo $field['sponsorship_statistic_description'];?></p>
 							</div>
-							<div class="cp-stat-image-wrapper" style="background: url(<?php echo $field['sponsorship_statistic_image'];?>); background-size: cover;"></div>
+							<div class="cp-stat-image-wrapper" style="background: url(<?php echo $field['sponsorship_statistic_image'];?>); background-size: cover; background-position-x:50%;"></div>
 						</div>
 						<?php endforeach;
 						wp_reset_postdata();

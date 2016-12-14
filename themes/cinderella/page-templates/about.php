@@ -65,7 +65,7 @@ get_header(); ?>
 								<p class="cp-stat-description"><?php echo $field['about_us_referral_details'];?></p>
 							</div>
 							
-							<div class="cp-stat-image-wrapper grayscale-image" style="background: url(<?php echo $field['about_us_referral_image'];?>); background-size: cover;"></div>
+							<div class="cp-stat-image-wrapper grayscale-image" style="background: url(<?php echo $field['about_us_referral_image'];?>); background-size: cover; background-position-x: 50%;"></div>
 							</div>
 								<?php endforeach ?>
 						
