@@ -35,6 +35,7 @@
 
             var value = $(this).closest('.cp-donation-grid').find('.cp-donation-value').html().replace(/\D/g, '');
             donation_total += value * 1;
+            console.log(donation_total);
         });
 
         $('.target_neg').click(function() {
@@ -46,6 +47,7 @@
                 }
                 return 0;
             });
+            console.log(donation_total);
         });
 
         $('.carousel').flickity({
@@ -135,7 +137,6 @@
     // changing navigation bar on scroll
     //switch nav
     var bottomHero = $('.cp-landing-section').offset().top + $('.cp-landing-section').height();
-    console.log(bottomHero);
     // on scroll
     $(window).on('scroll', function() {
 
