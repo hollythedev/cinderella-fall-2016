@@ -2395,30 +2395,31 @@ a {
 .cp-resources-section.cp-purple-section {
   padding-right: 0;
   padding-left: 0; }
-  .cp-resources-section.cp-purple-section .cp-resources {
-    background-color: orange;
-    padding-top: 0;
+
+.cp-resources {
+  background-color: orange;
+  padding-top: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .cp-resources .accordion {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
-    .cp-resources-section.cp-purple-section .cp-resources .accordion {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-align: center;
-          align-items: center; }
-    .cp-resources-section.cp-purple-section .cp-resources .resource-description {
-      color: red; }
-      .cp-resources-section.cp-purple-section .cp-resources .resource-description:after {
-        border-bottom: 1px solid #000;
-        margin-bottom: .5rem;
-        padding: .5rem; }
-    .cp-resources-section.cp-purple-section .cp-resources .cp-resource-item div:last-of-type {
-      display: none; }
+  .cp-resources .resource-description {
+    color: red; }
+    .cp-resources .resource-description:after {
+      border-bottom: 1px solid #000;
+      margin-bottom: .5rem;
+      padding: .5rem; }
+  .cp-resources .cp-resource-item div:last-of-type {
+    display: none; }
 
 /*! Flickity v2.0.4
 http://flickity.metafizzy.co
@@ -2746,7 +2747,8 @@ object {
 .cp-similar-project {
   padding: 1rem 2rem;
   line-height: 2;
-  font-weight: 300; }
+  font-weight: 300;
+  width: 100%; }
   .cp-similar-project p {
     color: black;
     font-size: 1.3rem; }
