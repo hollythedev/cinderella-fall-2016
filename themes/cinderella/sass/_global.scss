@@ -29,6 +29,16 @@ body {
     text-decoration: none;
     &:hover,
     &focus {}
+
+    &.button-shrink {
+        width: 85%;
+
+        @include desktop {
+            width: 45%;
+        }
+
+    }
+
 }
 
 .cp-learn-about-link {
@@ -98,7 +108,7 @@ body {
     font-size: 3rem !important;
     text-align: center;
     width: 80%;
-    text-align: left;
+
     padding-right: 10%;
     margin-top: 1rem;
     @include desktop {
