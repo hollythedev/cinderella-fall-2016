@@ -97,15 +97,21 @@ body {
     font-style: normal;
     font-size: 3rem !important;
     text-align: center;
-    width: 80%;
-    text-align: left;
     padding-right: 10%;
     margin-top: 1rem;
+    &.about-carousel-text {
+        width: 80%;
+        text-align: left;
+    }
     @include desktop {
         font-size: 4rem !important;
         width: 100%;
         text-align: center;
         padding-right: 0;
+        &.about-carousel-text {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
@@ -210,7 +216,7 @@ body {
         width: 100%;
         text-align: left;
         font-size: 20px;
-        padding-top:.4rem;
+        padding-top: .4rem;
         padding-left: 1rem;
         color: #FFF;
         font-family: $font_roboto;
@@ -229,6 +235,6 @@ body {
     filter: grayscale(1);
 }
 
-    .cp-learn-about-link {
-        text-decoration: none;
-    }
+.cp-learn-about-link {
+    text-decoration: none;
+}
