@@ -92,7 +92,7 @@ get_header(); ?>
 
  								<?php endforeach ?>
 							</div>
-								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us</a>
+								<a class="cp-button-link" href="<?php the_permalink(); ?>">Support Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 							</div>
 
 								<div class="in-kind-wishlist-background-image image-title-section grayscale-image">

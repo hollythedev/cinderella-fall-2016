@@ -1848,7 +1848,7 @@ a {
 
 .cp-quote-section {
   background-color: #F5A623;
-  padding: 5rem;
+  padding: 6rem;
   height: 100vh;
   font-family: "roboto";
   font-weight: 200;
@@ -2038,8 +2038,7 @@ a {
     font-weight: 200;
     font-style: normal; }
     .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-image-wrapper {
-      width: 50%;
-      padding-bottom: 50%; }
+      width: 50%; }
       .cp-expect-grid-wrapper .cp-expect-grid .cp-expect-image-wrapper:after {
         content: "";
         padding-bottom: 100%;
@@ -2196,11 +2195,11 @@ a {
 
 .donations-section-1,
 .in-kind-wishlist-background-image,
-.et-involved-drop-off-donations {
+.get-involved-drop-off-donations {
   height: 80vh; }
   .donations-section-1 .image-title-text,
   .in-kind-wishlist-background-image .image-title-text,
-  .et-involved-drop-off-donations .image-title-text {
+  .get-involved-drop-off-donations .image-title-text {
     font-size: 4rem;
     width: 70%;
     line-height: 1; }
