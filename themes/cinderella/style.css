@@ -1538,10 +1538,10 @@ a {
   .cp-marketing-section .front-page {
     padding: 10% 30% 0 30%; }
   .cp-marketing-section .about-page {
-    padding: 15% 15% 0 15%;
+    padding: 10rem 10rem 0 15%;
     line-height: 1.3; }
   .cp-marketing-section .boutique-day {
-    padding: 10% 10% 0 10%; }
+    padding: 10rem 10rem 0 10rem; }
   @media (min-width: 1240px) {
     .cp-marketing-section .cp-horizontal-line {
       width: 50%; } }
@@ -1843,7 +1843,7 @@ a {
 
 .cp-quote-section {
   background-color: #F5A623;
-  padding: 15%;
+  padding: 11rem;
   height: 100vh;
   font-family: "roboto";
   font-weight: 200;
@@ -2788,8 +2788,8 @@ object {
   font-size: 24px;
   font-family: "roboto";
   font-weight: 200;
-  padding-bottom: 6%;
-  padding-top: 6%;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
   letter-spacing: .1rem; }
 
 .info {
