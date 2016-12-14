@@ -79,7 +79,7 @@
     }
     p {
         font-size: 1.7rem;
-        padding: 0 5rem 1rem;
+        padding: 1rem 5rem 1rem;
         @include desktop {
             font-size: 1.5rem;
         }
@@ -431,6 +431,7 @@
                 display: table;
             }
             .counter {
+                user-select: none;
                 position: absolute;
                 display: flex;
                 justify-content: center;
@@ -444,6 +445,7 @@
                 }
                 .target_pos,
                 .target_neg {
+                    cursor: pointer;
                     height: 25px;
                     width: 25px;
                     border-radius: 50%;
