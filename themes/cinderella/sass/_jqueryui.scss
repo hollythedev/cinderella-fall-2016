@@ -2,6 +2,7 @@
     width: 100%;
     .accordion {
         width: 95%;
+        border-bottom: 1px solid #fff;
     }
 }
 
@@ -42,7 +43,6 @@
         margin-right: 2rem;
         content: "\f077";
     }
-    border: 0;
 }
 
 #get-involved-accordion {
