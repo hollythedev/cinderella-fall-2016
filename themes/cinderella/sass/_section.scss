@@ -159,6 +159,8 @@
         text-align: center;
         position: absolute;
         top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .brand-logo {
         width: 230px;
@@ -487,10 +489,11 @@
 }
 
 .cp-expect-grid-wrapper {
+    width: 100%;
     @include desktop {
         display: flex;
         flex-flow: row wrap;
-        width: 100%;
+        
     }
     .cp-expect-grid {
         display: flex;
@@ -501,7 +504,11 @@
         .cp-expect-image-wrapper {
             width: 50%;
             padding-bottom: 50%;
-            height: 0;
+            &:after {
+                content: "";
+                padding-bottom: 100%;
+                display: table;
+            }
             @include desktop {
                 display: none;
             }
