@@ -322,7 +322,7 @@
 
 .cp-quote-section {
     background-color: $color_background_3;
-    padding: 11rem;
+    padding: 6rem;
     height: 100vh;
     font-family: $font_roboto;
     font-weight: 200;
@@ -403,7 +403,6 @@
                     content: "";
                     display: block;
                     margin: .5rem auto;
-
                     @include desktop {
                         width: 3rem;
                     }
@@ -523,7 +522,6 @@
         font-style: normal;
         .cp-expect-image-wrapper {
             width: 50%;
-            padding-bottom: 50%;
             &:after {
                 content: "";
                 padding-bottom: 100%;
@@ -713,7 +711,7 @@
 
 .donations-section-1,
 .in-kind-wishlist-background-image,
-.et-involved-drop-off-donations {
+.get-involved-drop-off-donations {
     height: 80vh;
     .image-title-text {
         font-size: 4rem;
@@ -952,34 +950,27 @@
 .cp-resources-section.cp-purple-section {
     padding-right: 0;
     padding-left: 0;
- 
 }
 
-   
 .cp-resources {
     background-color: orange;
     padding-top: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     .accordion {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .resource-description {
         color: red;
-
         &:after {
             border-bottom: 1px solid #000;
             margin-bottom: .5rem;
             padding: .5rem;
         }
     }
-
     .cp-resource-item {
         div:last-of-type {
             display: none;
