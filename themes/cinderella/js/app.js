@@ -13,14 +13,14 @@
             }
         });
 
-        $('#bottom-mobile-nav-open-icon').click(function() {
+        $('#bottom-mobile-nav-open-icon').click(function(event) {
             event.stopPropagation();
             $(this).hide();
             $("#bottom-mobile-nav-close-icon").show();
             $('.mobile-nav-menu-wrapper').animate({ height: 'show' }, 500, function() {});
         });
 
-        $('#bottom-mobile-nav-close-icon').click(function() {
+        $('#bottom-mobile-nav-close-icon').click(function(event) {
             event.stopPropagation();
             $(this).hide();
             $("#bottom-mobile-nav-open-icon").show();
