@@ -75,7 +75,7 @@ get_header(); ?>
 						<h3 class="cp-marketing-small-title">This kit is yours for life</h3>
 						<div class="cp-horizontal-line"></div>
 						<p class="bd-message">It includes everyday tips and links to community resources.</p>
-						<a class="cp-button-link " href="<?php the_permalink(129); ?>">Access the kit</a>
+						<a class="cp-button-link button-shrink" href="<?php the_permalink(129); ?>">Access the kit</a>
 					</section>
 					<!--Dreams come true-->
 					<section class="bd-section-8 cp-marketing-section-small-purple cp-section section-above-footer">

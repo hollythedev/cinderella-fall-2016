@@ -533,6 +533,11 @@ body {
     .cp-button-link {
       width: 45%;
       font-size: 1.7rem; } }
+  .cp-button-link.button-shrink {
+    width: 85%; }
+    @media (min-width: 1240px) {
+      .cp-button-link.button-shrink {
+        width: 45%; } }
 
 .cp-learn-about-link {
   color: #fff;
@@ -587,6 +592,10 @@ body {
   font-style: normal;
   font-size: 3rem !important;
   text-align: center;
+<<<<<<< HEAD
+  width: 80%;
+=======
+>>>>>>> be9f50c7d6f457cf795a617e88efb62c0ed79edf
   padding-right: 10%;
   margin-top: 1rem; }
   .carousel-text.about-carousel-text {
@@ -1547,7 +1556,7 @@ a {
       .cp-marketing-section .cp-marketing-title {
         width: 80%; } }
   .cp-marketing-section .front-page {
-    padding: 10% 30% 0 30%; }
+    padding: 0 30% 0 30%; }
   .cp-marketing-section .about-page {
     padding: 4rem 4rem 0 4rem;
     line-height: 1.3; }
