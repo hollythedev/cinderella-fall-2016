@@ -706,9 +706,6 @@ html {
   @media (min-width: 414px) {
     html {
       font-size: 12px; } }
-  @media (min-width: 600px) {
-    html {
-      font-size: 14px; } }
 
 *,
 *:before,
