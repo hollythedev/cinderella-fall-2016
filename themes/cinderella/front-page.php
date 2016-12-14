@@ -81,7 +81,7 @@ get_header(); ?>
 					<section class=" home-section-5 cp-no-gift section-above-footer">
 						<h2>No gift is too small</h2>
 						<p>	Help us contribute to these student’s stories.</p>
-						<a class="cp-button-link" href="<?php the_permalink(37); ?>">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+						<a class="cp-button-link button-shrink" href="<?php the_permalink(37); ?>">Ways to Help <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 					</section>
 												
 						<?php get_footer(); ?>
