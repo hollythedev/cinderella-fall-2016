@@ -123,3 +123,6 @@ require get_template_directory() . '/inc/extras.php';
  * Removes the ability to add custom posts, categories and tags.
  */
 require get_template_directory() . '/hide-default-posts.php';
+
+
+?>

@@ -139,3 +139,20 @@ function filter_resource_json( $data, $post, $context ) {
     return $data;
 }
 add_filter( 'rest_prepare_resource', 'filter_resource_json', 10, 3 );
+
+// custom login logo
+
+function cp_login_logo() { ?>
+   <style type="text/css">
+       #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/assets/cp_logo-bw-800px.jpg);
+		    background-size: contain !important; 
+		    width: 240px !important;
+            height: 240px !important;
+		    background-position: center !important;
+       }
+   </style>
+<?php }
+
+add_action( 'login_enqueue_scripts', 'cp_login_logo' );
+?>
