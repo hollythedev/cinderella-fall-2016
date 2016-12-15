@@ -143,7 +143,6 @@
 
         // we round here to reduce a little workload
         stop = Math.round($(window).scrollTop());
-        console.log(stop)
         if (stop > bottomHero) {
 
             $('#desktop-nav').addClass('cp-purple');
