@@ -1705,7 +1705,7 @@ a {
       display: none; }
   .cp-purple-section .cp-button-link {
     margin-top: 10%; }
-  .cp-purple-section.cp-resources-section {
+  .cp-purple-section.cp-resources-section, .cp-purple-section.volunteer-gallery-wrapper {
     padding-bottom: 0; }
 
 .cp-dark-purple-section {
