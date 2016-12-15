@@ -592,10 +592,6 @@ body {
   font-style: normal;
   font-size: 3rem !important;
   text-align: center;
-<<<<<<< HEAD
-  width: 80%;
-=======
->>>>>>> be9f50c7d6f457cf795a617e88efb62c0ed79edf
   padding-right: 10%;
   margin-top: 1rem; }
   .carousel-text.about-carousel-text {
@@ -2069,6 +2065,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
       text-align: center;
+      -ms-flex-pack: center;
+          justify-content: center;
       font-size: 1.5rem;
       padding: 5%;
       font-weight: 300; }
@@ -2133,6 +2131,8 @@ a {
     width: 85%;
     padding: 0 1.5rem;
     text-align: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     font-size: 1.2rem; }
   .cp-description-section br {
     width: 55%;
